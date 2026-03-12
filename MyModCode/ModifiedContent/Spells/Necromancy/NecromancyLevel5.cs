@@ -54,9 +54,23 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
             BlueprintAbility BoneExplosion = BlueprintTool.Get<BlueprintAbility>("cc51242ff01192b49a2e25adf096e2d0");
             BlueprintAbility WrackingRay = BlueprintTool.Get<BlueprintAbility>("1cde0691195feae45bab5b83ea3f221e");
 
+            BlueprintBuff Fatigued = BlueprintTool.Get<BlueprintBuff>("e6f2fc5d73d88064583cb828801212f4");
+            BlueprintBuff Exhausted = BlueprintTool.Get<BlueprintBuff>("46d1b9cc3d0fd36469a471b047d773a2");
+
             AbilityConfigurator.For(BoneExplosion)
-                .EditComponent<ContextCalculateSharedValue>(
-                    c => c.Value = new ContextDiceValue()
+                .EditComponents<ContextRankConfig>(
+                    c =>
+                    {
+                        if (c.m_Type == AbilityRankType.DamageBonus)
+                        {
+                            c.m_StepLevel = 8;
+                        }
+                    },
+                    c => c.m_Type == AbilityRankType.DamageBonus
+                )
+                .EditComponent<ContextCalculateSharedValue>(c =>
+                {
+                    c.Value = new ContextDiceValue
                     {
                         DiceType = DiceType.D8,
                         DiceCountValue = new ContextValue
@@ -64,28 +78,98 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
                             ValueType = ContextValueType.Rank
                         },
                         BonusValue = 0
-                    }
-                )
-                .EditComponent<AbilityTargetsAround>(
-                     c => c.m_Radius = 30.Feet()
-                )
-                .Configure();
-
-                AbilityConfigurator.For(WrackingRay)
+                    };
+                })
                 .EditComponent<AbilityEffectRunAction>(c =>
                 {
                     foreach (var rootAction in c.Actions.Actions)
                     {
                         ActionTreeUtils.Walk(rootAction, a =>
                         {
-                            if (a is ContextActionDealDamage dealDamage)
+                            if (a is ContextActionConditionalSaved saved)
                             {
-                                dealDamage.MinHPAfterDamage = -999;
+                                for (int i = 0; i < saved.Succeed.Actions.Length; i++)
+                                {
+                                    if (saved.Succeed.Actions[i] is ContextActionDealDamage dealDamage)
+                                    {
+                                        dealDamage.Value = new ContextDiceValue()
+                                        {
+                                            DiceType = DiceType.D8,
+                                            DiceCountValue = new ContextValue
+                                            {
+                                                ValueType = ContextValueType.Rank
+                                            },
+                                            BonusValue = 0
+                                        };
+                                    }
+                                }
+
+                                saved.Succeed.Actions = saved.Succeed.Actions
+                                    .Append<GameAction>(new ContextActionApplyBuff
+                                    {
+                                        m_Buff = Fatigued.ToReference<BlueprintBuffReference>(),
+                                        Permanent = true,
+                                        DurationValue = new ContextDurationValue
+                                        {
+                                            Rate = DurationRate.Rounds,
+                                            DiceType = DiceType.Zero,
+                                            DiceCountValue = 0,
+                                            BonusValue = 0
+                                        },
+                                        ToCaster = false
+                                    })
+                                    .ToArray();
+
+                                saved.Failed.Actions = saved.Failed.Actions
+                                    .Append<GameAction>(new ContextActionApplyBuff
+                                    {
+                                        m_Buff = Exhausted.ToReference<BlueprintBuffReference>(),
+                                        Permanent = true,
+                                        DurationValue = new ContextDurationValue
+                                        {
+                                            Rate = DurationRate.Rounds,
+                                            DiceType = DiceType.Zero,
+                                            DiceCountValue = 0,
+                                            BonusValue = 0
+                                        },
+                                        ToCaster = false
+                                    })
+                                    .ToArray();
+                            }
+                        });
+                    }
+
+                    foreach (var rootAction in c.Actions.Actions)
+                    {
+                        ActionTreeUtils.Walk(rootAction, a =>
+                        {
+                            if (a is ContextActionChangeSharedValue change)
+                            {
+                                change.MultiplyValue = 6;
                             }
                         });
                     }
                 })
+                .EditComponent<AbilityTargetsAround>(
+                        c => c.m_Radius = 30.Feet()
+                )
                 .Configure();
+
+            AbilityConfigurator.For(WrackingRay)
+            .EditComponent<AbilityEffectRunAction>(c =>
+            {
+                foreach (var rootAction in c.Actions.Actions)
+                {
+                    ActionTreeUtils.Walk(rootAction, a =>
+                    {
+                        if (a is ContextActionDealDamage dealDamage)
+                        {
+                            dealDamage.MinHPAfterDamage = -999;
+                        }
+                    });
+                }
+            })
+            .Configure();
         }
     }
 }
