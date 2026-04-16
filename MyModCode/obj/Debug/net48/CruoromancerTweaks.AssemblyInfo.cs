@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CruoromancerTweaks")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+afe16db26838c386db02d2d859d245eb04fdb941")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07d7c2a2c8dd1f32344025643cdaa665e7c71389")]
 [assembly: System.Reflection.AssemblyProductAttribute("CruoromancerTweaks")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CruoromancerTweaks")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

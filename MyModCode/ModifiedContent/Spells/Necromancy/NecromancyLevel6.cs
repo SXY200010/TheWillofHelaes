@@ -93,6 +93,141 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
                     c.Actions.Actions = list.ToArray();
                 })
                 .Configure();
+
+            BlueprintAbility Eyebite = BlueprintTool.Get<BlueprintAbility>("3167d30dd3c622c46b0c0cb242061642");
+            BlueprintBuff EyebiteBuff = BlueprintTool.Get<BlueprintBuff>("50827f87d113b194f9fc772a47ae2b58");
+
+
+            BlueprintAbility CircleOfDeath = BlueprintTool.Get<BlueprintAbility>("a89dcbbab8f40e44e920cc60636097cf");
+            AbilityConfigurator.For(CircleOfDeath)
+            .EditComponents<ContextCalculateSharedValue>(
+                c =>
+                {
+                    c.Value = new ContextDiceValue
+                    {
+                        DiceType = DiceType.D6,
+                        DiceCountValue = new ContextValue
+                        {
+                            ValueType = ContextValueType.Rank,
+                            ValueRank = AbilityRankType.Default,
+                        },
+                        BonusValue = 0
+                    };
+                },
+                c => c.ValueType != AbilitySharedValue.Heal
+            )
+            .AddComponent<ContextRankConfig>(c =>
+            {
+                c.m_Type = AbilityRankType.DamageBonus;
+                c.m_BaseValueType = ContextRankBaseValueType.CasterLevel;
+                c.m_Progression = ContextRankProgression.AsIs;
+                c.m_Max = 10;
+            })
+            .AddComponent<ContextCalculateSharedValue>(c =>
+            {
+                c.ValueType = AbilitySharedValue.Heal; 
+                c.Value = new ContextDiceValue
+                {
+                    DiceType = DiceType.Zero,
+                    DiceCountValue = 0,
+                    BonusValue = new ContextValue
+                    {
+                        ValueType = ContextValueType.Rank,
+                        ValueRank = AbilityRankType.DamageBonus,
+                        Value = 9
+                    }
+                };
+            })
+            .EditComponent<AbilityEffectRunAction>(c =>
+            {
+                foreach (var rootAction in c.Actions.Actions)
+                {
+                    ActionTreeUtils.Walk(rootAction, a =>
+                    {
+                        if (a is Conditional cond)
+                        {
+                            foreach (var condition in cond.ConditionsChecker.Conditions)
+                            {
+                                if (condition is ContextConditionHitDice hpCond && hpCond.HitDice == 9)
+                                {
+                                    hpCond.SharedValue = AbilitySharedValue.Heal;
+                                }
+                            }
+                        }
+                    });
+                }
+            })
+            .Configure();
+
+            BlueprintAbility UndeathToDeath = BlueprintTool.Get<BlueprintAbility>("a9a52760290591844a96d0109e30e04d");
+            AbilityConfigurator.For(UndeathToDeath)
+            .EditComponents<ContextCalculateSharedValue>(
+                c =>
+                {
+                    c.Value = new ContextDiceValue
+                    {
+                        DiceType = DiceType.D6,
+                        DiceCountValue = new ContextValue
+                        {
+                            ValueType = ContextValueType.Rank,
+                            ValueRank = AbilityRankType.Default,
+                        },
+                        BonusValue = 0
+                    };
+                },
+                c => c.ValueType != AbilitySharedValue.Heal
+            )
+            .AddComponent<ContextRankConfig>(c =>
+            {
+                c.m_Type = AbilityRankType.DamageBonus;
+                c.m_BaseValueType = ContextRankBaseValueType.CasterLevel;
+                c.m_Progression = ContextRankProgression.AsIs;
+                c.m_Max = 10;
+            })
+            .AddComponent<ContextCalculateSharedValue>(c =>
+            {
+                c.ValueType = AbilitySharedValue.Heal;
+                c.Value = new ContextDiceValue
+                {
+                    DiceType = DiceType.Zero,
+                    DiceCountValue = 0,
+                    BonusValue = new ContextValue
+                    {
+                        ValueType = ContextValueType.Rank,
+                        ValueRank = AbilityRankType.DamageBonus,
+                        Value = 9
+                    }
+                };
+            })
+            .EditComponent<AbilityEffectRunAction>(c =>
+            {
+                foreach (var rootAction in c.Actions.Actions)
+                {
+                    ActionTreeUtils.Walk(rootAction, a =>
+                    {
+                        if (a is Conditional cond)
+                        {
+                            foreach (var condition in cond.ConditionsChecker.Conditions)
+                            {
+                                if (condition is ContextConditionHitDice hpCond && hpCond.HitDice == 9)
+                                {
+                                    hpCond.SharedValue = AbilitySharedValue.Heal;
+                                }
+                            }
+                        }
+                    });
+                }
+            })
+            .Configure();
+
+
+            BlueprintAbility HarmDamage = BlueprintTool.Get<BlueprintAbility>("3da67f8b941308348b7101e7ef418f52");
+            AbilityConfigurator.For(HarmDamage)
+                .EditComponent<ContextRankConfig>(c =>
+                {
+                    c.m_Max = 200;
+                })
+                .Configure();
         }
     }
 }

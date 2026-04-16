@@ -5,6 +5,7 @@ using CruoromancerTweaks.ModifiedContent;
 using CruoromancerTweaks.ModifiedContent.BugFix;
 using CruoromancerTweaks.ModifiedContent.Classes;
 using CruoromancerTweaks.ModifiedContent.Feats;
+using CruoromancerTweaks.ModifiedContent.Spells.Conjuration;
 using CruoromancerTweaks.ModifiedContent.Spells.Necromancy;
 using HarmonyLib;
 using Kingmaker.Blueprints.JsonSystem;
@@ -78,6 +79,7 @@ namespace CruoromancerTweaks
                     NecromancyLevel4.Configure();
                     NecromancyLevel5.Configure();
                     NecromancyLevel6.Configure();
+                    ConjurationLv7.Configure();
                 }
                 catch (Exception e)
                 {
