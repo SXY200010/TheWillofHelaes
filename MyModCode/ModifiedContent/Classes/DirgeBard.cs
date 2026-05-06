@@ -30,6 +30,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Kingmaker.Utility;
+using Kingmaker.UnitLogic.ActivatableAbilities;
+using Kingmaker.ResourceLinks;
+using Kingmaker.ResourceManagement;
 
 namespace CruoromancerTweaks.ModifiedContent.Classes
 {
@@ -370,6 +373,7 @@ namespace CruoromancerTweaks.ModifiedContent.Classes
                 {
                     m_Value = 30
                 })
+                .SetFx(BlueprintTool.Get<BlueprintAbilityAreaEffect>("4a15b95f8e173dc4fb56924fe5598dcf").Fx)
                 .Configure();
             BuffConfigurator.For("be20c77faa6c05f4387e52985e3358fc")
                 .EditComponent<AddFactContextActions>(c =>

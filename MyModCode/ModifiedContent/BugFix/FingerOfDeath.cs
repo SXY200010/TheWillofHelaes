@@ -1,5 +1,4 @@
-﻿using BlueprintCore.Blueprints.Configurators.Classes.Spells;
-using BlueprintCore.Blueprints.CustomConfigurators.Classes.Spells;
+﻿using BlueprintCore.Blueprints.CustomConfigurators.Classes.Spells;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Abilities;
 using BlueprintCore.Utils;
 using Kingmaker.Blueprints;

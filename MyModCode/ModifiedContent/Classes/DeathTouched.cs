@@ -37,14 +37,41 @@ namespace CruoromancerTweaks.ModifiedContent.Classes
     {
         public static void Configure()
         {
+            BlueprintFeature UndeadAnimalBonusFeature = 
+                FeatureConfigurator.New("UndeadAnimalBonusFeature", "D36D3C2B-0C8D-4351-AEF3-10D8F8BE4CC3")
+                .SetDisplayName("UndeadAnimalBonusFeature.Name")
+                .SetDescription("UndeadAnimalBonusFeature.Description")
+                .AddStatBonus(
+                    descriptor: ModifierDescriptor.Profane,
+                    stat: StatType.Charisma,
+                    value: 6)
+                .Configure();
+            FeatureConfigurator.For("045b1eef7a1577d44884e6f105f35a09")
+                .SetDescription("DeathtouchedFortitudeBonus.Description")
+                .Configure();
+            FeatureConfigurator.For("38570ac838f9e7e48af006800c0fd69c")
+                .SetDescription("ResistLevelDrainDhampir.Description")
+                .Configure();
             ArchetypeConfigurator.For("3ae8abeef5615294c85a2d0f92f592de")
                 .AddToAddFeatures(
-                level: 8,
+                level: 6,
+                features: [
+                    BlueprintTool.Get<BlueprintFeature>("8f58b4029511b5345981ffaf1da5ea2e")
+                ])
+                .AddToAddFeatures(
+                level: 9,
+                features: [
+                    BlueprintTool.Get<BlueprintFeature>("38570ac838f9e7e48af006800c0fd69c")
+                ])
+                .AddToAddFeatures(
+                level: 15,
                 features: [
                     BlueprintTool.Get<BlueprintFeature>("734a29b693e9ec346ba2951b27987e33"),
-                    BlueprintTool.Get<BlueprintFeature>("8a75eb16bfff86949a4ddcb3dd2f83ae")
+                    BlueprintTool.Get<BlueprintFeature>("8a75eb16bfff86949a4ddcb3dd2f83ae"),
+                    UndeadAnimalBonusFeature
                 ])
                 .Configure();
+
         }
     }
 }

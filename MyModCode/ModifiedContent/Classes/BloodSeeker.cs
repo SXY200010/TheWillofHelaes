@@ -56,6 +56,16 @@ namespace CruoromancerTweaks.ModifiedContent.Classes
                 metamagic: Kingmaker.UnitLogic.Abilities.Metamagic.Quicken,
                 allowedAbilities: AutoMetamagic.AllowedType.Any)
                 .Configure();
+            //血池能力修改为法术
+            AbilityConfigurator.For("934f905ffa6f4e65a6bbf6684ae51f44")
+                .SetType(AbilityType.Spell)
+                .Configure();
+            AbilityConfigurator.For("c96a91d6c0e2486faf5b68cf4703b2f6")
+                .SetType(AbilityType.Spell)
+                .Configure();
+            AbilityConfigurator.For("e602b239b27f4f5abe74e496e4c15b62")
+                .SetType(AbilityType.Spell)
+                .Configure();
         }
     }
 }

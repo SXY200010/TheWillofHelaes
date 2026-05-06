@@ -121,6 +121,27 @@ namespace CruoromancerTweaks.ModifiedContent.Classes
                                             ]
                                         }
                                     },
+                                    new Conditional
+                                    {
+                                        ConditionsChecker = new ConditionsChecker
+                                        {
+                                            Conditions = [
+                                                new ContextConditionCasterHasFact
+                                                {
+                                                    m_Fact = BlueprintTool.Get<BlueprintFeature>("38155ca9e4055bb48a89240a2055dcc3").ToReference<BlueprintUnitFactReference>()
+                                                }
+                                            ]
+                                        },
+                                        IfTrue = new ActionList{
+                                            Actions = [
+                                                new ContextActionApplyBuff
+                                                {
+                                                    m_Buff = BlueprintTool.Get<BlueprintBuff>("169d03bbccdbdc542ae1a57d83673d80").ToReference<BlueprintBuffReference>(),
+                                                    Permanent = true
+                                                }
+                                            ]
+                                        }
+                                    },
                                     new ContextActionRemoveBuff
                                     {
                                         m_Buff = BlueprintTool.Get<BlueprintBuff>("df3950af5a783bd4d91ab73eb8fa0fd3").ToReference<BlueprintBuffReference>()
@@ -135,6 +156,8 @@ namespace CruoromancerTweaks.ModifiedContent.Classes
                     isSpendResource: true,
                     requiredResource: SummonZombieAbilityResource
                 )
+                .SetType(AbilityType.Spell)
+                .SetSpellDescriptor(Kingmaker.Blueprints.Classes.Spells.SpellDescriptor.Summoning)
                 .Configure();
             //简易赋生添加召唤僵尸战士
             FeatureConfigurator.For("d45a818a74b842f3912adc22419b2760")
@@ -237,6 +260,27 @@ namespace CruoromancerTweaks.ModifiedContent.Classes
                                             ]
                                         }
                                     },
+                                    new Conditional
+                                    {
+                                        ConditionsChecker = new ConditionsChecker
+                                        {
+                                            Conditions = [
+                                                new ContextConditionCasterHasFact
+                                                {
+                                                    m_Fact = BlueprintTool.Get<BlueprintFeature>("38155ca9e4055bb48a89240a2055dcc3").ToReference<BlueprintUnitFactReference>()
+                                                }
+                                            ]
+                                        },
+                                        IfTrue = new ActionList{
+                                            Actions = [
+                                                new ContextActionApplyBuff
+                                                {
+                                                    m_Buff = BlueprintTool.Get<BlueprintBuff>("169d03bbccdbdc542ae1a57d83673d80").ToReference<BlueprintBuffReference>(),
+                                                    Permanent = true
+                                                }
+                                            ]
+                                        }
+                                    },
                                     new ContextActionRemoveBuff
                                     {
                                         m_Buff = BlueprintTool.Get<BlueprintBuff>("df3950af5a783bd4d91ab73eb8fa0fd3").ToReference<BlueprintBuffReference>()
@@ -251,6 +295,8 @@ namespace CruoromancerTweaks.ModifiedContent.Classes
                     isSpendResource: true,
                     requiredResource: SummonGhoulHuntMasterAbilityResource
                 )
+                .SetType(AbilityType.Spell)
+                .SetSpellDescriptor(Kingmaker.Blueprints.Classes.Spells.SpellDescriptor.Summoning)
                 .Configure();
             //精通赋生添加召唤食尸鬼狩猎大师
             FeatureConfigurator.For("855ad33f36d3421da7293d8cfd4a02ef")
@@ -353,6 +399,27 @@ namespace CruoromancerTweaks.ModifiedContent.Classes
                                             ]
                                         }
                                     },
+                                    new Conditional
+                                    {
+                                        ConditionsChecker = new ConditionsChecker
+                                        {
+                                            Conditions = [
+                                                new ContextConditionCasterHasFact
+                                                {
+                                                    m_Fact = BlueprintTool.Get<BlueprintFeature>("38155ca9e4055bb48a89240a2055dcc3").ToReference<BlueprintUnitFactReference>()
+                                                }
+                                            ]
+                                        },
+                                        IfTrue = new ActionList{
+                                            Actions = [
+                                                new ContextActionApplyBuff
+                                                {
+                                                    m_Buff = BlueprintTool.Get<BlueprintBuff>("169d03bbccdbdc542ae1a57d83673d80").ToReference<BlueprintBuffReference>(),
+                                                    Permanent = true
+                                                }
+                                            ]
+                                        }
+                                    },
                                     new ContextActionRemoveBuff
                                     {
                                         m_Buff = BlueprintTool.Get<BlueprintBuff>("df3950af5a783bd4d91ab73eb8fa0fd3").ToReference<BlueprintBuffReference>()
@@ -367,6 +434,8 @@ namespace CruoromancerTweaks.ModifiedContent.Classes
                     isSpendResource: true,
                     requiredResource: SummonBloodyBonesServantAbilityResource
                 )
+                .SetType(AbilityType.Spell)
+                .SetSpellDescriptor(Kingmaker.Blueprints.Classes.Spells.SpellDescriptor.Summoning)
                 .Configure();
             //高等赋生添加召唤血腥骨兽
             FeatureConfigurator.For("d538d0cfbd3a4f16bd2b1682c57e06f8")

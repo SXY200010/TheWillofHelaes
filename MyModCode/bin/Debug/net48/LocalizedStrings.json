@@ -217,7 +217,7 @@
   {
     "Key": "BloodDrinker.Description",
     "enGB": "Limited to three uses per day, you can drain blood from a living creature or from the corpse of a living being. When you do so, you gain 5 temporary hit points, plus an additional 5 temporary hit points for every three Hit Dice you possess. You also gain a +1 bonus on Fortitude saving throws. All these effects last for 1 hour.",
-    "zhCN": "每日限三次，你可以从一个活物身上吸血，或者从活物的尸体上吸血。若如此做，你获得5点临时生命值，你每拥有三个生命骰，额外获得5点临时生命值。你还会在强韧豁免检定上获得+1加值。以上效果持续1小时。"
+    "zhCN": "每日限三次，你可以从一个活物身上吸血，或者从活物的尸体上吸血。若如此做，你获得5点临时生命值，你每拥有三个生命骰，额外获得5点临时生命值。你还会在强韧豁免检定上获得+1加值。以上效果持续1小时。当你是觅血者时，可以为你回复一个血池点数。"
   },
 
   {
@@ -472,15 +472,9 @@
   },
 
   {
-    "Key": "WavesOfFatigue.Description",
-    "enGB": "Waves of negative energy render all living creatures in the spell's area fatigued. Creatures that are already fatigued become exhausted instead.",
-    "zhCN": "潮水般的负向能量使法术范围内的所有活物陷入疲劳状态。对于已经处于疲劳状态的生物，则改为使其陷入力竭状态。"
-  },
-
-  {
-    "Key":"commandUndead.Description",
-    "enGB":"You can make any undead creature fight on your side as if it was your ally. It will attack your opponents to the best of its ability.",
-    "zhCN":"你可以让不死生物为你作战，如同它是你的盟友。它会尽全力<b><color=#703565>攻击</color></b>你的敌人。"
+  "Key": "WavesOfFatigue.Description",
+  "enGB": "Waves of negative energy render all living creatures in the spell's area fatigued. Creatures that are already fatigued become exhausted instead.",
+  "zhCN": "潮水般的负向能量使法术范围内的所有活物陷入疲劳状态。对于已经处于疲劳状态的生物，则改为使其陷入力竭状态。"
   },
 
   {
@@ -493,5 +487,41 @@
   "Key": "UndeadSubdomainBaseAbility.Description",
   "enGB": "You can use melee contact attacks to make a creature exhibit certain characteristics of an undead creature and be enhanced at the same time. When the touched creature is determining the effect of healing or causing damage based on positive or negative energy, it is regarded as an undead creature. Additionally, it gains the亵渎 bonus on attack rolls， skill checks， attribute checks， and saving throws， for a duration equal to half of the class level that grants you this domain (minimum 1 round). This ability can be cast once per day equal to 3 + the adjustment for perception.",
   "zhCN": "你可以通过近战接触攻击，让一个生物显现出不死生物的某些特性，同时被增强。被触碰的生物在判定基于正向或负向能量的治疗或造成伤害效果时，视为不死生物，同时在攻击检定，技能检定，属性检定和豁免鉴定上获得亵渎加值，持续轮数等于赋予你此子域的职业等级的一半（最少1轮）。此能力每日可施展次数等于3+感知调整值。"
+  },
+
+  {
+  "Key": "DeathBlessingMinorAbility.Description",
+  "enGB": "Starting from level 1, you can transform your appearance into that of a corpse, making you appear even more terrifying within one minute and providing protection similar to that of an undead creature. Your intimidate communication skill check gains a +4 bonus, and your saving throws against diseases, mental effects, paralyzation, toxins, and stun receive a +2 bonus of blasphemy. From level 15, you will transform into an undead creature.",
+  "zhCN": "1级起，你可以将外貌变得宛如一具尸体，在1分钟内让你变得更加骇人，并提供近似于不死生物的防护。你用于威吓的沟通技能检定获得+4加值，抵抗疾病、心智效应、麻痹、毒素和震慑豁免检定获得+2亵渎加值，15级起你将化身为不死生物。"
+  },
+
+  {
+  "Key": "UndeadAnimalBonusFeature.Name",
+  "enGB": "Death with Grace",
+  "zhCN": "优雅归亡"
+  },
+
+  {
+  "Key": "UndeadAnimalBonusFeature.Description",
+  "enGB": "The peaceful death has a unique charm. The deceased animal companion gains a +6 bonus to Charisma.",
+  "zhCN": "宁静的死亡具有独特的魅力，死蚀动物伙伴获得+6魅力加值。"
+  },
+
+  {
+  "Key": "BloodragerUndeadGhostStrike.Description",
+  "enGB": "From level 4 onwards, your melee attacks are treated as having the weapon special ability Ghostly, and they deal an additional 1d6 damage to living creatures.",
+  "zhCN": "4级起，你的近战攻击视为具有武器特殊能力“幽冥”，同时对活物增加1d6伤害。"
+  },
+
+  {
+  "Key": "BloodragerUndeadOneFootInTheGrave.Description",
+  "enGB": "After reaching level 20, you will transform into a Undead creature and become immune to cold, paralysis and sleep. The damage reduction provided by your damage reduction ability is increased to 8 points. When casting spells and spell-like abilities against non-living creatures, you gain a +4 morale bonus on saving throws. You will possess these benefits permanently, even if you do not enter Bloodthirst Fury.",
+  "zhCN": "达到20级后，你将化身为不死生物，同时对寒冷、麻痹和睡眠免疫。你的伤害减免能力提供的伤害减免提高到8点。你在对抗不死生物施展的法术和类法术能力时，豁免检定获得+4士气加值。你将永久具有这些益处，即使未进入血承狂暴也是如此。"
+  },
+
+  {
+  "Key": "DeathtouchedFortitudeBonus.Description",
+  "enGB": "Starting from level 6, when a dead-withered animal companion fights against a normal opponent and the effect does not affect items or undead creatures, it gains a +4 morale bonus on the Constitution saving throw, and also receives all the benefits of the Life and Death Interwoven feat.",
+  "zhCN": "6级起，死蚀动物伙伴对抗正常不会影响物品或不死生物的效果时，在强韧豁免上获得+4士气加值，同时获得生死交织的所有好处。"
   }
 ]

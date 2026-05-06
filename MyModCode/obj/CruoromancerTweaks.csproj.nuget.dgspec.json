@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MyMod\\MyModCode\\CruoromancerTweaks.csproj": {}
+    "D:\\files\\Pathfinder-Wrath of the Righteous\\project\\MyModCode\\CruoromancerTweaks.csproj": {}
   },
   "projects": {
-    "D:\\MyMod\\MyModCode\\CruoromancerTweaks.csproj": {
+    "D:\\files\\Pathfinder-Wrath of the Righteous\\project\\MyModCode\\CruoromancerTweaks.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyMod\\MyModCode\\CruoromancerTweaks.csproj",
+        "projectUniqueName": "D:\\files\\Pathfinder-Wrath of the Righteous\\project\\MyModCode\\CruoromancerTweaks.csproj",
         "projectName": "CruoromancerTweaks",
-        "projectPath": "D:\\MyMod\\MyModCode\\CruoromancerTweaks.csproj",
-        "packagesPath": "C:\\Users\\13375\\.nuget\\packages\\",
-        "outputPath": "D:\\MyMod\\MyModCode\\obj\\",
+        "projectPath": "D:\\files\\Pathfinder-Wrath of the Righteous\\project\\MyModCode\\CruoromancerTweaks.csproj",
+        "packagesPath": "C:\\Users\\ChengHongBo\\.nuget\\packages\\",
+        "outputPath": "D:\\files\\Pathfinder-Wrath of the Righteous\\project\\MyModCode\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\13375\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\ChengHongBo\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net48"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,12 +54,18 @@
               "target": "Package",
               "version": "[*, )"
             },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            },
             "WW-Blueprint-Core": {
               "target": "Package",
               "version": "[*, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308\\RuntimeIdentifierGraph.json"
         }
       }
     }

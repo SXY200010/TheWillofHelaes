@@ -1,4 +1,5 @@
-﻿using BlueprintCore.Blueprints.CustomConfigurators.Classes;
+﻿using BlueprintCore.Blueprints.CustomConfigurators;
+using BlueprintCore.Blueprints.CustomConfigurators.Classes;
 using BlueprintCore.Blueprints.CustomConfigurators.Classes.Selection;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Abilities;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Buffs;
@@ -13,25 +14,25 @@ using Kingmaker.Designers.EventConditionActionSystem.Actions;
 using Kingmaker.ElementsSystem;
 using Kingmaker.EntitySystem.Stats;
 using Kingmaker.Enums;
+using Kingmaker.Enums.Damage;
 using Kingmaker.RuleSystem;
+using Kingmaker.RuleSystem.Rules.Damage;
 using Kingmaker.UnitLogic.Abilities.Blueprints;
 using Kingmaker.UnitLogic.Abilities.Components;
 using Kingmaker.UnitLogic.Abilities.Components.TargetCheckers;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
+using Kingmaker.UnitLogic.FactLogic;
 using Kingmaker.UnitLogic.Mechanics;
 using Kingmaker.UnitLogic.Mechanics.Actions;
 using Kingmaker.UnitLogic.Mechanics.Components;
 using Kingmaker.UnitLogic.Mechanics.Conditions;
 using Kingmaker.UnitLogic.Mechanics.Properties;
-using Kingmaker.Enums.Damage;
-using Kingmaker.UnitLogic.FactLogic;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static Kingmaker.UnitLogic.Mechanics.Properties.UnitPropertyComponent;
-using Kingmaker.RuleSystem.Rules.Damage;
 
 namespace CruoromancerTweaks.ModifiedContent.Classes
 {
@@ -39,6 +40,30 @@ namespace CruoromancerTweaks.ModifiedContent.Classes
     {
         public static void Configure()
         {
+            //唤起死亡能力资源
+            BlueprintAbilityResource OracleRevelationInvokeDeathAbilityResource =
+                AbilityResourceConfigurator.New("OracleRevelationInvokeDeathAbilityResource", "77714FCC-A647-4495-9A72-94AD6765E756")
+                .SetIcon(BlueprintTool.Get<BlueprintAbility>("57fcf8016cf04da4a8b33d2add14de7e").Icon)
+                .SetMax(1)
+                .SetMin(0)
+                .SetUseMax(false)
+                .SetMaxAmount(
+                    new BlueprintAbilityResource.Amount
+                    {
+                        BaseValue = 1
+                    }
+                )
+                .Configure();
+            //唤起死亡能力资源特性
+            BlueprintFeature OracleRevelationInvokeDeathAbilityResourceFeature =
+                FeatureConfigurator.New("OracleRevelationInvokeDeathAbilityResourceFeature", "97C6F8CB-AEFD-4A00-A910-923FC06375DB")
+                .SetHideInUI(true)
+                .SetHideInCharacterSheetAndLevelUp(true)
+                .AddAbilityResources(
+                    resource: OracleRevelationInvokeDeathAbilityResource,
+                    restoreAmount: true)
+                .Configure();
+            
             //buff：唤起死亡(力量和魅力附加先知魅调)
             BlueprintBuff OracleRevelationInvokeDeathBuff =
                 BuffConfigurator.New("OracleRevelationInvokeDeathBuff", "61DB1CFD-B634-480A-AD39-2BA08A75739D")
@@ -278,7 +303,7 @@ namespace CruoromancerTweaks.ModifiedContent.Classes
                     })
                 .AddAbilityResourceLogic(
                     isSpendResource: true,
-                    requiredResource: BlueprintTool.Get<BlueprintAbilityResource>("49735e955e1d14e42a238a87709a92c0"))
+                    requiredResource: OracleRevelationInvokeDeathAbilityResource)
                 .Configure();
             //启示：唤起死亡
             BlueprintFeature OracleRevelationInvokeDeathFeature =
@@ -292,7 +317,8 @@ namespace CruoromancerTweaks.ModifiedContent.Classes
                     BlueprintTool.Get<BlueprintFeature>("e083bd3fa7dfc924fb4e6ab371eda368")
                     ])
                 .AddFacts([
-                    OracleRevelationInvokeDeathAbility
+                    OracleRevelationInvokeDeathAbility,
+                    OracleRevelationInvokeDeathAbilityResourceFeature
                 ])
                 .AddToFeatureSelection(BlueprintTool.Get<BlueprintFeatureSelection>("60008a10ad7ad6543b1f63016741a5d2"))
                 .Configure();
@@ -489,6 +515,7 @@ namespace CruoromancerTweaks.ModifiedContent.Classes
             AbilityConfigurator.New("HarmOrSalyLivingAbility", "17BBB0A3-96E3-4B90-B020-15C74C240CBB")
                 .SetDisplayName("HarmOrSalyLivingAbility.Name")
                 .SetDescription("HarmOrSalyLivingAbility.Description")
+                .SetIcon(BlueprintTool.Get<BlueprintFeature>("067b175d3df0d1a408efd7eee2b36b9b").Icon)
                 .AddAbilityVariants(
                     variants:
                     [

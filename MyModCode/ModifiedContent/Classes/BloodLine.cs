@@ -161,6 +161,7 @@ namespace CruoromancerTweaks.ModifiedContent.Classes
                 .AddBuffEnchantAnyWeapon(
                 enchantmentBlueprint: LessBaneLivingEnchantment,
                 slot: Kingmaker.UI.GenericSlot.EquipSlotBase.SlotType.PrimaryHand)
+                .SetDescription("BloodragerUndeadGhostStrike.Description")
                 .Configure();
             //额外法术修改
             BlueprintFeature BloodragerUndeadSpell7 = 

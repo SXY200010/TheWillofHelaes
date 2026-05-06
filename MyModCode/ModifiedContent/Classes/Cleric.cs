@@ -1,33 +1,35 @@
-﻿using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Abilities;
+﻿using BlueprintCore.Blueprints.CustomConfigurators.Classes;
+using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Abilities;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Buffs;
 using BlueprintCore.Utils;
 using HarmonyLib;
+using Kingmaker.Blueprints;
+using Kingmaker.Blueprints.Classes;
+using Kingmaker.Blueprints.Classes.Spells;
 using Kingmaker.Craft;
+using Kingmaker.Designers.EventConditionActionSystem.Actions;
+using Kingmaker.Designers.Mechanics.Facts.Restrictions;
+using Kingmaker.ElementsSystem;
+using Kingmaker.EntitySystem.Properties;
+using Kingmaker.EntitySystem.Stats;
+using Kingmaker.Enums;
+using Kingmaker.ResourceLinks;
 using Kingmaker.RuleSystem;
+using Kingmaker.UnitLogic.Abilities;
+using Kingmaker.UnitLogic.Abilities.Blueprints;
 using Kingmaker.UnitLogic.Abilities.Components;
+using Kingmaker.UnitLogic.Abilities.Components.Base;
+using Kingmaker.UnitLogic.Abilities.Components.TargetCheckers;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
+using Kingmaker.UnitLogic.Mechanics;
 using Kingmaker.UnitLogic.Mechanics.Actions;
 using Kingmaker.UnitLogic.Mechanics.Components;
-using Kingmaker.Enums;
-using Kingmaker.UnitLogic.Mechanics;
-using Kingmaker.UnitLogic.Abilities;
-using Kingmaker.EntitySystem.Stats;
-using Kingmaker.Designers.Mechanics.Facts.Restrictions;
-using Kingmaker.EntitySystem.Properties;
-using Kingmaker.ElementsSystem;
-using Kingmaker.Blueprints.Classes.Spells;
+using Kingmaker.UnitLogic.Mechanics.Conditions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Kingmaker.Blueprints;
-using Kingmaker.Designers.EventConditionActionSystem.Actions;
-using Kingmaker.UnitLogic.Abilities.Components.TargetCheckers;
-using Kingmaker.UnitLogic.Mechanics.Conditions;
-using Kingmaker.Blueprints.Classes;
-using Kingmaker.UnitLogic.Abilities.Blueprints;
-using BlueprintCore.Blueprints.CustomConfigurators.Classes;
 
 namespace CruoromancerTweaks.ModifiedContent.Classes
 {
@@ -193,6 +195,27 @@ namespace CruoromancerTweaks.ModifiedContent.Classes
                         c.Actions.Actions = [.. list];
                     }
                 )
+                //.AddAbilitySpawnFx(
+                //    prefabLink: new PrefabLink
+                //    {
+                //        AssetId = "79cd62b68ac540a48b90fc622142432e"
+                //    },
+                //    anchor: AbilitySpawnFxAnchor.ClickedTarget)
+                .AddAbilitySpawnFx(
+                    anchor: AbilitySpawnFxAnchor.ClickedTarget,
+                    delay: 0f,
+                    destroyOnCast: false,
+                    orientationAnchor: AbilitySpawnFxAnchor.None,
+                    orientationMode: AbilitySpawnFxOrientation.Copy,
+                    positionAnchor: AbilitySpawnFxAnchor.None,
+                    prefabLink: new PrefabLink
+                    {
+                        AssetId = "79cd62b68ac540a48b90fc622142432e"
+                    },
+                    time: AbilitySpawnFxTime.OnApplyEffect,
+                    weaponTarget: AbilitySpawnFxWeaponTarget.None
+                )
+                .SetType(AbilityType.Spell)
                 .Configure();
             }
             //转变不死生物能力

@@ -23,6 +23,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Kingmaker.UnitLogic.Mechanics.Components;
+using BlueprintCore.Blueprints.CustomConfigurators.Classes;
 
 namespace CruoromancerTweaks.ModifiedContent.Classes
 {
@@ -138,6 +139,10 @@ namespace CruoromancerTweaks.ModifiedContent.Classes
                         });
                     c.Actions.Actions = list.ToArray();
                 })
+                .SetDescription("DeathBlessingMinorAbility.Description")
+                .Configure();
+            BuffConfigurator.For("6b3405a08f6cdee488266a500cc4cc84")
+                .SetDescription("DeathBlessingMajorAbility.Description")
                 .Configure();
             //死亡之触增强
             AbilityConfigurator.For("04dd71ac77051bc46aab114d200e65dd")
@@ -179,6 +184,9 @@ namespace CruoromancerTweaks.ModifiedContent.Classes
                         }
                     ];
                 })
+                .Configure();
+            FeatureConfigurator.For("751fddfe9096fdd41b2104b0cd2a68de")
+                .SetDescription("DeathBlessingMajorAbility.Description")
                 .Configure();
             AbilityConfigurator.For("d3dba848088e1a64582f76108b778fd0")
                 .SetDescription("DeathBlessingMajorAbility.Description")
