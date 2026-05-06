@@ -51,6 +51,7 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
     {
         private static readonly string BoneExplosionDescription = "BoneExplosion.Description";
         private static readonly string WavesOfFatigueDescription = "WavesOfFatigue.Description";
+        private static readonly string WrackingRayDescription = "WrackingRay.Description";
         public static void Configure()
         {
             BlueprintAbility BoneExplosion = BlueprintTool.Get<BlueprintAbility>("cc51242ff01192b49a2e25adf096e2d0");
@@ -159,6 +160,7 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
                 .Configure();
 
             AbilityConfigurator.For(WrackingRay)
+            .SetDescription(WrackingRayDescription)
             .EditComponent<AbilityEffectRunAction>(c =>
             {
                 foreach (var rootAction in c.Actions.Actions)

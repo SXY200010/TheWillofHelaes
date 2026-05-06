@@ -198,8 +198,8 @@
 
   {
     "Key": "GebianNecromancer.Description",
-    "enGB": "Gebian Necromancer adds Lore (Religion) to their list of class skills. Gebian Necromancer gains a +1 bonus on attack rolls, AC, and initiative checks, and gains a +1 bonus on damage rolls made with necromancy spells.<br>If the character already has the class skill, weapon proficiency or armor proficiency granted by the selected background from her class during character creation, then the corresponding bonuses from background change to a +1 competence bonus in case of skills, a +1 enhancement bonus in case of weapon proficiency and a -1 Armor Check Penalty reduction in case of armor proficiency.",
-    "zhCN": "盖布死灵师将<b><color=#703565>学识（宗教）</color></b>加入本职<b><color=#703565>技能</color></b>列表。其召唤的不死生物和死灵生物伙伴的攻击检定、AC和先攻获得+1加值，并且自身在使用死灵法术造成的伤害上获得+1加值。<br>如果角色已在角色创建过程中，通过职业获取了上述本职技能，<b><color=#703565>武器擅长</color></b>或防具擅长，则背景提供的相应加值改为相关技能上的+1表现加值，相关武器上的+1增强加值，相关防具上的<b><color=#703565>防具检定减值</color></b>–1。"
+    "enGB": "Gebian Necromancer adds Lore (Religion) to their list of class skills. Undead creatures summoned by the Gebian Necromancer and their necromancy animal companion gain a +2 bonus on attack rolls, AC, and initiative checks. The Gebian Necromancer gains a +1 bonus on damage rolls made with necromancy spells, a +1 bonus to necromancy spell DC, and a +1 bonus on Spell Penetration checks.<br>If the character already has the class skill, weapon proficiency or armor proficiency granted by the selected background from her class during character creation, then the corresponding bonuses from background change to a +1 competence bonus in case of skills, a +1 enhancement bonus in case of weapon proficiency and a -1 Armor Check Penalty reduction in case of armor proficiency.",
+    "zhCN": "盖布死灵师将<b><color=#703565>学识（宗教）</color></b>加入本职<b><color=#703565>技能</color></b>列表。其召唤的不死生物和死灵生物伙伴的攻击检定、AC和先攻获得+2加值。盖布死灵师自身在使用死灵法术造成的伤害上获得+1加值，死灵法术的DC获得+1加值，并且<b><color=#703565>法术穿透</color></b>检定获得+1加值。<br>如果角色已在角色创建过程中，通过职业获取了上述本职技能，<b><color=#703565>武器擅长</color></b>或防具擅长，则背景提供的相应加值改为相关技能上的+1表现加值，相关武器上的+1增强加值，相关防具上的<b><color=#703565>防具检定减值</color></b>–1。"
   },
 
   {
@@ -472,6 +472,12 @@
   },
 
   {
+  "Key": "commandUndead.Description",
+  "enGB": "You can make any undead creature fight on your side as if it was your ally. It will attack your opponents to the best of its ability.",
+  "zhCN": "你可以让不死生物为你作战，如同它是你的盟友。它会尽全力攻击你的敌人。"
+  },
+
+  {
   "Key": "WavesOfFatigue.Description",
   "enGB": "Waves of negative energy render all living creatures in the spell's area fatigued. Creatures that are already fatigued become exhausted instead.",
   "zhCN": "潮水般的负向能量使法术范围内的所有活物陷入疲劳状态。对于已经处于疲劳状态的生物，则改为使其陷入力竭状态。"
@@ -529,5 +535,11 @@
   "Key": "ResistLevelDrainDhampir.Description",
   "enGB": "Immune energy depletion effect.",
   "zhCN": "免疫能量流失效果。"
+  },
+
+  {
+  "Key": "WrackingRay.Description",
+  "enGB": "A ray of sickly greenish-gray negative energy issues forth from the palm of your hand.\n\nMake a ranged touch attack against the target. A creature hit by this spell is wracked by painful spasms as its muscles and sinews wither and twist.\n\nThe subject takes 1d4 points of Dexterity and Strength damage per 3 caster levels you possess (maximum 5d4 each). A successful Fortitude save halves the damage.",
+  "zhCN": "一道黯淡的青灰色负向能量从你的掌心发出。\n\n对目标进行一次远程接触攻击。被此法术击中的生物的肌肉和肌腱枯萎扭曲，陷入痛苦的痉挛。\n\n受术者受到每3个施法者等级1d4点敏捷和力量伤害（最高各5d4点）。通过成功的强韧豁免可减半该伤害。"
   }
 ]

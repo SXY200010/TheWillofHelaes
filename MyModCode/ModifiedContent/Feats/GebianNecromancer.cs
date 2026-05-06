@@ -41,19 +41,19 @@ namespace CruoromancerTweaks.ModifiedContent.Feats
                 .AddStatBonus
                 (
                     stat: Kingmaker.EntitySystem.Stats.StatType.AdditionalAttackBonus,
-                    value: 1,
+                    value: 2,
                     descriptor: Kingmaker.Enums.ModifierDescriptor.UntypedStackable
                 )
                 .AddStatBonus
                 (
                     stat: Kingmaker.EntitySystem.Stats.StatType.AC,
-                    value: 1,
+                    value: 2,
                     descriptor: Kingmaker.Enums.ModifierDescriptor.UntypedStackable
                 )
                 .AddStatBonus
                 (
                     stat: Kingmaker.EntitySystem.Stats.StatType.Initiative,
-                    value: 1,
+                    value: 2,
                     descriptor: Kingmaker.Enums.ModifierDescriptor.UntypedStackable
                 )
                 .Configure();
@@ -62,6 +62,13 @@ namespace CruoromancerTweaks.ModifiedContent.Feats
                 .AddIncreaseSpellSchoolDamage(
                     school: SpellSchool.Necromancy,
                     damageBonus: 1
+                )
+                .AddIncreaseSpellSchoolDC(
+                    school: SpellSchool.Necromancy,
+                    bonusDC: 1
+                )
+                .AddSpellPenetrationBonus(
+                    value: 1
                 )
                 .SetDescription(GebianNecromancerDescription)
                 .Configure();
