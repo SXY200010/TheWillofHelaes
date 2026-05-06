@@ -198,8 +198,8 @@
 
   {
     "Key": "GebianNecromancer.Description",
-    "enGB": "Gebian Necromancer adds Lore (Religion) to their list of class skills. Gebian Necromancer gains a +1 bonus on attack rolls, AC, and initiative checks, and gains a +1 bonus on damage rolls made with necromancy spells.<br>If the character already has the class skill, weapon proficiency or armor proficiency granted by the selected background from her class during character creation, then the corresponding bonuses from background change to a +1 competence bonus in case of skills, a +1 enhancement bonus in case of weapon proficiency and a -1 Armor Check Penalty reduction in case of armor proficiency.",
-    "zhCN": "盖布死灵师将<b><color=#703565>学识（宗教）</color></b>加入本职<b><color=#703565>技能</color></b>列表。其召唤的不死生物和死灵生物伙伴的攻击检定、AC和先攻获得+1加值，并且自身在使用死灵法术造成的伤害上获得+1加值。<br>如果角色已在角色创建过程中，通过职业获取了上述本职技能，<b><color=#703565>武器擅长</color></b>或防具擅长，则背景提供的相应加值改为相关技能上的+1表现加值，相关武器上的+1增强加值，相关防具上的<b><color=#703565>防具检定减值</color></b>–1。"
+    "enGB": "Gebian Necromancer adds Lore (Religion) to their list of class skills. Undead creatures summoned by the Gebian Necromancer and their necromancy animal companion gain a +2 bonus on attack rolls, AC, and initiative checks. The Gebian Necromancer gains a +1 bonus on damage rolls made with necromancy spells, a +1 bonus to necromancy spell DC, and a +1 bonus on Spell Penetration checks.<br>If the character already has the class skill, weapon proficiency or armor proficiency granted by the selected background from her class during character creation, then the corresponding bonuses from background change to a +1 competence bonus in case of skills, a +1 enhancement bonus in case of weapon proficiency and a -1 Armor Check Penalty reduction in case of armor proficiency.",
+    "zhCN": "盖布死灵师将<b><color=#703565>学识（宗教）</color></b>加入本职<b><color=#703565>技能</color></b>列表。其召唤的不死生物和死灵生物伙伴的攻击检定、AC和先攻获得+2加值。盖布死灵师自身在使用死灵法术造成的伤害上获得+1加值，死灵法术的DC获得+1加值，并且<b><color=#703565>法术穿透</color></b>检定获得+1加值。<br>如果角色已在角色创建过程中，通过职业获取了上述本职技能，<b><color=#703565>武器擅长</color></b>或防具擅长，则背景提供的相应加值改为相关技能上的+1表现加值，相关武器上的+1增强加值，相关防具上的<b><color=#703565>防具检定减值</color></b>–1。"
   },
 
   {
@@ -257,9 +257,9 @@
   },
 
   {
-    "Key": "PerniciousPoison.Description",
-    "enGB": "You weaken the target’s defenses against poison. The target takes a <b><color=#703565>-4 penalty</color></b> on saving throws against poison, and attempts to <b><color=#703565>cure</color></b> the poisoned target also take a <b><color=#703565>-4 penalty</color></b>. If the target <b><color=#703565>fails its saving throw</color></b>, it takes <b><color=#703565>1D3 points of Constitution damage</color></b>, and for the duration of the spell it suffers an additional <b><color=#703565>-2 penalty</color></b> on <b><color=#703565>Fortitude saving throws</color></b>.",
-    "zhCN": "你弱化目标对毒素的防御能力。目标在对抗毒素进行<b><color=#703565>豁免检定</color></b>时受到<b><color=#703565>-4减值</color></b>，尝试<b><color=#703565>治疗</color></b>目标身上的毒素时，相关检定同样受到<b><color=#703565>-4减值</color></b>。若目标<b><color=#703565>豁免失败</color></b>，则会受到<b><color=#703565>1D3点体质伤害</color></b>，并且在法术持续时间内，目标在进行<b><color=#703565>强韧豁免</color></b>时还将额外承受<b><color=#703565>-2减值</color></b>。"
+  "Key": "PerniciousPoison.Description",
+  "enGB": "You weaken the target’s defenses against poison. The target takes a <b><color=#703565>-4 penalty</color></b> on saving throws against poison, and attempts to <b><color=#703565>cure</color></b> the poisoned target also take a <b><color=#703565>-4 penalty</color></b>. When this spell is cast, if the target <b><color=#703565>fails its initial saving throw</color></b>, it takes <b><color=#703565>1D3 points of Constitution damage</color></b>. For the duration of the spell, the target also suffers an additional <b><color=#703565>-2 penalty</color></b> on <b><color=#703565>Fortitude saving throws</color></b>.",
+  "zhCN": "你弱化目标对毒素的防御能力。目标在对抗毒素进行<b><color=#703565>豁免检定</color></b>时受到<b><color=#703565>-4减值</color></b>，尝试<b><color=#703565>治疗</color></b>目标身上的毒素时，相关检定同样受到<b><color=#703565>-4减值</color></b>。施放此法术时，若目标<b><color=#703565>初始豁免失败</color></b>，则会受到<b><color=#703565>1D3点体质伤害</color></b>。在法术持续时间内，目标在进行<b><color=#703565>强韧豁免</color></b>时还将额外承受<b><color=#703565>-2减值</color></b>。"
   },
 
   {
@@ -472,6 +472,12 @@
   },
 
   {
+  "Key": "commandUndead.Description",
+  "enGB": "You can make any undead creature fight on your side as if it was your ally. It will attack your opponents to the best of its ability.",
+  "zhCN": "你可以让不死生物为你作战，如同它是你的盟友。它会尽全力攻击你的敌人。"
+  },
+
+  {
   "Key": "WavesOfFatigue.Description",
   "enGB": "Waves of negative energy render all living creatures in the spell's area fatigued. Creatures that are already fatigued become exhausted instead.",
   "zhCN": "潮水般的负向能量使法术范围内的所有活物陷入疲劳状态。对于已经处于疲劳状态的生物，则改为使其陷入力竭状态。"
@@ -529,5 +535,17 @@
   "Key": "ResistLevelDrainDhampir.Description",
   "enGB": "Immune energy depletion effect.",
   "zhCN": "免疫能量流失效果。"
+  },
+
+  {
+  "Key": "WrackingRay.Description",
+  "enGB": "A ray of sickly greenish-gray negative energy issues forth from the palm of your hand.\n\nMake a ranged touch attack against the target. A creature hit by this spell is wracked by painful spasms as its muscles and sinews wither and twist.\n\nThe subject takes 1d4 points of Dexterity and Strength damage per 3 caster levels you possess (maximum 5d4 each). A successful Fortitude save halves the damage.",
+  "zhCN": "一道黯淡的青灰色负向能量从你的掌心发出。\n\n对目标进行一次远程接触攻击。被此法术击中的生物的肌肉和肌腱枯萎扭曲，陷入痛苦的痉挛。\n\n受术者受到每3个施法者等级1d4点敏捷和力量伤害（最高各5d4点）。通过成功的强韧豁免可减半该伤害。"
+  },
+
+  {
+  "Key": "HarmDamage.Description",
+  "enGB": "The Grave Wound spell inflicts negative energy damage equal to 10 points per caster level, up to a maximum of 200 points at 20th level. A successful Will saving throw reduces the damage by half. When cast upon undead creatures, the spell functions identically to the Heal spell.",
+  "zhCN": "重伤术会以负向能量冲击目标，造成每施法者等级10点伤害（20级时达到最高的200点）。如果生物的意志豁免成功，则重伤术的伤害减半。如果对不死生物使用，重伤术产生如同医疗术的效果。"
   }
 ]
