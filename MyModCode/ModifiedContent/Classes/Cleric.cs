@@ -50,6 +50,8 @@ namespace CruoromancerTweaks.ModifiedContent.Classes
                         return false;
                     }
                 })
+                .SetIcon(BlueprintTool.Get<BlueprintAbility>("3b12a2a6898d403ebf918d9a6aeb02b0").Icon)
+                .SetDescription("UndeadSubdomainBaseAbility.Description")
                 .AddBuffAllSkillsBonus(descriptor: ModifierDescriptor.Profane, 
                 multiplier: new ContextValue 
                 {
@@ -146,6 +148,7 @@ namespace CruoromancerTweaks.ModifiedContent.Classes
             foreach (string guid in DeathKissGuids)
             {
                 AbilityConfigurator.For(guid)
+                .SetDescription("UndeadSubdomainBaseAbility.Description")
                 .EditComponent<AbilityEffectRunAction>(
                     c => 
                     {

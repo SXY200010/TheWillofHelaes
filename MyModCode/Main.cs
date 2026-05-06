@@ -87,6 +87,7 @@ namespace CruoromancerTweaks
                     Alchemist.Configure();
                     BloodSeeker.Configure();
                     Cleric.Configure();
+                    DeathTouched.Configure();
                 }
                 catch (Exception e)
                 {

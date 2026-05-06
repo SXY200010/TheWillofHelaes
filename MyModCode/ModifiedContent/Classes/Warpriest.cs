@@ -22,6 +22,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Kingmaker.UnitLogic.Mechanics.Components;
 
 namespace CruoromancerTweaks.ModifiedContent.Classes
 {
@@ -140,6 +141,7 @@ namespace CruoromancerTweaks.ModifiedContent.Classes
                 .Configure();
             //死亡之触增强
             AbilityConfigurator.For("04dd71ac77051bc46aab114d200e65dd")
+                .SetDescription("DeathBlessingMajorAbility.Description")
                 .EditComponent<AbilityEffectRunAction>(c =>
                 {
                     c.Actions.Actions = [
@@ -176,6 +178,59 @@ namespace CruoromancerTweaks.ModifiedContent.Classes
                             }
                         }
                     ];
+                })
+                .Configure();
+            AbilityConfigurator.For("d3dba848088e1a64582f76108b778fd0")
+                .SetDescription("DeathBlessingMajorAbility.Description")
+                .Configure();
+            BuffConfigurator.For("84cd1f14dff45f4479603d753dcfbf0b")
+                .SetDescription("DeathBlessingMajorAbility.Description")
+                .EditComponent<AddInitiatorAttackWithWeaponTrigger>(c =>
+                {
+                    var list = c.Action.Actions.ToList();
+                    list.RemoveRange(0, 1);
+                    list.Add(new ContextActionDealDamage
+                    {
+                        CriticalSharedValue = AbilitySharedValue.Damage,
+                        DamageType = new DamageTypeDescription
+                        {
+                            Physical = new DamageTypeDescription.PhysicalData
+                            {
+                                Form = PhysicalDamageForm.Slashing
+                            },
+                            Type = DamageType.Physical
+                        },
+                        Duration = new ContextDurationValue
+                        {
+                            BonusValue = new ContextValue
+                            {
+                                Value = 1
+                            },
+                            DiceCountValue = new ContextValue
+                            {
+                                Value = 0
+                            },
+                            DiceType = DiceType.Zero,
+                            Rate = DurationRate.Hours
+                        },
+                        EnergyDrainType = EnergyDrainType.Temporary,
+                        m_Type = ContextActionDealDamage.Type.EnergyDrain,
+                        PreRolledSharedValue = AbilitySharedValue.Damage,
+                        ResultSharedValue = AbilitySharedValue.Damage,
+                        Value = new ContextDiceValue
+                        {
+                            BonusValue = new ContextValue
+                            {
+                                Value = 0
+                            },
+                            DiceType = DiceType.D4,
+                            DiceCountValue = new ContextValue
+                            {
+                                Value = 1
+                            }
+                        }
+                    });
+                    c.Action.Actions = list.ToArray();
                 })
                 .Configure();
         }

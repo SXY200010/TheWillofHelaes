@@ -41,6 +41,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 
 namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
 {
@@ -56,6 +57,7 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
         private static readonly string GhoulTouchBuffDescription = "GhoulTouchBuff.Description";
         private static readonly string PoxPustulesDescription = "PoxPustules.Description";
         private static readonly string commandUndeadDuration = "commandUndead.Duration";
+        private static readonly string commandUndeadDescription = "commandUndead.Description";
         public static void Configure()
         {
             BlueprintAbility scare = BlueprintTool.Get<BlueprintAbility>("08cb5f4c3b2695e44971bf5c45205df0");
@@ -75,6 +77,8 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
             BlueprintBuff ghoulTouchBuff = BlueprintTool.Get<BlueprintBuff>("bdc12558a89d47a1b4f859b2664bcef3");
             BlueprintBuff summonedCreatureSpawnMonsterIVVI = BlueprintTool.Get<BlueprintBuff>("50d51854cf6a3434d96a87d050e1d09a");
             BlueprintBuff RepurposeBuffUndead = BlueprintTool.Get<BlueprintBuff>("57785c3bf386461ea3d623d627314afa");
+            BlueprintBuff MonsterMythic5HealthTriggerBadBuff = BlueprintTool.Get<BlueprintBuff>("a668bbad55c0945478fcc62c4f079510");
+            BlueprintBuff Sickened = BlueprintTool.Get<BlueprintBuff>("4e42460798665fd4cb9173ffa7ada323");
 
             BlueprintFeature incorporeal = BlueprintTool.Get<BlueprintFeature>("c4a7f98d743bc784c9d4cf2105852c39");
             BlueprintFeature constructType = BlueprintTool.Get<BlueprintFeature>("fd389783027d63343b4a5634bd81645f");
@@ -144,6 +148,7 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
                 })
                 .SetIsFullRoundAction(false)
                 .SetLocalizedDuration(commandUndeadDuration)
+                .SetDescription(commandUndeadDescription)
                 .Configure();
 
             BuffConfigurator.For(commandUndeadIntelligentBuff)
@@ -282,13 +287,59 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
                 .Configure();
 
             AbilityConfigurator.For(perniciousPoison)
-                .SetDescription(PoxPustulesDescription)
+                .SetDescription(PerniciousPoisonDescription)
                 .SetRange(AbilityRange.Medium)
+                .EditComponent<AbilityEffectRunAction>(c =>
+                {
+                    var list = c.Actions.Actions.ToList();
+
+                    list.Add(new ContextActionConditionalSaved
+                    {
+                        Succeed = new ActionList
+                        {
+                            Actions = Array.Empty<GameAction>()
+                        },
+
+                        Failed = new ActionList
+                        {
+                            Actions = new GameAction[]
+                            {
+                                new ContextActionDealDamage
+                                {
+                                    AbilityType = StatType.Constitution,
+                                    DamageType = new DamageTypeDescription
+                                    {
+                                        Type = DamageType.Physical,
+                                        Energy = Kingmaker.Enums.Damage.DamageEnergyType.Fire
+                                    },
+                                    Duration = new ContextDurationValue
+                                    {
+                                        Rate = DurationRate.Rounds,
+                                        DiceType = DiceType.Zero,
+                                        DiceCountValue = 0,
+                                        BonusValue = 0
+                                    },
+                                    Value = new ContextDiceValue
+                                    {
+                                        DiceType = DiceType.D3,
+                                        DiceCountValue = 1,
+                                        BonusValue = 0
+                                    },
+                                    m_Type = ContextActionDealDamage.Type.AbilityDamage
+                                }
+                            }
+                        }
+                    });
+
+                    c.Actions.Actions = list.ToArray();
+                    c.SavingThrowType = SavingThrowType.Fortitude;
+                    LogWrapper.Get("CruoromancerTweaks").Info("Added saving throw action to Pernicious Poison.");
+                })
                 .Configure();
 
             BuffConfigurator.For(perniciousPoisonbuff)
-                .SetDescription(PoxPustulesDescription)
-                .AddContextStatBonus(
+                .SetDescription(PerniciousPoisonDescription)
+                .AddStatBonus(
                     stat: StatType.SaveFortitude,
                     descriptor: ModifierDescriptor.Penalty,
                     value: -2
@@ -299,15 +350,29 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
                     {
                         Actions = new GameAction[]
                         {
-                        new DealStatDamage
-                        {
-                            Stat = StatType.Constitution,
-                            DamageDice = new DiceFormula
-                            {
-                                m_Dice=DiceType.D3,
-                                m_Rolls=1
-                            },
-                        }
+                            new ContextActionDealDamage
+                                {
+                                    AbilityType = StatType.Constitution,
+                                    DamageType = new DamageTypeDescription
+                                    {
+                                        Type = DamageType.Physical,
+                                        Energy = Kingmaker.Enums.Damage.DamageEnergyType.Fire
+                                    },
+                                    Duration = new ContextDurationValue
+                                    {
+                                        Rate = DurationRate.Rounds,
+                                        DiceType = DiceType.Zero,
+                                        DiceCountValue = 0,
+                                        BonusValue = 0
+                                    },
+                                    Value = new ContextDiceValue
+                                    {
+                                        DiceType = DiceType.D3,
+                                        DiceCountValue = 1,
+                                        BonusValue = 0
+                                    },
+                                    m_Type = ContextActionDealDamage.Type.AbilityDamage
+                                }
                         }
                     };
 
@@ -318,6 +383,9 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
             BuffConfigurator.For(poxPustulesBuff)
                 .SetDescription(PoxPustulesDescription)
                 .RemoveComponents(c => c is AddStatBonus)
+                .AddCondition(
+                    Kingmaker.UnitLogic.UnitCondition.Sickened
+                )
                 .AddContextRankConfig(
                     ContextRankConfigs
                         .CasterLevel()
@@ -439,6 +507,11 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
                                         },
                                         new ContextConditionHasFact
                                         {
+                                            m_Fact = MonsterMythic5HealthTriggerBadBuff.ToReference<BlueprintUnitFactReference>(),
+                                            Not = true
+                                        },
+                                        new ContextConditionHasFact
+                                        {
                                             m_Fact = ghoulTouchBuff.ToReference<BlueprintUnitFactReference>(),
                                             Not = false
                                         }
@@ -501,6 +574,7 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
                   };
                   c.CompareType = 0;
                   c.TargetValue = 0;
+                  c.ReduceBelowZero = true;
               })
               .Configure();
 

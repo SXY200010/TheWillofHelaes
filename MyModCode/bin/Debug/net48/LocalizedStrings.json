@@ -472,8 +472,26 @@
   },
 
   {
-  "Key": "WavesOfFatigue.Description",
-  "enGB": "Waves of negative energy render all living creatures in the spell's area fatigued. Creatures that are already fatigued become exhausted instead.",
-  "zhCN": "潮水般的负向能量使法术范围内的所有活物陷入疲劳状态。对于已经处于疲劳状态的生物，则改为使其陷入力竭状态。"
+    "Key": "WavesOfFatigue.Description",
+    "enGB": "Waves of negative energy render all living creatures in the spell's area fatigued. Creatures that are already fatigued become exhausted instead.",
+    "zhCN": "潮水般的负向能量使法术范围内的所有活物陷入疲劳状态。对于已经处于疲劳状态的生物，则改为使其陷入力竭状态。"
+  },
+
+  {
+    "Key":"commandUndead.Description",
+    "enGB":"You can make any undead creature fight on your side as if it was your ally. It will attack your opponents to the best of its ability.",
+    "zhCN":"你可以让不死生物为你作战，如同它是你的盟友。它会尽全力<b><color=#703565>攻击</color></b>你的敌人。"
+  },
+
+  {
+  "Key": "DeathBlessingMajorAbility.Description",
+  "enGB": "Starting from level 10, you can launch a melee contact attack against an enemy, inflicting excruciating pain upon it. If you hit successfully, you cause the target to suffer 1d4 temporary negative levels for 1 hour. Additionally, you can expend a swift action to activate this ability, enabling you to apply this effect to your next melee attack within the next minute. These temporary negative levels can be stacked. You will not receive any benefits from causing these negative levels (such as the temporary hit points gained by undead creatures due to the necromancy spell).",
+  "zhCN": "10级起，你可以对敌人发起一次近战接触攻击，使其承受难忍痛苦。若成功命中，你令目标承受1d4个临时负向等级，持续1小时。此外，你也能够花费迅捷动作来启动此能力，使你在接下来一分钟内，下一次近战攻击附带此效果。这些临时负向等级可叠加。你不会因造成这些负向等级而获得好处（比如不死生物因弱能术而获得的临时生命值。"
+  },
+
+  {
+  "Key": "UndeadSubdomainBaseAbility.Description",
+  "enGB": "You can use melee contact attacks to make a creature exhibit certain characteristics of an undead creature and be enhanced at the same time. When the touched creature is determining the effect of healing or causing damage based on positive or negative energy, it is regarded as an undead creature. Additionally, it gains the亵渎 bonus on attack rolls， skill checks， attribute checks， and saving throws， for a duration equal to half of the class level that grants you this domain (minimum 1 round). This ability can be cast once per day equal to 3 + the adjustment for perception.",
+  "zhCN": "你可以通过近战接触攻击，让一个生物显现出不死生物的某些特性，同时被增强。被触碰的生物在判定基于正向或负向能量的治疗或造成伤害效果时，视为不死生物，同时在攻击检定，技能检定，属性检定和豁免鉴定上获得亵渎加值，持续轮数等于赋予你此子域的职业等级的一半（最少1轮）。此能力每日可施展次数等于3+感知调整值。"
   }
 ]
