@@ -257,9 +257,9 @@
   },
 
   {
-    "Key": "PerniciousPoison.Description",
-    "enGB": "You weaken the target’s defenses against poison. The target takes a <b><color=#703565>-4 penalty</color></b> on saving throws against poison, and attempts to <b><color=#703565>cure</color></b> the poisoned target also take a <b><color=#703565>-4 penalty</color></b>. If the target <b><color=#703565>fails its saving throw</color></b>, it takes <b><color=#703565>1D3 points of Constitution damage</color></b>, and for the duration of the spell it suffers an additional <b><color=#703565>-2 penalty</color></b> on <b><color=#703565>Fortitude saving throws</color></b>.",
-    "zhCN": "你弱化目标对毒素的防御能力。目标在对抗毒素进行<b><color=#703565>豁免检定</color></b>时受到<b><color=#703565>-4减值</color></b>，尝试<b><color=#703565>治疗</color></b>目标身上的毒素时，相关检定同样受到<b><color=#703565>-4减值</color></b>。若目标<b><color=#703565>豁免失败</color></b>，则会受到<b><color=#703565>1D3点体质伤害</color></b>，并且在法术持续时间内，目标在进行<b><color=#703565>强韧豁免</color></b>时还将额外承受<b><color=#703565>-2减值</color></b>。"
+  "Key": "PerniciousPoison.Description",
+  "enGB": "You weaken the target’s defenses against poison. The target takes a <b><color=#703565>-4 penalty</color></b> on saving throws against poison, and attempts to <b><color=#703565>cure</color></b> the poisoned target also take a <b><color=#703565>-4 penalty</color></b>. When this spell is cast, if the target <b><color=#703565>fails its initial saving throw</color></b>, it takes <b><color=#703565>1D3 points of Constitution damage</color></b>. For the duration of the spell, the target also suffers an additional <b><color=#703565>-2 penalty</color></b> on <b><color=#703565>Fortitude saving throws</color></b>.",
+  "zhCN": "你弱化目标对毒素的防御能力。目标在对抗毒素进行<b><color=#703565>豁免检定</color></b>时受到<b><color=#703565>-4减值</color></b>，尝试<b><color=#703565>治疗</color></b>目标身上的毒素时，相关检定同样受到<b><color=#703565>-4减值</color></b>。施放此法术时，若目标<b><color=#703565>初始豁免失败</color></b>，则会受到<b><color=#703565>1D3点体质伤害</color></b>。在法术持续时间内，目标在进行<b><color=#703565>强韧豁免</color></b>时还将额外承受<b><color=#703565>-2减值</color></b>。"
   },
 
   {
