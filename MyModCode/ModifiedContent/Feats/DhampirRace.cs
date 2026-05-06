@@ -19,6 +19,7 @@ using Kingmaker.RuleSystem.Rules.Damage;
 using Kingmaker.UnitLogic;
 using Kingmaker.UnitLogic.Abilities.Blueprints;
 using Kingmaker.UnitLogic.Abilities.Components;
+using Kingmaker.UnitLogic.Abilities.Components.CasterCheckers;
 using Kingmaker.UnitLogic.Abilities.Components.TargetCheckers;
 using Kingmaker.UnitLogic.ActivatableAbilities;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
@@ -41,13 +42,42 @@ namespace CruoromancerTweaks.ModifiedContent.Feats
     {
         public static void Configure()
         {
-            //移除饮血者限制
+            //移除饮血者限制、增加恢复血池点数
             AbilityConfigurator.For("be35623d2c561c649b98a1794216e9f9")
                 .RemoveComponents(
-                predicate: c => c is AbilityTargetHasOneOfConditionsOrHP ? true : false
+                predicate: c => c is AbilityTargetHasOneOfConditionsOrHP
                 )
+                .EditComponent<AbilityEffectRunAction>(
+                c =>
+                {
+                    var list = c.Actions.Actions.ToList();
+                    list.Add(
+                        new ContextActionOnContextCaster
+                        {
+                            Actions = new ActionList
+                            {
+                                Actions = [
+                                    new ContextRestoreResource
+                                    {
+                                        m_Resource = BlueprintTool.Get<BlueprintAbilityResource>("d776a80421be411e8d3b62fc956b80d2").ToReference<BlueprintAbilityResourceReference>(),
+                                        ContextValueRestoration = true,
+                                        Value = new ContextValue
+                                        {
+                                            Value = 1,
+                                            Property = UnitProperty.Level
+                                        }
+                                    }
+                                ]
+                            },
+                            TargetAsCaster = true
+                        }
+                    );
+                    
+                    c.Actions.Actions = [.. list];
+                })
                 .SetDescription("BloodDrinker.Description")
                 .Configure(delayed: true);
+
             //移除饮血者描述
             FeatureConfigurator.For("96983d50aca1d214e8adc57a39b41c25")
                 .SetDescription("BloodDrinker.Description")
@@ -56,7 +86,7 @@ namespace CruoromancerTweaks.ModifiedContent.Feats
                 .SetDescription("BloodDrinker.Description")
                 .Configure(delayed: true);
             //增加Buff施法者等级+1
-            BlueprintBuff DhampirResonanceBuffLv4 =
+            BlueprintBuff DhampirResonanceBuffLv4 = 
                 BuffConfigurator.New("DhampirResonanceBuffLv4", "E180EB5E-8F4A-42EF-BE48-FBCB19261256")
                 .SetFlags(BlueprintBuff.Flags.HiddenInUi)
                 .AddIncreaseSpellSchoolCasterLevel(
@@ -102,26 +132,26 @@ namespace CruoromancerTweaks.ModifiedContent.Feats
                 )
                 .Configure(delayed: true);
             //增加能力吸血鬼共鸣
-            BlueprintAbility DhampirResonanceAbility =
+            BlueprintAbility DhampirResonanceAbility = 
                 AbilityConfigurator.New("DhampirResonance", "47B00733-6F50-4B5A-85CD-91F505C06455")
                 .SetDisplayName("DhampirResonance.Name")
                 .SetDescription("DhampirResonanceAbility.Description")
                 .SetType(AbilityType.Supernatural)
                 .SetRange(AbilityRange.Personal)
                 .SetIcon(BlueprintTool.Get<BlueprintFeature>("703c488da4a34dc883dd7787e8d7ed51").Icon)
-                .AddComponent<AbilityEffectRunAction>(c =>
+                .AddComponent<AbilityEffectRunAction>(c=>
                 {
                     c.Actions = new ActionList
                     {
-                        Actions = new GameAction[]
-                        {
+                        Actions =
+                        [
                             new Conditional
                             {
                                 ConditionsChecker = new ConditionsChecker
                                 {
                                     Operation = Operation.And,
-                                    Conditions = new Condition[]
-                                    {
+                                    Conditions =
+                                    [
                                         new ContextConditionCompare
                                         {
                                             m_Type = ContextConditionCompare.Type.GreaterOrEqual,
@@ -136,18 +166,18 @@ namespace CruoromancerTweaks.ModifiedContent.Feats
                                                 Value = 4
                                             }
                                         }
-                                    }
+                                    ]
                                 },
                                 IfTrue = new ActionList
                                 {
-                                    Actions = new GameAction[]
-                                    {
+                                    Actions =
+                                    [
                                         new ContextActionApplyBuff
                                         {
                                             m_Buff = DhampirResonanceBuffLv4.ToReference<BlueprintBuffReference>(),
                                             Permanent = true
                                         }
-                                    }
+                                    ]
                                 }
                             },
                             new Conditional
@@ -290,12 +320,12 @@ namespace CruoromancerTweaks.ModifiedContent.Feats
                                     }
                                 }
                             },
-                        }
+                        ]
                     };
                 })
                 .Configure(delayed: true);
             //增加特长吸血鬼共鸣（不可选）
-            BlueprintFeature DhampirResonanceFeature =
+            BlueprintFeature DhampirResonanceFeature = 
             FeatureConfigurator.New("DhampirResonanceFeature", "A822CF12-D0C8-41F2-A741-E0307E21D7EA")
                 .SetDisplayName("DhampirResonance.Name")
                 .SetDescription("DhampirResonance.Description")

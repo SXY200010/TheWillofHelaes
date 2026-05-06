@@ -49,6 +49,8 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
 {
     internal class NecromancyLevel5
     {
+        private static readonly string BoneExplosionDescription = "BoneExplosion.Description";
+        private static readonly string WavesOfFatigueDescription = "WavesOfFatigue.Description";
         public static void Configure()
         {
             BlueprintAbility BoneExplosion = BlueprintTool.Get<BlueprintAbility>("cc51242ff01192b49a2e25adf096e2d0");
@@ -58,6 +60,7 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
             BlueprintBuff Exhausted = BlueprintTool.Get<BlueprintBuff>("46d1b9cc3d0fd36469a471b047d773a2");
 
             AbilityConfigurator.For(BoneExplosion)
+                .SetDescription(BoneExplosionDescription)
                 .EditComponents<ContextRankConfig>(
                     c =>
                     {
@@ -170,6 +173,133 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
                 }
             })
             .Configure();
+
+            BlueprintAbility WavesOfFatigue = BlueprintTool.Get<BlueprintAbility>("8878d0c46dfbd564e9d5756349d5e439");
+            AbilityConfigurator.For(WavesOfFatigue)
+                .SetDescription(WavesOfFatigueDescription)
+                .EditComponent<AbilityEffectRunAction>(c =>
+                {
+                    Conditional targetCond = null;
+                    GameAction savedSpawnFx = null;
+
+                    foreach (var rootAction in c.Actions.Actions)
+                    {
+                        ActionTreeUtils.Walk(rootAction, a =>
+                        {
+                            if (targetCond != null) return;
+
+                            if (a is not Conditional cond)
+                                return;
+
+                            bool hasFatiguedNotCondition =
+                                cond.ConditionsChecker?.Conditions != null &&
+                                cond.ConditionsChecker.Conditions
+                                    .OfType<ContextConditionHasFact>()
+                                    .Any(hasFact =>
+                                        hasFact.m_Fact != null &&
+                                        hasFact.m_Fact.Guid == Fatigued.AssetGuid &&
+                                        hasFact.Not);
+
+                            bool ifTrueHasFatiguedApply =
+                                cond.IfTrue?.Actions != null &&
+                                cond.IfTrue.Actions
+                                    .OfType<ContextActionApplyBuff>()
+                                    .Any(apply =>
+                                        apply.m_Buff != null &&
+                                        apply.m_Buff.Guid == Fatigued.AssetGuid);
+
+                            if (!hasFatiguedNotCondition || !ifTrueHasFatiguedApply)
+                                return;
+
+                            targetCond = cond;
+
+                            savedSpawnFx = cond.IfTrue?.Actions?
+                                .FirstOrDefault(a => a is ContextActionSpawnFx);
+                        });
+                    }
+
+                    if (targetCond == null)
+                        return;
+
+                    // 第二步：遍历结束后再改
+                    targetCond.ConditionsChecker.Conditions =
+                        targetCond.ConditionsChecker.Conditions
+                            .Where(cond =>
+                                !(cond is ContextConditionHasFact hasFact
+                                  && hasFact.m_Fact != null
+                                  && hasFact.m_Fact.Guid == Fatigued.AssetGuid
+                                  && hasFact.Not))
+                            .ToArray();
+
+                    var innerCond = new Conditional
+                    {
+                        ConditionsChecker = new ConditionsChecker
+                        {
+                            Operation = Operation.And,
+                            Conditions = new Condition[]
+                            {
+                                new ContextConditionHasFact
+                                {
+                                    m_Fact = Fatigued.ToReference<BlueprintUnitFactReference>(),
+                                    Not = false
+                                }
+                            }
+                        },
+                        IfTrue = new ActionList
+                        {
+                            Actions = new GameAction[]
+                            {
+                                new ContextActionApplyBuff
+                                {
+                                    m_Buff = Exhausted.ToReference<BlueprintBuffReference>(),
+                                    Permanent = true,
+                                    DurationValue = new ContextDurationValue
+                                    {
+                                        Rate = DurationRate.Rounds,
+                                        DiceType = DiceType.Zero,
+                                        DiceCountValue = 0,
+                                        BonusValue = 0
+                                    }
+                                }
+                            }
+                        },
+                        IfFalse = new ActionList
+                        {
+                            Actions = new GameAction[]
+                            {
+                                new ContextActionApplyBuff
+                                {
+                                    m_Buff = Fatigued.ToReference<BlueprintBuffReference>(),
+                                    Permanent = true,
+                                    DurationValue = new ContextDurationValue
+                                    {
+                                        Rate = DurationRate.Rounds,
+                                        DiceType = DiceType.Zero,
+                                        DiceCountValue = 0,
+                                        BonusValue = 0
+                                    }
+                                }
+                            }
+                        }
+                    };
+
+                    if (savedSpawnFx != null)
+                    {
+                        targetCond.IfTrue.Actions = new GameAction[]
+                        {
+                            innerCond,
+                            savedSpawnFx
+                        };
+                    }
+                    else
+                    {
+                        targetCond.IfTrue.Actions = new GameAction[]
+                        {
+                             innerCond
+                        };
+                    }
+                })
+                .Configure();
         }
     }
 }

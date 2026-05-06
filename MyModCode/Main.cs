@@ -1,8 +1,12 @@
 using BlueprintCore.Blueprints.Configurators.Root;
 using BlueprintCore.Utils;
+using CruoromancerTweaks.Feats;
+using CruoromancerTweaks.ModifiedContent;
+using CruoromancerTweaks.ModifiedContent.BugFix;
 using CruoromancerTweaks.ModifiedContent.Classes;
-using CruoromancerTweaks.undead;
-using CruoromancerTweaks.Magus;
+using CruoromancerTweaks.ModifiedContent.Feats;
+using CruoromancerTweaks.ModifiedContent.Spells.Conjuration;
+using CruoromancerTweaks.ModifiedContent.Spells.Necromancy;
 using HarmonyLib;
 using Kingmaker.Blueprints.JsonSystem;
 using System;
@@ -57,24 +61,33 @@ namespace CruoromancerTweaks
 
                     Logger.Info("Configuring blueprints.");
 
+                    //MyFeat.Configure();
                     PerfectInfusion.Configure();
                     FocusedInfusion.Configure();
                     SickeningInfusion.Configure();
                     CommandingInfusion.Configure();
                     ProfaneInfusion.Configure();
                     Cruoromancer.Configure();
+                    Necromancy.Configure();
                     BloodLine.Configure();
                     DhampirRace.Configure();
                     FingerOfDeath.Configure();
+                    GebianNecromancer.Configure();
+                    NecromancyLevel1.Configure();
+                    NecromancyLevel2.Configure();
+                    ContagionAggravationBuffs.Configure();
+                    NecromancyLevel4.Configure();
+                    NecromancyLevel5.Configure();
+                    NecromancyLevel6.Configure();
+                    ConjurationLv7.Configure();
                     MagusBuff.Configure();
                     OracleRevelation.Configure();
                     DirgeBard.Configure();
                     Warpriest.Configure();
                     Alchemist.Configure();
-                    
                     BloodSeeker.Configure();
-                    //牧师需要在战斗祭司后加载
                     Cleric.Configure();
+                    DeathTouched.Configure();
                 }
                 catch (Exception e)
                 {

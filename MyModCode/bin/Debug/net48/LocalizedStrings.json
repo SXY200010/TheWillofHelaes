@@ -320,5 +320,178 @@
     "Key": "Poison.Description",
     "enGB": "Injury; <b><color=#703565>Save</color></b>: Fortitude <br>Frequency: 1/ <b><color=#703565>round</color></b> for 6 rounds <br>Effect: <b><color=#703565>1d4</color></b> <b><color=#703565>Constitution damage</color></b> <br>Cure: 1 successful save",
     "zhCN": "受创；<b><color=#703565>豁免</color></b>：强韧<br>频率：1次/<b><color=#703565>轮</color></b>，持续6轮 <br>效果：<b><color=#703565>1d4</color></b>点<b><color=#703565>体质</color></b><b><color=#703565>伤害</color></b> <br>痊愈：1次豁免成功"
+  },
+
+  {
+    "Key": "OracleRevelationInvokeDeath.Name",
+    "enGB": "Invoke Death",
+    "zhCN": "唤起死亡"
+  },
+
+  {
+    "Key": "OracleRevelationInvokeDeath.Description",
+    "enGB": "As a standard action, you summon a fierce skeletal champion to serve you. This undead creature gains a bonus to its Strength and Charisma equal to your Charisma modifier.The duration is 1 minute per Charisma modifier.At 7th level, you can additionally summon one bloody bones beast.At 15th level, you can additionally summon one soul-eater.",
+    "zhCN": "以一个标准动作，唤起一个凶猛骷髅战将来服侍你，这个不死生物的力量和魅力获得你的魅力调整值的加值。持续时间等于1分钟/魅力调整值，7级时可以额外唤起一个血腥骨兽，15级时可以额外唤起一个吞魂鬼。"
+  },
+
+  {
+    "Key": "OracleRevelationBloodBath.Name",
+    "enGB": "Blood Bath",
+    "zhCN": "血流成河"
+  },
+
+  {
+    "Key": "OracleRevelationBloodBath.Description",
+    "enGB": "Whenever you deal negative energy damage with a spell or ability, the target begins to bleed, taking 1d6 damage each round. This damage increases by an additional 1d6 at 5th level and every 5 levels thereafter. Your necromancy spells benefit from increased range, as if modified by the Distant Spell metamagic feat.",
+    "zhCN": "当你造成负能量伤害的法术或能力时，将会使敌人开始流血，每轮受到1D6点伤害，5级以及之后每5级，该伤害再增加1D6。你的死灵法术能增加远距离施法，如同运用了超魔：法术及远。"
+  },
+
+  {
+    "Key": "HarmOrSalyLivingAbility.Name",
+    "enGB": "Endless Murderous Intent",
+    "zhCN": "无尽杀意"
+  },
+
+  {
+    "Key": "HarmOrSalyLivingAbility.Description",
+    "enGB": "Once per round, you may use Cure Critical Wounds or Inflict Critical Wounds as a free action.",
+    "zhCN": "每轮1次，你能以自由动作使用重伤术或者杀生术"
+  },
+
+  {
+    "Key": "DirgeBardSecretsOfTheGraveFeature.Description",
+    "enGB": "Starting at 2nd level, a Dirge Singer gains a bonus to Knowledge (religion) checks equal to half her bard level. A Dirge Singer can use mind-affecting spells to affect undead as if they were living creatures. For the purpose of determining which spells can affect undead, treat them as humanoids. Additionally, add the following necromancy spells to her list of known spells:2nd level: Ray of Enfeeblement, Cause Fear.6th level: Scare, Command Undead.8th level: Lesser Control Undead, Ray of Exhaustion.10th level: Control Undead, Fear.14th level: Ray of Agony, Wave of Fatigue.17th level: Purge Undead, Sonic Wail",
+    "zhCN": "2级起，哀歌咏者在学识（宗教）检定上获得等于吟游诗人等级一半的加值。哀歌咏者可以用影响心智的法术影响不死生物，如同它们是活物一般。在判定哪些法术可以影响不死生物时，将它们视为类人生物。此外，将以下死灵法术加入已知法术列表：2级时，衰弱射线，惊恐术。6级时，恐吓术，号令死灵。8级时，次等操纵亡者，力竭射线。10级时，操纵亡者，恐惧术。14级时，剧痛射线，疲乏波。17级时，净化亡者，音爆哀鸣"
+  },
+
+  {
+    "Key": "DirgeBardAnimateDeadReinforcement.Name",
+    "enGB": "Animate Dead Reinforcement",
+    "zhCN": "亡者增援"
+  },
+
+  {
+    "Key": "SummonZombieAbility.Name",
+    "enGB": "Summon Zombie",
+    "zhCN": "召唤僵尸战士"
+  },
+
+  {
+    "Key": "SummonZombieAbility.Description",
+    "enGB": "Once per day, summon a CR 3 zombie warrior to fight for you. It lasts 10 minutes per level of Necromancer.",
+    "zhCN": "每天1次，召唤一个CR3的僵尸战士为你作战，持续每活尸学家等级10分钟"
+  },
+
+  {
+    "Key": "SummonGhoulHuntMasterAbility.Name",
+    "enGB": "Summon Ghoul Hunt Master",
+    "zhCN": "召唤食尸鬼狩猎大师"
+  },
+
+  {
+    "Key": "SummonGhoulHuntMasterAbility.Description",
+    "enGB": "Once per day, summon a CR 7 Ghoul Hunt Master to fight for you. It lasts 10 minutes per level of Necromancer.",
+    "zhCN": "每天1次，召唤一个CR7的食尸鬼狩猎大师为你作战，持续每活尸学家等级10分钟"
+  },
+
+  {
+    "Key": "SummonBloodyBonesServantAbility.Name",
+    "enGB": "Summon Bloody Bones Servant",
+    "zhCN": "召唤血腥骨兽"
+  },
+
+  {
+    "Key": "SummonBloodyBonesServantAbility.Description",
+    "enGB": "Once per day, summon a Bloody Bones Servant to fight for you. It lasts 10 minutes per level of Necromancer.",
+    "zhCN": "每天1次，召唤一个血腥骨兽为你作战，持续每活尸学家等级10分钟"
+  },
+
+  {
+    "Key": "FatalEmbraceAbility.Name",
+    "enGB": "Fatal Embrace",
+    "zhCN": "致命拥抱"
+  },
+
+  {
+    "Key": "FatalEmbraceAbility.Description",
+    "enGB": "Your embrace is lethal enough; with a single touch, you can temporarily transform a target into an undead creature.",
+    "zhCN": "你的拥抱足以致命，你可以用一个接触动作将目标短暂地转化为不死生物。"
+  },
+
+  {
+    "Key": "BloodragerUndeadSpell7.Name",
+    "enGB": "Additional Spell(FalseLifeGreater)",
+    "zhCN": "额外法术（高等虚假生命）"
+  },
+
+  {
+    "Key": "BloodragerUndeadFeatSelectionGreenrager.Description",
+    "enGB": "Additional Specialties: Resilience, Evade, Tenacity, Agile Movement, Powerful Attack, Weapon Specialization, Weapon Proficiency, Heavy Strike Mastery.",
+    "zhCN": "额外专长：顽强、闪避、坚韧、灵活移动、猛力攻击、武器专攻、武器专精、重击精通。"
+  },
+
+  {
+  "Key": "BoneExplosion.Description",
+  "enGB": "Target's bones explode in the body. If the target fails a Fortitude saving throw, it receives 8 damage per caster level and becomes exhausted, and all creatures in a 30 feet radius receive 1d8 damage per caster level (Reflex save halves). If the Fortitude saving throw is successful, the target receives 1d8 damage per caster level and becomes fatigued, and all creatures in a 30 feet radius receive 1d6 damage per caster level instead (Reflex save halves).",
+  "zhCN": "目标的骨骼在身体中爆裂。若目标在强韧豁免检定中失败，将受到每施法者等级8点伤害并陷入力竭状态，30英尺半径范围内的所有生物受到每施法者等级1d8点伤害（反射豁免检定成功可减半该伤害）。如果强韧豁免检定成功，目标受到每施法者等级1d8点伤害并陷入疲劳状态，30英尺半径范围内的所有生物改为受到每施法者等级1d6点伤害（反射豁免检定成功可减半该伤害）。"
+  },
+
+  {
+  "Key": "SiphonLife.Description",
+  "enGB": "This spell works as vampiric touch, except it's a ranged touch attack in medium range and the amount of damage is 1d8 per caster level. The target also becomes fatigued.",
+  "zhCN": "此法术效果类似于吸血鬼之触，区别在于它是一个中距的远程接触攻击，伤害值改为每施法者等级1d8点，并且使目标陷入疲劳状态。"
+  },
+
+  {
+  "Key": "CircleOfDeath.Description",
+  "enGB": "Circle of death snuffs out the life force of living creatures. The spell affects 1d6 HD worth of living creatures per caster level (maximum 20d6). Those who are closest to the burst's point of origin are affected first. Creatures with Hit Dice equal to or less than 9 + 1 per caster level (maximum +10) that fail their saving throw are slain outright, while creatures with more Hit Dice than that which fail their saving throw take 100 damage instead. HD that are not sufficient to affect a creature are wasted.",
+  "zhCN": "死亡法阵会消灭活物的生命力。此法术可影响总生命骰数不超过每施法者等级1d6（最高20d6）的活物。越接近法术爆发源头的活物越先受影响。生命骰数小于等于9+每施法者等级1点（最高+10）的生物若豁免失败，将被立即杀死；生命骰数高于该数值的生物若豁免失败，则改为受到100点伤害。不足以影响一个生物的多余生命骰数忽略不计。"
+  },
+
+  {
+    "Key":"UndeathToDeath.Name",
+    "zhCN": "不死归亡"
+  },
+
+  {
+  "Key": "UndeathToDeath.Description",
+  "enGB": "Undeath to Death destroys undead creatures. The spell affects 1d6 HD worth of undead creatures per caster level (maximum 20d6). Those with the fewest Hit Dice are affected first, and among creatures with equal Hit Dice, those closest to the burst's point of origin are affected first. Undead creatures with Hit Dice equal to or less than 9 + 1 per caster level (maximum +10) that fail their saving throw are slain outright, while undead creatures with more Hit Dice than that which fail their saving throw take 100 damage instead. HD that are not sufficient to affect a creature are wasted.",
+  "zhCN": "该法术能够熄灭不死生物的生命之火，将其立刻击杀。此法术可影响总生命骰数不超过每施法者等级1d6（最高20d6）的不死生物。生命骰数越低的生物越先受影响，而在相同生命骰数的生物中，最接近法术爆发源点的生物先受影响。生命骰数小于等于9+每施法者等级1点（最高+10）的亡灵生物若豁免失败，将被立即杀死；生命骰数高于该数值的亡灵生物若豁免失败，则改为受到100点伤害。不足以影响一个生物的多余生命骰数忽略不计。"
+  },
+
+  {
+  "Key": "HealDamage.Description",
+  "enGB": "Heal enables you to channel positive energy into a creature to wipe away injury and afflictions. It immediately ends any and all of the following adverse conditions affecting the target: ability damage, blinded, confused, dazed, dazzled, diseased, exhausted, fatigued, nauseated, poisoned, sickened, and stunned. It also cures 10 hit points of damage per caster level, to a maximum of 200 points at 20th level. Heal does not remove negative levels or restore permanently drained ability score points. If used against an undead creature, heal acts like harm.",
+  "zhCN": "医疗术可以让你向生物引导正向能量，驱除伤害和负向效果。它可立即结束以下所有影响目标的不利状态：属性伤害、目盲、困惑、眩晕、目眩、患病、力竭、疲劳、反胃、中毒、恶心及震慑。它还能治疗伤害，恢复每施法者等级10点生命值（20级时达到最多200点）。医疗术不会移除负向等级，也无法恢复永久的属性流失。如果对不死生物使用，医疗术改为产生类似重伤术的效果。"
+  },
+
+  {
+    "Key":"commandUndead.Duration",
+    "enGB": "1 minute/level",
+    "zhCN":"1分钟/级"
+  },
+
+  {
+    "Key": "WavesOfFatigue.Description",
+    "enGB": "Waves of negative energy render all living creatures in the spell's area fatigued. Creatures that are already fatigued become exhausted instead.",
+    "zhCN": "潮水般的负向能量使法术范围内的所有活物陷入疲劳状态。对于已经处于疲劳状态的生物，则改为使其陷入力竭状态。"
+  },
+
+  {
+    "Key":"commandUndead.Description",
+    "enGB":"You can make any undead creature fight on your side as if it was your ally. It will attack your opponents to the best of its ability.",
+    "zhCN":"你可以让不死生物为你作战，如同它是你的盟友。它会尽全力<b><color=#703565>攻击</color></b>你的敌人。"
+  },
+
+  {
+  "Key": "DeathBlessingMajorAbility.Description",
+  "enGB": "Starting from level 10, you can launch a melee contact attack against an enemy, inflicting excruciating pain upon it. If you hit successfully, you cause the target to suffer 1d4 temporary negative levels for 1 hour. Additionally, you can expend a swift action to activate this ability, enabling you to apply this effect to your next melee attack within the next minute. These temporary negative levels can be stacked. You will not receive any benefits from causing these negative levels (such as the temporary hit points gained by undead creatures due to the necromancy spell).",
+  "zhCN": "10级起，你可以对敌人发起一次近战接触攻击，使其承受难忍痛苦。若成功命中，你令目标承受1d4个临时负向等级，持续1小时。此外，你也能够花费迅捷动作来启动此能力，使你在接下来一分钟内，下一次近战攻击附带此效果。这些临时负向等级可叠加。你不会因造成这些负向等级而获得好处（比如不死生物因弱能术而获得的临时生命值。"
+  },
+
+  {
+  "Key": "UndeadSubdomainBaseAbility.Description",
+  "enGB": "You can use melee contact attacks to make a creature exhibit certain characteristics of an undead creature and be enhanced at the same time. When the touched creature is determining the effect of healing or causing damage based on positive or negative energy, it is regarded as an undead creature. Additionally, it gains the亵渎 bonus on attack rolls， skill checks， attribute checks， and saving throws， for a duration equal to half of the class level that grants you this domain (minimum 1 round). This ability can be cast once per day equal to 3 + the adjustment for perception.",
+  "zhCN": "你可以通过近战接触攻击，让一个生物显现出不死生物的某些特性，同时被增强。被触碰的生物在判定基于正向或负向能量的治疗或造成伤害效果时，视为不死生物，同时在攻击检定，技能检定，属性检定和豁免鉴定上获得亵渎加值，持续轮数等于赋予你此子域的职业等级的一半（最少1轮）。此能力每日可施展次数等于3+感知调整值。"
   }
 ]
