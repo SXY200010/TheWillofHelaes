@@ -81,6 +81,7 @@
 
 <h3>觅血者修改</h3>
 <ul>
+  <li>血池点额外获得智力调整值的点数</li>
   <li>腐肉形态时，血池：吸血鬼之触附加及远，如同运用了及远超魔；同时增加迅捷动作版本，并且智力获得+2变形加值。</li>
   <li>若种族为吸血裔，且拥有专长能力饮血者，则每次使用饮血者可恢复1点血池点数，每天恢复不超过血池自身上限。</li>
 </ul>
@@ -252,6 +253,7 @@
 
 <h3>Bloodseeker Adjustments</h3>
 <ul>
+  <li>Blood pool points additionally increase by an amount equal to your Intelligence modifier.</li>
   <li>While in carrion form, <b>Blood Pool: Vampiric Touch</b> gains increased range as if modified by the Reach Spell metamagic feat. A swift-action version is also added, and Intelligence gains a +2 polymorph bonus.</li>
   <li>If the character is a dhampir and has the Blood Drinker feat ability, each use of Blood Drinker restores 1 blood pool point. The total points restored per day cannot exceed the blood pool's own maximum.</li>
 </ul>
