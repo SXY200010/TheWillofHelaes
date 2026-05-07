@@ -76,3 +76,17 @@ crashlytics-build.properties
 
 BasicTemplate/
 SetupBPTemplateDFlat.exe
+
+# Visual Studio / C# build files
+.vs/
+[Bb]in/
+[Oo]bj/
+[Ll]ib/
+
+# Unity generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
