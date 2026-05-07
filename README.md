@@ -7,7 +7,7 @@
 
 <h3>背景修改</h3>
 <ul>
-  <li><b>盖布死灵师</b>：盖布死灵师将学识（宗教）加入本职技能列表。其召唤的不死生物和死灵生物伙伴的攻击检定、AC和先攻获得+1加值，并且自身在使用死灵法术造成的伤害上获得+1加值。</li>
+  <li><b>盖布死灵师</b>：盖布死灵师将学识（宗教）加入本职技能列表。其召唤的不死生物和死灵生物伙伴的攻击检定、AC和先攻获得+2加值，并且自身在使用死灵法术造成的伤害上获得+1加值。自身法术穿透+1，死灵法术DC+1</li>
 </ul>
 
 <h3>融血师修改</h3>
@@ -178,7 +178,7 @@
 
 <h3>Background Adjustments</h3>
 <ul>
-  <li><b>Gebian Necromancer</b>: Adds Lore (Religion) to the list of class skills. Undead creatures summoned by the Gebian Necromancer and their necromancy animal companions gain a +1 bonus on attack rolls, AC, and initiative checks. The Gebian Necromancer also gains a +1 bonus on damage rolls made with necromancy spells.</li>
+  <li><b>Gebian Necromancer</b>: Adds Lore (Religion) to the list of class skills. Undead creatures summoned by the Gebian Necromancer and their necromancy animal companions gain a +2 bonus on attack rolls, AC, and initiative checks. The Gebian Necromancer gains a +1 bonus on damage rolls made with necromancy spells, a +1 bonus to necromancy spell DC, and a +1 bonus on Spell Penetration checks.</li>
 </ul>
 
 <h3>Cruoromancer Adjustments</h3>
