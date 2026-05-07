@@ -57,6 +57,7 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
         private static readonly string GhoulTouchBuffDescription = "GhoulTouchBuff.Description";
         private static readonly string PoxPustulesDescription = "PoxPustules.Description";
         private static readonly string commandUndeadDuration = "commandUndead.Duration";
+        private static readonly string commandUndeadSavingThrow = "commandUndead.SavingThrow";
         private static readonly string commandUndeadDescription = "commandUndead.Description";
         public static void Configure()
         {
@@ -148,6 +149,7 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
                 })
                 .SetIsFullRoundAction(false)
                 .SetLocalizedDuration(commandUndeadDuration)
+                .SetLocalizedSavingThrow(commandUndeadSavingThrow)
                 .SetDescription(commandUndeadDescription)
                 .Configure();
 

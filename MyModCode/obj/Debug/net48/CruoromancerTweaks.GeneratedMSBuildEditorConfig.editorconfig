@@ -1,6 +1,6 @@
 is_global = true
 build_property.RootNamespace = CruoromancerTweaks
-build_property.ProjectDir = D:\files\Pathfinder-Wrath of the Righteous\project\MyModCode\
+build_property.ProjectDir = D:\MyMod\MyModCode\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false

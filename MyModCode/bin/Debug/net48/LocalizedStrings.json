@@ -547,5 +547,11 @@
   "Key": "HarmDamage.Description",
   "enGB": "The Grave Wound spell inflicts negative energy damage equal to 10 points per caster level, up to a maximum of 200 points at 20th level. A successful Will saving throw reduces the damage by half. When cast upon undead creatures, the spell functions identically to the Heal spell.",
   "zhCN": "重伤术会以负向能量冲击目标，造成每施法者等级10点伤害（20级时达到最高的200点）。如果生物的意志豁免成功，则重伤术的伤害减半。如果对不死生物使用，重伤术产生如同医疗术的效果。"
+  },
+
+  {
+    "Key": "commandUndead.SavingThrow",
+    "enGB": "Will negates",
+    "zhCN": "意志，免除效果"
   }
 ]
