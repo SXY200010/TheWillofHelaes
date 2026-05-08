@@ -329,7 +329,7 @@
 <ul>
   <li><b>Siphon Life</b>: Damage is changed to 1d8 per caster level, and the target also becomes fatigued.</li>
   <li><b>Circle of Death</b>: The affected Hit Dice pool is changed from 1d4 per caster level to 1d6 per caster level (maximum 20d6). Creatures with Hit Dice equal to or less than 9 + 1 per caster level (maximum +10) that fail their saving throw are slain outright. Creatures with more Hit Dice that fail their saving throw take 100 damage instead.</li>
-  <li><b>Purge Undead</b>: Renamed to <b>Undeath to Death</b>. Its data is changed to match Circle of Death: undead creatures with Hit Dice equal to or less than 9 + 1 per caster level (maximum +10) that fail their saving throw are slain outright. Undead creatures with more Hit Dice that fail their saving throw take 100 damage instead.</li>
+  <li><b>Undeath to Death</b>: Its data is changed to match Circle of Death: undead creatures with Hit Dice equal to or less than 9 + 1 per caster level (maximum +10) that fail their saving throw are slain outright. Undead creatures with more Hit Dice that fail their saving throw take 100 damage instead.</li>
   <li><b>Harm</b>: Maximum damage increased to 200 at caster level 20. Heal is updated accordingly.</li>
 </ul>
 
