@@ -126,8 +126,8 @@
 
   {
     "Key": "SpecialisationSchoolNecromancy.Description",
-    "enGB": "The dread and feared necromancer commands undead and uses the foul power of unlife against his enemies.<br>Power over undead: You receive Turn Undead as a bonus feat. You can channel energy a number of times per day equal to 3 + your Intelligence modifier, but only to use this feat. The DC to save against these feats is equal to 10 + half your Wizard level + your Charisma modifier. At 20th level, undead cannot add their channel resistance to the save against this ability.<br>Undead Touch: As a standard action, you can touch an undead creature and infuse it with negative energy. This grants the target a +1 profane bonus on attack rolls and saving throws, plus 1 temporary hit point per caster level. The bonus on attacks and saves increases by 1 for every 5 wizard levels you possess. These bonuses last for a number of rounds equal to half your wizard level (minimum 1 round). You can use this ability a number of times per day equal to 3 + your Intelligence modifier.<br>Dead Sight: You emit a 30-foot-radius aura. You and all undead within the aura gain a +1 profane bonus on ability checks, attack rolls, saving throws, and damage rolls. Hostile living creatures within the aura take a –1 penalty on ability checks, attack rolls, saving throws, and damage rolls. Additionally, you gain blindsight.",
-    "zhCN": "狰狞骇人的死灵师可命令不死生物，并使用禁忌的不死生命力量来对抗敌人。<br>驾驭亡者：你获得驱散死灵作为额外<b><color=#703565>专长</link></color></b>。你每天可引导能量的次数为<b><color=#703565>智力</color></b>调整值+3，但这些次数仅可被用于该专长。该专长的<b><color=#703565>豁免检定</color></b><b><color=#703565>难度等级</color></b>为10+1/2法师等级+<b><color=#703565>魅力</color></b>调整值。达到20级后，不死生物将无法在针对此能力进行豁免检定时附加它们的引导抗性加值。<br>不死之触：以一个标准动作，你可以碰触一个不死生物并替它注入负能量。使其攻击跟豁免检定的+1亵渎加值，以及每施法者等级1点的临时生命值。在攻击和豁免的加值会在你每5个法师等级增加1点。这些加值持续法师等级一半的轮数（至少1轮）。你每天可以使用这个能力的次数为3+智力调整值。<br>亡者视野：你发出一道30英尺范围的灵光。你自身与灵光范围内的所有不死生物在属性检定、攻击检定、豁免检定和伤害检定上获得+1亵渎加值；范围内的敌对活物在属性检定、攻击检定、豁免检定和伤害检定上受到-1减值。此外，你自身获得盲视。"
+    "enGB": "The dread and feared necromancer commands undead and uses the foul power of unlife against his enemies.<br>Power over undead: You receive Turn Undead as a bonus feat. You can channel energy a number of times per day equal to 3 + your Intelligence modifier, but only to use this feat. The DC to save against these feats is equal to 10 + half your Wizard level + your Charisma modifier. At 20th level, undead cannot add their channel resistance to the save against this ability.<br>Undead Touch: As a standard action, you can touch an undead creature and infuse it with negative energy. This grants the target a +1 profane bonus on attack rolls and saving throws, plus 1 temporary hit point per caster level. The bonus on attacks and saves increases by 1 for every 5 wizard levels you possess. These bonuses last for a number of rounds equal to half your wizard level (minimum 1 round). You can use this ability a number of times per day equal to 3 + your Intelligence modifier.<br>Dead Sight: You emit a 30-foot-radius aura. You and all undead allies within the aura gain a +1 profane bonus on ability checks, attack rolls, saving throws, and damage rolls. Hostile living creatures within the aura take a –1 penalty on ability checks, attack rolls, saving throws, and damage rolls. Additionally, you gain blindsight.",
+    "zhCN": "狰狞骇人的死灵师可命令不死生物，并使用禁忌的不死生命力量来对抗敌人。<br>驾驭亡者：你获得驱散死灵作为额外<b><color=#703565>专长</link></color></b>。你每天可引导能量的次数为<b><color=#703565>智力</color></b>调整值+3，但这些次数仅可被用于该专长。该专长的<b><color=#703565>豁免检定</color></b><b><color=#703565>难度等级</color></b>为10+1/2法师等级+<b><color=#703565>魅力</color></b>调整值。达到20级后，不死生物将无法在针对此能力进行豁免检定时附加它们的引导抗性加值。<br>不死之触：以一个标准动作，你可以碰触一个不死生物并替它注入负能量。使其攻击跟豁免检定的+1亵渎加值，以及每施法者等级1点的临时生命值。在攻击和豁免的加值会在你每5个法师等级增加1点。这些加值持续法师等级一半的轮数（至少1轮）。你每天可以使用这个能力的次数为3+智力调整值。<br>亡者视野：你发出一道30英尺范围的灵光。你自身与灵光范围内的所有不死生物盟友在属性检定、攻击检定、豁免检定和伤害检定上获得+1亵渎加值；范围内的敌对活物在属性检定、攻击检定、豁免检定和伤害检定上受到-1减值。此外，你自身获得盲视。"
   },
 
   {
@@ -450,7 +450,8 @@
 
   {
     "Key":"UndeathToDeath.Name",
-    "zhCN": "不死归亡"
+    "zhCN": "不死归亡",
+    "enGB": "Undeath to Death"
   },
 
   {
@@ -553,5 +554,23 @@
     "Key": "commandUndead.SavingThrow",
     "enGB": "Will negates",
     "zhCN": "意志，免除效果"
+  },
+
+  {
+  "Key": "Fester.Description",
+  "enGB": "Necrotic energy permeates the target, blocking healing abilities and lowering the target's resistance. The target takes a penalty to spell resistance equal to 2 + your caster level and cannot regain hit points. If the target succeeds on a Fortitude saving throw, fester lasts only a single round.",
+  "zhCN": "死灵能量将浸透目标，阻碍<b><color=#703565><link=\"Encyclopedia:Healing\">治疗</link></color></b>的能力并且降低目标的抗力。目标的<b><color=#703565><link=\"Encyclopedia:Spell_Resistance\">法术抗力</link></color></b>降低2+你的<b><color=#703565><link=\"Encyclopedia:Caster_Level\">施法者等级</link></color></b>，并且无法恢复<b><color=#703565><link=\"Encyclopedia:HP\">生命值</link></color></b>。如果目标<b><color=#703565><link=\"Encyclopedia:Saving_Throw\">强韧豁免</link></color></b>成功，则死疽仅持续1<b><color=#703565><link=\"Encyclopedia:Combat_Round\">轮</link></color></b>。"
+  },
+
+  {
+    "Key": "Eyebite.Name",
+    "enGB": "Dread Gaze",
+    "zhCN": "慑心目光"
+  },
+
+  {
+    "Key": "Eyebite.Description",
+    "enGB": "Your gaze radiates waves of dreadful necromantic power. Each living enemy within 30 feet must succeed at a <b><color=#703565><link=\"Encyclopedia:Saving_Throw\">Fortitude saving throw</link></color></b> or suffer the harmful effects of the <b><color=#703565><link=\"Encyclopedia:Spell\">spell</link></color></b>. This attack has three different effects depending on the target's <b><color=#703565><link=\"Encyclopedia:Hit_Dice\">Hit Dice</link></color></b>.\nIf the target has 10 or more Hit Dice, it becomes <b><color=#703565><link=\"ConditionSickened\">sickened</link></color></b> for 10 minutes per <b><color=#703565><link=\"Encyclopedia:Caster_Level\">caster level</link></color></b>. If a target with 10 or more Hit Dice is already sickened and fails its saving throw again, it becomes nauseated instead.\nIf the target has 5–9 Hit Dice, it becomes <b><color=#703565><link=\"ConditionFrightened\">frightened</link></color></b> and sickened for 10 minutes per caster level.\nIf the target has 4 or fewer Hit Dice, it becomes <b><color=#703565><link=\"ConditionParalyzed\">paralyzed</link></color></b>, frightened, and sickened for 10 minutes per caster level.\nThese effects are cumulative and concurrent.",
+    "zhCN": "你的目光辐射出令人胆寒的死灵能量波动。30英尺范围内每个活物敌人必须成功进行<b><color=#703565><link=\"Encyclopedia:Saving_Throw\">强韧豁免检定</link></color></b>，否则将承受<b><color=#703565><link=\"Encyclopedia:Spell\">法术</link></color></b>的有害效果。根据目标的<b><color=#703565><link=\"Encyclopedia:Hit_Dice\">生命骰数</link></color></b>，这种袭击具有三种不同效果。\n如果目标生命骰数大于或等于10，它将在每<b><color=#703565><link=\"Encyclopedia:Caster_Level\">施法者等级</link></color></b>10分钟内陷入<b><color=#703565><link=\"ConditionSickened\">恶心</link></color></b>状态。如果生命骰数大于或等于10的目标已经陷入恶心状态，并且再次豁免失败，则改为陷入反胃状态。\n如果目标生命骰数在5–9之间，它将在每施法者等级10分钟内陷入<b><color=#703565><link=\"ConditionFrightened\">惊恐</link></color></b>和恶心状态。\n如果目标生命骰数小于或等于4，它将在每施法者等级10分钟内陷入<b><color=#703565><link=\"ConditionParalyzed\">麻痹</link></color></b>、惊恐和恶心状态。\n这些效果互相累计并同时生效。"
   }
 ]

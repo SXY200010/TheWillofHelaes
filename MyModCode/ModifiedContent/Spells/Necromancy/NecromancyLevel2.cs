@@ -69,6 +69,7 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
             BlueprintAbility ghoulTouchCast = BlueprintTool.Get<BlueprintAbility>("a2b05555c704458aaadc34be52a63633");
             BlueprintAbility ghoulTouchAbility = BlueprintTool.Get<BlueprintAbility>("cea2f6ead41c449191e1acc4ca488bd0");
             BlueprintAbility poxPustules = BlueprintTool.Get<BlueprintAbility>("bc153808ef4884a4594bc9bec2299b69");
+            BlueprintAbility Fester = BlueprintTool.Get<BlueprintAbility>("2dbe271c979d9104c8e2e6b42e208e32");
 
             BlueprintBuff shaken = BlueprintTool.Get<BlueprintBuff>("25ec6cb6ab1845c48a95f9c20b034220");
             BlueprintBuff commandUndeadBuff = BlueprintTool.Get<BlueprintBuff>("7cd727ddd4cc4be498720e45f0c1f6f4");
@@ -80,6 +81,7 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
             BlueprintBuff RepurposeBuffUndead = BlueprintTool.Get<BlueprintBuff>("57785c3bf386461ea3d623d627314afa");
             BlueprintBuff MonsterMythic5HealthTriggerBadBuff = BlueprintTool.Get<BlueprintBuff>("a668bbad55c0945478fcc62c4f079510");
             BlueprintBuff Sickened = BlueprintTool.Get<BlueprintBuff>("4e42460798665fd4cb9173ffa7ada323");
+            BlueprintBuff FesterBuff = BlueprintTool.Get<BlueprintBuff>("b896100431869174092b06411aba5b30");
 
             BlueprintFeature incorporeal = BlueprintTool.Get<BlueprintFeature>("c4a7f98d743bc784c9d4cf2105852c39");
             BlueprintFeature constructType = BlueprintTool.Get<BlueprintFeature>("fd389783027d63343b4a5634bd81645f");
@@ -586,6 +588,33 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
 
             AbilityConfigurator.For(ghoulTouchCast)
                 .SetDescription(GhoulTouchDescription)
+                .AddToAvailableMetamagic(Metamagic.Persistent)
+                .Configure();
+
+            AbilityConfigurator.For(Fester)
+                .SetDescription(Fester.Description)
+                .Configure();
+
+
+            BuffConfigurator.For(FesterBuff)
+                .RemoveComponents(c => c is SpellResistanceAgainstSpellDescriptor)
+                .AddContextRankConfig(
+                    ContextRankConfigs.CasterLevel()
+                        .WithLinearProgression(
+                            a: -1f,
+                            b: -2f,
+                            startingBaseValue: 1,
+                            maxBaseValue: 40
+                        )
+                )
+                .AddComponent<AddSpellResistance>(c =>
+                {
+                    c.Value = new ContextValue
+                    {
+                        ValueType = ContextValueType.Rank
+                    };
+                })
+                .AddHealResistance(1f)
                 .Configure();
         }
     }

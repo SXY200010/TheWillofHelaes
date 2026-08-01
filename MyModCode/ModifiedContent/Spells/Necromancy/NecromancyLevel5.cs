@@ -25,6 +25,7 @@ using Kingmaker.UnitLogic.Abilities.Components;
 using Kingmaker.UnitLogic.Abilities.Components.AreaEffects;
 using Kingmaker.UnitLogic.Abilities.Components.Base;
 using Kingmaker.UnitLogic.Abilities.Components.CasterCheckers;
+using Kingmaker.UnitLogic.Abilities.Components.TargetCheckers;
 using Kingmaker.UnitLogic.ActivatableAbilities;
 using Kingmaker.UnitLogic.Buffs;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
@@ -301,6 +302,21 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
                         };
                     }
                 })
+                .Configure();
+
+            BlueprintAbility RaiseDead = BlueprintTool.Get<BlueprintAbility>("a0fc99f0933d01643b2b8fe570caa4c5");
+            BlueprintFeature UndeadType = BlueprintTool.Get<BlueprintFeature>("734a29b693e9ec346ba2951b27987e33");
+
+            AbilityConfigurator.For(RaiseDead)
+                .EditComponents<AbilityTargetHasFact>(
+                    c =>
+                    {
+                        c.m_CheckedFacts = c.m_CheckedFacts
+                            .Where(f => f.Guid != UndeadType.AssetGuid)
+                            .ToArray();
+                    },
+                    c => c.m_CheckedFacts.Any(f => f.Guid == UndeadType.AssetGuid)
+                )
                 .Configure();
         }
     }
