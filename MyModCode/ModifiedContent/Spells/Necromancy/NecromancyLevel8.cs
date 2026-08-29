@@ -52,6 +52,12 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
     internal class NecromancyLevel8
     {
         private const string DeathClutchBleedConst1d6BuffGuid = "286E456D8EC44BA2AFE8D84E38575D72";
+        private const string GreaterHorrifiedThisRoundBuffGuid = "A4C0E7D2B9F64B52A1F1C7E9D0A2B311";
+        private const string GreaterHorrifyingCurseBuffGuid = "D6F3B24C8A4E49F7A8123D0C5B7E9F21";
+        private const string GreaterHorrifyingCurseAbilityGuid = "F19B7A2D4C834E6BA0D5C1E8F2A94763";
+        private static readonly string BestowCurseGreaterDescription = "BestowCurseGreater.Description";
+        private static readonly string GreaterHorrifyingCurseName = "GreaterHorrifyingCurse.Name";
+        private static readonly string GreaterHorrifyingCurseDescription = "GreaterHorrifyingCurse.Description";
         public static void Configure()
         {
             BlueprintAbility DeathClutch = BlueprintTool.Get<BlueprintAbility>("c3d2294a6740bc147870fff652f3ced5");
@@ -226,6 +232,22 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
                                             m_Buff = DeathClutchBleedConst1d6Buff
                                                 .ToReference<BlueprintBuffReference>(),
 
+                                            DurationValue = new ContextDurationValue
+                                            {
+                                                DiceType = DiceType.Zero,
+                                                DiceCountValue = 0,
+                                                BonusValue = 0
+                                            },
+
+                                            Permanent = true,
+                                            ToCaster = false
+                                        },  
+                                        
+                                        new ContextActionApplyBuff
+                                        {
+                                            m_Buff = DeathClutchBleedConst1d6Buff
+                                                .ToReference<BlueprintBuffReference>(),
+
                                             Permanent = true,
                                             ToCaster = false
                                         },
@@ -288,26 +310,319 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
                 .Configure();
 
             BlueprintAbility BestowCurseGreater = BlueprintTool.Get<BlueprintAbility>("6101d0f0720927e4ca413de7b3c4b7e5");
+            BlueprintAbility BestowCurseGreaterDeterioration = BlueprintTool.Get<BlueprintAbility>("71196d7e6d6645247a058a3c3c9bb5fd");
+            BlueprintAbility BestowCurseGreaterFeebleBody = BlueprintTool.Get<BlueprintAbility>("c74a7dfebd7b1004a80f7e59689dfadd");
+            BlueprintAbility BestowCurseGreaterIdiocy = BlueprintTool.Get<BlueprintAbility>("f7739a453e2138b46978e9098a29b3fb");
+            BlueprintAbility BestowCurseGreaterWeakness = BlueprintTool.Get<BlueprintAbility>("abb2d42dd9219eb41848ec56a8726d58");
 
-            BlueprintAbility BestowCurseGreaterDeteriorationCast = BlueprintTool.Get<BlueprintAbility>("54606d540f5d3684d9f7d6e2e2be9b63");
-            BlueprintAbility BestowCurseGreaterFeebleBodyCast = BlueprintTool.Get<BlueprintAbility>("292d630a5abae64499bb18057aaa24b4");
-            BlueprintAbility BestowCurseGreaterIdiocyCast = BlueprintTool.Get<BlueprintAbility>("e0212142d2a426f43926edd4202996bb");
-            BlueprintAbility BestowCurseGreaterWeaknessCast = BlueprintTool.Get<BlueprintAbility>("1168f36fac0bad64f965928206df7b86");
+            BlueprintBuff BestowCurseGreaterDeteriorationBuff = BlueprintTool.Get<BlueprintBuff>("8f8835d083f31c547a39ebc26ae42159");
+            BlueprintBuff BestowCurseGreaterFeebleBodyBuff = BlueprintTool.Get<BlueprintBuff>("28c9db77dfb1aa54a94e8a7413b1840a");
+            BlueprintBuff BestowCurseGreaterIdiocyBuff = BlueprintTool.Get<BlueprintBuff>("493dcc29a21abd94d9adb579e1f40318");
+            BlueprintBuff BestowCurseGreaterWeaknessBuff = BlueprintTool.Get<BlueprintBuff>("0493a9d25687d7e4682e250ae3ccb187");
 
-            BlueprintAbility[] bestowCursesGreater = new BlueprintAbility[] { BestowCurseGreaterDeteriorationCast, BestowCurseGreaterFeebleBodyCast, BestowCurseGreaterIdiocyCast, BestowCurseGreaterWeaknessCast };
+            BlueprintAbility[] bestowCursesGreater = new BlueprintAbility[] { BestowCurseGreaterDeterioration, BestowCurseGreaterFeebleBody, BestowCurseGreaterIdiocy, BestowCurseGreaterWeakness };
 
+            BlueprintBuff[] bestowCurseGreaterBuffs = new BlueprintBuff[] { BestowCurseGreaterDeteriorationBuff, BestowCurseGreaterFeebleBodyBuff, BestowCurseGreaterIdiocyBuff, BestowCurseGreaterWeaknessBuff };
 
+            BlueprintBuff greaterHorrifiedThisRoundBuff = BuffConfigurator.New("GreaterHorrifiedThisRoundBuff", GreaterHorrifiedThisRoundBuffGuid)
+                .AddCondition(Kingmaker.UnitLogic.UnitCondition.Frightened)
+                .AddCondition(Kingmaker.UnitLogic.UnitCondition.MovementBan)
+                .Configure();
+
+            BlueprintBuff greaterHorrifyingCurseBuff = BuffConfigurator.New("GreaterHorrifyingCurseBuff", GreaterHorrifyingCurseBuffGuid)
+                .SetIcon(BestowCurseGreater.Icon)
+                .SetDisplayName(GreaterHorrifyingCurseName)
+                .SetDescription(GreaterHorrifyingCurseDescription)
+                .SetStacking(StackingType.Stack)
+                .AddFactContextActions(
+                    newRound: new ActionList
+                    {
+                        Actions = new GameAction[]
+                        {
+                            new ContextActionSavingThrow
+                            {
+                                Type = SavingThrowType.Will,
+
+                                Actions = new ActionList
+                                {
+                                    Actions = new GameAction[]
+                                    {
+                                        new ContextActionConditionalSaved
+                                        {
+                                            Succeed = new ActionList
+                                            {
+                                                Actions = Array.Empty<GameAction>()
+                                            },
+
+                                            Failed = new ActionList
+                                            {
+                                                Actions = new GameAction[]
+                                                {
+                                                    new ContextActionApplyBuff
+                                                    {
+                                                        m_Buff = greaterHorrifiedThisRoundBuff
+                                                            .ToReference<BlueprintBuffReference>(),
+
+                                                        DurationValue = new ContextDurationValue
+                                                        {
+                                                            Rate = DurationRate.Rounds,
+                                                            DiceType = DiceType.Zero,
+                                                            DiceCountValue = 0,
+                                                            BonusValue = 1
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                )
+                .Configure();
+
+            BlueprintAbility BestowCurseGreaterHorrifying = AbilityConfigurator.New("GreaterHorrifyingCurse", GreaterHorrifyingCurseAbilityGuid)
+                .CopyFrom(BestowCurseGreaterFeebleBody, typeof(SpellComponent), typeof(SpellDescriptorComponent), typeof(AbilitySpawnFx))
+                .SetDisplayName(GreaterHorrifyingCurseName)
+                .SetDescription(GreaterHorrifyingCurseDescription)
+                .SetRange(AbilityRange.Close)
+                .AddComponent<AbilityEffectRunAction>(c =>
+                {
+                    c.Actions = new ActionList
+                    {
+                        Actions = new GameAction[]
+                        {
+                            new ContextActionConditionalSaved
+                            {
+                                Succeed = new ActionList
+                                {
+                                    Actions = Array.Empty<GameAction>()
+                                },
+
+                                Failed = new ActionList
+                                {
+                                    Actions = new GameAction[]
+                                    {
+                                        new ContextActionApplyBuff
+                                        {
+                                            m_Buff = greaterHorrifyingCurseBuff
+                                                .ToReference<BlueprintBuffReference>(),
+
+                                            DurationValue = new ContextDurationValue
+                                            {
+                                                DiceType = DiceType.Zero,
+                                                DiceCountValue = 0,
+                                                BonusValue = 0
+                                            },
+
+                                            Permanent = true
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    };
+
+                    c.SavingThrowType = SavingThrowType.Will;
+                })
+                .Configure();
+
+            var greaterCurseVariants = new List<Blueprint<BlueprintAbilityReference>>
+                {
+                    BestowCurseGreaterDeterioration,
+                    BestowCurseGreaterFeebleBody,
+                    BestowCurseGreaterIdiocy,
+                    BestowCurseGreaterWeakness,
+                    BestowCurseGreaterHorrifying
+                };
+
+            AbilityConfigurator.For(BestowCurseGreater)
+                .SetRange(AbilityRange.Close)
+                .SetDescription(BestowCurseGreaterDescription)
+                .AddAbilityVariants(greaterCurseVariants, mergeBehavior: ComponentMerge.Replace)
+                .Configure();
+
+            foreach (var curse in bestowCursesGreater)
+            {
+                AbilityConfigurator.For(curse)
+                    .SetRange(AbilityRange.Close)
+                    .RemoveComponents(c => c is AbilityDeliverTouch)
+                    .Configure();
+            }
+
+            foreach (var curseBuff in bestowCurseGreaterBuffs)
+            {
+                BuffConfigurator.For(curseBuff)
+                    .SetStacking(StackingType.Stack)
+                    .EditComponents<AddStatBonus>(
+                        c =>
+                        {
+                            c.Descriptor = ModifierDescriptor.UntypedStackable;
+                        },
+                        _ => true
+                    )
+                    .EditComponents<AddContextStatBonus>(
+                        c =>
+                        {
+                            c.Descriptor = ModifierDescriptor.UntypedStackable;
+                        },
+                        _ => true
+                    )
+                    .Configure();
+            }
 
             BlueprintAbility HorridWilting = BlueprintTool.Get<BlueprintAbility>("08323922485f7e246acb3d2276515526");
 
+            AbilityConfigurator.For(HorridWilting)
+            .EditComponent<AbilityEffectRunAction>(c =>
+            {
+                foreach (var rootAction in c.Actions.Actions)
+                {
+                    ActionTreeUtils.Walk(rootAction, action =>
+                    {
+                        if (action is ContextActionDealDamage damage)
+                        {
+                            // 普通目标：D6 → D8
+                            if (damage.Value.DiceType == DiceType.D6)
+                            {
+                                damage.Value.DiceType = DiceType.D8;
+                            }
+                            // 植物 / 水元素：D8 → D10
+                            else if (damage.Value.DiceType == DiceType.D8)
+                            {
+                                damage.Value.DiceType = DiceType.D10;
+                            }
 
+                            // 修复强效 / 极效不参与实际伤害结算
+                            damage.ReadPreRolledFromSharedValue = false;
+                        }
+                    });
+                }
+            })
+            .Configure();
 
             BlueprintAbility Soulreaver = BlueprintTool.Get<BlueprintAbility>("b4afacd337dac4a40a769a567c038ab7");
 
+            AbilityConfigurator.For(Soulreaver)
+            // 伤害骰上限：20 → 25
+            .EditComponents<ContextRankConfig>(
+                c =>
+                {
+                    c.m_Max = 25;
+                },
+                c => c.m_Type == AbilityRankType.Default
+            )
 
+            // 伤害：每施法者等级 D6 → D8
+            .EditComponent<AbilityEffectRunAction>(c =>
+            {
+                foreach (var rootAction in c.Actions.Actions)
+                {
+                    ActionTreeUtils.Walk(rootAction, action =>
+                    {
+                        if (action is ContextActionDealDamage damage &&
+                            damage.m_Type == ContextActionDealDamage.Type.Damage)
+                        {
+                            damage.Value.DiceType = DiceType.D8;
+
+                            // 保留原本的 Rank.Default 作为骰数
+                            // 即最终为 min(CL, 25)D8
+
+                            // 修复强效 / 极效不参与伤害结算的问题
+                            damage.ReadPreRolledFromSharedValue = false;
+                        }
+                    });
+                }
+            })
+
+            // 范围：25 英尺 → 30 英尺
+            .EditComponent<AbilityTargetsAround>(
+                c => c.m_Radius = 30.Feet()
+            )
+            .Configure();
 
             BlueprintAbility DomainOfTheHungryFlesh = BlueprintTool.Get<BlueprintAbility>("0d820abda7693a9418546a47eea62ea2");
             BlueprintAbilityAreaEffect DomainOfTheHungryFleshArea = BlueprintTool.Get<BlueprintAbilityAreaEffect>("6df8ed6ff8ac4974aba16eca1b7b5cbe");
+
+            // 施法范围显示：20尺 → 40尺
+            AbilityConfigurator.For(DomainOfTheHungryFlesh)
+                .EditComponent<AbilityAoERadius>(
+                    c => c.m_Radius = 40.Feet()
+                )
+                .Configure();
+
+
+            // 实际区域：20尺 → 40尺
+            AbilityAreaEffectConfigurator.For(DomainOfTheHungryFleshArea)
+                .SetSize(40.Feet())
+                .EditComponent<AbilityAreaEffectRunAction>(c =>
+                {
+                    var actions = c.Round.Actions.ToList();
+
+                    var originalDamage = actions
+                        .OfType<ContextActionDealDamage>()
+                        .FirstOrDefault();
+
+                    if (originalDamage == null)
+                        return;
+
+                    int index = actions.IndexOf(originalDamage);
+
+                    // 原版：
+                    // 2D6 + Rank.Default
+                    //
+                    // 改为第一段：
+                    // 2D6
+                    originalDamage.Value = new ContextDiceValue
+                    {
+                        DiceType = DiceType.D6,
+
+                        DiceCountValue = new ContextValue
+                        {
+                            ValueType = ContextValueType.Simple,
+                            Value = 2
+                        },
+
+                        BonusValue = new ContextValue
+                        {
+                            ValueType = ContextValueType.Simple,
+                            Value = 0
+                        }
+                    };
+
+                    // 第二段：
+                    // 每施法者等级 1D4
+                    var casterLevelDamage = new ContextActionDealDamage
+                    {
+                        DamageType = originalDamage.DamageType,
+
+                        Value = new ContextDiceValue
+                        {
+                            DiceType = DiceType.D4,
+
+                            DiceCountValue = new ContextValue
+                            {
+                                ValueType = ContextValueType.Rank,
+                                ValueRank = AbilityRankType.Default
+                            },
+
+                            BonusValue = new ContextValue
+                            {
+                                ValueType = ContextValueType.Simple,
+                                Value = 0
+                            }
+                        },
+
+                        ReadPreRolledFromSharedValue = false
+                    };
+
+                    // 紧接在原伤害后面
+                    actions.Insert(index + 1, casterLevelDamage);
+
+                    c.Round.Actions = actions.ToArray();
+                })
+                .Configure();
         }
     }
 }

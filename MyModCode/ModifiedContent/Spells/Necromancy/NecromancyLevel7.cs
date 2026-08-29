@@ -73,7 +73,7 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
                     {
                         var list = c.Actions.Actions.ToList();
 
-                        list.Add (new ContextActionApplyBuff
+                        list.Add(new ContextActionApplyBuff
                         {
                             m_Buff = aggravation.ToReference<BlueprintBuffReference>(),
 
@@ -93,190 +93,189 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
                         c.Actions.Actions = list.ToArray();
                     })
                     .Configure();
+            }
+            BlueprintAbility UmbralStrike = BlueprintTool.Get<BlueprintAbility>("474ed0aa656cc38499cc9a073d113716");
 
-                BlueprintAbility UmbralStrike = BlueprintTool.Get<BlueprintAbility>("474ed0aa656cc38499cc9a073d113716");
+            AbilityConfigurator.For(UmbralStrike)
+                .EditComponent<AbilityEffectRunAction>(c =>
+                {
+                    var list = c.Actions.Actions.ToList();
 
-                AbilityConfigurator.For(UmbralStrike)
-                    .EditComponent<AbilityEffectRunAction>(c =>
+                    foreach (var action in list)
                     {
-                        var list = c.Actions.Actions.ToList();
-
-                        foreach (var action in list)
+                        if (action is ContextActionDealDamage dealDamage && dealDamage.DamageType.Type == DamageType.Energy && dealDamage.DamageType.Energy == DamageEnergyType.Cold)
                         {
-                            if (action is ContextActionDealDamage dealDamage && dealDamage.DamageType.Type == DamageType.Energy && dealDamage.DamageType.Energy == DamageEnergyType.Cold)
+                            dealDamage.DamageType = new DamageTypeDescription
                             {
-                                dealDamage.DamageType = new DamageTypeDescription
-                                {
-                                    Type = DamageType.Energy,
-                                    Energy = DamageEnergyType.Unholy
-                                };
-                            }
+                                Type = DamageType.Energy,
+                                Energy = DamageEnergyType.Unholy
+                            };
                         }
+                    }
 
-                        list.RemoveAll(action => action is ContextActionConditionalSaved);
+                    list.RemoveAll(action => action is ContextActionConditionalSaved);
 
-                        c.Actions.Actions = list.ToArray();
-                    })
-                    .Configure();
+                    c.Actions.Actions = list.ToArray();
+                })
+                .Configure();
 
-                BlueprintAbility BoneSpearConjure = BlueprintTool.Get<BlueprintAbility>("ca8bc7d438e6b004a87222f3c32572f2");
+            BlueprintAbility BoneSpearConjure = BlueprintTool.Get<BlueprintAbility>("ca8bc7d438e6b004a87222f3c32572f2");
 
-                var boneSpearDamageRank = ContextRankConfigs.CasterLevel();
-                boneSpearDamageRank.m_Type = AbilityRankType.DamageBonus;
+            var boneSpearDamageRank = ContextRankConfigs.CasterLevel();
+            boneSpearDamageRank.m_Type = AbilityRankType.DamageBonus;
 
-                AbilityConfigurator.For(BoneSpearConjure)
-                    .AddContextRankConfig(boneSpearDamageRank)
-                    .EditComponent<AbilityEffectRunAction>(c =>
+            AbilityConfigurator.For(BoneSpearConjure)
+                .AddContextRankConfig(boneSpearDamageRank)
+                .EditComponent<AbilityEffectRunAction>(c =>
+                {
+                    foreach (var rootAction in c.Actions.Actions)
                     {
-                        foreach (var rootAction in c.Actions.Actions)
+                        ActionTreeUtils.Walk(rootAction, a =>
                         {
-                            ActionTreeUtils.Walk(rootAction, a =>
+                            if (a is ContextActionConditionalSaved saved)
                             {
-                                if (a is ContextActionConditionalSaved saved)
+                                // 不追加，直接替换 Succeed 分支
+                                saved.Succeed = new ActionList
                                 {
-                                    // 不追加，直接替换 Succeed 分支
-                                    saved.Succeed = new ActionList
+                                    Actions = new GameAction[]
                                     {
-                                        Actions = new GameAction[]
+                                        new ContextActionDealDamage
                                         {
-                                            new ContextActionDealDamage
+                                            Value = new ContextDiceValue
                                             {
-                                                Value = new ContextDiceValue
+                                                DiceType = DiceType.D6,
+                                                DiceCountValue = new ContextValue
                                                 {
-                                                    DiceType = DiceType.D6,
-                                                    DiceCountValue = new ContextValue
-                                                    {
-                                                        ValueType = ContextValueType.Rank,
-                                                        ValueRank = AbilityRankType.DamageBonus
-                                                    },
-                                                    BonusValue = 0
+                                                    ValueType = ContextValueType.Rank,
+                                                    ValueRank = AbilityRankType.DamageBonus
                                                 },
-                                                DamageType = new DamageTypeDescription
-                                                {
-                                                    Type = DamageType.Untyped
-                                                }
+                                                BonusValue = 0
+                                            },
+                                            DamageType = new DamageTypeDescription
+                                            {
+                                                Type = DamageType.Untyped
                                             }
                                         }
-                                    };
-                                }
-                            });
-                        }
-                    })
-                    .Configure();
+                                    }
+                                };
+                            }
+                        });
+                    }
+                })
+                .Configure();
 
-                BlueprintAbility FingerOfDeath = BlueprintTool.Get<BlueprintAbility>("6f1dcf6cfa92d1948a740195707c0dbe");
+            BlueprintAbility FingerOfDeath = BlueprintTool.Get<BlueprintAbility>("6f1dcf6cfa92d1948a740195707c0dbe");
 
-                AbilityConfigurator.For(FingerOfDeath)
-                    .EditComponent<AbilityEffectRunAction>(c =>
+            AbilityConfigurator.For(FingerOfDeath)
+                .EditComponent<AbilityEffectRunAction>(c =>
+                {
+                    foreach (var rootAction in c.Actions.Actions)
                     {
-                        foreach (var rootAction in c.Actions.Actions)
+                        ActionTreeUtils.Walk(rootAction, a =>
                         {
-                            ActionTreeUtils.Walk(rootAction, a =>
+                            if (a is ContextActionConditionalSaved saved)
                             {
-                                if (a is ContextActionConditionalSaved saved)
+                                // 保存原来的失败分支：也就是原本的每施法者等级10点污邪伤害
+                                ActionList originalFailed = saved.Failed;
+
+                                saved.Failed = new ActionList
                                 {
-                                    // 保存原来的失败分支：也就是原本的每施法者等级10点污邪伤害
-                                    ActionList originalFailed = saved.Failed;
-
-                                    saved.Failed = new ActionList
+                                    Actions = new GameAction[]
                                     {
-                                        Actions = new GameAction[]
+                                        new Conditional
                                         {
-                                            new Conditional
+                                            ConditionsChecker = new ConditionsChecker
                                             {
-                                                ConditionsChecker = new ConditionsChecker
+                                                Operation = Operation.And,
+                                                Conditions = new Condition[]
                                                 {
-                                                    Operation = Operation.And,
-                                                    Conditions = new Condition[]
+                                                    // 目标生命骰/等级 < 施法者等级
+                                                    new ContextConditionCompare
                                                     {
-                                                        // 目标生命骰/等级 < 施法者等级
-                                                        new ContextConditionCompare
+                                                        m_Type = ContextConditionCompare.Type.Less,
+
+                                                        CheckValue = new ContextValue
                                                         {
-                                                            m_Type = ContextConditionCompare.Type.Less,
+                                                            ValueType = ContextValueType.TargetProperty,
+                                                            Property = UnitProperty.Level
+                                                        },
 
-                                                            CheckValue = new ContextValue
-                                                            {
-                                                                ValueType = ContextValueType.TargetProperty,
-                                                                Property = UnitProperty.Level
-                                                            },
-
-                                                            TargetValue = new ContextValue
-                                                            {
-                                                                ValueType = ContextValueType.CasterProperty,
-                                                                Property = UnitProperty.Level
-                                                            }
+                                                        TargetValue = new ContextValue
+                                                        {
+                                                            ValueType = ContextValueType.CasterProperty,
+                                                            Property = UnitProperty.Level
                                                         }
                                                     }
-                                                },
+                                                }
+                                            },
 
-                                                // 低于施法者等级：强韧失败立即死亡
-                                                IfTrue = new ActionList
+                                            // 低于施法者等级：强韧失败立即死亡
+                                            IfTrue = new ActionList
+                                            {
+                                                Actions = new GameAction[]
                                                 {
-                                                    Actions = new GameAction[]
-                                                    {
-                                                        new ContextActionKill()
-                                                    }
-                                                },
+                                                    new ContextActionKill()
+                                                }
+                                            },
 
-                                                // 不低于施法者等级：走原来的失败分支
-                                                // 也就是原本的每施法者等级10点污邪伤害
-                                                IfFalse = originalFailed
-                                            }
+                                            // 不低于施法者等级：走原来的失败分支
+                                            // 也就是原本的每施法者等级10点污邪伤害
+                                            IfFalse = originalFailed
                                         }
-                                    };
-                                }
-                            });
-                        }
-                    })
-                    .Configure();
-
-                BlueprintAbility RestoreUndead = BlueprintTool.Get<BlueprintAbility>("a9dbff7a630003d4eafa6c9dd203cb7e");
-
-                AbilityConfigurator.For(RestoreUndead)
-                    .AddAbilityCanTargetDead()
-                    .EditComponent<AbilityEffectRunAction>(c =>
-                    {
-                        foreach (var action in c.Actions.Actions)
-                        {
-                            if (action is Conditional conditional)
-                            {
-                                var ifTrueActions = conditional.IfTrue.Actions.ToList();
-
-                                // 防止重复插入
-                                if (ifTrueActions.Any(a => a is ContextActionResurrect))
-                                    continue;
-
-                                var resurrect = new ContextActionResurrect
-                                {
-                                    // 这里不要 full restore，因为后面的 HealUnit 本来就会负责治疗
-                                    FullRestore = false
+                                    }
                                 };
-
-                                // 插到 HealUnit 前面：先复活，再治疗
-                                int healIndex = ifTrueActions.FindIndex(a => a is HealUnit);
-
-                                if (healIndex >= 0)
-                                    ifTrueActions.Insert(healIndex, resurrect);
-                                else
-                                    ifTrueActions.Insert(0, resurrect);
-
-                                conditional.IfTrue.Actions = ifTrueActions.ToArray();
                             }
-                        }
-                    })
-                    .EditComponent<AbilityTargetsAround>(c =>
+                        });
+                    }
+                })
+                .Configure();
+
+            BlueprintAbility RestoreUndead = BlueprintTool.Get<BlueprintAbility>("a9dbff7a630003d4eafa6c9dd203cb7e");
+
+            AbilityConfigurator.For(RestoreUndead)
+                .AddAbilityCanTargetDead()
+                .EditComponent<AbilityEffectRunAction>(c =>
+                {
+                    foreach (var action in c.Actions.Actions)
                     {
-                        c.m_IncludeDead = true;
-                    })
-                    .Configure();
+                        if (action is Conditional conditional)
+                        {
+                            var ifTrueActions = conditional.IfTrue.Actions.ToList();
 
-                BlueprintAbility SymbolOfWeakness = BlueprintTool.Get<BlueprintAbility>("8b02310b46e54de1ae9ba7161831938d");
+                            // 防止重复插入
+                            if (ifTrueActions.Any(a => a is ContextActionResurrect))
+                                continue;
 
-                AbilityConfigurator.For(SymbolOfWeakness)
-                    .AddToAvailableMetamagic(Metamagic.Empower)
-                    .AddToAvailableMetamagic(Metamagic.Maximize)
-                    .Configure();
-            }
+                            var resurrect = new ContextActionResurrect
+                            {
+                                // 这里不要 full restore，因为后面的 HealUnit 本来就会负责治疗
+                                FullRestore = false
+                            };
+
+                            // 插到 HealUnit 前面：先复活，再治疗
+                            int healIndex = ifTrueActions.FindIndex(a => a is HealUnit);
+
+                            if (healIndex >= 0)
+                                ifTrueActions.Insert(healIndex, resurrect);
+                            else
+                                ifTrueActions.Insert(0, resurrect);
+
+                            conditional.IfTrue.Actions = ifTrueActions.ToArray();
+                        }
+                    }
+                })
+                .EditComponent<AbilityTargetsAround>(c =>
+                {
+                    c.m_IncludeDead = true;
+                })
+                .Configure();
+
+            BlueprintAbility SymbolOfWeakness = BlueprintTool.Get<BlueprintAbility>("8b02310b46e54de1ae9ba7161831938d");
+
+            AbilityConfigurator.For(SymbolOfWeakness)
+                .AddToAvailableMetamagic(Metamagic.Empower)
+                .AddToAvailableMetamagic(Metamagic.Maximize)
+                .Configure();
         }
     }
 }
