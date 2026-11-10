@@ -325,12 +325,15 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
             BlueprintAbility Repurpose =
                 BlueprintTool.Get<BlueprintAbility>("de5f875a5f98d99459e45e6af8ce5dcd");
 
+            BlueprintBuff RepurposeBuff =
+                BlueprintTool.Get<BlueprintBuff>("11ff9c86d6929ac4ebec3152c5df1ce0");
+
             BlueprintFeature Incorporeal =
                 BlueprintTool.Get<BlueprintFeature>("c4a7f98d743bc784c9d4cf2105852c39");
 
+            // 持续时间改为每施法者等级1轮
+            // 不添加施法目标限制，虚体仍然可以受到原版持续伤害
             AbilityConfigurator.For(Repurpose)
-                // 持续时间：每施法者等级1轮
-                // 原版Buff的每轮1d6伤害与死亡后复起效果保留
                 .EditComponents<ContextRankConfig>(
                     c =>
                     {
@@ -341,14 +344,45 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
                     },
                     c => c.m_Type == AbilityRankType.Default
                 )
-                // 虚体生物不能成为目标
-                .AddComponent<AbilityTargetHasFact>(c =>
+                .Configure();
+
+            // 死亡时，只有非虚体目标才会获得 RepurposeBuffTimer
+            BuffConfigurator.For(RepurposeBuff)
+                .EditComponent<DeathActions>(c =>
                 {
-                    c.m_CheckedFacts = new BlueprintUnitFactReference[]
+                    var actions = c.Actions.Actions;
+
+                    // 截图中的第一个动作：施加 RepurposeBuffTimer
+                    if (actions[0] is not ContextActionApplyBuff applyTimer)
+                        return;
+
+                    actions[0] = new Conditional
                     {
-                        Incorporeal.ToReference<BlueprintUnitFactReference>()
+                        ConditionsChecker = new ConditionsChecker
+                        {
+                            Operation = Operation.And,
+                            Conditions = new Condition[]
+                            {
+                                new ContextConditionHasFact
+                                {
+                                    m_Fact = Incorporeal
+                                        .ToReference<BlueprintUnitFactReference>(),
+                                    Not = true
+                                }
+                            }
+                        },
+                        IfTrue = new ActionList
+                        {
+                            Actions = new GameAction[]
+                            {
+                                 applyTimer
+                            }
+                        },
+                        IfFalse = new ActionList
+                        {
+                            Actions = Array.Empty<GameAction>()
+                        }
                     };
-                    c.Inverted = true;
                 })
                 .Configure();
         }
