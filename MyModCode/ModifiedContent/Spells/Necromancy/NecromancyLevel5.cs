@@ -53,6 +53,7 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
         private static readonly string BoneExplosionDescription = "BoneExplosion.Description";
         private static readonly string WavesOfFatigueDescription = "WavesOfFatigue.Description";
         private static readonly string WrackingRayDescription = "WrackingRay.Description";
+        private static readonly string RaiseDeadDescription = "RaiseDead.Description";
         public static void Configure()
         {
             BlueprintAbility BoneExplosion = BlueprintTool.Get<BlueprintAbility>("cc51242ff01192b49a2e25adf096e2d0");
@@ -308,6 +309,7 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
             BlueprintFeature UndeadType = BlueprintTool.Get<BlueprintFeature>("734a29b693e9ec346ba2951b27987e33");
 
             AbilityConfigurator.For(RaiseDead)
+                .SetDescription(RaiseDeadDescription)
                 .EditComponents<AbilityTargetHasFact>(
                     c =>
                     {
@@ -317,6 +319,37 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
                     },
                     c => c.m_CheckedFacts.Any(f => f.Guid == UndeadType.AssetGuid)
                 )
+                .Configure();
+
+            // 重赋使命
+            BlueprintAbility Repurpose =
+                BlueprintTool.Get<BlueprintAbility>("de5f875a5f98d99459e45e6af8ce5dcd");
+
+            BlueprintFeature Incorporeal =
+                BlueprintTool.Get<BlueprintFeature>("c4a7f98d743bc784c9d4cf2105852c39");
+
+            AbilityConfigurator.For(Repurpose)
+                // 持续时间：每施法者等级1轮
+                // 原版Buff的每轮1d6伤害与死亡后复起效果保留
+                .EditComponents<ContextRankConfig>(
+                    c =>
+                    {
+                        c.m_BaseValueType = ContextRankBaseValueType.CasterLevel;
+                        c.m_Progression = ContextRankProgression.AsIs;
+                        c.m_UseMin = false;
+                        c.m_UseMax = false;
+                    },
+                    c => c.m_Type == AbilityRankType.Default
+                )
+                // 虚体生物不能成为目标
+                .AddComponent<AbilityTargetHasFact>(c =>
+                {
+                    c.m_CheckedFacts = new BlueprintUnitFactReference[]
+                    {
+                        Incorporeal.ToReference<BlueprintUnitFactReference>()
+                    };
+                    c.Inverted = true;
+                })
                 .Configure();
         }
     }

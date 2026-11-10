@@ -51,16 +51,20 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
 {
     internal class NecromancyLevel9
     {
+        private static readonly string WailOfBansheeDescription = "WailOfBanshee.Description";
+        private static readonly string NegativeEruptionDescription = "NegativeEruption.Description";
+
         public static void Configure()
         {
             BlueprintAbility WailOfBanshee = BlueprintTool.Get<BlueprintAbility>("b24583190f36a8442b212e45226c54fc");
-            BlueprintBuff Dazed = BlueprintTool.Get<BlueprintBuff>("9934fedff1b14994ea90205d189c8759");
+            BlueprintBuff Staggered = BlueprintTool.Get<BlueprintBuff>("9934fedff1b14994ea90205d189c8759");
 
             // 单独保存施法者等级，用于和目标生命骰比较
             var wailCasterLevelRank = ContextRankConfigs.CasterLevel();
             wailCasterLevelRank.m_Type = AbilityRankType.StatBonus;
 
             AbilityConfigurator.For(WailOfBanshee)
+                .SetDescription(WailOfBansheeDescription)
                 // 实际寻找目标的范围：40 → 60 英尺
                 .EditComponent<AbilityTargetsAround>(c =>
                 {
@@ -178,7 +182,7 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
                         {
                             new ContextActionApplyBuff
                             {
-                                m_Buff = Dazed
+                                m_Buff = Staggered
                                     .ToReference<BlueprintBuffReference>(),
 
                                 ToCaster = false,
@@ -200,6 +204,15 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
             BlueprintFeature NegativeEnergyAffinity = BlueprintTool.Get<BlueprintFeature>("d5ee498e19722854198439629c1841a5");
 
             AbilityConfigurator.For(NegativeEruption)
+                // 保留现有描述键；该键的实际文案在本地化文件中。
+                .SetDescription(NegativeEruptionDescription)
+                // 放开按施法者等级计算的默认 Rank 上限。
+                // 用 int.MaxValue 避免 m_Max = 0 在不同版本中被解释为零上限。
+                .EditComponents<ContextRankConfig>(
+                    c => c.m_Max = int.MaxValue,
+                    c => c.m_Type == AbilityRankType.Default &&
+                         c.m_BaseValueType == ContextRankBaseValueType.CasterLevel
+                )
                 .EditComponent<AbilityEffectRunAction>(c =>
                 {
                     foreach (var rootAction in c.Actions.Actions)

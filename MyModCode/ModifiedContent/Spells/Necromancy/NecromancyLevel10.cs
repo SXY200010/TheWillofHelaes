@@ -52,11 +52,17 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
 {
     internal class NecromancyLevel10
     {
+        private static readonly string DeathRealmDescription = "DeathRealm.Description";
+        private static readonly string PitOfDespairDescription = "PitOfDespair.Description";
+        private static readonly string DoomOfServitudeDescription = "DoomOfServitude.Description";
+        private static readonly string AbsoluteDeathDescription = "AbsoluteDeath.Description";
+
         public static void Configure()
         {
             BlueprintAbility DeathRealm = BlueprintTool.Get<BlueprintAbility>("16c3fe873538010459a8a3fd61304825");
 
             AbilityConfigurator.For(DeathRealm)
+                .SetDescription(DeathRealmDescription)
                 // 塑能系 → 死灵系
                 .EditComponent<SpellComponent>(c =>
                 {
@@ -89,6 +95,7 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
             BlueprintFeature UndeadType = BlueprintTool.Get<BlueprintFeature>("734a29b693e9ec346ba2951b27987e33");
 
             AbilityConfigurator.For(PitOfDespair)
+                .SetDescription(PitOfDespairDescription)
                 // 学派改为死灵学派
                 .EditComponent<SpellComponent>(c =>
                 {
@@ -206,6 +213,7 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
 
             // 施法时造成的伤害
             AbilityConfigurator.For(DoomOfServitude)
+                .SetDescription(DoomOfServitudeDescription)
                 .EditComponents<ContextRankConfig>(
                     c =>
                     {
@@ -242,6 +250,7 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
 
             // Buff每轮造成的伤害
             BuffConfigurator.For(DoomOfServitudeBuff)
+                .SetDescription(DoomOfServitudeDescription)
                 .EditComponents<ContextRankConfig>(
                     c =>
                     {
@@ -296,6 +305,7 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
 
 
             AbilityConfigurator.For(AbsoluteDeath)
+                .SetDescription(AbsoluteDeathDescription)
                 .EditComponent<AbilityEffectRunAction>(c =>
                 {
                     ContextActionConditionalSaved willSaved =

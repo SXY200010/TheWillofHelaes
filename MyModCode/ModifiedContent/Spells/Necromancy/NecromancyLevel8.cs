@@ -52,17 +52,22 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
     internal class NecromancyLevel8
     {
         private const string DeathClutchBleedConst1d6BuffGuid = "286E456D8EC44BA2AFE8D84E38575D72";
+        private const string HorridWiltingDelayedBuffGuid = "56AF1855B7E54EB09C7207E1D2816A69";
         private const string GreaterHorrifiedThisRoundBuffGuid = "A4C0E7D2B9F64B52A1F1C7E9D0A2B311";
         private const string GreaterHorrifyingCurseBuffGuid = "D6F3B24C8A4E49F7A8123D0C5B7E9F21";
         private const string GreaterHorrifyingCurseAbilityGuid = "F19B7A2D4C834E6BA0D5C1E8F2A94763";
+        private static readonly string DeathClutchDescription = "DeathClutch.Description";
         private static readonly string BestowCurseGreaterDescription = "BestowCurseGreater.Description";
         private static readonly string GreaterHorrifyingCurseName = "GreaterHorrifyingCurse.Name";
         private static readonly string GreaterHorrifyingCurseDescription = "GreaterHorrifyingCurse.Description";
+        private static readonly string HorridWiltingDescription = "HorridWilting.Description";
+        private static readonly string SoulreaverDescription = "Soulreaver.Description";
+        private static readonly string DomainOfTheHungryFleshDescription = "DomainOfTheHungryFlesh.Description";
         public static void Configure()
         {
             BlueprintAbility DeathClutch = BlueprintTool.Get<BlueprintAbility>("c3d2294a6740bc147870fff652f3ced5");
             BlueprintBuff Stunned = BlueprintTool.Get<BlueprintBuff>("09d39b38bb7c6014394b6daced9bacd3");
-            BlueprintBuff Dazed = BlueprintTool.Get<BlueprintBuff>("9934fedff1b14994ea90205d189c8759");
+            BlueprintBuff Staggered = BlueprintTool.Get<BlueprintBuff>("df3950af5a783bd4d91ab73eb8fa0fd3");
             BlueprintBuff BleedConst1d4Buff = BlueprintTool.Get<BlueprintBuff>("f80de2a32fc2a7141b23ec29bc36f395");
 
             // 使用一个独立的 Rank 保存本次施法的施法者等级
@@ -128,6 +133,7 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
 
 
             AbilityConfigurator.For(DeathClutch)
+                .SetDescription(DeathClutchDescription)
                 .AddContextRankConfig(deathClutchCasterLevelRank)
                 .EditComponent<AbilityEffectRunAction>(c =>
                 {
@@ -290,7 +296,7 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
                         {
                             new ContextActionApplyBuff
                             {
-                                m_Buff = Dazed
+                                m_Buff = Staggered
                                     .ToReference<BlueprintBuffReference>(),
 
                                 ToCaster = false,
@@ -474,88 +480,194 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
 
             BlueprintAbility HorridWilting = BlueprintTool.Get<BlueprintAbility>("08323922485f7e246acb3d2276515526");
 
-            AbilityConfigurator.For(HorridWilting)
-            .EditComponent<AbilityEffectRunAction>(c =>
-            {
-                foreach (var rootAction in c.Actions.Actions)
-                {
-                    ActionTreeUtils.Walk(rootAction, action =>
+            // 豁免失败后标记目标，在下一轮结算一次额外伤害。
+            BlueprintBuff horridWiltingDelayedBuff =
+                BuffConfigurator.New("HorridWiltingDelayedBuff", HorridWiltingDelayedBuffGuid)
+                    .SetFlags(BlueprintBuff.Flags.HiddenInUi)
+                    .SetStacking(StackingType.Stack)
+                    .AddContextRankConfig(ContextRankConfigs.CasterLevel())
+                    .AddFactContextActions(newRound: new ActionList
                     {
-                        if (action is ContextActionDealDamage damage)
+                        Actions = new GameAction[]
                         {
-                            // 普通目标：D6 → D8
-                            if (damage.Value.DiceType == DiceType.D6)
+                            new ContextActionDealDamage
                             {
-                                damage.Value.DiceType = DiceType.D8;
-                            }
-                            // 植物 / 水元素：D8 → D10
-                            else if (damage.Value.DiceType == DiceType.D8)
-                            {
-                                damage.Value.DiceType = DiceType.D10;
-                            }
+                                DamageType = new DamageTypeDescription
+                                {
+                                    Type = DamageType.Untyped
+                                },
+                                Value = new ContextDiceValue
+                                {
+                                    DiceType = DiceType.D6,
+                                    DiceCountValue = new ContextValue
+                                    {
+                                        ValueType = ContextValueType.Rank,
+                                        ValueRank = AbilityRankType.Default
+                                    },
+                                    BonusValue = 0
+                                },
+                                ReadPreRolledFromSharedValue = false
+                            },
+                            new ContextActionRemoveSelf()
+                        }
+                    })
+                    .Configure();
 
-                            // 修复强效 / 极效不参与实际伤害结算
-                            damage.ReadPreRolledFromSharedValue = false;
+            AbilityConfigurator.For(HorridWilting)
+                .SetDescription(HorridWiltingDescription)
+                .EditComponent<AbilityEffectRunAction>(c =>
+                {
+                    foreach (var rootAction in c.Actions.Actions)
+                    {
+                        ActionTreeUtils.Walk(rootAction, action =>
+                        {
+                            if (action is ContextActionDealDamage damage)
+                            {
+                                // 普通目标：D6 → D8
+                                if (damage.Value.DiceType == DiceType.D6)
+                                {
+                                    damage.Value.DiceType = DiceType.D8;
+                                }
+                                // 植物 / 水元素：D8 → D10
+                                else if (damage.Value.DiceType == DiceType.D8)
+                                {
+                                    damage.Value.DiceType = DiceType.D10;
+                                }
+
+                                // 修复强效 / 极效不参与实际伤害结算
+                                damage.ReadPreRolledFromSharedValue = false;
+                            }
+                        });
+                    }
+
+                    // 使用 AbilityEffectRunAction 已进行的豁免，不依赖原树含有 ConditionalSaved。
+                    c.SavingThrowType = SavingThrowType.Fortitude;
+                    var actions = c.Actions.Actions.ToList();
+                    actions.Add(new ContextActionConditionalSaved
+                    {
+                        Succeed = new ActionList { Actions = Array.Empty<GameAction>() },
+                        Failed = new ActionList
+                        {
+                            Actions = new GameAction[]
+                            {
+                                new ContextActionApplyBuff
+                                {
+                                    m_Buff = horridWiltingDelayedBuff.ToReference<BlueprintBuffReference>(),
+                                    DurationValue = new ContextDurationValue
+                                    {
+                                        Rate = DurationRate.Rounds,
+                                        DiceType = DiceType.Zero,
+                                        DiceCountValue = 0,
+                                        BonusValue = 2
+                                    },
+                                    ToCaster = false,
+                                    AsChild = false,
+                                    IsFromSpell = true
+                                }
+                            }
                         }
                     });
-                }
-            })
-            .Configure();
+                    c.Actions.Actions = actions.ToArray();
+                })
+                .Configure();
 
             BlueprintAbility Soulreaver = BlueprintTool.Get<BlueprintAbility>("b4afacd337dac4a40a769a567c038ab7");
 
             AbilityConfigurator.For(Soulreaver)
-            // 伤害骰上限：20 → 25
-            .EditComponents<ContextRankConfig>(
-                c =>
-                {
-                    c.m_Max = 25;
-                },
-                c => c.m_Type == AbilityRankType.Default
-            )
-
-            // 伤害：每施法者等级 D6 → D8
-            .EditComponent<AbilityEffectRunAction>(c =>
-            {
-                foreach (var rootAction in c.Actions.Actions)
-                {
-                    ActionTreeUtils.Walk(rootAction, action =>
+                .SetDescription(SoulreaverDescription)
+                // 伤害骰上限：20 → 25
+                .EditComponents<ContextRankConfig>(
+                    c =>
                     {
-                        if (action is ContextActionDealDamage damage &&
-                            damage.m_Type == ContextActionDealDamage.Type.Damage)
+                        c.m_Max = 25;
+                    },
+                    c => c.m_Type == AbilityRankType.Default
+                )
+
+                // 伤害：每施法者等级 D6 → D8
+                .EditComponent<AbilityEffectRunAction>(c =>
+                {
+                    foreach (var rootAction in c.Actions.Actions)
+                    {
+                        ActionTreeUtils.Walk(rootAction, action =>
                         {
-                            damage.Value.DiceType = DiceType.D8;
+                            if (action is ContextActionDealDamage damage &&
+                                damage.m_Type == ContextActionDealDamage.Type.Damage)
+                            {
+                                damage.Value.DiceType = DiceType.D8;
 
-                            // 保留原本的 Rank.Default 作为骰数
-                            // 即最终为 min(CL, 25)D8
+                                // 保留原本的 Rank.Default 作为骰数
+                                // 即最终为 min(CL, 25)D8
 
-                            // 修复强效 / 极效不参与伤害结算的问题
-                            damage.ReadPreRolledFromSharedValue = false;
-                        }
+                                // 修复强效 / 极效不参与伤害结算的问题
+                                damage.ReadPreRolledFromSharedValue = false;
+                            }
+                        });
+                    }
+
+                    // 单独追加失败分支；原版直接伤害仍按自己的 HalfIfSaved 结算。
+                    c.SavingThrowType = SavingThrowType.Fortitude;
+                    var actions = c.Actions.Actions.ToList();
+                    actions.Add(new ContextActionConditionalSaved
+                    {
+                        Succeed = new ActionList { Actions = Array.Empty<GameAction>() },
+                        // 由 BlueprintCore 构造完整的能量吸取动作，避免遗漏专用字段。
+                        Failed = ActionsBuilder.New()
+                            .DealDamagePermanentNegativeLevels(new ContextDiceValue
+                            {
+                                DiceType = DiceType.D4,
+                                DiceCountValue = 1,
+                                BonusValue = 0
+                            }, halfIfSaved: false)
+                            .Build()
                     });
-                }
-            })
+                    c.Actions.Actions = actions.ToArray();
+                })
 
-            // 范围：25 英尺 → 30 英尺
-            .EditComponent<AbilityTargetsAround>(
-                c => c.m_Radius = 30.Feet()
-            )
-            .Configure();
+                // 范围：25 英尺 → 30 英尺
+                .EditComponent<AbilityTargetsAround>(
+                    c => c.m_Radius = 30.Feet()
+                )
+                .Configure();
 
             BlueprintAbility DomainOfTheHungryFlesh = BlueprintTool.Get<BlueprintAbility>("0d820abda7693a9418546a47eea62ea2");
             BlueprintAbilityAreaEffect DomainOfTheHungryFleshArea = BlueprintTool.Get<BlueprintAbilityAreaEffect>("6df8ed6ff8ac4974aba16eca1b7b5cbe");
 
-            // 施法范围显示：20尺 → 40尺
-            AbilityConfigurator.For(DomainOfTheHungryFlesh)
-                .EditComponent<AbilityAoERadius>(
-                    c => c.m_Radius = 40.Feet()
-                )
+            // 不同区域分别维护Buff实例，豁免减值不重复叠加。
+            var hungryFleshSavePenalty = BuffConfigurator.New("HungryFleshSavePenaltyBuff", "D38D8D64EE1B4B9B9E8F548CBB9A5CFD")
+                .SetIcon(DomainOfTheHungryFlesh.Icon)
+                .SetStacking(StackingType.Stack)
+                .AddComponent<AddStatBonus>(c =>
+                {
+                    c.Stat = StatType.SaveFortitude;
+                    c.Value = -4;
+                    c.Descriptor = ModifierDescriptor.UntypedStackable;
+                })
+                .AddComponent<AddStatBonus>(c =>
+                {
+                    c.Stat = StatType.SaveReflex;
+                    c.Value = -4;
+                    c.Descriptor = ModifierDescriptor.UntypedStackable;
+                })
+                .AddComponent<AddStatBonus>(c =>
+                {
+                    c.Stat = StatType.SaveWill;
+                    c.Value = -4;
+                    c.Descriptor = ModifierDescriptor.UntypedStackable;
+                })
                 .Configure();
 
-
-            // 实际区域：20尺 → 40尺
             AbilityAreaEffectConfigurator.For(DomainOfTheHungryFleshArea)
-                .SetSize(40.Feet())
+                .AddComponent<AbilityAreaEffectBuff>(c =>
+                {
+                    c.m_Buff = hungryFleshSavePenalty.ToReference<BlueprintBuffReference>();
+                    c.Condition = new ConditionsChecker
+                    {
+                        Operation = Operation.And,
+                        Conditions = Array.Empty<Condition>()
+                    };
+
+                })
                 .EditComponent<AbilityAreaEffectRunAction>(c =>
                 {
                     var actions = c.Round.Actions.ToList();

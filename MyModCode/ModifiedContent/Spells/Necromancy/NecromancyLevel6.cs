@@ -117,6 +117,23 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
             BlueprintBuff Paralyzed = BlueprintTool.Get<BlueprintBuff>("af1e2d232ebbb334aaf25e2a46a92591");
             BlueprintBuff Nauseated = BlueprintTool.Get<BlueprintBuff>("956331dba5125ef48afe41875a00ca0e");
 
+            // 专用副本避免光环退出时影响其他法术施加的同类负面效果。
+            Sickened = CreateEyebiteDebuff("EyebiteSickened", "c8a11fc251c7474e990831f9572dba61", Sickened);
+            Frightened = CreateEyebiteDebuff("EyebiteFrightened", "5330d8238a354598a7c35c7f9c481f36", Frightened);
+            Paralyzed = CreateEyebiteDebuff("EyebiteParalyzed", "2f567fa6c2a6460391de64c98f53117c", Paralyzed);
+            Nauseated = CreateEyebiteDebuff("EyebiteNauseated", "a5595a9a120f461d8366c81cdd63bf64", Nauseated);
+
+            // 范围组件管理这个隐藏 BUFF 的进入、退出与光环消失。
+            // 所有负面效果作为它的子 BUFF，随它一起移除。
+            BlueprintBuff EyebiteInRange =
+                BuffConfigurator.New("EyebiteInRange", "c13c3a6183474f4abf953429b4f86f24")
+                    .SetFlags(BlueprintBuff.Flags.HiddenInUi)
+                    .SetStacking(StackingType.Stack)
+                    .AddFactContextActions(
+                        activated: CreateEyebiteAreaAction(Sickened, Frightened, Paralyzed, Nauseated),
+                        newRound: CreateEyebiteAreaAction(Sickened, Frightened, Paralyzed, Nauseated))
+                    .Configure();
+
             BlueprintAbilityAreaEffect EyebiteArea =
                 AbilityAreaEffectConfigurator.New("EyebiteArea", EyebiteAreaGuid)
                     .SetSize(30.Feet())
@@ -127,10 +144,14 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
                     .AddContextRankConfig(
                         ContextRankConfigs.CasterLevel()
                     )
-                    .AddComponent<AbilityAreaEffectRunAction>(c =>
+                    .AddComponent<AbilityAreaEffectBuff>(c =>
                     {
-                        c.UnitEnter = CreateEyebiteAreaAction(Sickened, Frightened, Paralyzed, Nauseated);
-                        c.Round = CreateEyebiteAreaAction(Sickened, Frightened, Paralyzed, Nauseated);
+                        c.m_Buff = EyebiteInRange.ToReference<BlueprintBuffReference>();
+                        c.Condition = new ConditionsChecker
+                        {
+                            Operation = Operation.And,
+                            Conditions = new Condition[] { new ContextConditionIsEnemy() }
+                        };
                     })
                     .Configure();
 
@@ -314,13 +335,21 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
                 .Configure();
         }
 
+        private static BlueprintBuff CreateEyebiteDebuff(string name, string guid, BlueprintBuff original)
+        {
+            return BuffConfigurator.New(name, guid)
+                .CopyFrom(original)
+                .SetStacking(StackingType.Stack)
+                .Configure();
+        }
+
         private static ActionList CreateEyebiteAreaAction(
         BlueprintBuff sickened,
         BlueprintBuff frightened,
         BlueprintBuff paralyzed,
         BlueprintBuff nauseated)
         {
-            return new ActionList
+            var actions = new ActionList
             {
                 Actions = new GameAction[]
                 {
@@ -536,6 +565,21 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
                     }
                 }
             };
+
+            // 不独立倒计时；生存期由范围 BUFF 控制。
+            foreach (var rootAction in actions.Actions)
+            {
+                ActionTreeUtils.Walk(rootAction, action =>
+                {
+                    if (action is ContextActionApplyBuff apply)
+                    {
+                        apply.Permanent = true;
+                        apply.AsChild = true;
+                        apply.DurationValue = new ContextDurationValue();
+                    }
+                });
+            }
+            return actions;
         }
     }
 }

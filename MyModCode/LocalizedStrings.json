@@ -572,5 +572,125 @@
     "Key": "Eyebite.Description",
     "enGB": "Your gaze radiates waves of dreadful necromantic power. Each living enemy within 30 feet must succeed at a <b><color=#703565><link=\"Encyclopedia:Saving_Throw\">Fortitude saving throw</link></color></b> or suffer the harmful effects of the <b><color=#703565><link=\"Encyclopedia:Spell\">spell</link></color></b>. This attack has three different effects depending on the target's <b><color=#703565><link=\"Encyclopedia:Hit_Dice\">Hit Dice</link></color></b>.\nIf the target has 10 or more Hit Dice, it becomes <b><color=#703565><link=\"ConditionSickened\">sickened</link></color></b> for 10 minutes per <b><color=#703565><link=\"Encyclopedia:Caster_Level\">caster level</link></color></b>. If a target with 10 or more Hit Dice is already sickened and fails its saving throw again, it becomes nauseated instead.\nIf the target has 5–9 Hit Dice, it becomes <b><color=#703565><link=\"ConditionFrightened\">frightened</link></color></b> and sickened for 10 minutes per caster level.\nIf the target has 4 or fewer Hit Dice, it becomes <b><color=#703565><link=\"ConditionParalyzed\">paralyzed</link></color></b>, frightened, and sickened for 10 minutes per caster level.\nThese effects are cumulative and concurrent.",
     "zhCN": "你的目光辐射出令人胆寒的死灵能量波动。30英尺范围内每个活物敌人必须成功进行<b><color=#703565><link=\"Encyclopedia:Saving_Throw\">强韧豁免检定</link></color></b>，否则将承受<b><color=#703565><link=\"Encyclopedia:Spell\">法术</link></color></b>的有害效果。根据目标的<b><color=#703565><link=\"Encyclopedia:Hit_Dice\">生命骰数</link></color></b>，这种袭击具有三种不同效果。\n如果目标生命骰数大于或等于10，它将在每<b><color=#703565><link=\"Encyclopedia:Caster_Level\">施法者等级</link></color></b>10分钟内陷入<b><color=#703565><link=\"ConditionSickened\">恶心</link></color></b>状态。如果生命骰数大于或等于10的目标已经陷入恶心状态，并且再次豁免失败，则改为陷入反胃状态。\n如果目标生命骰数在5–9之间，它将在每施法者等级10分钟内陷入<b><color=#703565><link=\"ConditionFrightened\">惊恐</link></color></b>和恶心状态。\n如果目标生命骰数小于或等于4，它将在每施法者等级10分钟内陷入<b><color=#703565><link=\"ConditionParalyzed\">麻痹</link></color></b>、惊恐和恶心状态。\n这些效果互相累计并同时生效。"
+  },
+
+  {
+    "Key": "RaiseDead.Description",
+    "enGB": "You restore life to a deceased party member. A raised creature has a number of hit points equal to its current HD. Raise dead also removes death's door. Coming back from the dead is an ordeal, and the subject gains two permanent negative levels when it is raised. If the target is undead, it is not affected by these negative levels or by death's door.",
+    "zhCN": "你让一名死亡的队友复活。复活后的生物拥有等同于当前生命骰数的生命值。复活亡者还会移除生命垂危状态。从死亡中归来是一场磨难，受术者复活时会获得2个永久负向等级。若目标为不死生物，则不受这些负向等级以及生命垂危的影响。"
+  },
+
+  {
+    "Key": "PlagueStorm.Description",
+    "enGB": "You create a hideous gray cloud that infects creatures with one of several diseases. The disease takes effect immediately. If a target fails its saving throw, it must attempt a Fortitude save at the start of each subsequent round to resist the disease's worsening; on a failure, it takes the disease's ability damage again.",
+    "zhCN": "你创造一团污秽的灰色云雾，使范围内生物感染数种疾病之一。疾病会立即生效。若目标豁免失败，则在之后每轮开始时必须再次进行强韧豁免以抵御疫病恶化；若失败，则再次承受该疾病造成的属性伤害。"
+  },
+
+  {
+    "Key": "UmbralStrike.Description",
+    "enGB": "You create a bolt of dark energy and make a ranged touch attack that ignores concealment, but not total concealment. If you hit, the target takes 1d6 damage per caster level, maximum 20d6. Half of this damage is unholy damage and half is negative energy. The bolt's shadow blinds the target for the spell's duration. A successful Fortitude save negates the blindness but no longer halves the damage.",
+    "zhCN": "你创造一道黑暗能量箭矢并进行一次远程接触攻击，该攻击无视隐蔽，但不能无视全隐蔽。若命中，目标受到每施法者等级1d6点伤害，最高20d6。伤害的一半为污邪伤害，另一半为负能量伤害。箭矢的阴影会笼罩目标，使其在法术持续时间内目盲。强韧豁免成功可以免除目盲，但不再使伤害减半。"
+  },
+
+  {
+    "Key": "BoneSpear.Description",
+    "enGB": "You take control of the target's bones, tearing them away from the body and forming them into a deadly projectile. The spell deals 10 damage per caster level unless the target succeeds at a Fortitude save. On a successful save, the target still takes 1d6 damage per caster level. If the target dies from this damage, a bone spear forms from its bones and can be launched within the next 5 rounds.",
+    "zhCN": "你控制目标的骨骼，将其强行撕离躯体并塑造成致命投矛。除非目标通过强韧豁免，否则此法术会立即造成每施法者等级10点伤害。若豁免成功，目标仍会受到每施法者等级1d6点伤害。如果目标死于此伤害，其骨骼会形成一支白骨利矛，你可在接下来的5轮内将其掷出。"
+  },
+
+  {
+    "Key": "FingerOfDeath.Description",
+    "enGB": "This spell channels death into one creature. If the target's Hit Dice are lower than your caster level and it fails its Fortitude save, it dies instantly. If the target's Hit Dice are not lower than your caster level and it fails the save, it instead takes 10 damage per caster level. On a successful save, the target takes 3d6 damage plus 1 damage per caster level.",
+    "zhCN": "该法术将死亡之力灌入一个生物。若目标生命骰数低于你的施法者等级且强韧豁免失败，目标会立即死亡。若目标生命骰数不低于你的施法者等级且豁免失败，则改为受到每施法者等级10点伤害。豁免成功时，目标受到3d6点伤害加每施法者等级1点伤害。"
+  },
+
+  {
+    "Key": "RestoreUndead.Description",
+    "enGB": "This spell fully heals all allied undead creatures and can also restore temporarily dead undead allies before applying its healing.",
+    "zhCN": "此法术完全治疗所有友方不死生物，并且可以在治疗前先复活暂时死去的不死生物盟友。"
+  },
+
+  {
+    "Key": "SymbolOfWeakness.Description",
+    "enGB": "This rune is activated by any creature. Once triggered, a symbol of weakness remains active for 10 minutes per caster level and deals 3d6 Strength damage to all creatures within 30 feet. A creature can only be affected by this symbol once per day. This spell can benefit from Empower Spell and Maximize Spell metamagic.",
+    "zhCN": "任何生物都可以触发此符文。触发后，虚弱徽记会维持每施法者等级10分钟，并对30英尺内所有生物造成3d6点力量伤害。每个生物每天只能受到同一个徽记影响一次。此法术可以受到法术强效和法术极效超魔影响。"
+  },
+
+  {
+    "Key": "DeathClutch.Description",
+    "enGB": "With a grasping motion, you cause the target's heart to struggle inside its chest. If the target's Hit Dice are lower than your caster level and it fails its Fortitude save, it dies instantly. If its Hit Dice are not lower than your caster level and it fails the save, it is stunned for 1 minute per caster level and takes 1d6 Constitution drain plus 1d6 Constitution bleed. On a successful save, the target is dazed for 1d4 rounds.",
+    "zhCN": "你向目标伸出手作擒握之姿，使其心脏在躯干中痛苦挣扎。若目标生命骰数低于你的施法者等级且强韧豁免失败，目标会立即死亡。若目标生命骰数不低于你的施法者等级且豁免失败，目标会震慑每施法者等级1分钟，并受到1d6点体质流失与1d6点体质流血伤害。若强韧豁免成功，目标陷入恍惚1d4轮。"
+  },
+
+  {
+    "Key": "BestowCurseGreater.Description",
+    "enGB": "You place a greater curse on the target. Choose one of the following curses: Greater Curse of Feeble Body - the target takes a -12 penalty to Constitution; Greater Curse of Weakness - the target takes a -12 penalty to Strength and Dexterity; Greater Curse of Idiocy - the target takes a -12 penalty to Intelligence, Wisdom, and Charisma; Greater Curse of Deterioration - the target takes a -8 penalty on attack rolls, saves, ability checks, and skill checks; Greater Curse of Terror - each round the target must succeed at a Will save or remain in place under a fear effect. These curses can stack with themselves.",
+    "zhCN": "你对目标施以高等诅咒，从下列诅咒中选择一项：高等弱体诅咒——目标的体质受到-12减值；高等无能诅咒——目标的力量与敏捷受到-12减值；高等愚痴诅咒——目标的智力、感知与魅力受到-12减值；高等衰颓诅咒——目标在攻击检定、豁免检定、属性检定与技能检定时受到-8减值；高等恐怖诅咒——目标每轮必须通过意志豁免，否则将在原地承受恐惧效果。这些诅咒可以与自身叠加。"
+  },
+
+  {
+    "Key": "GreaterHorrifyingCurse.Name",
+    "enGB": "Greater Curse of Terror",
+    "zhCN": "高等恐怖诅咒"
+  },
+
+  {
+    "Key": "GreaterHorrifyingCurse.Description",
+    "enGB": "Each round the target must succeed at a Will save or remain in place under a fear effect.",
+    "zhCN": "目标每回合必须成功进行意志豁免，否则将在原地承受恐惧效果。"
+  },
+
+  {
+    "Key": "HorridWilting.Description",
+    "enGB": "This spell evaporates moisture from living creatures, dealing 1d8 damage per caster level, maximum 20d8. Water elementals and plant creatures instead take 1d10 damage per caster level, maximum 20d10. Damage from this spell correctly benefits from Empower Spell and Maximize Spell. Targets that fail their saving throw are withered and take an additional 1d6 damage per caster level on the next round.",
+    "zhCN": "此法术蒸发活物体内的水分，造成每施法者等级1d8点伤害，最高20d8。水元素和植物类生物改为受到每施法者等级1d10点伤害，最高20d10。此法术的伤害可以正确受到法术强效和法术极效超魔影响。豁免失败的目标会陷入凋死状态，并在下一轮额外受到每施法者等级1d6点伤害。"
+  },
+
+  {
+    "Key": "Soulreaver.Description",
+    "enGB": "This potent death spell deals 1d8 damage per caster level, maximum 25d8, to living creatures in a 30-foot radius. Damage from this spell correctly benefits from Empower Spell and Maximize Spell. Targets that fail their saving throw also gain 1d4 negative levels.",
+    "zhCN": "这个强大的死亡法术对30英尺半径范围内的活物造成每施法者等级1d8点伤害，最高25d8。此法术的伤害可以正确受到法术强效和法术极效超魔影响。豁免失败的目标还会获得1d4个负向等级。"
+  },
+
+  {
+    "Key": "DomainOfTheHungryFlesh.Description",
+    "enGB": "You create a terrible abomination in a 40-foot area. It attacks creatures inside, attempts to trip them, entangles them, and deals 1d4 damage to a random physical ability score. Each round, creatures in the area take 2d6 damage plus 1d4 damage per caster level. The area lasts for 1 round per caster level.",
+    "zhCN": "你在40英尺范围内创造一片可怖畸变血肉。它会攻击范围内的生物，尝试将其绊摔，使其纠缠，并对随机一项物理属性造成1d4点伤害。范围内生物每轮受到2d6点伤害加每施法者等级1d4点伤害。此区域持续每施法者等级1轮。"
+  },
+
+  {
+    "Key": "WailOfBanshee.Description",
+    "enGB": "You emit a terrible, soul-chilling scream in a 60-foot radius. If a target's Hit Dice are lower than your caster level and it fails its Fortitude save, it dies instantly. If its Hit Dice are not lower than your caster level and it fails the save, it instead takes 10 damage per caster level. On a successful save, the target is dazed for 1d4 rounds.",
+    "zhCN": "你发出骇人的摄魂尖啸，影响60英尺半径范围内的生物。若目标生命骰数低于你的施法者等级且强韧豁免失败，目标会立即死亡。若目标生命骰数不低于你的施法者等级且豁免失败，则改为受到每施法者等级10点伤害。豁免成功的目标陷入恍惚1d4轮。"
+  },
+
+  {
+    "Key": "NegativeEruption.Description",
+    "enGB": "This spell functions as harm, but affects all creatures in a 30-foot radius. Additionally, all affected undead creatures gain a +2 bonus on attack rolls, damage rolls, and Will saves, twice your caster level in temporary hit points, and have all harmful effects removed.",
+    "zhCN": "此法术效果类似重伤术，但影响30英尺半径范围内的所有生物。此外，所有受影响的不死生物在攻击检定、伤害检定和意志豁免上获得+2加值，获得等同于你施法者等级两倍的临时生命值，并移除身上的所有有害效果。"
+  },
+
+  {
+    "Key": "DeathRealm.Description",
+    "enGB": "You create a realm of death. This spell is treated as necromancy. Its negative level effect inflicts 2d4 negative levels.",
+    "zhCN": "你创造一片死亡领域。此法术视为死灵学派法术，其负向等级效果改为造成2d4个负向等级。"
+  },
+
+  {
+    "Key": "PitOfDespair.Description",
+    "enGB": "You create a 40-foot pit around a Nightshade Nightcrawler. The spell is treated as necromancy and affects enemies only. The pit and the summoned nightcrawler last for 1 minute per caster level. Creatures falling into the pit take 20d6 bludgeoning damage, and creatures in the pit take 1d6 negative energy damage per caster level each round.",
+    "zhCN": "你围绕一只巨虫夜影创造一个40英尺范围的陷坑。此法术视为死灵学派法术，并且只影响敌人。陷坑和召唤出的巨虫夜影持续每施法者等级1分钟。坠入陷坑的生物受到20d6点钝击伤害，陷坑中的生物每轮受到每施法者等级1d6点负能量伤害。"
+  },
+
+  {
+    "Key": "DoomOfServitude.Description",
+    "enGB": "There is no escape for any mortal soul. This spell functions as repurpose, except the duration is permanent. The target immediately takes 6 damage per caster level, and then takes 6 damage per caster level each round until death. If the target dies during the effect, it rises as an undead creature under your command.",
+    "zhCN": "凡俗灵魂无处可逃。此法术效果类似重赋使命，但持续时间为永久。目标立即受到每施法者等级6点伤害，之后每轮受到每施法者等级6点伤害，直至死亡。若目标在此效果持续期间死亡，它会复生为受你控制的不死生物。"
+  },
+
+  {
+    "Key": "AbsoluteDeath.Description",
+    "enGB": "A sense of imminent death fills the target's heart. If the target fails its Will save, it dies immediately. If the Will save succeeds, it must attempt an additional Fortitude save. If the Fortitude save fails, the target still dies immediately. If both saves succeed, the target takes 10 damage per caster level and remains in place under a fear effect for 1 round.",
+    "zhCN": "迫近死亡的预感充满目标心中。若目标意志豁免失败，它会立即死亡。若意志豁免成功，目标还必须进行一次强韧豁免。若强韧豁免失败，目标仍会立即死亡。若两次豁免均成功，目标受到每施法者等级10点伤害，并在原地承受恐惧效果1轮。"
   }
 ]

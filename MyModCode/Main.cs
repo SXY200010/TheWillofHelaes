@@ -82,6 +82,7 @@ namespace CruoromancerTweaks
                     NecromancyLevel7.Configure();
                     NecromancyLevel8.Configure();
                     NecromancyLevel9.Configure();
+                    NecromancyLevel10.Configure();
                     ConjurationLv7.Configure();
                     MagusBuff.Configure();
                     OracleRevelation.Configure();
