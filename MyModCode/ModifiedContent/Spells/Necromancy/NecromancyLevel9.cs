@@ -200,7 +200,7 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
                 })
                 .Configure();
 
-            BlueprintAbility NegativeEruption = BlueprintTool.Get<BlueprintAbility>("5c377ad96e3fc4f4d9b74cba9d38f4f8");
+            BlueprintAbility NegativeEruption = BlueprintTool.Get<BlueprintAbility>("5c377ad96e3fc4f4d9b74eba9d38f4f8");
             BlueprintFeature NegativeEnergyAffinity = BlueprintTool.Get<BlueprintFeature>("d5ee498e19722854198439629c1841a5");
 
             AbilityConfigurator.For(NegativeEruption)
