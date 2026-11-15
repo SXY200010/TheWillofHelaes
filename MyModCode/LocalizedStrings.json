@@ -2,695 +2,1161 @@
   {
     "Key": "MyFeat.Name",
     "ProcessTemplates": false,
-    "enGB": "My Feat"
+    "enGB": "My Feat",
+    "deDE": "Mein Talent",
+    "frFR": "Mon don",
+    "ruRU": "Моя черта",
+    "esES": "Mi dote",
+    "zhCN": "我的专长"
   },
 
   {
     "Key": "MyFeat.Description",
-    "enGB": "This is my feat, not your feat."
+    "enGB": "This is my feat, not your feat.",
+    "deDE": "Dies ist mein Talent, nicht deines.",
+    "frFR": "C'est mon don, pas le vôtre.",
+    "ruRU": "Это моя черта, а не твоя.",
+    "esES": "Esta es mi dote, no la tuya.",
+    "zhCN": "这是我的专长，不是你的专长。"
   },
 
   {
     "Key": "FocusedInfusion.Name",
     "enGB": "Focused Infusion(Free)",
-    "zhCN": "聚能灌注（自由）"
+    "zhCN": "聚能灌注（自由）",
+    "deDE": "Konzentrierte Beimischung (frei)",
+    "frFR": "Infusion focalisée (action libre)",
+    "ruRU": "Фокусированное насыщение (свободное действие)",
+    "esES": "Infusión enfocada (acción gratuita)"
   },
 
     {
     "Key": "FocusedInfusionCooldown.Name",
     "enGB": "On Cooldown",
-    "zhCN": "冷却中……"
+    "zhCN": "冷却中……",
+    "deDE": "Abklingzeit läuft",
+    "frFR": "En recharge",
+    "ruRU": "Перезарядка",
+    "esES": "En recarga"
   },
 
   {
     "Key": "FocusedInfusion.Description",
     "enGB": "When the cruoromancer uses this infusion, he adds +1 to the DC of the infused necromancy spell. This ability can be used only once per round. At 5th level, the bonus increases to +2. At 8th level, this infusion becomes a free action.",
-    "zhCN": "融血师以此形式灌注血液之力时，被灌注的死灵法术难度等级+1。此能力每回合只能使用一次。5级时，加值提升至+2；8级时，此灌注改为一个自由动作。"
+    "zhCN": "融血师以此形式灌注血液之力时，被灌注的死灵法术难度等级+1。此能力每回合只能使用一次。5级时，加值提升至+2；8级时，此灌注改为一个自由动作。",
+    "deDE": "Der Cruomant erhöht den SG des durch diese Beimischung verstärkten Nekromantiezaubers um +1. Nur einmal pro Runde einsetzbar. Auf Stufe 5 steigt der Bonus auf +2. Ab Stufe 8 ist die Beimischung eine freie Aktion.",
+    "frFR": "Le cruoromancien augmente de +1 le DD du sort de nécromancie imprégné. Cette aptitude ne peut être utilisée qu'une fois par round. Au niveau 5, le bonus passe à +2. Au niveau 8, cette infusion devient une action libre.",
+    "ruRU": "Круоромант повышает СЛ насыщенного заклинания некромантии на +1. Способность доступна лишь раз в раунд. На 5-м уровне бонус возрастает до +2. С 8-го уровня насыщение становится свободным действием.",
+    "esES": "El cruoromante aumenta en +1 la CD del conjuro de nigromancia imbuido. Solo puede usar esta aptitud una vez por asalto. A nivel 5, el bonificador aumenta a +2. A nivel 8, esta infusión pasa a ser una acción gratuita."
   },
 
   {
     "Key": "SickeningInfusion.Name",
     "enGB": "Sickening Infusion(Free)",
-    "zhCN": "恶心灌注（自由）"
+    "zhCN": "恶心灌注（自由）",
+    "deDE": "Krankmachende Beimischung (frei)",
+    "frFR": "Infusion de fièvre (action libre)",
+    "ruRU": "Дезориентирующее насыщение (свободное действие)",
+    "esES": "Infusión nauseabunda (acción gratuita)"
   },
 
   {
     "Key": "SickeningInfusionCooldown.Name",
     "enGB": "On Cooldown",
-    "zhCN": "冷却中……"
+    "zhCN": "冷却中……",
+    "deDE": "Abklingzeit läuft",
+    "frFR": "En recharge",
+    "ruRU": "Перезарядка",
+    "esES": "En recarga"
   },
 
   {
     "Key": "SickeningInfusion.Description",
     "enGB": "When the cruoromancer uses this infusion, a creature that takes damage from the infused necromancy spell becomes sickened for (1 + half your wizard level) rounds. You can use this ability only once per turn. At 8th level, this infusion becomes a free action.",
-    "zhCN": "融血师以此形式灌注血液之力时，受到被灌注的死灵法术伤害的生物陷入恶心状态，持续1 + 你的法师等级的一半的轮数。此能力每回合只能使用一次。8级时，此灌注改为一个自由动作。"
+    "zhCN": "融血师以此形式灌注血液之力时，受到被灌注的死灵法术伤害的生物陷入恶心状态，持续1 + 你的法师等级的一半的轮数。此能力每回合只能使用一次。8级时，此灌注改为一个自由动作。",
+    "deDE": "Eine Kreatur, die durch den mit dieser Beimischung verstärkten Nekromantiezauber Schaden erleidet, kränkelt für 1 + die Hälfte deiner Magierstufe Runden. Nur einmal pro Runde einsetzbar. Ab Stufe 8 ist die Beimischung eine freie Aktion.",
+    "frFR": "Une créature blessée par le sort de nécromancie imprégné devient fiévreuse pendant 1 + la moitié de votre niveau de magicien rounds. Cette aptitude ne peut être utilisée qu'une fois par round. Au niveau 8, cette infusion devient une action libre.",
+    "ruRU": "Существо, получившее урон от насыщенного заклинания некромантии, становится дезориентированным на число раундов, равное 1 + половина вашего уровня волшебника. Способность доступна лишь раз в раунд. С 8-го уровня насыщение становится свободным действием.",
+    "esES": "Una criatura que sufra daño del conjuro de nigromancia imbuido queda indispuesta durante 1 + la mitad de tu nivel de mago asaltos. Solo puedes usar esta aptitud una vez por asalto. A nivel 8, esta infusión pasa a ser una acción gratuita."
   },
 
   {
     "Key": "BloodInfusionFree.Name",
     "enGB": "Blood Infusion (Free)",
-    "zhCN": "融血灌注（自由）"
+    "zhCN": "融血灌注（自由）",
+    "deDE": "Blutbeimischung (frei)",
+    "frFR": "Infusion de sang (action libre)",
+    "ruRU": "Насыщение кровью (свободное действие)",
+    "esES": "Infusión de sangre (acción gratuita)"
   },
 
   {
     "Key": "AugmentSummoning.Name",
     "enGB": "Wizard Bonus Feat (Augment Summoning)",
-    "zhCN": "法师额外专长（增强召唤）"
+    "zhCN": "法师额外专长（增强召唤）",
+    "deDE": "Magier-Bonustalent (Verstärkte Herbeizauberung)",
+    "frFR": "Don supplémentaire de magicien (Amélioration des créatures convoquées)",
+    "ruRU": "Дополнительная черта волшебника (Изменение вызова)",
+    "esES": "Dote adicional de mago (Aumentar convocación)"
   },
 
   {
     "Key": "AugmentSummoning.Description",
     "enGB": "At 6th level, the cruoromancer gains a wizard bonus feat, which must be Augment Summoning.",
-    "zhCN": "融血师6级时获得一个法师额外专长，固定为增强召唤。"
+    "zhCN": "融血师6级时获得一个法师额外专长，固定为增强召唤。",
+    "deDE": "Auf Stufe 6 erhält der Cruomant ein Magier-Bonustalent: Verstärkte Herbeizauberung.",
+    "frFR": "Au niveau 6, le cruoromancien reçoit un don supplémentaire de magicien, obligatoirement Amélioration des créatures convoquées.",
+    "ruRU": "На 6-м уровне круоромант получает дополнительную черту волшебника: Изменение вызова.",
+    "esES": "A nivel 6, el cruoromante obtiene una dote adicional de mago, que debe ser Aumentar convocación."
   },
 
   {
     "Key": "CommandingInfusion.Description",
     "enGB": "When using this infusion with animate dead, the summoned undead and your undead companions gain a +4 inherent bonus to Strength and Charisma for 1 minute per caster level. At 15th level, summoned undead and your undead companions affected in this way also gain temporary hit points equal to three times your wizard level.",
-    "zhCN": "通过在施放操纵亡者时以此形式灌注血液之力，你召唤出的死灵生物以及不死生物伙伴将在力量和魅力属性上获得+4天赋加值，持续时间为每施法者等级一分钟。15级时，以此方式召唤的死灵生物以及不死生物伙伴额外获得数值为三倍你法师等级的临时生命值。"
+    "zhCN": "通过在施放操纵亡者时以此形式灌注血液之力，你召唤出的死灵生物以及不死生物伙伴将在力量和魅力属性上获得+4天赋加值，持续时间为每施法者等级一分钟。15级时，以此方式召唤的死灵生物以及不死生物伙伴额外获得数值为三倍你法师等级的临时生命值。",
+    "deDE": "Beim Einsatz dieser Beimischung mit Tote beleben erhalten die herbeigezauberten Untoten und deine untoten Gefährten einen innewohnenden Bonus von +4 auf Stärke und Charisma für 1 Minute pro Zauberstufe. Ab Stufe 15 erhalten die so betroffenen Untoten außerdem temporäre Trefferpunkte in Höhe deiner dreifachen Magierstufe.",
+    "frFR": "Avec Animation des morts, cette infusion confère aux morts-vivants convoqués et à vos compagnons morts-vivants un bonus inné de +4 en Force et en Charisme pendant 1 minute par niveau de lanceur de sorts. Au niveau 15, ils gagnent aussi des points de vie temporaires égaux à trois fois votre niveau de magicien.",
+    "ruRU": "При использовании с Оживить мертвецов насыщение даёт призванной нежити и вашим спутникам-нежити врождённый бонус +4 к Силе и Харизме на 1 минуту за уровень заклинателя. С 15-го уровня они также получают временные ОЗ в размере утроенного уровня волшебника.",
+    "esES": "Al usar esta infusión con Reanimar a los muertos, los muertos vivientes convocados y tus compañeros muertos vivientes obtienen un bonificador inherente de +4 a Fuerza y Carisma durante 1 minuto por nivel de lanzador. A nivel 15, también obtienen puntos de golpe temporales iguales al triple de tu nivel de mago."
   },
 
   {
     "Key": "ProfaneInfusion.Name",
     "enGB": "Profane Infusion",
-    "zhCN": "亵渎灌注"
+    "zhCN": "亵渎灌注",
+    "deDE": "Profane Beimischung",
+    "frFR": "Infusion impie",
+    "ruRU": "Нечестивое насыщение",
+    "esES": "Infusión profana"
   },
 
   {
     "Key": "ProfaneInfusion.Description",
     "enGB": "When the cruoromancer uses this infusion, the infused necromancy spell gains a +2 bonus to its caster level. You can use this ability only once per turn, as a free action.",
-    "zhCN": "当融血师以此形式灌注血液之力时，被灌注的死灵法术施法者等级获得+2加值。此能力每回合只能使用一次，为自由动作。"
+    "zhCN": "当融血师以此形式灌注血液之力时，被灌注的死灵法术施法者等级获得+2加值。此能力每回合只能使用一次，为自由动作。",
+    "deDE": "Der Cruomant erhöht die Zauberstufe des durch diese Beimischung verstärkten Nekromantiezaubers um +2. Einmal pro Runde als freie Aktion einsetzbar.",
+    "frFR": "Le cruoromancien augmente de +2 le niveau de lanceur de sorts du sort de nécromancie imprégné. Cette aptitude s'utilise une fois par round, par une action libre.",
+    "ruRU": "Круоромант повышает уровень заклинателя насыщенного заклинания некромантии на +2. Доступно раз в раунд свободным действием.",
+    "esES": "El cruoromante obtiene un bonificador de +2 al nivel de lanzador del conjuro de nigromancia imbuido. Puede usar esta aptitud una vez por asalto como acción gratuita."
   },
 
   {
     "Key": "PerfectInfusion.Description",
     "enGB": "At 20th level, a cruoromancer can use his blood infusions without spending hit points. In addition, the bonuses granted by his Focused Infusion and Profane Infusion increase to +4.",
-    "zhCN": "达到20级后，融血师施展融血灌注时不再消耗生命值。此外，其聚能灌注与亵渎灌注所提供的加值提升至+4。"
+    "zhCN": "达到20级后，融血师施展融血灌注时不再消耗生命值。此外，其聚能灌注与亵渎灌注所提供的加值提升至+4。",
+    "deDE": "Ab Stufe 20 kosten Blutbeimischungen den Cruomanten keine Trefferpunkte mehr. Außerdem steigen die Boni von Konzentrierte Beimischung und Profane Beimischung auf +4.",
+    "frFR": "Au niveau 20, les infusions de sang du cruoromancien ne coûtent plus de points de vie. Les bonus d'Infusion focalisée et d'Infusion impie passent en outre à +4.",
+    "ruRU": "С 20-го уровня насыщение кровью больше не расходует ОЗ круороманта. Бонусы Фокусированного насыщения и Нечестивого насыщения возрастают до +4.",
+    "esES": "A nivel 20, las infusiones de sangre del cruoromante ya no cuestan puntos de golpe. Además, los bonificadores de Infusión enfocada e Infusión profana aumentan a +4."
   },
 
   {
     "Key": "TurnUndeadNecromancy.Description",
     "enGB": "As a standard action, you can channel positive energy, causing all undead within 30 feet to become panicked. Undead can attempt a Will saving throw to resist this effect, the DC of this save is equal to (10 + half your cleric level + your Charisma modifier). Undead that fail the save flee for 1 minute, and can attempt a new saving throw each round to end the effect. Additionally, deal (1d4 + half your wizard level + your Intelligence modifier) damage to all hostile undead creatures within the area. When channel energy is used in this way, it produces no other effect (such as healing or harming nearby creatures).",
-    "zhCN": "以一个标准动作，你可以引导正向能量，使30尺内的所有不死生物陷入惊恐状态并四处逃窜。不死生物可以进行意志豁免来抵抗该效果，豁免难度等级为10+1/2你的牧师等级+你的魅力调整值。豁免失败的不死生物将逃窜1分钟，并且每轮都可以进行一次新的豁免以提前结束该效果。此外，此次引导能量还会对区域内所有敌对的死灵生物造成1d4+1/2你的法师等级+你的智力调整值的伤害。若以此方式使用引导能量，它将不会产生任何治疗或其他效果。"
+    "zhCN": "以一个标准动作，你可以引导正向能量，使30尺内的所有不死生物陷入惊恐状态并四处逃窜。不死生物可以进行意志豁免来抵抗该效果，豁免难度等级为10+1/2你的牧师等级+你的魅力调整值。豁免失败的不死生物将逃窜1分钟，并且每轮都可以进行一次新的豁免以提前结束该效果。此外，此次引导能量还会对区域内所有敌对的死灵生物造成1d4+1/2你的法师等级+你的智力调整值的伤害。若以此方式使用引导能量，它将不会产生任何治疗或其他效果。",
+    "deDE": "Als Standard-Aktion kannst du positive Energie fokussieren und alle Untoten im Umkreis von 30 Fuß in Panik versetzen. Ein Willenswurf gegen SG 10 + die Hälfte deiner Klerikerstufe + deinen Charismamodifikator verhindert dies. Bei einem Fehlschlag fliehen sie 1 Minute lang und dürfen jede Runde erneut würfeln, um den Effekt zu beenden. Außerdem erleiden alle feindlichen Untoten im Bereich 1d4 + die Hälfte deiner Magierstufe + deinen Intelligenzmodifikator Schaden. Diese Anwendung erzeugt keine weiteren Effekte wie Heilung oder Schaden an anderen nahen Kreaturen.",
+    "frFR": "Par une action simple, vous canalisez l'énergie positive et paniquez tous les morts-vivants dans un rayon de 30 pieds. Un jet de Volonté, DD 10 + la moitié de votre niveau de prêtre + votre modificateur de Charisme, annule cet effet. En cas d'échec, ils fuient pendant 1 minute et peuvent retenter le jet chaque round pour mettre fin à l'effet. Vous infligez aussi 1d4 + la moitié de votre niveau de magicien + votre modificateur d'Intelligence dégâts à tous les morts-vivants ennemis dans la zone. Cette canalisation ne produit aucun autre effet, comme soigner ou blesser les créatures proches.",
+    "ruRU": "Основным действием вы проводите положительную энергию, вызывая панику у всей нежити в радиусе 30 футов. Спасбросок Воли со СЛ 10 + половина уровня жреца + модификатор Харизмы отменяет эффект. При провале нежить бежит 1 минуту и каждый раунд может повторить спасбросок, чтобы прекратить эффект. Кроме того, вся враждебная нежить в области получает 1d4 + половина уровня волшебника + модификатор Интеллекта урона. Такое проведение энергии не создаёт других эффектов, включая лечение или урон ближайшим существам.",
+    "esES": "Como acción estándar, canalizas energía positiva y haces que todos los muertos vivientes en un radio de 30 pies entren en pánico. Una salvación de Voluntad con CD 10 + la mitad de tu nivel de clérigo + tu modificador de Carisma evita el efecto. Si fallan, huyen durante 1 minuto y pueden repetir la salvación cada asalto para terminar el efecto. Además, todos los muertos vivientes hostiles en la zona sufren 1d4 + la mitad de tu nivel de mago + tu modificador de Inteligencia de daño. Esta canalización no produce otros efectos, como curar o dañar a criaturas cercanas."
   },
 
   {
     "Key": "UndeadTouch.Name",
     "enGB": "Undead Touch",
-    "zhCN": "不死之触"
+    "zhCN": "不死之触",
+    "deDE": "Berührung der Untoten",
+    "frFR": "Contact mort-vivant",
+    "ruRU": "Касание нежити",
+    "esES": "Toque de muerto viviente"
   },
 
   {
     "Key": "UndeadTouch.Description",
     "enGB": "As a standard action, you can touch an undead creature and infuse it with negative energy. This grants the target a +1 profane bonus on attack rolls and saving throws, plus 1 temporary hit point per caster level. The bonus on attacks and saves increases by 1 for every 5 wizard levels you possess. These bonuses last for a number of rounds equal to half your wizard level (minimum 1 round). You can use this ability a number of times per day equal to 3 + your Intelligence modifier.",
-    "zhCN": "以一个标准动作，你可以碰触一个不死生物并替它注入负能量。使其攻击跟豁免检定的+1亵渎加值，以及每施法者等级1点的临时生命值。在攻击和豁免的加值会在你每5个法师等级增加1点。这些加值持续法师等级一半的轮数（至少1轮）。你每天可以使用这个能力的次数为3+智力调整值。"
+    "zhCN": "以一个标准动作，你可以碰触一个不死生物并替它注入负能量。使其攻击跟豁免检定的+1亵渎加值，以及每施法者等级1点的临时生命值。在攻击和豁免的加值会在你每5个法师等级增加1点。这些加值持续法师等级一半的轮数（至少1轮）。你每天可以使用这个能力的次数为3+智力调整值。",
+    "deDE": "Als Standard-Aktion berührst du einen Untoten und erfüllst ihn mit negativer Energie. Er erhält einen weltlichen Bonus von +1 auf Angriffs- und Rettungswürfe sowie 1 temporären Trefferpunkt pro Zauberstufe. Der Bonus steigt pro 5 Magierstufen um +1. Die Effekte halten halb so viele Runden wie deine Magierstufe an (mindestens 1). Täglich 3 + dein Intelligenzmodifikator Mal einsetzbar.",
+    "frFR": "Par une action simple, vous touchez un mort-vivant et l'imprégnez d'énergie négative. Il gagne un bonus de malveillance de +1 aux jets d'attaque et de sauvegarde, ainsi que 1 point de vie temporaire par niveau de lanceur de sorts. Le bonus augmente de +1 tous les 5 niveaux de magicien. Ces effets durent la moitié de votre niveau de magicien rounds (minimum 1). Utilisable 3 + votre modificateur d'Intelligence fois par jour.",
+    "ruRU": "Основным действием вы касаетесь нежити, наполняя её отрицательной энергией. Цель получает нечистый бонус +1 к броскам атаки и спасброскам и 1 временное ОЗ за уровень заклинателя. Бонус возрастает на +1 за каждые 5 уровней волшебника. Эффекты длятся число раундов, равное половине уровня волшебника (минимум 1). Доступно 3 + модификатор Интеллекта раз в день.",
+    "esES": "Como acción estándar, tocas a un muerto viviente y lo imbuyes de energía negativa. Obtiene un bonificador profano de +1 a las tiradas de ataque y salvación, y 1 punto de golpe temporal por nivel de lanzador. El bonificador aumenta en +1 cada 5 niveles de mago. Los efectos duran tantos asaltos como la mitad de tu nivel de mago (mínimo 1). Puedes usarla 3 + tu modificador de Inteligencia veces al día."
   },
 
   {
     "Key": "DeadSight.Name",
     "enGB": "Dead Sight",
-    "zhCN": "亡者视野"
+    "zhCN": "亡者视野",
+    "deDE": "Sicht der Toten",
+    "frFR": "Vision des morts",
+    "ruRU": "Зрение мёртвых",
+    "esES": "Visión de los muertos"
   },
 
   {
     "Key": "DeadSight.Description",
     "enGB": "You emit a 30-foot-radius aura. You and all undead within the aura gain a +1 profane bonus on ability checks, attack rolls, saving throws, and damage rolls. Hostile living creatures within the aura take a –1 penalty on ability checks, attack rolls, saving throws, and damage rolls. Additionally, you gain blindsight.",
-    "zhCN": "你发出一道30英尺范围的灵光。你自身与灵光范围内的所有不死生物在属性检定、攻击检定、豁免检定和伤害检定上获得+1亵渎加值；范围内的敌对活物在属性检定、攻击检定、豁免检定和伤害检定上受到-1减值。此外，你自身获得盲视。"
+    "zhCN": "你发出一道30英尺范围的灵光。你自身与灵光范围内的所有不死生物在属性检定、攻击检定、豁免检定和伤害检定上获得+1亵渎加值；范围内的敌对活物在属性检定、攻击检定、豁免检定和伤害检定上受到-1减值。此外，你自身获得盲视。",
+    "deDE": "Du strahlst eine Aura mit 30 Fuß Radius aus. Du und alle Untoten darin erhalten einen weltlichen Bonus von +1 auf Attributs-, Angriffs-, Rettungs- und Schadenswürfe. Feindliche lebende Kreaturen darin erleiden –1 auf dieselben Würfe. Außerdem erhältst du Blindsicht.",
+    "frFR": "Vous émettez une aura de 30 pieds de rayon. Vous et tous les morts-vivants dans l'aura gagnez un bonus de malveillance de +1 aux tests de caractéristique et aux jets d'attaque, de sauvegarde et de dégâts. Les créatures vivantes ennemies dans l'aura subissent un malus de –1 à ces mêmes jets et tests. Vous gagnez aussi la vision aveugle.",
+    "ruRU": "Вы испускаете ауру радиусом 30 футов. Вы и вся нежить в ней получаете нечистый бонус +1 к проверкам характеристик, броскам атаки, спасброскам и броскам урона. Враждебные живые существа в ауре получают штраф –1 к тем же броскам и проверкам. Вы также получаете слеповидение.",
+    "esES": "Emites un aura de 30 pies de radio. Tú y todos los muertos vivientes en ella obtenéis un bonificador profano de +1 a las pruebas de característica y las tiradas de ataque, salvación y daño. Las criaturas vivas hostiles en ella sufren un penalizador de –1 a esas mismas tiradas y pruebas. Además, obtienes vista ciega."
   },
 
   {
     "Key": "BloodInfusion.Description",
     "enGB": "When a cruoromancer casts a Spell of the necromancy school, he can opt to infuse that spell with his undead-tainted blood as a swift action. As he increases in level, the power and effects of such infusions become more potent. Each time a cruoromancer uses blood infusion, he drains a portion of his own blood either by cutting himself with a blade or by opening a scab from a previous wound. When he does this, he takes an amount of damage equal to 1d4 + half his wizard level. <br> At 1st level, they can infuse their necromancy spells in either of the following ways:<br>Focused Infusion: When the cruoromancer uses this infusion, they adds +1 to the DC of the infused necromancy spell. This ability can be used only once per round. At 5th level, the bonus increases to +2. At 8th level, this infusion becomes a free action.<br>Sickening Infusion: When the cruoromancer channels blood power in this way, a creature that takes damage from the infused necromancy spell becomes sickened for 1 + half your wizard level rounds. You can use this ability only once per turn. At 8th level, this infusion becomes a free action.",
-    "zhCN": "融血师在施放死灵学派的<b><color=#703565>法术</color></b>时，可以选择花费<b><color=#703565>迅捷动作</color></b>，将自己被死灵能量污染的血液之力灌注入该法术当中。随着等级提升，这些灌注效果和威力都会变得更强。每次施展融血灌注时，融血师要用刀割伤自己，或者揭开旧伤口的结痂，从而流失自身的一部分血液。这么做会让他受到<b><color=#703565>1d4</color></b>+法师等级一半的<b><color=#703565>伤害</color></b>。<br>1级起，他可以用以下任一形式灌注死灵法术：<br>聚能灌注：融血师以此形式灌注血液之力时，被灌注的死灵法术难度等级+1。此能力每回合只能使用一次。5级时，加值提升至+2；8级时，此灌注改为一个自由动作。<br>恶心灌注：融血师以此形式灌注血液之力时，受到被灌注的死灵法术伤害的生物陷入恶心状态，持续1 + 你的法师等级的一半的轮数。此能力每回合只能使用一次。8级时，此灌注改为一个自由动作。"
+    "zhCN": "融血师在施放死灵学派的<b><color=#703565>法术</color></b>时，可以选择花费<b><color=#703565>迅捷动作</color></b>，将自己被死灵能量污染的血液之力灌注入该法术当中。随着等级提升，这些灌注效果和威力都会变得更强。每次施展融血灌注时，融血师要用刀割伤自己，或者揭开旧伤口的结痂，从而流失自身的一部分血液。这么做会让他受到<b><color=#703565>1d4</color></b>+法师等级一半的<b><color=#703565>伤害</color></b>。<br>1级起，他可以用以下任一形式灌注死灵法术：<br>聚能灌注：融血师以此形式灌注血液之力时，被灌注的死灵法术难度等级+1。此能力每回合只能使用一次。5级时，加值提升至+2；8级时，此灌注改为一个自由动作。<br>恶心灌注：融血师以此形式灌注血液之力时，受到被灌注的死灵法术伤害的生物陷入恶心状态，持续1 + 你的法师等级的一半的轮数。此能力每回合只能使用一次。8级时，此灌注改为一个自由动作。",
+    "deDE": "Wenn ein Cruomant einen Nekromantiezauber wirkt, kann er als schnelle Aktion sein von untoter Energie verdorbenes Blut beimischen. Mit steigender Stufe werden diese Beimischungen mächtiger. Dazu schneidet er sich oder öffnet eine alte Wunde und erleidet 1d4 + die Hälfte seiner Magierstufe Schaden.<br>Ab Stufe 1 stehen folgende Formen zur Wahl:<br>Konzentrierte Beimischung: Der Cruomant erhöht den SG des durch diese Beimischung verstärkten Nekromantiezaubers um +1. Nur einmal pro Runde einsetzbar. Auf Stufe 5 steigt der Bonus auf +2. Ab Stufe 8 ist die Beimischung eine freie Aktion.<br>Krankmachende Beimischung: Eine Kreatur, die durch den mit dieser Beimischung verstärkten Nekromantiezauber Schaden erleidet, kränkelt für 1 + die Hälfte deiner Magierstufe Runden. Nur einmal pro Runde einsetzbar. Ab Stufe 8 ist die Beimischung eine freie Aktion.",
+    "frFR": "Lorsqu'il lance un sort de nécromancie, le cruoromancien peut, par une action rapide, l'imprégner de son sang souillé d'énergie morte-vivante. La puissance des infusions augmente avec son niveau. Il se coupe ou rouvre une ancienne plaie et subit 1d4 + la moitié de son niveau de magicien dégâts.<br>Dès le niveau 1, il peut choisir les formes suivantes :<br>Infusion focalisée : Le cruoromancien augmente de +1 le DD du sort de nécromancie imprégné. Cette aptitude ne peut être utilisée qu'une fois par round. Au niveau 5, le bonus passe à +2. Au niveau 8, cette infusion devient une action libre.<br>Infusion de fièvre : Une créature blessée par le sort de nécromancie imprégné devient fiévreuse pendant 1 + la moitié de votre niveau de magicien rounds. Cette aptitude ne peut être utilisée qu'une fois par round. Au niveau 8, cette infusion devient une action libre.",
+    "ruRU": "Произнося заклинание некромантии, круоромант может быстрым действием насытить его своей осквернённой нежитью кровью. С ростом уровня насыщения становятся сильнее. Для этого он режет себя или вскрывает старую рану, получая 1d4 + половина уровня волшебника урона.<br>С 1-го уровня доступны следующие варианты:<br>Фокусированное насыщение: Круоромант повышает СЛ насыщенного заклинания некромантии на +1. Способность доступна лишь раз в раунд. На 5-м уровне бонус возрастает до +2. С 8-го уровня насыщение становится свободным действием.<br>Дезориентирующее насыщение: Существо, получившее урон от насыщенного заклинания некромантии, становится дезориентированным на число раундов, равное 1 + половина вашего уровня волшебника. Способность доступна лишь раз в раунд. С 8-го уровня насыщение становится свободным действием.",
+    "esES": "Al lanzar un conjuro de nigromancia, el cruoromante puede imbuirlo de su sangre contaminada por la muerte como acción rápida. Las infusiones se vuelven más poderosas al subir de nivel. Para usarlas, se corta o reabre una herida y sufre 1d4 + la mitad de su nivel de mago de daño.<br>A partir del nivel 1 puede elegir entre estas formas:<br>Infusión enfocada: El cruoromante aumenta en +1 la CD del conjuro de nigromancia imbuido. Solo puede usar esta aptitud una vez por asalto. A nivel 5, el bonificador aumenta a +2. A nivel 8, esta infusión pasa a ser una acción gratuita.<br>Infusión nauseabunda: Una criatura que sufra daño del conjuro de nigromancia imbuido queda indispuesta durante 1 + la mitad de tu nivel de mago asaltos. Solo puedes usar esta aptitud una vez por asalto. A nivel 8, esta infusión pasa a ser una acción gratuita."
   },
 
   {
     "Key": "SpecialisationSchoolNecromancy.Description",
     "enGB": "The dread and feared necromancer commands undead and uses the foul power of unlife against his enemies.<br>Power over undead: You receive Turn Undead as a bonus feat. You can channel energy a number of times per day equal to 3 + your Intelligence modifier, but only to use this feat. The DC to save against these feats is equal to 10 + half your Wizard level + your Charisma modifier. At 20th level, undead cannot add their channel resistance to the save against this ability.<br>Undead Touch: As a standard action, you can touch an undead creature and infuse it with negative energy. This grants the target a +1 profane bonus on attack rolls and saving throws, plus 1 temporary hit point per caster level. The bonus on attacks and saves increases by 1 for every 5 wizard levels you possess. These bonuses last for a number of rounds equal to half your wizard level (minimum 1 round). You can use this ability a number of times per day equal to 3 + your Intelligence modifier.<br>Dead Sight: You emit a 30-foot-radius aura. You and all undead allies within the aura gain a +1 profane bonus on ability checks, attack rolls, saving throws, and damage rolls. Hostile living creatures within the aura take a –1 penalty on ability checks, attack rolls, saving throws, and damage rolls. Additionally, you gain blindsight.",
-    "zhCN": "狰狞骇人的死灵师可命令不死生物，并使用禁忌的不死生命力量来对抗敌人。<br>驾驭亡者：你获得驱散死灵作为额外<b><color=#703565>专长</color></b>。你每天可引导能量的次数为<b><color=#703565>智力</color></b>调整值+3，但这些次数仅可被用于该专长。该专长的<b><color=#703565>豁免检定</color></b><b><color=#703565>难度等级</color></b>为10+1/2法师等级+<b><color=#703565>魅力</color></b>调整值。达到20级后，不死生物将无法在针对此能力进行豁免检定时附加它们的引导抗性加值。<br>不死之触：以一个标准动作，你可以碰触一个不死生物并替它注入负能量。使其攻击跟豁免检定的+1亵渎加值，以及每施法者等级1点的临时生命值。在攻击和豁免的加值会在你每5个法师等级增加1点。这些加值持续法师等级一半的轮数（至少1轮）。你每天可以使用这个能力的次数为3+智力调整值。<br>亡者视野：你发出一道30英尺范围的灵光。你自身与灵光范围内的所有不死生物盟友在属性检定、攻击检定、豁免检定和伤害检定上获得+1亵渎加值；范围内的敌对活物在属性检定、攻击检定、豁免检定和伤害检定上受到-1减值。此外，你自身获得盲视。"
+    "zhCN": "狰狞骇人的死灵师可命令不死生物，并使用禁忌的不死生命力量来对抗敌人。<br>驾驭亡者：你获得驱散死灵作为额外<b><color=#703565>专长</color></b>。你每天可引导能量的次数为<b><color=#703565>智力</color></b>调整值+3，但这些次数仅可被用于该专长。该专长的<b><color=#703565>豁免检定</color></b><b><color=#703565>难度等级</color></b>为10+1/2法师等级+<b><color=#703565>魅力</color></b>调整值。达到20级后，不死生物将无法在针对此能力进行豁免检定时附加它们的引导抗性加值。<br>不死之触：以一个标准动作，你可以碰触一个不死生物并替它注入负能量。使其攻击跟豁免检定的+1亵渎加值，以及每施法者等级1点的临时生命值。在攻击和豁免的加值会在你每5个法师等级增加1点。这些加值持续法师等级一半的轮数（至少1轮）。你每天可以使用这个能力的次数为3+智力调整值。<br>亡者视野：你发出一道30英尺范围的灵光。你自身与灵光范围内的所有不死生物盟友在属性检定、攻击检定、豁免检定和伤害检定上获得+1亵渎加值；范围内的敌对活物在属性检定、攻击检定、豁免检定和伤害检定上受到-1减值。此外，你自身获得盲视。",
+    "deDE": "Der gefürchtete Nekromant befehligt Untote und setzt die finstere Macht des Unlebens gegen seine Feinde ein.<br>Macht über Untote: Du erhältst Untote vertreiben als Bonustalent. Du kannst täglich 3 + dein Intelligenzmodifikator Mal Energie fokussieren, jedoch nur für dieses Talent. Der Rettungswurf-SG beträgt 10 + die Hälfte deiner Magierstufe + deinen Charismamodifikator. Ab Stufe 20 können Untote ihren Widerstand gegen Fokussieren nicht auf diesen Rettungswurf anrechnen.<br>Berührung der Untoten: Als Standard-Aktion berührst du einen Untoten und erfüllst ihn mit negativer Energie. Er erhält einen weltlichen Bonus von +1 auf Angriffs- und Rettungswürfe sowie 1 temporären Trefferpunkt pro Zauberstufe. Der Bonus steigt pro 5 Magierstufen um +1. Die Effekte halten halb so viele Runden wie deine Magierstufe an (mindestens 1). Täglich 3 + dein Intelligenzmodifikator Mal einsetzbar.<br>Sicht der Toten: Du und alle untoten Verbündeten in deiner Aura mit 30 Fuß Radius erhalten einen weltlichen Bonus von +1 auf Attributs-, Angriffs-, Rettungs- und Schadenswürfe. Feindliche lebende Kreaturen darin erleiden –1 auf dieselben Würfe. Außerdem erhältst du Blindsicht.",
+    "frFR": "Le redoutable nécromancien commande aux morts-vivants et emploie les pouvoirs impurs de la non-vie contre ses ennemis.<br>Pouvoir sur les morts-vivants : vous recevez le don supplémentaire Renvoi des morts-vivants. Vous pouvez canaliser l'énergie 3 + votre modificateur d'Intelligence fois par jour, uniquement pour ce don. Le DD de sauvegarde est de 10 + la moitié de votre niveau de magicien + votre modificateur de Charisme. Au niveau 20, les morts-vivants n'ajoutent plus leur résistance à la canalisation à ce jet.<br>Contact mort-vivant : Par une action simple, vous touchez un mort-vivant et l'imprégnez d'énergie négative. Il gagne un bonus de malveillance de +1 aux jets d'attaque et de sauvegarde, ainsi que 1 point de vie temporaire par niveau de lanceur de sorts. Le bonus augmente de +1 tous les 5 niveaux de magicien. Ces effets durent la moitié de votre niveau de magicien rounds (minimum 1). Utilisable 3 + votre modificateur d'Intelligence fois par jour.<br>Vision des morts : vous et vos alliés morts-vivants dans votre aura de 30 pieds gagnez un bonus de malveillance de +1 aux tests de caractéristique et aux jets d'attaque, de sauvegarde et de dégâts. Les créatures vivantes ennemies dans l'aura subissent –1 à ces jets et tests. Vous gagnez aussi la vision aveugle.",
+    "ruRU": "Ужасающий некромант повелевает нежитью и обращает мерзкую силу нежизни против врагов.<br>Власть над нежитью: вы получаете дополнительную черту Изгнание нежити. Вы можете проводить энергию 3 + модификатор Интеллекта раз в день, но только для этой черты. СЛ спасброска равна 10 + половина уровня волшебника + модификатор Харизмы. С 20-го уровня нежить не добавляет сопротивление проведению энергии к этому спасброску.<br>Касание нежити: Основным действием вы касаетесь нежити, наполняя её отрицательной энергией. Цель получает нечистый бонус +1 к броскам атаки и спасброскам и 1 временное ОЗ за уровень заклинателя. Бонус возрастает на +1 за каждые 5 уровней волшебника. Эффекты длятся число раундов, равное половине уровня волшебника (минимум 1). Доступно 3 + модификатор Интеллекта раз в день.<br>Зрение мёртвых: вы и союзная нежить в вашей ауре радиусом 30 футов получаете нечистый бонус +1 к проверкам характеристик, броскам атаки, спасброскам и броскам урона. Враждебные живые существа в ауре получают –1 к тем же броскам и проверкам. Вы также получаете слеповидение.",
+    "esES": "El temido nigromante domina a los muertos vivientes y usa el poder impuro de la no vida contra sus enemigos.<br>Poder sobre los muertos vivientes: obtienes la dote adicional Expulsar muertos vivientes. Puedes canalizar energía 3 + tu modificador de Inteligencia veces al día, solo para usar esta dote. La CD de salvación es 10 + la mitad de tu nivel de mago + tu modificador de Carisma. A nivel 20, los muertos vivientes no añaden su resistencia a la canalización a esta salvación.<br>Toque de muerto viviente: Como acción estándar, tocas a un muerto viviente y lo imbuyes de energía negativa. Obtiene un bonificador profano de +1 a las tiradas de ataque y salvación, y 1 punto de golpe temporal por nivel de lanzador. El bonificador aumenta en +1 cada 5 niveles de mago. Los efectos duran tantos asaltos como la mitad de tu nivel de mago (mínimo 1). Puedes usarla 3 + tu modificador de Inteligencia veces al día.<br>Visión de los muertos: tú y tus aliados muertos vivientes en tu aura de 30 pies obtenéis un bonificador profano de +1 a las pruebas de característica y las tiradas de ataque, salvación y daño. Las criaturas vivas hostiles en ella sufren –1 a esas mismas tiradas y pruebas. Además, obtienes vista ciega."
   },
 
   {
     "Key": "BloodLineUndead.Name",
     "enGB": "Blood Line Undead",
-    "zhCN": "亡灵血承"
+    "zhCN": "亡灵血承",
+    "deDE": "Blutlinie des Grabes",
+    "frFR": "Lignage Mort-vivant",
+    "ruRU": "Загробное наследие",
+    "esES": "Linaje de muerto viviente"
   },
 
   {
     "Key": "BloodLineUndead.Description",
     "enGB": "Your family atmosphere is filled with a foul smell of a cemetery. Perhaps your ancestors were powerful necromancers or vampires, or maybe you were a deceased person who was suddenly brought back to life. Anyway, the power of death flows through you, influencing every action you make. You can summon the evil power of the dead. Unfortunately, each time you use this power, you get closer to joining them.<br> Necromancer Bloodline Extra Talent: Combat Casting, Hardened Stone, Iron Will, Skill Focus (Knowledge: Religion), Spell Focus, High Spell Focus, Robust, Tenacious.",
-    "zhCN": "你的家族弥漫着一股墓地的腐败气息。或许你的先祖曾是一名实力强劲的巫妖或吸血鬼，也可能是你自出生便是死者，只是突然被复活了而已。无论如何，死亡之力在你的身上流淌，影响着你的每个动作。你可以呼唤死者的邪恶力量。不幸的是，你每使用一次这种力量，就会离加入它们更近一步。<br>亡灵血承额外专长：战斗施法、顽石强韧、钢铁意志、技能专攻（学识：宗教）、法术专攻、高等法术专攻、健壮、顽强。"
+    "zhCN": "你的家族弥漫着一股墓地的腐败气息。或许你的先祖曾是一名实力强劲的巫妖或吸血鬼，也可能是你自出生便是死者，只是突然被复活了而已。无论如何，死亡之力在你的身上流淌，影响着你的每个动作。你可以呼唤死者的邪恶力量。不幸的是，你每使用一次这种力量，就会离加入它们更近一步。<br>亡灵血承额外专长：战斗施法、顽石强韧、钢铁意志、技能专攻（学识：宗教）、法术专攻、高等法术专攻、健壮、顽强。",
+    "deDE": "Deine Familie umgibt der Verwesungsgeruch eines Friedhofs. Vielleicht waren deine Ahnen mächtige Liche oder Vampire, oder du warst von Geburt an tot und wurdest unvermittelt wiederbelebt. Die Macht des Todes fließt durch dich und prägt jede Bewegung. Du kannst die finstere Macht der Toten anrufen, doch jeder Einsatz bringt dich ihnen näher.<br>Bonustalente der Blutlinie des Grabes: Im Kampf zaubern, Unverwüstlich, Eiserner Wille, Fertigkeitsfokus (Wissen: Religion), Zauberfokus, Mächtiger Zauberfokus, Abhärtung, Ausdauer.",
+    "frFR": "Votre famille exhale la pourriture d'un cimetière. Vos ancêtres étaient peut-être de puissants liches ou vampires, ou vous étiez mort dès la naissance avant d'être soudain ramené à la vie. La puissance de la mort coule en vous et influence tous vos gestes. Vous pouvez invoquer la puissance maléfique des morts, mais chaque usage vous rapproche d'eux.<br>Dons supplémentaires du Lignage Mort-vivant : Magie de guerre, Dur à cuire, Volonté de fer, Talent (Connaissances : religion), École renforcée, École supérieure, Robustesse, Endurance.",
+    "ruRU": "Ваш род окружает могильный смрад. Возможно, ваши предки были могущественными личами или вампирами, либо вы были мертвы с рождения, но внезапно воскресли. Сила смерти течёт в вас и влияет на каждое движение. Вы можете призывать злую силу мёртвых, но каждое её использование приближает вас к их рядам.<br>Дополнительные черты Загробного наследия: Боевая магия, Крепкий орешек, Железная воля, Умелец (Знание: религия), Любимая школа магии, Любимая школа магии+, Живучесть, Стойкость.",
+    "esES": "Tu familia desprende el hedor de un cementerio. Quizá tus antepasados fueran poderosos liches o vampiros, o naciste muerto y volviste a la vida de repente. El poder de la muerte fluye por ti e influye en cada movimiento. Puedes invocar el poder maligno de los muertos, pero cada uso te acerca más a ellos.<br>Dotes adicionales del Linaje de muerto viviente: Conjurar en combate, Duro de pelar, Voluntad de hierro, Soltura con una habilidad (Saber: religión), Soltura con una escuela de magia, Soltura mayor con una escuela de magia, Dureza, Resistencia."
   },
 
   {
     "Key": "BloodLineUndeadArcana.Name",
     "enGB": "Blood Line Undead Arcana",
-    "zhCN": "亡灵血承奥法"
+    "zhCN": "亡灵血承奥法",
+    "deDE": "Geheimnis der Blutlinie des Grabes",
+    "frFR": "Arcanes du Lignage Mort-vivant",
+    "ruRU": "Тайное знание Загробного наследия",
+    "esES": "Arcana del Linaje de muerto viviente"
   },
 
   {
     "Key": "BloodlineUndeadClassSkill.Description",
     "enGB": "The additional special skills bestowed by the Bloodline Undead",
-    "zhCN": "亡灵血承赋予的额外本职技能"
+    "zhCN": "亡灵血承赋予的额外本职技能",
+    "deDE": "Zusätzliche Klassenfertigkeit der Blutlinie des Grabes.",
+    "frFR": "Compétence de classe supplémentaire conférée par le Lignage Mort-vivant.",
+    "ruRU": "Дополнительный классовый навык Загробного наследия.",
+    "esES": "Habilidad de clase adicional del Linaje de muerto viviente."
   },
 
   {
     "Key": "BloodlineUndeadSpellLevel1.Name",
     "enGB": "Ray Of Enfeeblement",
-    "zhCN": "衰弱射线"
+    "zhCN": "衰弱射线",
+    "deDE": "Schwächestrahl",
+    "frFR": "Rayon affaiblissant",
+    "ruRU": "Ослабляющий луч",
+    "esES": "Rayo de debilitamiento"
   },
 
   {
     "Key": "BloodlineUndeadSpellLevel1.Description",
     "enGB": "When reaching level 3, and every 2 levels thereafter, the Warlock can learn an additional spell from Bloodline. This spell is not counted towards the number of spells granted by the new level.<br> Weakness Ray: A dazzling ray shoots out from your hand. You need to successfully make a ranged touch attack check to hit the target. The target will suffer 1d6 + 1 point of strength penalty per 2 levels of the caster (up to a maximum of 1d6 + 5 points). The target's strength will not be reduced below 1 point. A successful Fortitude saving throw halves the penalty. Multiple penalties do not stack; only the highest penalty is taken.",
-    "zhCN": "达到3级时，以及之后每升2级，术士都可以额外学习一个来自于血承的法术。该法术不计入新等级赋予的法术数量。<br>衰弱射线：一道耀眼的射线从你的手中射出。你需要成功进行远程接触攻击检定，才能够击中目标。目标会受到1d6+每两个施法者等级1点力量减值（最高1d6+5点）。目标的力量不会被降到1点以下。强韧豁免成功可使减值减半。多个减值不会叠加，只取其中最高的减值。"
+    "zhCN": "达到3级时，以及之后每升2级，术士都可以额外学习一个来自于血承的法术。该法术不计入新等级赋予的法术数量。<br>衰弱射线：一道耀眼的射线从你的手中射出。你需要成功进行远程接触攻击检定，才能够击中目标。目标会受到1d6+每两个施法者等级1点力量减值（最高1d6+5点）。目标的力量不会被降到1点以下。强韧豁免成功可使减值减半。多个减值不会叠加，只取其中最高的减值。",
+    "deDE": "Ab Stufe 3 und danach alle 2 Stufen lernt der Hexenmeister einen zusätzlichen Blutlinienzauber, der nicht auf die durch Stufenaufstieg erlernten Zauber angerechnet wird.<br>Schwächestrahl: Ein leuchtender Strahl schießt aus deiner Hand. Ein erfolgreicher Berührungsangriff im Fernkampf lässt das Ziel einen Stärkemalus von 1d6 + 1 pro 2 Zauberstufen erleiden (maximal 1d6 + 5). Die Stärke kann dadurch nicht unter 1 sinken. Ein erfolgreicher Zähigkeitswurf halbiert den Malus. Mehrere Mali sind nicht kumulativ; nur der höchste gilt.",
+    "frFR": "Au niveau 3 puis tous les 2 niveaux, l'ensorceleur apprend un sort supplémentaire de son lignage, sans le décompter des sorts accordés par le nouveau niveau.<br>Rayon affaiblissant : un rayon éblouissant jaillit de votre main. Une attaque de contact à distance réussie inflige un malus de Force de 1d6 + 1 par tranche de 2 niveaux de lanceur de sorts (maximum 1d6 + 5), sans réduire la Force sous 1. Un jet de Vigueur réussi réduit le malus de moitié. Les malus ne se cumulent pas ; seul le plus élevé s'applique.",
+    "ruRU": "На 3-м уровне и каждые 2 уровня далее чародей изучает дополнительное заклинание наследия, не учитываемое в числе заклинаний нового уровня.<br>Ослабляющий луч: из руки вырывается яркий луч. Успешная дальняя атака касанием накладывает штраф к Силе 1d6 + 1 за каждые 2 уровня заклинателя (максимум 1d6 + 5), но не снижает Силу ниже 1. Успешный спасбросок Стойкости уменьшает штраф вдвое. Штрафы не складываются: действует наибольший.",
+    "esES": "A nivel 3 y cada 2 niveles posteriores, el hechicero aprende un conjuro adicional del linaje que no cuenta entre los conjuros otorgados por el nuevo nivel.<br>Rayo de debilitamiento: un rayo deslumbrante sale de tu mano. Un ataque de toque a distancia acertado impone un penalizador a Fuerza de 1d6 + 1 por cada 2 niveles de lanzador (máximo 1d6 + 5), sin reducirla por debajo de 1. Una salvación de Fortaleza exitosa reduce el penalizador a la mitad. Los penalizadores no se acumulan; solo se aplica el mayor."
   },
 
   {
     "Key": "ImmunityPrecisionDamage.Name",
     "enGB": "Immunity Precision Damage",
-    "zhCN": "无漏之躯"
+    "zhCN": "无漏之躯",
+    "deDE": "Immunität gegen Präzisionsschaden",
+    "frFR": "Immunité aux dégâts de précision",
+    "ruRU": "Иммунитет к точному урону",
+    "esES": "Inmunidad al daño de precisión"
   },
 
   {
     "Key": "ImmunityPrecisionDamage.Description",
     "enGB": "Your body has transcended the limitations of the physical world. There are no conventional vulnerabilities. You are immune to precise damage, such as sneak attacks.",
-    "zhCN": "你的身躯已经超脱了肉体凡胎的限制，不存在常规意义上的要害，你可以免疫精准伤害，例如偷袭。"
+    "zhCN": "你的身躯已经超脱了肉体凡胎的限制，不存在常规意义上的要害，你可以免疫精准伤害，例如偷袭。",
+    "deDE": "Dein Körper hat die Grenzen des Fleisches überwunden und besitzt keine gewöhnlichen Schwachstellen mehr. Du bist immun gegen Präzisionsschaden, etwa durch Hinterhältige Angriffe.",
+    "frFR": "Votre corps a transcendé les limites de la chair et n'a plus de points vitaux ordinaires. Vous êtes immunisé contre les dégâts de précision, comme les attaques sournoises.",
+    "ruRU": "Ваше тело преодолело ограничения плоти и лишилось обычных уязвимых мест. Вы невосприимчивы к точному урону, например от атак исподтишка.",
+    "esES": "Tu cuerpo ha trascendido las limitaciones de la carne y carece de puntos vitales convencionales. Eres inmune al daño de precisión, como el de los ataques furtivos."
   },
 
   {
     "Key": "DhampirResonance.Name",
     "enGB": "Dhampir Resonance",
-    "zhCN": "吸血鬼共鸣"
+    "zhCN": "吸血鬼共鸣",
+    "deDE": "Dhampir-Resonanz",
+    "frFR": "Résonance dhampir",
+    "ruRU": "Резонанс дампира",
+    "esES": "Resonancia de dhampiro"
   },
 
   {
     "Key": "DhampirResonance.Description",
     "enGB": "Your veins are infused with the power of the undead. When using spells from the Necromancy School, the caster's level increases by a fourth of the character's level.",
-    "zhCN": "吸血裔能与死亡的力量共鸣，使用死灵学派法术时施法者等级提升1/4角色等级。"
+    "zhCN": "吸血裔能与死亡的力量共鸣，使用死灵学派法术时施法者等级提升1/4角色等级。",
+    "deDE": "Dein Dhampirblut schwingt mit der Macht des Todes mit. Die Zauberstufe deiner Nekromantiezauber steigt um ein Viertel deiner Charakterstufe.",
+    "frFR": "Votre sang de dhampir résonne avec la mort. Le niveau de lanceur de sorts de vos sorts de nécromancie augmente d'un quart de votre niveau de personnage.",
+    "ruRU": "Кровь дампира резонирует с силой смерти. Уровень заклинателя ваших заклинаний некромантии повышается на четверть уровня персонажа.",
+    "esES": "Tu sangre de dhampiro resuena con la muerte. Tu nivel de lanzador para conjuros de nigromancia aumenta en un cuarto de tu nivel de personaje."
   },
 
   {
     "Key": "DhampirResonanceAbility.Description",
     "enGB": "Resonate with the power of death through your blood, and your caster level for the Necromancy school will increase based on your character level.",
-    "zhCN": "通过你的血脉与死亡的力量共鸣，根据角色等级提升用于死灵学派的施法者等级"
+    "zhCN": "通过你的血脉与死亡的力量共鸣，根据角色等级提升用于死灵学派的施法者等级",
+    "deDE": "Lass dein Blut mit dem Tod in Resonanz treten, um deine Zauberstufe für Nekromantie abhängig von deiner Charakterstufe zu erhöhen.",
+    "frFR": "Faites résonner votre sang avec la mort pour augmenter votre niveau de lanceur de sorts en nécromancie selon votre niveau de personnage.",
+    "ruRU": "Пробудите резонанс крови с силой смерти, повышая уровень заклинателя некромантии в зависимости от уровня персонажа.",
+    "esES": "Haz resonar tu sangre con la muerte para aumentar tu nivel de lanzador de nigromancia según tu nivel de personaje."
   },
 
   {
     "Key": "GebianNecromancer.Description",
     "enGB": "Gebian Necromancer adds Lore (Religion) to their list of class skills. Undead creatures summoned by the Gebian Necromancer and their necromancy animal companion gain a +2 bonus on attack rolls, AC, and initiative checks. The Gebian Necromancer gains a +1 bonus on damage rolls made with necromancy spells, a +1 bonus to necromancy spell DC, and a +1 bonus on Spell Penetration checks.<br>If the character already has the class skill, weapon proficiency or armor proficiency granted by the selected background from her class during character creation, then the corresponding bonuses from background change to a +1 competence bonus in case of skills, a +1 enhancement bonus in case of weapon proficiency and a -1 Armor Check Penalty reduction in case of armor proficiency.",
-    "zhCN": "盖布死灵师将<b><color=#703565>学识（宗教）</color></b>加入本职<b><color=#703565>技能</color></b>列表。其召唤的不死生物和死灵生物伙伴的攻击检定、AC和先攻获得+2加值。盖布死灵师自身在使用死灵法术造成的伤害上获得+1加值，死灵法术的DC获得+1加值，并且<b><color=#703565>法术穿透</color></b>检定获得+1加值。<br>如果角色已在角色创建过程中，通过职业获取了上述本职技能，<b><color=#703565>武器擅长</color></b>或防具擅长，则背景提供的相应加值改为相关技能上的+1表现加值，相关武器上的+1增强加值，相关防具上的<b><color=#703565>防具检定减值</color></b>–1。"
+    "zhCN": "盖布死灵师将<b><color=#703565>学识（宗教）</color></b>加入本职<b><color=#703565>技能</color></b>列表。其召唤的不死生物和死灵生物伙伴的攻击检定、AC和先攻获得+2加值。盖布死灵师自身在使用死灵法术造成的伤害上获得+1加值，死灵法术的DC获得+1加值，并且<b><color=#703565>法术穿透</color></b>检定获得+1加值。<br>如果角色已在角色创建过程中，通过职业获取了上述本职技能，<b><color=#703565>武器擅长</color></b>或防具擅长，则背景提供的相应加值改为相关技能上的+1表现加值，相关武器上的+1增强加值，相关防具上的<b><color=#703565>防具检定减值</color></b>–1。",
+    "deDE": "Der Nekromant aus Geb erhält Wissen (Religion) als Klassenfertigkeit. Von ihm herbeigezauberte Untote und sein nekromantischer Tiergefährte erhalten +2 auf Angriffswürfe, RK und Initiative. Er selbst erhält +1 auf Schadenswürfe mit Nekromantiezaubern, deren SG und Würfe zum Überwinden von Zauberresistenz.<br>Besitzt der Charakter die vom Hintergrund gewährte Klassenfertigkeit oder Waffen- bzw. Rüstungsübung bereits durch seine Klasse bei der Charaktererstellung, erhält er stattdessen einen Kompetenzbonus von +1 auf die Fertigkeit, einen Verbesserungsbonus von +1 mit der Waffe bzw. eine Verringerung des Rüstungsmalus um 1.",
+    "frFR": "Le nécromancien de Geb ajoute Connaissances (religion) à ses compétences de classe. Les morts-vivants qu'il convoque et son compagnon animal nécromantique gagnent +2 aux jets d'attaque, à la CA et à l'initiative. Il gagne +1 aux jets de dégâts de ses sorts de nécromancie, à leur DD et aux tests de pénétration de la résistance à la magie.<br>Si sa classe lui accorde déjà à la création la compétence de classe ou le maniement d'arme ou d'armure du passé choisi, le bonus devient un bonus d'aptitude de +1 à la compétence, d'altération de +1 avec l'arme, ou une réduction de 1 du malus d'armure aux tests.",
+    "ruRU": "Гебский некромант получает классовый навык Знание (религия). Призванная им нежить и его некромантический питомец получают +2 к броскам атаки, КБ и инициативе. Сам он получает +1 к броскам урона заклинаний некромантии, их СЛ и проверкам преодоления устойчивости к магии.<br>Если при создании персонажа класс уже даёт навык или владение оружием либо доспехами выбранного происхождения, бонус происхождения заменяется на бонус компетентности +1 к навыку, бонус усиления +1 с оружием либо снижение штрафа за доспех на 1.",
+    "esES": "El nigromante de Geb añade Saber (religión) a sus habilidades de clase. Sus muertos vivientes convocados y su compañero animal nigromántico obtienen +2 a las tiradas de ataque, la CA y la iniciativa. Él obtiene +1 a las tiradas de daño de conjuros de nigromancia, a su CD y a las pruebas para superar la resistencia a conjuros.<br>Si su clase ya otorga al crear el personaje la habilidad de clase o competencia con armas o armaduras del trasfondo, recibe en su lugar un bonificador de competencia de +1 a la habilidad, de mejora de +1 con el arma o una reducción de 1 al penalizador de armadura."
   },
 
   {
     "Key": "undeadType.Description",
     "enGB": "The balance between life and death has been shattered within you. The frigid breath of death has completely overwhelmed your vitality, and you have been fully transformed into an undead creature.",
-    "zhCN": "生死之间的平衡在你身上被打破了，冰冷的死气完全压倒你的生机，你彻底转变成一名不死生物。"
+    "zhCN": "生死之间的平衡在你身上被打破了，冰冷的死气完全压倒你的生机，你彻底转变成一名不死生物。",
+    "deDE": "Das Gleichgewicht zwischen Leben und Tod in dir ist zerbrochen. Die Kälte des Todes hat deine Lebenskraft überwältigt: Du bist vollständig zu einem Untoten geworden.",
+    "frFR": "L'équilibre entre vie et mort s'est rompu en vous. Le souffle glacé de la mort a submergé votre vitalité : vous êtes entièrement devenu un mort-vivant.",
+    "ruRU": "Равновесие жизни и смерти в вас нарушено. Ледяное дыхание смерти полностью подавило жизненную силу: вы стали нежитью.",
+    "esES": "El equilibrio entre vida y muerte en tu interior se ha roto. El aliento helado de la muerte ha vencido tu vitalidad: te has transformado por completo en un muerto viviente."
   },
 
   {
     "Key": "UndeadOneOfUs.Description",
     "enGB": "Upon reaching Level 20, your body is permeated by the power of death, and you no longer possess vital organs in the conventional sense. You gain immunity to cold, paralysis, sleep, and precision damage. You also acquire damage reduction 5/—. Additionally, you get a +4 morale bonus on saving throws against spells and spell-like abilities cast by undead creatures.",
-    "zhCN": "达到20级后，你的躯体被死亡的力量浸润了，再也没有常规意义上的要害，你对寒冷、麻痹、睡眠和精准伤害免疫。同时获得伤害减免5/—。你在对抗不死生物施展的法术和类法术能力时，豁免检定获得+4士气加值。"
+    "zhCN": "达到20级后，你的躯体被死亡的力量浸润了，再也没有常规意义上的要害，你对寒冷、麻痹、睡眠和精准伤害免疫。同时获得伤害减免5/—。你在对抗不死生物施展的法术和类法术能力时，豁免检定获得+4士气加值。",
+    "deDE": "Ab Stufe 20 durchdringt der Tod deinen Körper, der keine gewöhnlichen lebenswichtigen Organe mehr besitzt. Du erhältst Immunität gegen Kälte, Lähmung, Schlaf und Präzisionsschaden sowie Schadensreduzierung 5/—. Gegen Zauber und zauberähnliche Fähigkeiten von Untoten erhältst du einen Moralbonus von +4 auf Rettungswürfe.",
+    "frFR": "Au niveau 20, la mort imprègne votre corps, qui n'a plus d'organes vitaux ordinaires. Vous êtes immunisé contre le froid, la paralysie, le sommeil et les dégâts de précision, et gagnez une réduction des dégâts de 5/—. Vous gagnez +4 de moral aux sauvegardes contre les sorts et pouvoirs magiques lancés par des morts-vivants.",
+    "ruRU": "На 20-м уровне смерть пронизывает ваше тело, лишая его обычных жизненно важных органов. Вы получаете иммунитет к холоду, параличу, сну и точному урону, а также снижение урона 5/—. Вы получаете боевой дух +4 к спасброскам против заклинаний и псевдозаклинаний нежити.",
+    "esES": "A nivel 20, la muerte impregna tu cuerpo, que ya no posee órganos vitales convencionales. Obtienes inmunidad al frío, la parálisis, el sueño y el daño de precisión, y reducción de daño 5/—. Obtienes un bonificador de moral de +4 a las salvaciones contra conjuros y aptitudes sortílegas lanzados por muertos vivientes."
   },
 
   {
     "Key": "BloodDrinker.Description",
     "enGB": "Limited to three uses per day, you can drain blood from a living creature or from the corpse of a living being. When you do so, you gain 5 temporary hit points, plus an additional 5 temporary hit points for every three Hit Dice you possess. You also gain a +1 bonus on Fortitude saving throws. All these effects last for 1 hour.",
-    "zhCN": "每日限三次，你可以从一个活物身上吸血，或者从活物的尸体上吸血。若如此做，你获得5点临时生命值，你每拥有三个生命骰，额外获得5点临时生命值。你还会在强韧豁免检定上获得+1加值。以上效果持续1小时。当你是觅血者时，可以为你回复一个血池点数。"
+    "zhCN": "每日限三次，你可以从一个活物身上吸血，或者从活物的尸体上吸血。若如此做，你获得5点临时生命值，你每拥有三个生命骰，额外获得5点临时生命值。你还会在强韧豁免检定上获得+1加值。以上效果持续1小时。当你是觅血者时，可以为你回复一个血池点数。",
+    "deDE": "Dreimal täglich kannst du Blut von einer lebenden Kreatur oder ihrer Leiche trinken. Du erhältst 5 temporäre Trefferpunkte plus 5 pro 3 deiner Trefferwürfel sowie +1 auf Zähigkeitswürfe. Alle Effekte halten 1 Stunde an. Als Blutsucher erhältst du außerdem 1 Punkt deines Blutvorrats zurück.",
+    "frFR": "Trois fois par jour, vous pouvez boire le sang d'une créature vivante ou de son cadavre. Vous gagnez 5 points de vie temporaires, plus 5 par tranche de 3 dés de vie, et +1 aux jets de Vigueur. Ces effets durent 1 heure. Si vous êtes un traquesang, vous récupérez aussi 1 point de réserve de sang.",
+    "ruRU": "Трижды в день вы можете пить кровь живого существа или его трупа. Вы получаете 5 временных ОЗ и ещё 5 за каждые 3 своих КЗ, а также +1 к спасброскам Стойкости на 1 час. Кровоискатель также восстанавливает 1 очко запаса крови.",
+    "esES": "Tres veces al día puedes beber sangre de una criatura viva o de su cadáver. Obtienes 5 puntos de golpe temporales más otros 5 por cada 3 Dados de Golpe que poseas, y +1 a las salvaciones de Fortaleza. Todo dura 1 hora. Si eres un buscasangre, también recuperas 1 punto de tu reserva de sangre."
   },
 
   {
     "Key": "UndeadFeatSelection.Description",
     "enGB": "When reaching level 7, and every 6 levels thereafter, the sorcerer gains 1 additional feat, which is selected from the feat list corresponding to each bloodline. The character must meet the prerequisites of the additional feat.<br>Additional Feats for Undead Bloodline: Combat Casting, Diehard, Iron Will, Skill Focus (Knowledge: Religion), Spell Focus, Greater Spell Focus, Toughness, Tenacious, Metamagic (Maximize Spell).",
-    "zhCN": "达到7级时，以及之后每升6级，术士都会获得1个额外专长，从各血承对应的专长列表中选择。角色必须满足额外专长的先决条件。 <br>亡灵血承额外专长：战斗施法、顽石强韧、钢铁意志、技能专攻（学识：宗教）、法术专攻、高等法术专攻、健壮，顽强，超魔（法术极效）。"
+    "zhCN": "达到7级时，以及之后每升6级，术士都会获得1个额外专长，从各血承对应的专长列表中选择。角色必须满足额外专长的先决条件。 <br>亡灵血承额外专长：战斗施法、顽石强韧、钢铁意志、技能专攻（学识：宗教）、法术专攻、高等法术专攻、健壮，顽强，超魔（法术极效）。",
+    "deDE": "Ab Stufe 7 und danach alle 6 Stufen erhält der Hexenmeister ein zusätzliches Talent aus der Liste seiner Blutlinie. Er muss dessen Voraussetzungen erfüllen.<br>Talente der Blutlinie des Grabes: Im Kampf zaubern, Unverwüstlich, Eiserner Wille, Fertigkeitsfokus (Wissen: Religion), Zauberfokus, Mächtiger Zauberfokus, Abhärtung, Ausdauer, Metamagie (Zauber maximieren).",
+    "frFR": "Au niveau 7 puis tous les 6 niveaux, l'ensorceleur reçoit un don supplémentaire de la liste de son lignage, dont il doit remplir les conditions.<br>Dons du Lignage Mort-vivant : Magie de guerre, Dur à cuire, Volonté de fer, Talent (Connaissances : religion), École renforcée, École supérieure, Robustesse, Endurance, Métamagie (Quintessence des sorts).",
+    "ruRU": "На 7-м уровне и каждые 6 уровней далее чародей получает дополнительную черту из списка своего наследия, соблюдая её требования.<br>Черты Загробного наследия: Боевая магия, Крепкий орешек, Железная воля, Умелец (Знание: религия), Любимая школа магии, Любимая школа магии+, Живучесть, Стойкость, Метамагия (Максимизированное заклинание).",
+    "esES": "A nivel 7 y cada 6 niveles posteriores, el hechicero obtiene una dote adicional de su linaje y debe cumplir sus requisitos.<br>Dotes del Linaje de muerto viviente: Conjurar en combate, Duro de pelar, Voluntad de hierro, Soltura con una habilidad (Saber: religión), Soltura con una escuela de magia, Soltura mayor con una escuela de magia, Dureza, Resistencia, Metamagia (Maximizar conjuro)."
   },
 
   {
     "Key": "CauseFear.Description",
     "enGB": "The affected creature becomes frightened. If the subject succeeds at a Will save, it is shaken for 1d4 rounds. Creatures with 6 or more HD are immune to this effect. Cause fear dispels remove fear.",
-    "zhCN": "受到法术影响的生物会陷入<b><color=#703565>惊恐</color></b>状态。如果目标<b><color=#703565>意志豁免</color></b>成功，则陷入<b><color=#703565>战栗</color></b>状态 1D4<b><color=#703565>轮</color></b>。<b><color=#703565>生命骰数</color></b>不低于 6 的生物免疫该效果。惊恐术能够解除<b><color=#703565>移除恐惧</color></b>。"
+    "zhCN": "受到法术影响的生物会陷入<b><color=#703565>惊恐</color></b>状态。如果目标<b><color=#703565>意志豁免</color></b>成功，则陷入<b><color=#703565>战栗</color></b>状态 1D4<b><color=#703565>轮</color></b>。<b><color=#703565>生命骰数</color></b>不低于 6 的生物免疫该效果。惊恐术能够解除<b><color=#703565>移除恐惧</color></b>。",
+    "deDE": "Die betroffene Kreatur ist verängstigt. Bei erfolgreichem Willenswurf ist sie stattdessen 1d4 Runden erschüttert. Kreaturen mit mindestens 6 TW sind immun. Furcht auslösen bannt Furcht aufheben.",
+    "frFR": "La créature affectée est effrayée. Si elle réussit un jet de Volonté, elle est seulement secouée pendant 1d4 rounds. Les créatures ayant au moins 6 DV sont immunisées. Frayeur dissipe Apaisement des émotions terrifiantes.",
+    "ruRU": "Цель охватывает испуг. При успешном спасброске Воли она вместо этого потрясена на 1d4 раунда. Существа с 6 и более КЗ невосприимчивы. Заклинание рассеивает Снятие страха.",
+    "esES": "La criatura afectada queda asustada. Si supera una salvación de Voluntad, queda estremecida durante 1d4 asaltos. Las criaturas con 6 DG o más son inmunes. Causar miedo disipa Quitar el miedo."
   },
 
   {
     "Key": "RayOfSickening.Description",
     "enGB": "The subject is immediately sickened for the spell’s duration. A successful Fortitude save negates this effect. If the target is already sickened and fails the Fortitude save again, it becomes nauseated instead.",
-    "zhCN": "在法术持续时间内，目标陷入恶心状态。若目标通过强韧豁免，则免除此效果。若目标已经处于恶心状态且再次强韧豁免失败，则改为陷入反胃状态。"
+    "zhCN": "在法术持续时间内，目标陷入恶心状态。若目标通过强韧豁免，则免除此效果。若目标已经处于恶心状态且再次强韧豁免失败，则改为陷入反胃状态。",
+    "deDE": "Das Ziel kränkelt für die Wirkungsdauer. Ein erfolgreicher Zähigkeitswurf verhindert dies. Kränkelt das Ziel bereits und misslingt ihm der Zähigkeitswurf erneut, leidet es stattdessen unter Übelkeit.",
+    "frFR": "La cible devient fiévreuse pour la durée du sort. Un jet de Vigueur réussi annule cet effet. Si elle est déjà fiévreuse et rate à nouveau son jet, elle devient nauséeuse.",
+    "ruRU": "На время действия заклинания цель получает дезориентацию. Успешный спасбросок Стойкости отменяет эффект. Если уже дезориентированная цель снова проваливает спасбросок, она вместо этого получает тошноту.",
+    "esES": "El objetivo queda indispuesto mientras dure el conjuro. Una salvación de Fortaleza exitosa anula el efecto. Si ya está indispuesto y vuelve a fallar, queda mareado en su lugar."
   },
 
   {
     "Key": "Scare.Description",
     "enGB": "All living targets with fewer than 6 HD become frightened. If the target succeeds at a Will save, it is shaken for 1d4 rounds instead. Creatures with 6 or more HD are immune to this effect. Scare dispels remove fear.",
-    "zhCN": "所有生命骰数小于6的活物目标都将陷入<b><color=#703565>惊恐</color></b>状态。若生物进行<b><color=#703565>意志豁免</color></b>成功，则只陷入<b><color=#703565>战栗</color></b>状态1D4轮。生命骰数大于或等于6的生物对此效果免疫。恐吓术能够解除<b><color=#703565>移除恐惧</color></b>。"
+    "zhCN": "所有生命骰数小于6的活物目标都将陷入<b><color=#703565>惊恐</color></b>状态。若生物进行<b><color=#703565>意志豁免</color></b>成功，则只陷入<b><color=#703565>战栗</color></b>状态1D4轮。生命骰数大于或等于6的生物对此效果免疫。恐吓术能够解除<b><color=#703565>移除恐惧</color></b>。",
+    "deDE": "Alle lebenden Ziele mit weniger als 6 TW sind verängstigt. Bei erfolgreichem Willenswurf sind sie stattdessen 1d4 Runden erschüttert. Kreaturen mit mindestens 6 TW sind immun. Erschrecken bannt Furcht aufheben.",
+    "frFR": "Toutes les cibles vivantes ayant moins de 6 DV sont effrayées. Un jet de Volonté réussi les laisse seulement secouées pendant 1d4 rounds. Les créatures ayant au moins 6 DV sont immunisées. Effroi dissipe Apaisement des émotions terrifiantes.",
+    "ruRU": "Все живые цели с менее чем 6 КЗ охватывает испуг. Успешный спасбросок Воли оставляет их лишь потрясёнными на 1d4 раунда. Существа с 6 и более КЗ невосприимчивы. Заклинание рассеивает Снятие страха.",
+    "esES": "Todos los objetivos vivos con menos de 6 DG quedan asustados. Si superan una salvación de Voluntad, solo quedan estremecidos durante 1d4 asaltos. Las criaturas con 6 DG o más son inmunes. Espantar disipa Quitar el miedo."
   },
 
   {
     "Key": "Boneshaker.Description",
     "enGB": "You take control of a target creature’s skeleton, causing it to rattle violently within its flesh and deal grievous harm. The target takes <b><color=#703565>3d6</color></b> points of <b><color=#703565>damage</color></b>, plus 1d6 additional points of damage per 2 <b><color=#703565>caster levels</color></b>. This spell also affects undead creatures, but it has no effect on <b><color=#703565>incorporeal creatures</color></b> such as ghosts.",
-    "zhCN": "你控制一个目标生物体内的骨架。骨架在该生物血肉里剧烈颤抖，给生物带来重创。目标将受到<b><color=#703565>3d6</color></b>点<b><color=#703565>伤害</color></b>，此外再加上每两个<b><color=#703565>施法者等级</color></b>1d6点额外伤害。该法术对不死生物同样生效，但对幽灵等<b><color=#703565>虚体生物</color></b>无效。"
+    "zhCN": "你控制一个目标生物体内的骨架。骨架在该生物血肉里剧烈颤抖，给生物带来重创。目标将受到<b><color=#703565>3d6</color></b>点<b><color=#703565>伤害</color></b>，此外再加上每两个<b><color=#703565>施法者等级</color></b>1d6点额外伤害。该法术对不死生物同样生效，但对幽灵等<b><color=#703565>虚体生物</color></b>无效。",
+    "deDE": "Du kontrollierst das Skelett einer Kreatur und lässt es in ihrem Fleisch heftig erzittern. Das Ziel erleidet 3d6 Schaden plus 1d6 pro 2 Zauberstufen. Der Zauber wirkt auch auf Untote, jedoch nicht auf körperlose Kreaturen wie Geister.",
+    "frFR": "Vous contrôlez le squelette d'une créature et le faites vibrer violemment dans sa chair. La cible subit 3d6 dégâts, plus 1d6 par tranche de 2 niveaux de lanceur de sorts. Ce sort affecte aussi les morts-vivants, mais pas les créatures intangibles comme les fantômes.",
+    "ruRU": "Вы заставляете скелет цели яростно содрогаться внутри плоти, нанося 3d6 урона и ещё 1d6 за каждые 2 уровня заклинателя. Заклинание действует и на нежить, но не на бестелесных существ, например призраков.",
+    "esES": "Controlas el esqueleto de una criatura y haces que se sacuda violentamente dentro de su carne. Sufre 3d6 de daño más 1d6 por cada 2 niveles de lanzador. También afecta a muertos vivientes, pero no a criaturas incorporales como fantasmas."
   },
 
   {
     "Key": "BoneFists.Description",
     "enGB": "The bones of the target’s joints grow thick and sharp, painfully protruding through the skin at the knuckles, elbows, shoulders, spine, and knees. The target gains a <b><color=#703565>+1 bonus</color></b> to natural armor and a <b><color=#703565>+2 bonus</color></b> on damage rolls with <b><color=#703565>natural weapons</color></b>, and deals an additional <b><color=#703565>1d6</color></b> points of <b><color=#703565>piercing damage</color></b> on successful <b><color=#703565>grapple checks</color></b>. If the target is <b><color=#703565>undead</color></b>, it gains an additional <b><color=#703565>+2 bonus</color></b> to natural armor and receives <b><color=#703565>1d6</color></b> temporary hit points plus <b><color=#703565>1 temporary hit point</color></b> per <b><color=#703565>2 caster levels</color></b>.",
-    "zhCN": "目标关节处的骨头变得又粗又尖，在一阵疼痛中穿出指节、肘部、肩部、脊柱和膝盖处的皮肤。每个目标的天生防御获得<b><color=#703565>+1加值</color></b>，以<b><color=#703565>天生武器</color></b>进行的<b><color=#703565>伤害检定</color></b>获得<b><color=#703565>+2加值</color></b>，并且在成功进行<b><color=#703565>擒抱检定</color></b>时还会造成额外的<b><color=#703565>1d6</color></b>点<b><color=#703565>穿刺伤害</color></b>。若目标为<b><color=#703565>不死生物</color></b>，则其天生防御额外获得<b><color=#703565>+2加值</color></b>，并获得<b><color=#703565>1d6</color></b>点加上每<b><color=#703565>2个施法者等级</color></b><b><color=#703565>1点</color></b>的<b><color=#703565>临时生命值</color></b>。"
+    "zhCN": "目标关节处的骨头变得又粗又尖，在一阵疼痛中穿出指节、肘部、肩部、脊柱和膝盖处的皮肤。每个目标的天生防御获得<b><color=#703565>+1加值</color></b>，以<b><color=#703565>天生武器</color></b>进行的<b><color=#703565>伤害检定</color></b>获得<b><color=#703565>+2加值</color></b>，并且在成功进行<b><color=#703565>擒抱检定</color></b>时还会造成额外的<b><color=#703565>1d6</color></b>点<b><color=#703565>穿刺伤害</color></b>。若目标为<b><color=#703565>不死生物</color></b>，则其天生防御额外获得<b><color=#703565>+2加值</color></b>，并获得<b><color=#703565>1d6</color></b>点加上每<b><color=#703565>2个施法者等级</color></b><b><color=#703565>1点</color></b>的<b><color=#703565>临时生命值</color></b>。",
+    "deDE": "Die Gelenkknochen des Ziels werden dick und spitz und durchbrechen schmerzhaft die Haut an Knöcheln, Ellbogen, Schultern, Wirbelsäule und Knien. Das Ziel erhält +1 auf natürliche Rüstung und +2 auf Schadenswürfe mit natürlichen Waffen und verursacht bei erfolgreichen Ringkampfwürfen zusätzlich 1d6 Stichschaden. Untote Ziele erhalten weitere +2 auf natürliche Rüstung sowie 1d6 temporäre Trefferpunkte plus 1 pro 2 Zauberstufen.",
+    "frFR": "Les os des articulations de la cible s'épaississent et percent douloureusement la peau des jointures, coudes, épaules, vertèbres et genoux. La cible gagne +1 à l'armure naturelle et +2 aux dégâts des armes naturelles, et inflige 1d6 dégâts perforants supplémentaires sur les tests de lutte réussis. Une cible morte-vivante gagne encore +2 à l'armure naturelle et 1d6 points de vie temporaires, plus 1 par tranche de 2 niveaux de lanceur de sorts.",
+    "ruRU": "Кости суставов цели утолщаются и заостряются, болезненно прорывая кожу на пальцах, локтях, плечах, позвоночнике и коленях. Цель получает +1 к естественной броне, +2 к броскам урона естественным оружием и наносит дополнительно 1d6 колющего урона при успешных проверках захвата. Нежить получает ещё +2 к естественной броне и 1d6 временных ОЗ плюс 1 за каждые 2 уровня заклинателя.",
+    "esES": "Los huesos de las articulaciones del objetivo engrosan y se afilan, atravesando dolorosamente la piel de nudillos, codos, hombros, columna y rodillas. Obtiene +1 a la armadura natural, +2 a las tiradas de daño con armas naturales y causa 1d6 de daño perforante adicional con pruebas de presa exitosas. Si es un muerto viviente, obtiene otro +2 a la armadura natural y 1d6 puntos de golpe temporales más 1 por cada 2 niveles de lanzador."
   },
 
   {
   "Key": "PerniciousPoison.Description",
   "enGB": "You weaken the target’s defenses against poison. The target takes a <b><color=#703565>-4 penalty</color></b> on saving throws against poison, and attempts to <b><color=#703565>cure</color></b> the poisoned target also take a <b><color=#703565>-4 penalty</color></b>. When this spell is cast, if the target <b><color=#703565>fails its initial saving throw</color></b>, it takes <b><color=#703565>1D3 points of Constitution damage</color></b>. For the duration of the spell, the target also suffers an additional <b><color=#703565>-2 penalty</color></b> on <b><color=#703565>Fortitude saving throws</color></b>.",
-  "zhCN": "你弱化目标对毒素的防御能力。目标在对抗毒素进行<b><color=#703565>豁免检定</color></b>时受到<b><color=#703565>-4减值</color></b>，尝试<b><color=#703565>治疗</color></b>目标身上的毒素时，相关检定同样受到<b><color=#703565>-4减值</color></b>。施放此法术时，若目标<b><color=#703565>初始豁免失败</color></b>，则会受到<b><color=#703565>1D3点体质伤害</color></b>。在法术持续时间内，目标在进行<b><color=#703565>强韧豁免</color></b>时还将额外承受<b><color=#703565>-2减值</color></b>。"
+  "zhCN": "你弱化目标对毒素的防御能力。目标在对抗毒素进行<b><color=#703565>豁免检定</color></b>时受到<b><color=#703565>-4减值</color></b>，尝试<b><color=#703565>治疗</color></b>目标身上的毒素时，相关检定同样受到<b><color=#703565>-4减值</color></b>。施放此法术时，若目标<b><color=#703565>初始豁免失败</color></b>，则会受到<b><color=#703565>1D3点体质伤害</color></b>。在法术持续时间内，目标在进行<b><color=#703565>强韧豁免</color></b>时还将额外承受<b><color=#703565>-2减值</color></b>。",
+    "deDE": "Du schwächst die Giftabwehr des Ziels. Es erleidet –4 auf Rettungswürfe gegen Gift; auch Würfe, um seine Vergiftung zu heilen, erleiden –4. Misslingt dem Ziel beim Wirken der erste Rettungswurf, erleidet es 1d3 Konstitutionsschaden. Während der Wirkungsdauer erleidet es außerdem –2 auf Zähigkeitswürfe.",
+    "frFR": "Vous affaiblissez les défenses de la cible contre le poison. Elle subit –4 aux sauvegardes contre le poison ; les tests pour soigner son empoisonnement subissent aussi –4. Si elle rate sa sauvegarde initiale au lancement, elle subit 1d3 dégâts de Constitution. Elle subit en outre –2 aux jets de Vigueur pendant la durée du sort.",
+    "ruRU": "Вы ослабляете защиту цели от яда. Она получает –4 к спасброскам против яда; проверки лечения её отравления также получают –4. При провале начального спасброска цель получает 1d3 урона Телосложению. На время действия заклинания она также получает –2 к спасброскам Стойкости.",
+    "esES": "Debilitas las defensas del objetivo contra el veneno. Sufre –4 a las salvaciones contra venenos; las pruebas para curar su envenenamiento también sufren –4. Si falla la salvación inicial al lanzar el conjuro, sufre 1d3 de daño de Constitución. Además, sufre –2 a las salvaciones de Fortaleza durante el conjuro."
   },
 
   {
     "Key": "GhoulTouch.Description",
     "enGB": "Imbuing you with negative energy, this spell allows you to paralyze a single living humanoid for the duration of the spell with a successful melee <b><color=#703565>touch attack</color></b>. A <b><color=#703565>paralyzed</color></b> subject exudes a carrion stench that causes all living creatures within a 10-foot radius (except you) to become <b><color=#703565>sickened</color></b> (<b><color=#703565>Fortitude</color></b> negates). A <b><color=#703565>neutralize poison</color></b> spell removes this effect from a sickened creature, and creatures immune to poison are unaffected by the stench; this is a <b><color=#703565>poison effect</color></b>. If the living target is slain while ghoul touch remains in effect, its corpse rises as a <b><color=#703565>ghoul</color></b> under your control for <b><color=#703565>1 round per caster level</color></b>.",
-    "zhCN": "此<b><color=#703565>法术</color></b>为你灌注负向能量，使你能够在法术持续时间内通过成功的近战<b><color=#703565>接触攻击</color></b>麻痹一个类人活物。被<b><color=#703565>麻痹</color></b>的目标会散发出腐肉的恶臭，导致10英尺半径范围内的所有活物（除你以外）陷入<b><color=#703565>恶心</color></b>状态（<b><color=#703565>强韧</color></b>豁免免除效果）。法术<b><color=#703565>中和毒素</color></b>可以为陷入恶心状态的生物移除该效果，免疫毒素的生物则不受恶臭影响，此效果属于<b><color=#703565>毒素效应</color></b>。若目标活物在食尸鬼之触的持续时间内被杀死，则其尸体会复活为一具<b><color=#703565>食尸鬼</color></b>为你战斗，持续时间为<b><color=#703565>每施法者等级1轮</color></b>。"
+    "zhCN": "此<b><color=#703565>法术</color></b>为你灌注负向能量，使你能够在法术持续时间内通过成功的近战<b><color=#703565>接触攻击</color></b>麻痹一个类人活物。被<b><color=#703565>麻痹</color></b>的目标会散发出腐肉的恶臭，导致10英尺半径范围内的所有活物（除你以外）陷入<b><color=#703565>恶心</color></b>状态（<b><color=#703565>强韧</color></b>豁免免除效果）。法术<b><color=#703565>中和毒素</color></b>可以为陷入恶心状态的生物移除该效果，免疫毒素的生物则不受恶臭影响，此效果属于<b><color=#703565>毒素效应</color></b>。若目标活物在食尸鬼之触的持续时间内被杀死，则其尸体会复活为一具<b><color=#703565>食尸鬼</color></b>为你战斗，持续时间为<b><color=#703565>每施法者等级1轮</color></b>。",
+    "deDE": "Negative Energie erfüllt dich. Mit einem erfolgreichen Berührungsangriff im Nahkampf lähmst du einen lebenden Humanoiden für die Wirkungsdauer. Das gelähmte Ziel verströmt Aasgestank, der alle lebenden Kreaturen im Umkreis von 10 Fuß außer dir kränkeln lässt (Zähigkeit negiert). Gift neutralisieren entfernt diesen Effekt; gegen Gift immune Kreaturen sind nicht betroffen. Dies ist ein Gifteffekt. Stirbt das lebende Ziel während der Wirkungsdauer, erhebt sich seine Leiche als Ghul unter deiner Kontrolle für 1 Runde pro Zauberstufe.",
+    "frFR": "L'énergie négative vous imprègne. Une attaque de contact au corps à corps réussie paralyse un humanoïde vivant pour la durée du sort. La cible paralysée exhale une puanteur de charogne qui rend fiévreuses toutes les créatures vivantes dans un rayon de 10 pieds, sauf vous (Vigueur annule). Neutralisation du poison supprime cet effet ; les créatures immunisées au poison ignorent la puanteur. Il s'agit d'un effet de poison. Si la cible vivante meurt pendant le sort, son cadavre se relève en goule sous votre contrôle pendant 1 round par niveau de lanceur de sorts.",
+    "ruRU": "Отрицательная энергия позволяет вам успешной ближней атакой касанием парализовать живого гуманоида на время заклинания. Парализованная цель источает трупный смрад, вызывающий дезориентацию у всех живых существ в радиусе 10 футов, кроме вас (Стойкость отменяет). Нейтрализация яда снимает эффект; невосприимчивые к яду существа не страдают от смрада. Это эффект яда. Если живая цель погибнет во время действия заклинания, её труп восстанет гулем под вашим контролем на 1 раунд за уровень заклинателя.",
+    "esES": "La energía negativa te permite paralizar a un humanoide vivo durante el conjuro con un ataque de toque cuerpo a cuerpo acertado. El objetivo paralizado desprende un hedor a carroña que deja indispuestas a todas las criaturas vivas en un radio de 10 pies salvo tú (Fortaleza niega). Neutralizar veneno elimina este efecto; las criaturas inmunes al veneno no se ven afectadas. Es un efecto de veneno. Si el objetivo vivo muere durante el conjuro, su cadáver se alza como un gul bajo tu control durante 1 asalto por nivel de lanzador."
   },
 
  {
     "Key": "GhoulTouchBuff.Description",
     "enGB": "The creature becomes <b><color=#703565>paralyzed</color></b> and exudes a carrion stench that causes all living creatures within a 10-foot radius (except the caster of this <b><color=#703565>spell</color></b>) to become <b><color=#703565>sickened</color></b> (<b><color=#703565>Fortitude</color></b> negates). A <b><color=#703565>neutralize poison</color></b> spell removes this effect from a sickened creature, and creatures immune to poison are unaffected by the stench; this is a <b><color=#703565>poison effect</color></b>. If the living target is slain while ghoul touch remains in effect, its corpse rises as a <b><color=#703565>ghoul</color></b> under your control for <b><color=#703565>1 round per caster level</color></b>.",
-    "zhCN": "该生物陷入<b><color=#703565>麻痹</color></b>状态，并散发出腐肉的恶臭，导致10英尺扩散半径内所有活物（此<b><color=#703565>法术</color></b>的施法者除外）陷入<b><color=#703565>恶心</color></b>状态（<b><color=#703565>强韧</color></b>免除效果）。法术<b><color=#703565>中和毒素</color></b>可移除陷入恶心的生物身上的此效果，免疫毒素的生物不受恶臭影响，此为<b><color=#703565>毒素效应</color></b>。若目标活物在食尸鬼之触的持续时间内被杀死，则其尸体会复活为一具<b><color=#703565>食尸鬼</color></b>为你战斗，持续时间为<b><color=#703565>每施法者等级1轮</color></b>。"
+    "zhCN": "该生物陷入<b><color=#703565>麻痹</color></b>状态，并散发出腐肉的恶臭，导致10英尺扩散半径内所有活物（此<b><color=#703565>法术</color></b>的施法者除外）陷入<b><color=#703565>恶心</color></b>状态（<b><color=#703565>强韧</color></b>免除效果）。法术<b><color=#703565>中和毒素</color></b>可移除陷入恶心的生物身上的此效果，免疫毒素的生物不受恶臭影响，此为<b><color=#703565>毒素效应</color></b>。若目标活物在食尸鬼之触的持续时间内被杀死，则其尸体会复活为一具<b><color=#703565>食尸鬼</color></b>为你战斗，持续时间为<b><color=#703565>每施法者等级1轮</color></b>。",
+    "deDE": "Die Kreatur ist gelähmt und verströmt Aasgestank, der alle lebenden Kreaturen im Umkreis von 10 Fuß außer dem Zauberwirker kränkeln lässt (Zähigkeit negiert). Gift neutralisieren entfernt den Effekt; gegen Gift immune Kreaturen sind nicht betroffen. Dies ist ein Gifteffekt. Stirbt das lebende Ziel während der Wirkungsdauer von Ghulberührung, erhebt sich seine Leiche als Ghul unter der Kontrolle des Zauberwirkers für 1 Runde pro Zauberstufe.",
+    "frFR": "La créature est paralysée et exhale une puanteur de charogne rendant fiévreuses les créatures vivantes dans un rayon de 10 pieds, sauf le lanceur du sort (Vigueur annule). Neutralisation du poison supprime l'effet ; les créatures immunisées au poison l'ignorent. Il s'agit d'un effet de poison. Si la cible vivante meurt pendant Baiser de la goule, son cadavre devient une goule contrôlée par le lanceur pendant 1 round par niveau de lanceur de sorts.",
+    "ruRU": "Существо парализовано и источает трупный смрад, вызывающий дезориентацию у всех живых существ в радиусе 10 футов, кроме заклинателя (Стойкость отменяет). Нейтрализация яда снимает эффект; невосприимчивые к яду существа не страдают от смрада. Это эффект яда. Если живая цель погибнет во время действия Прикосновения гуля, её труп восстанет гулем под контролем заклинателя на 1 раунд за уровень заклинателя.",
+    "esES": "La criatura está paralizada y desprende un hedor a carroña que deja indispuestas a las criaturas vivas en un radio de 10 pies salvo el lanzador (Fortaleza niega). Neutralizar veneno elimina el efecto; las criaturas inmunes al veneno lo ignoran. Es un efecto de veneno. Si el objetivo vivo muere mientras dura Toque de gul, su cadáver se alza como un gul bajo el control del lanzador durante 1 asalto por nivel de lanzador."
   },
 
   {
     "Key": "PoxPustules.Description",
     "enGB": "You inflict a painful, itching rash on the target creature. The target becomes <b><color=#703565>sickened</color></b> and, on a <b><color=#703565>failed saving throw</color></b>, takes a <b><color=#703565>Dexterity penalty</color></b> equal to <b><color=#703565>4</color></b> plus <b><color=#703565>1</color></b> for every <b><color=#703565>2 caster levels</color></b> (this penalty cannot reduce Dexterity below 0); on a <b><color=#703565>successful saving throw</color></b>, the target takes only half this penalty.",
-    "zhCN": "你使目标生物身上出现奇痒难耐的皮疹。目标陷入<b><color=#703565>恶心</color></b>状态，并在<b><color=#703565>豁免失败</color></b>时其<b><color=#703565>敏捷属性</color></b>承受<b><color=#703565>4点</color></b>加上每<b><color=#703565>2个施法者等级</color></b><b><color=#703565>1点</color></b>的<b><color=#703565>减值</color></b>（该减值无法将敏捷属性降至0点以下）；若<b><color=#703565>豁免成功</color></b>，则仅承受上述减值的一半。"
+    "zhCN": "你使目标生物身上出现奇痒难耐的皮疹。目标陷入<b><color=#703565>恶心</color></b>状态，并在<b><color=#703565>豁免失败</color></b>时其<b><color=#703565>敏捷属性</color></b>承受<b><color=#703565>4点</color></b>加上每<b><color=#703565>2个施法者等级</color></b><b><color=#703565>1点</color></b>的<b><color=#703565>减值</color></b>（该减值无法将敏捷属性降至0点以下）；若<b><color=#703565>豁免成功</color></b>，则仅承受上述减值的一半。",
+    "deDE": "Du verursachst einen schmerzhaften, juckenden Ausschlag. Das Ziel kränkelt und erleidet bei misslungenem Rettungswurf einen Geschicklichkeitsmalus von 4 + 1 pro 2 Zauberstufen (nicht unter 0). Ein erfolgreicher Rettungswurf halbiert diesen Malus.",
+    "frFR": "Vous infligez une éruption douloureuse et irritante. La cible devient fiévreuse et, si elle rate sa sauvegarde, subit un malus de Dextérité de 4 + 1 par tranche de 2 niveaux de lanceur de sorts, sans descendre sous 0. Une sauvegarde réussie réduit le malus de moitié.",
+    "ruRU": "Вы вызываете болезненную зудящую сыпь. Цель получает дезориентацию, а при провале спасброска — штраф к Ловкости 4 + 1 за каждые 2 уровня заклинателя, не снижающий её ниже 0. Успешный спасбросок уменьшает штраф вдвое.",
+    "esES": "Provocas una erupción dolorosa que causa picor. El objetivo queda indispuesto y, si falla la salvación, sufre un penalizador a Destreza de 4 + 1 por cada 2 niveles de lanzador, sin reducirla por debajo de 0. Una salvación exitosa reduce el penalizador a la mitad."
   },
 
   {
     "Key": "BestowCurse.Description",
     "enGB": "You place a curse on the target. Choose one of the following curses: Curse of Feeble Body — the target takes a <b><color=#703565>-6 penalty</color></b> to <b><color=#703565>Constitution</color></b>; <br>Curse of Weakness — the target takes a <b><color=#703565>-6 penalty</color></b> to <b><color=#703565>Strength</color></b> and <b><color=#703565>Dexterity</color></b>; <br>Curse of Idiocy — the target takes a <b><color=#703565>-6 penalty</color></b> to <b><color=#703565>Intelligence</color></b>, <b><color=#703565>Wisdom</color></b>, and <b><color=#703565>Charisma</color></b>;<br> Curse of Deterioration — the target takes a <b><color=#703565>-4 penalty</color></b> on <b><color=#703565>attack rolls</color></b>, <b><color=#703565>saves</color></b>, <b><color=#703565>ability checks</color></b>, and <b><color=#703565>skill checks</color></b>;<br> Curse of Terror — each round the target has only a <b><color=#703565>50% chance</color></b> to act normally, otherwise it remains in place under a <b><color=#703565>fear effect</color></b>.",
-    "zhCN": "你对目标施以诅咒，从下列诅咒中选择一项：弱体诅咒——受术目标的<b><color=#703565>体质</color></b>值受到<b><color=#703565>-6减值</color></b>；<br>无能诅咒——受术目标的<b><color=#703565>力量</color></b>与<b><color=#703565>敏捷</color></b>值受到<b><color=#703565>-6减值</color></b>；<br>愚痴诅咒——受术目标的<b><color=#703565>智力</color></b>、<b><color=#703565>感知</color></b>与<b><color=#703565>魅力</color></b>值受到<b><color=#703565>-6减值</color></b>；<br>衰颓诅咒——受术目标在<b><color=#703565>攻击检定</color></b>、<b><color=#703565>豁免检定</color></b>、<b><color=#703565>属性检定</color></b>与<b><color=#703565>技能检定</color></b>时受到<b><color=#703565>-4减值</color></b>；<br>恐怖诅咒——每回合目标只有<b><color=#703565>50%概率</color></b>可以正常行动，否则将在原地承受<b><color=#703565>恐惧效果</color></b>。"
+    "zhCN": "你对目标施以诅咒，从下列诅咒中选择一项：弱体诅咒——受术目标的<b><color=#703565>体质</color></b>值受到<b><color=#703565>-6减值</color></b>；<br>无能诅咒——受术目标的<b><color=#703565>力量</color></b>与<b><color=#703565>敏捷</color></b>值受到<b><color=#703565>-6减值</color></b>；<br>愚痴诅咒——受术目标的<b><color=#703565>智力</color></b>、<b><color=#703565>感知</color></b>与<b><color=#703565>魅力</color></b>值受到<b><color=#703565>-6减值</color></b>；<br>衰颓诅咒——受术目标在<b><color=#703565>攻击检定</color></b>、<b><color=#703565>豁免检定</color></b>、<b><color=#703565>属性检定</color></b>与<b><color=#703565>技能检定</color></b>时受到<b><color=#703565>-4减值</color></b>；<br>恐怖诅咒——每回合目标只有<b><color=#703565>50%概率</color></b>可以正常行动，否则将在原地承受<b><color=#703565>恐惧效果</color></b>。",
+    "deDE": "Du verfluchst das Ziel. Wähle einen Fluch:<br>Fluch des schwachen Körpers: –6 auf Konstitution.<br>Fluch der Schwäche: –6 auf Stärke und Geschicklichkeit.<br>Fluch der Torheit: –6 auf Intelligenz, Weisheit und Charisma.<br>Fluch des Verfalls: –4 auf Angriffs-, Rettungs-, Attributs- und Fertigkeitswürfe.<br>Fluch des Schreckens: Das Ziel hat jede Runde nur eine Chance von 50%, normal zu handeln; andernfalls bleibt es unter einem Furchteffekt an Ort und Stelle.",
+    "frFR": "Vous maudissez la cible. Choisissez une malédiction :<br>Malédiction du corps affaibli : –6 en Constitution.<br>Malédiction de faiblesse : –6 en Force et en Dextérité.<br>Malédiction d'idiotie : –6 en Intelligence, Sagesse et Charisme.<br>Malédiction de dégradation : –4 aux jets d'attaque et de sauvegarde et aux tests de caractéristique et de compétence.<br>Malédiction de terreur : à chaque round, la cible n'a que 50 % de chances d'agir normalement ; sinon, elle reste sur place sous un effet de terreur.",
+    "ruRU": "Вы проклинаете цель. Выберите проклятие:<br>Проклятие слабого тела: –6 к Телосложению.<br>Проклятие слабости: –6 к Силе и Ловкости.<br>Проклятие глупости: –6 к Интеллекту, Мудрости и Харизме.<br>Проклятие упадка: –4 к броскам атаки, спасброскам, проверкам характеристик и навыков.<br>Проклятие ужаса: каждый раунд цель имеет лишь 50% шанс действовать нормально; иначе она остаётся на месте под действием страха.",
+    "esES": "Maldices al objetivo. Elige una maldición:<br>Maldición del cuerpo débil: –6 a Constitución.<br>Maldición de debilidad: –6 a Fuerza y Destreza.<br>Maldición de idiotez: –6 a Inteligencia, Sabiduría y Carisma.<br>Maldición de deterioro: –4 a las tiradas de ataque y salvación y a las pruebas de característica y habilidad.<br>Maldición de terror: cada asalto el objetivo solo tiene un 50% de probabilidad de actuar normalmente; de lo contrario permanece en su sitio bajo un efecto de miedo."
   },
 
   {
     "Key": "HorrifyingCurse.Name",
     "enGB": "Curse of Terror",
-    "zhCN": "恐怖诅咒"
+    "zhCN": "恐怖诅咒",
+    "deDE": "Fluch des Schreckens",
+    "frFR": "Malédiction de terreur",
+    "ruRU": "Проклятие ужаса",
+    "esES": "Maldición de terror"
   },
 
   {
     "Key": "HorrifyingCurse.Description",
     "enGB": "Each round the target has only a <b><color=#703565>50% chance</color></b> to act normally, otherwise it remains in place under a <b><color=#703565>fear effect</color></b>.",
-    "zhCN": "目标每回合目标只有<b><color=#703565>50%概率</color></b>可以正常行动，否则将在原地承受<b><color=#703565>恐惧效果</color></b>。"
+    "zhCN": "目标每回合目标只有<b><color=#703565>50%概率</color></b>可以正常行动，否则将在原地承受<b><color=#703565>恐惧效果</color></b>。",
+    "deDE": "Das Ziel hat jede Runde nur eine Chance von 50%, normal zu handeln; andernfalls bleibt es unter einem Furchteffekt an Ort und Stelle.",
+    "frFR": "À chaque round, la cible n'a que 50 % de chances d'agir normalement ; sinon, elle reste sur place sous un effet de terreur.",
+    "ruRU": "Каждый раунд цель имеет лишь 50% шанс действовать нормально; иначе она остаётся на месте под действием страха.",
+    "esES": "Cada asalto el objetivo solo tiene un 50% de probabilidad de actuar normalmente; de lo contrario permanece en su sitio bajo un efecto de miedo."
   },
 
   {
     "Key": "Contagion.Description",
     "enGB": "The subject contracts one of the following diseases: blinding sickness, bubonic plague, cackle fever, mindfire, or shakes. The disease takes effect immediately (the onset period does not apply). If the target <b><color=#703565>fails its saving throw</color></b>, it must attempt a <b><color=#703565>Fortitude save</color></b> at the start of each subsequent round to resist the disease’s worsening; on a failure, it takes the corresponding <b><color=#703565>ability damage</color></b> again each round, and this worsening lasts for <b><color=#703565>1 round per caster level</color></b>. <br>Blinding Sickness effect: <b><color=#703565>1d4</color></b> <b><color=#703565>Strength damage</color></b>, and the target must make an additional <b><color=#703565>Fortitude save</color></b> or become permanently <b><color=#703565>blinded</color></b>;<br> Bubonic Plague effect: <b><color=#703565>1d4</color></b> <b><color=#703565>Constitution damage</color></b> and the target becomes <b><color=#703565>fatigued</color></b>;<br> Cackle Fever effect: <b><color=#703565>1d6</color></b> <b><color=#703565>Wisdom damage</color></b>; <br>Mindfire effect: <b><color=#703565>1d4</color></b> <b><color=#703565>Intelligence damage</color></b>; <br>Shakes effect: <b><color=#703565>1d8</color></b> <b><color=#703565>Dexterity damage</color></b>.",
-    "zhCN": "目标感染以下疾病之一：目盲症、黑死病、失心疯、脑热症或寒颤症。疾病立刻生效（无潜伏期）。若目标<b><color=#703565>豁免失败</color></b>，则在之后每个回合开始时必须再次进行一次<b><color=#703565>强韧豁免</color></b>以抵御疫病恶化，否则每轮都会再次承受一次相应的<b><color=#703565>属性伤害</color></b>，该恶化效果持续<b><color=#703565>每施法者等级1轮</color></b>。<br>目盲症效果：<b><color=#703565>1d4</color></b>点<b><color=#703565>力量</color></b><b><color=#703565>伤害</color></b>，目标必须进行额外的<b><color=#703565>强韧豁免</color></b>，若失败则永久<b><color=#703565>目盲</color></b>；<br>黑死病效果：<b><color=#703565>1d4</color></b>点<b><color=#703565>体质</color></b>伤害并陷入<b><color=#703565>疲劳</color></b>状态；<br>失心疯效果：<b><color=#703565>1d6</color></b>点<b><color=#703565>感知</color></b>伤害；<br>脑热症效果：<b><color=#703565>1d4</color></b>点<b><color=#703565>智力</color></b>伤害；<br>寒颤症效果：<b><color=#703565>1d8</color></b>点<b><color=#703565>敏捷</color></b>伤害。"
+    "zhCN": "目标感染以下疾病之一：目盲症、黑死病、失心疯、脑热症或寒颤症。疾病立刻生效（无潜伏期）。若目标<b><color=#703565>豁免失败</color></b>，则在之后每个回合开始时必须再次进行一次<b><color=#703565>强韧豁免</color></b>以抵御疫病恶化，否则每轮都会再次承受一次相应的<b><color=#703565>属性伤害</color></b>，该恶化效果持续<b><color=#703565>每施法者等级1轮</color></b>。<br>目盲症效果：<b><color=#703565>1d4</color></b>点<b><color=#703565>力量</color></b><b><color=#703565>伤害</color></b>，目标必须进行额外的<b><color=#703565>强韧豁免</color></b>，若失败则永久<b><color=#703565>目盲</color></b>；<br>黑死病效果：<b><color=#703565>1d4</color></b>点<b><color=#703565>体质</color></b>伤害并陷入<b><color=#703565>疲劳</color></b>状态；<br>失心疯效果：<b><color=#703565>1d6</color></b>点<b><color=#703565>感知</color></b>伤害；<br>脑热症效果：<b><color=#703565>1d4</color></b>点<b><color=#703565>智力</color></b>伤害；<br>寒颤症效果：<b><color=#703565>1d8</color></b>点<b><color=#703565>敏捷</color></b>伤害。",
+    "deDE": "Das Ziel erkrankt an Trübe Sieche, Beulenpest, Fieberwahn, Hirnbrand oder Schüttelkrämpfen. Die Krankheit wirkt sofort ohne Inkubationszeit. Bei misslungenem Rettungswurf muss das Ziel zu Beginn jeder folgenden Runde einen Zähigkeitswurf gegen die Verschlimmerung ablegen; bei einem Fehlschlag erleidet es erneut den Attributsschaden. Dies hält 1 Runde pro Zauberstufe an.<br>Trübe Sieche: 1d4 Stärkeschaden; ein weiterer Zähigkeitswurf verhindert dauerhafte Blindheit.<br>Beulenpest: 1d4 Konstitutionsschaden und Erschöpfung.<br>Fieberwahn: 1d6 Weisheitsschaden.<br>Hirnbrand: 1d4 Intelligenzschaden.<br>Schüttelkrämpfe: 1d8 Geschicklichkeitsschaden.",
+    "frFR": "La cible contracte la mal aveuglant, la peste bubonique, la fièvre gloussante, le bouille-crâne ou la tremblante. La maladie agit immédiatement, sans incubation. Si la sauvegarde échoue, la cible doit réussir un jet de Vigueur au début de chaque round suivant contre l'aggravation ; un échec inflige à nouveau les dégâts de caractéristique. Cette aggravation dure 1 round par niveau de lanceur de sorts.<br>Mal aveuglant : 1d4 dégâts de Force et un autre jet de Vigueur pour éviter une cécité permanente.<br>Peste bubonique : 1d4 dégâts de Constitution et fatigue.<br>Fièvre gloussante : 1d6 dégâts de Sagesse.<br>Bouille-crâne : 1d4 dégâts d'Intelligence.<br>Tremblante : 1d8 dégâts de Dextérité.",
+    "ruRU": "Цель заражается слепой хворобой, бубонной чумой, хохочущей горячкой, мозговым жаром или трясучкой. Болезнь действует немедленно, без инкубации. При провале спасброска цель в начале каждого следующего раунда совершает спасбросок Стойкости против ухудшения; провал вновь наносит урон характеристике. Ухудшение длится 1 раунд за уровень заклинателя.<br>Слепая хвороба: 1d4 урона Силе и дополнительный спасбросок Стойкости против постоянной слепоты.<br>Бубонная чума: 1d4 урона Телосложению и усталость.<br>Хохочущая горячка: 1d6 урона Мудрости.<br>Мозговой жар: 1d4 урона Интеллекту.<br>Трясучка: 1d8 урона Ловкости.",
+    "esES": "El objetivo contrae mal de ceguera, peste bubónica, fiebre hilarante, ascua mental o temblequeo. La enfermedad actúa de inmediato, sin incubación. Si falla la salvación, debe superar una salvación de Fortaleza al inicio de cada asalto posterior para evitar el empeoramiento; si falla, vuelve a sufrir el daño de característica. El empeoramiento dura 1 asalto por nivel de lanzador.<br>Mal de ceguera: 1d4 de daño de Fuerza y otra salvación de Fortaleza para evitar la ceguera permanente.<br>Peste bubónica: 1d4 de daño de Constitución y fatiga.<br>Fiebre hilarante: 1d6 de daño de Sabiduría.<br>Ascua mental: 1d4 de daño de Inteligencia.<br>Temblequeo: 1d8 de daño de Destreza."
   },
 
   {
     "Key": "Boneshatter.Description",
     "enGB": "The target’s bones (or exoskeleton) splinter, dealing <b><color=#703565>1d6 damage per caster level</color></b> (maximum <b><color=#703565>15d6</color></b>), but if the target is <b><color=#703565>undead</color></b> the damage becomes <b><color=#703565>1d8 per caster level</color></b> (maximum <b><color=#703565>15d8</color></b>); the target is also <b><color=#703565>exhausted</color></b> for <b><color=#703565>1 minute per caster level</color></b> from the pain and exertion of the transformation. On a successful <b><color=#703565>Fortitude save</color></b>, the damage is halved and the target is <b><color=#703565>fatigued</color></b> instead of exhausted.",
-    "zhCN": "目标的骨骼（或外骨骼）碎裂飞散，造成每<b><color=#703565>施法者等级</color></b><b><color=#703565>1d6</color></b>点<b><color=#703565>伤害</color></b>（最高<b><color=#703565>15d6</color></b>点），若目标为<b><color=#703565>不死生物</color></b>则伤害改为每施法者等级<b><color=#703565>1d8</color></b>（最高<b><color=#703565>15d8</color></b>点），同时使目标因痛苦和疲累陷入<b><color=#703565>力竭</color></b>状态，持续<b><color=#703565>每施法者等级1分钟</color></b>。若目标<b><color=#703565>强韧豁免</color></b>成功，则伤害减半，并陷入<b><color=#703565>疲劳</color></b>而非力竭状态。"
+    "zhCN": "目标的骨骼（或外骨骼）碎裂飞散，造成每<b><color=#703565>施法者等级</color></b><b><color=#703565>1d6</color></b>点<b><color=#703565>伤害</color></b>（最高<b><color=#703565>15d6</color></b>点），若目标为<b><color=#703565>不死生物</color></b>则伤害改为每施法者等级<b><color=#703565>1d8</color></b>（最高<b><color=#703565>15d8</color></b>点），同时使目标因痛苦和疲累陷入<b><color=#703565>力竭</color></b>状态，持续<b><color=#703565>每施法者等级1分钟</color></b>。若目标<b><color=#703565>强韧豁免</color></b>成功，则伤害减半，并陷入<b><color=#703565>疲劳</color></b>而非力竭状态。",
+    "deDE": "Die Knochen oder der Außenpanzer des Ziels splittern. Es erleidet 1d6 Schaden pro Zauberstufe (maximal 15d6); Untote erleiden stattdessen 1d8 pro Zauberstufe (maximal 15d8). Das Ziel ist außerdem 1 Minute pro Zauberstufe entkräftet. Ein erfolgreicher Zähigkeitswurf halbiert den Schaden und lässt es stattdessen nur erschöpft sein.",
+    "frFR": "Les os ou l'exosquelette de la cible se brisent, infligeant 1d6 dégâts par niveau de lanceur de sorts (maximum 15d6), ou 1d8 par niveau contre les morts-vivants (maximum 15d8). La cible est aussi épuisée pendant 1 minute par niveau. Un jet de Vigueur réussi réduit les dégâts de moitié et ne cause que la fatigue.",
+    "ruRU": "Кости или экзоскелет цели раскалываются, нанося 1d6 урона за уровень заклинателя (максимум 15d6), а нежити — 1d8 за уровень (максимум 15d8). Цель также получает бессилие на 1 минуту за уровень. Успешный спасбросок Стойкости уменьшает урон вдвое и заменяет бессилие усталостью.",
+    "esES": "Los huesos o el exoesqueleto del objetivo se astillan y causan 1d6 de daño por nivel de lanzador (máximo 15d6), o 1d8 por nivel si es un muerto viviente (máximo 15d8). Además queda exhausto durante 1 minuto por nivel. Una salvación de Fortaleza exitosa reduce el daño a la mitad y solo causa fatiga."
   },
 
   {
     "Key": "PoisonCast.Description",
     "enGB": "Calling upon the venomous powers of natural predators, you infect the subject with a terrible poison by making a successful melee <b><color=#703565>touch attack</color></b>. This poison deals <b><color=#703565>1d4</color></b> <b><color=#703565>Constitution damage</color></b> per round for 6 rounds. Poisoned creatures may attempt a <b><color=#703565>Fortitude save</color></b> each round to negate the <b><color=#703565>damage</color></b> and end the affliction.",
-    "zhCN": "你唤起大自然中捕食者的毒性，成功进行近战<b><color=#703565>接触攻击</color></b>检定后便可使目标身中剧毒。该毒素每<b><color=#703565>轮</color></b>造成<b><color=#703565>1d4</color></b>点<b><color=#703565>体质</color></b><b><color=#703565>伤害</color></b>，持续6轮。中毒的生物每轮可尝试<b><color=#703565>强韧豁免检定</color></b>来免受<b><color=#703565>伤害</color></b>并结束该负向效果。"
+    "zhCN": "你唤起大自然中捕食者的毒性，成功进行近战<b><color=#703565>接触攻击</color></b>检定后便可使目标身中剧毒。该毒素每<b><color=#703565>轮</color></b>造成<b><color=#703565>1d4</color></b>点<b><color=#703565>体质</color></b><b><color=#703565>伤害</color></b>，持续6轮。中毒的生物每轮可尝试<b><color=#703565>强韧豁免检定</color></b>来免受<b><color=#703565>伤害</color></b>并结束该负向效果。",
+    "deDE": "Mit einem erfolgreichen Berührungsangriff im Nahkampf vergiftest du das Ziel mit dem Gift natürlicher Raubtiere. Es verursacht 6 Runden lang jede Runde 1d4 Konstitutionsschaden. Ein Zähigkeitswurf pro Runde verhindert den Schaden und beendet die Vergiftung.",
+    "frFR": "Une attaque de contact au corps à corps réussie infecte la cible d'un venin de prédateur naturel. Le poison inflige 1d4 dégâts de Constitution par round pendant 6 rounds. Chaque round, un jet de Vigueur réussi annule les dégâts et met fin au poison.",
+    "ruRU": "Успешной ближней атакой касанием вы заражаете цель ядом природных хищников. Он наносит 1d4 урона Телосложению каждый раунд в течение 6 раундов. Каждый раунд успешный спасбросок Стойкости отменяет урон и прекращает отравление.",
+    "esES": "Un ataque de toque cuerpo a cuerpo acertado infecta al objetivo con el veneno de los depredadores naturales. Causa 1d4 de daño de Constitución cada asalto durante 6 asaltos. Cada asalto, una salvación de Fortaleza exitosa evita el daño y termina el envenenamiento."
   },
 
   {
     "Key": "Poison.Description",
     "enGB": "Injury; <b><color=#703565>Save</color></b>: Fortitude <br>Frequency: 1/ <b><color=#703565>round</color></b> for 6 rounds <br>Effect: <b><color=#703565>1d4</color></b> <b><color=#703565>Constitution damage</color></b> <br>Cure: 1 successful save",
-    "zhCN": "受创；<b><color=#703565>豁免</color></b>：强韧<br>频率：1次/<b><color=#703565>轮</color></b>，持续6轮 <br>效果：<b><color=#703565>1d4</color></b>点<b><color=#703565>体质</color></b><b><color=#703565>伤害</color></b> <br>痊愈：1次豁免成功"
+    "zhCN": "受创；<b><color=#703565>豁免</color></b>：强韧<br>频率：1次/<b><color=#703565>轮</color></b>，持续6轮 <br>效果：<b><color=#703565>1d4</color></b>点<b><color=#703565>体质</color></b><b><color=#703565>伤害</color></b> <br>痊愈：1次豁免成功",
+    "deDE": "Verwundung; Rettungswurf: Zähigkeit<br>Häufigkeit: 1/Runde für 6 Runden<br>Effekt: 1d4 Konstitutionsschaden<br>Heilung: 1 erfolgreicher Rettungswurf",
+    "frFR": "Blessure ; sauvegarde : Vigueur<br>Fréquence : 1/round pendant 6 rounds<br>Effet : 1d4 dégâts de Constitution<br>Guérison : 1 sauvegarde réussie",
+    "ruRU": "Ранение; спасбросок: Стойкость<br>Частота: 1/раунд в течение 6 раундов<br>Эффект: 1d4 урона Телосложению<br>Излечение: 1 успешный спасбросок",
+    "esES": "Herida; salvación: Fortaleza<br>Frecuencia: 1/asalto durante 6 asaltos<br>Efecto: 1d4 de daño de Constitución<br>Curación: 1 salvación exitosa"
   },
 
   {
     "Key": "OracleRevelationInvokeDeath.Name",
     "enGB": "Invoke Death",
-    "zhCN": "唤起死亡"
+    "zhCN": "唤起死亡",
+    "deDE": "Tod herbeirufen",
+    "frFR": "Invoquer la mort",
+    "ruRU": "Призыв смерти",
+    "esES": "Invocar la muerte"
   },
 
   {
     "Key": "OracleRevelationInvokeDeath.Description",
     "enGB": "As a standard action, you summon a fierce skeletal champion to serve you. This undead creature gains a bonus to its Strength and Charisma equal to your Charisma modifier.The duration is 1 minute per Charisma modifier.At 7th level, you can additionally summon one bloody bones beast.At 15th level, you can additionally summon one soul-eater.",
-    "zhCN": "以一个标准动作，唤起一个凶猛骷髅战将来服侍你，这个不死生物的力量和魅力获得你的魅力调整值的加值。持续时间等于1分钟/魅力调整值，7级时可以额外唤起一个血腥骨兽，15级时可以额外唤起一个吞魂鬼。"
+    "zhCN": "以一个标准动作，唤起一个凶猛骷髅战将来服侍你，这个不死生物的力量和魅力获得你的魅力调整值的加值。持续时间等于1分钟/魅力调整值，7级时可以额外唤起一个血腥骨兽，15级时可以额外唤起一个吞魂鬼。",
+    "deDE": "Als Standard-Aktion rufst du einen wilden Skelettchampion herbei. Er erhält einen Bonus auf Stärke und Charisma in Höhe deines Charismamodifikators. Die Dauer beträgt 1 Minute pro Punkt deines Charismamodifikators. Ab Stufe 7 kannst du zusätzlich eine Blutgebein-Bestie und ab Stufe 15 zusätzlich einen Seelenfresser herbeirufen.",
+    "frFR": "Par une action simple, vous invoquez un féroce champion squelettique. Il gagne un bonus en Force et en Charisme égal à votre modificateur de Charisme. La durée est de 1 minute par point de ce modificateur. Au niveau 7, vous invoquez aussi une bête squelettique sanguinolente ; au niveau 15, un dévoreur d'âmes supplémentaire.",
+    "ruRU": "Основным действием вы призываете свирепого скелета-чемпиона. Он получает бонус к Силе и Харизме, равный вашему модификатору Харизмы. Длительность — 1 минута за единицу этого модификатора. С 7-го уровня можно дополнительно призвать кровавую бестию, а с 15-го — ещё и пожирателя душ.",
+    "esES": "Como acción estándar, invocas a un feroz campeón esquelético. Obtiene un bonificador a Fuerza y Carisma igual a tu modificador de Carisma. Dura 1 minuto por punto de dicho modificador. A nivel 7 puedes invocar además una bestia de huesos malditos, y a nivel 15, un devorador de almas adicional."
   },
 
   {
     "Key": "OracleRevelationBloodBath.Name",
     "enGB": "Blood Bath",
-    "zhCN": "血流成河"
+    "zhCN": "血流成河",
+    "deDE": "Blutbad",
+    "frFR": "Bain de sang",
+    "ruRU": "Кровавая баня",
+    "esES": "Baño de sangre"
   },
 
   {
     "Key": "OracleRevelationBloodBath.Description",
     "enGB": "Whenever you deal negative energy damage with a spell or ability, the target begins to bleed, taking 1d6 damage each round. This damage increases by an additional 1d6 at 5th level and every 5 levels thereafter. Your necromancy spells benefit from increased range, as if modified by the Distant Spell metamagic feat.",
-    "zhCN": "当你造成负能量伤害的法术或能力时，将会使敌人开始流血，每轮受到1D6点伤害，5级以及之后每5级，该伤害再增加1D6。你的死灵法术能增加远距离施法，如同运用了超魔：法术及远。"
+    "zhCN": "当你造成负能量伤害的法术或能力时，将会使敌人开始流血，每轮受到1D6点伤害，5级以及之后每5级，该伤害再增加1D6。你的死灵法术能增加远距离施法，如同运用了超魔：法术及远。",
+    "deDE": "Wenn ein Zauber oder eine Fähigkeit von dir negativen Energieschaden verursacht, beginnt das Ziel zu bluten und erleidet jede Runde 1d6 Schaden. Ab Stufe 5 und danach alle 5 Stufen steigt dieser Schaden um 1d6. Deine Nekromantiezauber erhalten eine größere Reichweite wie durch Metamagie: Zauber ausdehnen.",
+    "frFR": "Quand un sort ou une aptitude inflige des dégâts d'énergie négative, la cible saigne et subit 1d6 dégâts par round. Ces dégâts augmentent de 1d6 au niveau 5 puis tous les 5 niveaux. La portée de vos sorts de nécromancie augmente comme avec la métamagie Extension de portée.",
+    "ruRU": "Когда ваше заклинание или способность наносит урон отрицательной энергией, цель начинает кровоточить, получая 1d6 урона за раунд. Урон увеличивается на 1d6 на 5-м уровне и каждые 5 уровней далее. Дальность ваших заклинаний некромантии увеличена, как при метамагии Дальнобойное заклинание.",
+    "esES": "Cuando un conjuro o aptitud tuyo causa daño de energía negativa, el objetivo empieza a sangrar y sufre 1d6 de daño cada asalto. El daño aumenta en 1d6 a nivel 5 y cada 5 niveles posteriores. Tus conjuros de nigromancia tienen mayor alcance, como con la metamagia Conjuro de alcance ampliado."
   },
 
   {
     "Key": "HarmOrSalyLivingAbility.Name",
     "enGB": "Endless Murderous Intent",
-    "zhCN": "无尽杀意"
+    "zhCN": "无尽杀意",
+    "deDE": "Endlose Mordlust",
+    "frFR": "Soif de meurtre sans fin",
+    "ruRU": "Бесконечная жажда убийства",
+    "esES": "Ansia homicida infinita"
   },
 
   {
     "Key": "HarmOrSalyLivingAbility.Description",
     "enGB": "Once per round, you may use Cure Critical Wounds or Inflict Critical Wounds as a free action.",
-    "zhCN": "每轮1次，你能以自由动作使用重伤术或者杀生术"
+    "zhCN": "每轮1次，你能以自由动作使用重伤术或者杀生术",
+    "deDE": "Einmal pro Runde kannst du Leid oder Schneller Tod als freie Aktion einsetzen.",
+    "frFR": "Une fois par round, vous pouvez utiliser Mise à mal ou Exécution par une action libre.",
+    "ruRU": "Раз в раунд вы можете свободным действием использовать Повреждение или Сразить живого.",
+    "esES": "Una vez por asalto, puedes usar Dañar o Rematar a los vivos como acción gratuita."
   },
 
   {
     "Key": "DirgeBardSecretsOfTheGraveFeature.Description",
     "enGB": "Starting at 2nd level, a Dirge Singer gains a bonus to Knowledge (religion) checks equal to half her bard level. A Dirge Singer can use mind-affecting spells to affect undead as if they were living creatures. For the purpose of determining which spells can affect undead, treat them as humanoids. Additionally, add the following necromancy spells to her list of known spells:2nd level: Ray of Enfeeblement, Cause Fear.6th level: Scare, Command Undead.8th level: Lesser Control Undead, Ray of Exhaustion.10th level: Control Undead, Fear.14th level: Ray of Agony, Wave of Fatigue.17th level: Undeath to Death, Sonic Wail",
-    "zhCN": "2级起，哀歌咏者在学识（宗教）检定上获得等于吟游诗人等级一半的加值。哀歌咏者可以用影响心智的法术影响不死生物，如同它们是活物一般。在判定哪些法术可以影响不死生物时，将它们视为类人生物。此外，将以下死灵法术加入已知法术列表：2级时，衰弱射线，惊恐术。6级时，恐吓术，号令死灵。8级时，次等操纵亡者，力竭射线。10级时，操纵亡者，恐惧术。14级时，剧痛射线，疲乏波。17级时，净化亡者，音爆哀鸣"
+    "zhCN": "2级起，哀歌咏者在学识（宗教）检定上获得等于吟游诗人等级一半的加值。哀歌咏者可以用影响心智的法术影响不死生物，如同它们是活物一般。在判定哪些法术可以影响不死生物时，将它们视为类人生物。此外，将以下死灵法术加入已知法术列表：2级时，衰弱射线，惊恐术。6级时，恐吓术，号令死灵。8级时，次等操纵亡者，力竭射线。10级时，操纵亡者，恐惧术。14级时，剧痛射线，疲乏波。17级时，净化亡者，音爆哀鸣",
+    "deDE": "Ab Stufe 2 erhält der Klagesänger einen Bonus auf Wissen (Religion) in Höhe seiner halben Bardenstufe. Seine geistesbeeinflussenden Zauber können Untote wie lebende Kreaturen betreffen; zur Bestimmung geeigneter Zauber gelten sie als Humanoide. Außerdem erhält er folgende bekannte Nekromantiezauber:<br>Stufe 2: Schwächestrahl, Furcht auslösen.<br>Stufe 6: Erschrecken, Untote befehligen.<br>Stufe 8: Schwächeres Untote kontrollieren, Entkräftender Strahl.<br>Stufe 10: Untote kontrollieren, Furcht.<br>Stufe 14: Qualvoller Strahl, Wellen der Erschöpfung.<br>Stufe 17: Tod den Untoten, Schallklage.",
+    "frFR": "Dès le niveau 2, le barde funèbre gagne un bonus aux tests de Connaissances (religion) égal à la moitié de son niveau de barde. Ses sorts mentaux peuvent affecter les morts-vivants comme des êtres vivants ; pour déterminer les sorts applicables, ils sont traités comme des humanoïdes. Il ajoute aussi ces sorts de nécromancie à ses sorts connus :<br>Niveau 2 : Rayon affaiblissant, Frayeur.<br>Niveau 6 : Effroi, Contrôle mineur des morts-vivants.<br>Niveau 8 : Domination mineure des morts-vivants, Rayon d'épuisement.<br>Niveau 10 : Domination des morts-vivants, Terreur.<br>Niveau 14 : Rayon d'agonie, Vagues de fatigue.<br>Niveau 17 : Annihilation de mort-vivant, Lamentation sonore.",
+    "ruRU": "С 2-го уровня бард-плакальщик получает бонус к проверкам Знания (религия), равный половине уровня барда. Его заклинания, воздействующие на разум, могут влиять на нежить как на живых существ; при определении подходящих заклинаний нежить считается гуманоидами. Он также изучает заклинания некромантии:<br>2-й уровень: Ослабляющий луч, Устрашение.<br>6-й: Испуг, Управление нежитью.<br>8-й: Малое управление нежитью, Обессиливающий луч.<br>10-й: Управление нежитью, Страх.<br>14-й: Луч агонии, Волна усталости.<br>17-й: Упокоение нежити, Звуковой плач.",
+    "esES": "Desde nivel 2, el bardo fúnebre obtiene un bonificador a Saber (religión) igual a la mitad de su nivel de bardo. Sus conjuros enajenadores afectan a los muertos vivientes como si estuvieran vivos; para determinar qué conjuros les afectan, se consideran humanoides. Añade estos conjuros de nigromancia a los conocidos:<br>Nivel 2: Rayo de debilitamiento, Causar miedo.<br>Nivel 6: Espantar, Comandar muertos vivientes.<br>Nivel 8: Controlar muertos vivientes menor, Rayo de agotamiento.<br>Nivel 10: Controlar muertos vivientes, Miedo.<br>Nivel 14: Rayo de agonía, Olas de fatiga.<br>Nivel 17: Matar muertos vivientes, Lamento sónico."
   },
 
   {
     "Key": "DirgeBardAnimateDeadReinforcement.Name",
     "enGB": "Animate Dead Reinforcement",
-    "zhCN": "亡者增援"
+    "zhCN": "亡者增援",
+    "deDE": "Verstärkung der Toten",
+    "frFR": "Renforts morts-vivants",
+    "ruRU": "Подкрепление мертвецов",
+    "esES": "Refuerzos de muertos vivientes"
   },
 
   {
     "Key": "SummonZombieAbility.Name",
     "enGB": "Summon Zombie",
-    "zhCN": "召唤僵尸战士"
+    "zhCN": "召唤僵尸战士",
+    "deDE": "Zombiekrieger herbeizaubern",
+    "frFR": "Convocation de guerrier zombie",
+    "ruRU": "Призыв зомби-воина",
+    "esES": "Convocar guerrero zombi"
   },
 
   {
     "Key": "SummonZombieAbility.Description",
     "enGB": "Once per day, summon a CR 3 zombie warrior to fight for you. It lasts 10 minutes per level of Necromancer.",
-    "zhCN": "每天1次，召唤一个CR3的僵尸战士为你作战，持续每活尸学家等级10分钟"
+    "zhCN": "每天1次，召唤一个CR3的僵尸战士为你作战，持续每活尸学家等级10分钟",
+    "deDE": "Einmal täglich rufst du einen Zombiekrieger mit HG 3 herbei. Er kämpft 10 Minuten pro Stufe als Reanimator für dich.",
+    "frFR": "Une fois par jour, vous convoquez un guerrier zombie de FP 3 qui combat à vos côtés pendant 10 minutes par niveau de réanimateur.",
+    "ruRU": "Раз в день вы призываете зомби-воина с УО 3, который сражается за вас 10 минут за уровень реаниматора.",
+    "esES": "Una vez al día convocas a un guerrero zombi de VD 3 que lucha por ti durante 10 minutos por nivel de reanimador."
   },
 
   {
     "Key": "SummonGhoulHuntMasterAbility.Name",
     "enGB": "Summon Ghoul Hunt Master",
-    "zhCN": "召唤食尸鬼狩猎大师"
+    "zhCN": "召唤食尸鬼狩猎大师",
+    "deDE": "Ghul-Jagdmeister herbeizaubern",
+    "frFR": "Convocation de maître chasseur goule",
+    "ruRU": "Призыв гуля — мастера охоты",
+    "esES": "Convocar maestro cazador gul"
   },
 
   {
     "Key": "SummonGhoulHuntMasterAbility.Description",
     "enGB": "Once per day, summon a CR 7 Ghoul Hunt Master to fight for you. It lasts 10 minutes per level of Necromancer.",
-    "zhCN": "每天1次，召唤一个CR7的食尸鬼狩猎大师为你作战，持续每活尸学家等级10分钟"
+    "zhCN": "每天1次，召唤一个CR7的食尸鬼狩猎大师为你作战，持续每活尸学家等级10分钟",
+    "deDE": "Einmal täglich rufst du einen Ghul-Jagdmeister mit HG 7 herbei. Er kämpft 10 Minuten pro Stufe als Reanimator für dich.",
+    "frFR": "Une fois par jour, vous convoquez un maître chasseur goule de FP 7 qui combat à vos côtés pendant 10 minutes par niveau de réanimateur.",
+    "ruRU": "Раз в день вы призываете гуля — мастера охоты с УО 7, который сражается за вас 10 минут за уровень реаниматора.",
+    "esES": "Una vez al día convocas a un maestro cazador gul de VD 7 que lucha por ti durante 10 minutos por nivel de reanimador."
   },
 
   {
     "Key": "SummonBloodyBonesServantAbility.Name",
     "enGB": "Summon Bloody Bones Servant",
-    "zhCN": "召唤血腥骨兽"
+    "zhCN": "召唤血腥骨兽",
+    "deDE": "Blutknochendiener herbeizaubern",
+    "frFR": "Convocation de serviteur d'os sanglants",
+    "ruRU": "Призыв кровавого костяного слуги",
+    "esES": "Convocar sirviente de huesos sangrientos"
   },
 
   {
     "Key": "SummonBloodyBonesServantAbility.Description",
     "enGB": "Once per day, summon a Bloody Bones Servant to fight for you. It lasts 10 minutes per level of Necromancer.",
-    "zhCN": "每天1次，召唤一个血腥骨兽为你作战，持续每活尸学家等级10分钟"
+    "zhCN": "每天1次，召唤一个血腥骨兽为你作战，持续每活尸学家等级10分钟",
+    "deDE": "Einmal täglich rufst du einen Blutknochendiener herbei. Er kämpft 10 Minuten pro Stufe als Reanimator für dich.",
+    "frFR": "Une fois par jour, vous convoquez un serviteur d'os sanglants qui combat à vos côtés pendant 10 minutes par niveau de réanimateur.",
+    "ruRU": "Раз в день вы призываете кровавого костяного слугу, который сражается за вас 10 минут за уровень реаниматора.",
+    "esES": "Una vez al día convocas a un sirviente de huesos sangrientos que lucha por ti durante 10 minutos por nivel de reanimador."
   },
 
   {
     "Key": "FatalEmbraceAbility.Name",
     "enGB": "Fatal Embrace",
-    "zhCN": "致命拥抱"
+    "zhCN": "致命拥抱",
+    "deDE": "Tödliche Umarmung",
+    "frFR": "Étreinte fatale",
+    "ruRU": "Смертельные объятия",
+    "esES": "Abrazo mortal"
   },
 
   {
     "Key": "FatalEmbraceAbility.Description",
     "enGB": "Your embrace is lethal enough; with a single touch, you can temporarily transform a target into an undead creature.",
-    "zhCN": "你的拥抱足以致命，你可以用一个接触动作将目标短暂地转化为不死生物。"
+    "zhCN": "你的拥抱足以致命，你可以用一个接触动作将目标短暂地转化为不死生物。",
+    "deDE": "Deine Umarmung ist tödlich: Mit einer Berührung verwandelst du ein Ziel vorübergehend in einen Untoten.",
+    "frFR": "Votre étreinte est mortelle : un simple contact transforme temporairement la cible en mort-vivant.",
+    "ruRU": "Ваши объятия смертоносны: одним касанием вы временно превращаете цель в нежить.",
+    "esES": "Tu abrazo es mortal: con un toque transformas temporalmente al objetivo en un muerto viviente."
   },
 
   {
     "Key": "BloodragerUndeadSpell7.Name",
     "enGB": "Additional Spell(FalseLifeGreater)",
-    "zhCN": "额外法术（高等虚假生命）"
+    "zhCN": "额外法术（高等虚假生命）",
+    "deDE": "Zusätzlicher Zauber (Mächtiges Falsches Leben)",
+    "frFR": "Sort supplémentaire (Simulacre de vie supérieur)",
+    "ruRU": "Дополнительное заклинание (Ложная жизнь, высшее)",
+    "esES": "Conjuro adicional (Falsa vida mayor)"
   },
 
   {
     "Key": "BloodragerUndeadFeatSelectionGreenrager.Description",
     "enGB": "Additional Specialties: Resilience, Evade, Tenacity, Agile Movement, Powerful Attack, Weapon Specialization, Weapon Proficiency, Heavy Strike Mastery.",
-    "zhCN": "额外专长：顽强、闪避、坚韧、灵活移动、猛力攻击、武器专攻、武器专精、重击精通。"
+    "zhCN": "额外专长：顽强、闪避、坚韧、灵活移动、猛力攻击、武器专攻、武器专精、重击精通。",
+    "deDE": "Bonustalente: Unverwüstlich, Ausweichen, Große Zähigkeit, Beweglichkeit, Heftiger Angriff, Waffenfokus, Waffenspezialisierung, Verbesserter Kritischer Treffer.",
+    "frFR": "Dons supplémentaires : Dur à cuire, Esquive, Vigueur surhumaine, Souplesse du serpent, Attaque en puissance, Arme de prédilection, Spécialisation martiale, Science du critique.",
+    "ruRU": "Дополнительные черты: Крепкий орешек, Уклонение, Внушительная стойкость, Подвижность, Мощная атака, Любимое оружие, Специализация на оружии, Улучшенный критический удар.",
+    "esES": "Dotes adicionales: Duro de pelar, Esquiva, Gran fortaleza, Movilidad, Ataque poderoso, Soltura con un arma, Especialización en un arma, Crítico mejorado."
   },
 
   {
   "Key": "BoneExplosion.Description",
   "enGB": "Target's bones explode in the body. If the target fails a Fortitude saving throw, it receives 8 damage per caster level and becomes exhausted, and all creatures in a 30 feet radius receive 1d8 damage per caster level (Reflex save halves). If the Fortitude saving throw is successful, the target receives 1d8 damage per caster level and becomes fatigued, and all creatures in a 30 feet radius receive 1d6 damage per caster level instead (Reflex save halves).",
-  "zhCN": "目标的骨骼在身体中爆裂。若目标在强韧豁免检定中失败，将受到每施法者等级8点伤害并陷入力竭状态，30英尺半径范围内的所有生物受到每施法者等级1d8点伤害（反射豁免检定成功可减半该伤害）。如果强韧豁免检定成功，目标受到每施法者等级1d8点伤害并陷入疲劳状态，30英尺半径范围内的所有生物改为受到每施法者等级1d6点伤害（反射豁免检定成功可减半该伤害）。"
+  "zhCN": "目标的骨骼在身体中爆裂。若目标在强韧豁免检定中失败，将受到每施法者等级8点伤害并陷入力竭状态，30英尺半径范围内的所有生物受到每施法者等级1d8点伤害（反射豁免检定成功可减半该伤害）。如果强韧豁免检定成功，目标受到每施法者等级1d8点伤害并陷入疲劳状态，30英尺半径范围内的所有生物改为受到每施法者等级1d6点伤害（反射豁免检定成功可减半该伤害）。",
+    "deDE": "Die Knochen des Ziels explodieren in seinem Körper. Bei misslungenem Zähigkeitswurf erleidet es 8 Schaden pro Zauberstufe und ist entkräftet; alle Kreaturen im Umkreis von 30 Fuß erleiden 1d8 Schaden pro Zauberstufe (Reflex halbiert). Bei erfolgreichem Zähigkeitswurf erleidet das Ziel 1d8 Schaden pro Zauberstufe und ist erschöpft; alle Kreaturen im Umkreis erleiden stattdessen 1d6 Schaden pro Zauberstufe (Reflex halbiert).",
+    "frFR": "Les os de la cible explosent dans son corps. Si elle rate son jet de Vigueur, elle subit 8 dégâts par niveau de lanceur de sorts et devient épuisée ; les créatures dans un rayon de 30 pieds subissent 1d8 dégâts par niveau (Réflexes, moitié). Si elle réussit, elle subit 1d8 dégâts par niveau et devient fatiguée ; les créatures alentour subissent plutôt 1d6 dégâts par niveau (Réflexes, moitié).",
+    "ruRU": "Кости цели взрываются внутри тела. При провале спасброска Стойкости она получает 8 урона за уровень заклинателя и бессилие, а все существа в радиусе 30 футов — 1d8 урона за уровень (Реакция уменьшает вдвое). При успехе цель получает 1d8 урона за уровень и усталость, а окружающие — 1d6 урона за уровень (Реакция уменьшает вдвое).",
+    "esES": "Los huesos del objetivo explotan en su cuerpo. Si falla una salvación de Fortaleza, sufre 8 de daño por nivel de lanzador y queda exhausto; todas las criaturas en un radio de 30 pies sufren 1d8 de daño por nivel (Reflejos reduce a la mitad). Si la supera, sufre 1d8 de daño por nivel y queda fatigado; las criaturas cercanas sufren en su lugar 1d6 de daño por nivel (Reflejos reduce a la mitad)."
   },
 
   {
   "Key": "SiphonLife.Description",
   "enGB": "This spell works as vampiric touch, except it's a ranged touch attack in medium range and the amount of damage is 1d8 per caster level. The target also becomes fatigued.",
-  "zhCN": "此法术效果类似于吸血鬼之触，区别在于它是一个中距的远程接触攻击，伤害值改为每施法者等级1d8点，并且使目标陷入疲劳状态。"
+  "zhCN": "此法术效果类似于吸血鬼之触，区别在于它是一个中距的远程接触攻击，伤害值改为每施法者等级1d8点，并且使目标陷入疲劳状态。",
+    "deDE": "Dieser Zauber wirkt wie Vampirgriff, ist jedoch ein Berührungsangriff im Fernkampf mit mittlerer Reichweite und verursacht 1d8 Schaden pro Zauberstufe. Das Ziel ist außerdem erschöpft.",
+    "frFR": "Ce sort fonctionne comme Baiser du vampire, mais utilise une attaque de contact à distance de portée moyenne et inflige 1d8 dégâts par niveau de lanceur de sorts. La cible devient aussi fatiguée.",
+    "ruRU": "Заклинание действует как Вампирское прикосновение, но использует дальнюю атаку касанием на средней дистанции и наносит 1d8 урона за уровень заклинателя. Цель также получает усталость.",
+    "esES": "Este conjuro funciona como Toque vampírico, pero es un ataque de toque a distancia de alcance medio y causa 1d8 de daño por nivel de lanzador. El objetivo también queda fatigado."
   },
 
   {
   "Key": "CircleOfDeath.Description",
   "enGB": "Circle of death snuffs out the life force of living creatures. The spell affects 1d6 HD worth of living creatures per caster level (maximum 20d6). Those who are closest to the burst's point of origin are affected first. Creatures with Hit Dice equal to or less than 9 + 1 per caster level (maximum +10) that fail their saving throw are slain outright, while creatures with more Hit Dice than that which fail their saving throw take 100 damage instead. HD that are not sufficient to affect a creature are wasted.",
-  "zhCN": "死亡法阵会消灭活物的生命力。此法术可影响总生命骰数不超过每施法者等级1d6（最高20d6）的活物。越接近法术爆发源头的活物越先受影响。生命骰数小于等于9+每施法者等级1点（最高+10）的生物若豁免失败，将被立即杀死；生命骰数高于该数值的生物若豁免失败，则改为受到100点伤害。不足以影响一个生物的多余生命骰数忽略不计。"
+  "zhCN": "死亡法阵会消灭活物的生命力。此法术可影响总生命骰数不超过每施法者等级1d6（最高20d6）的活物。越接近法术爆发源头的活物越先受影响。生命骰数小于等于9+每施法者等级1点（最高+10）的生物若豁免失败，将被立即杀死；生命骰数高于该数值的生物若豁免失败，则改为受到100点伤害。不足以影响一个生物的多余生命骰数忽略不计。",
+    "deDE": "Todeskreis löscht die Lebenskraft lebender Kreaturen aus. Er betrifft insgesamt 1d6 TW pro Zauberstufe (maximal 20d6), beginnend mit den dem Ursprung nächsten Kreaturen. Misslingt der Rettungswurf, sterben Kreaturen mit höchstens 9 + 1 TW pro Zauberstufe (maximal +10) sofort; Kreaturen mit mehr TW erleiden stattdessen 100 Schaden. Übrige TW, die für eine Kreatur nicht ausreichen, verfallen.",
+    "frFR": "Cercle de mort éteint la force vitale des créatures vivantes. Il affecte un total de 1d6 DV par niveau de lanceur de sorts (maximum 20d6), en commençant par les plus proches du centre. En cas de sauvegarde ratée, celles ayant au plus 9 + 1 DV par niveau (maximum +10) meurent instantanément ; celles ayant davantage de DV subissent plutôt 100 dégâts. Les DV restants insuffisants pour affecter une créature sont perdus.",
+    "ruRU": "Круг смерти угашает жизнь существ с суммарными КЗ 1d6 за уровень заклинателя (максимум 20d6), начиная с ближайших к центру. При провале спасброска существа с КЗ не выше 9 + 1 за уровень заклинателя (максимум +10) немедленно погибают; имеющие больше КЗ получают вместо этого 100 урона. Остаток КЗ, недостаточный для следующего существа, пропадает.",
+    "esES": "Círculo de muerte apaga la fuerza vital de criaturas vivas con un total de 1d6 DG por nivel de lanzador (máximo 20d6), empezando por las más cercanas al centro. Si fallan la salvación, las que tengan como máximo 9 + 1 DG por nivel (máximo +10) mueren al instante; las de más DG sufren 100 de daño en su lugar. Los DG restantes insuficientes para afectar a una criatura se pierden."
   },
 
   {
     "Key":"UndeathToDeath.Name",
     "zhCN": "不死归亡",
-    "enGB": "Undeath to Death"
+    "enGB": "Undeath to Death",
+    "deDE": "Tod den Untoten",
+    "frFR": "Annihilation de mort-vivant",
+    "ruRU": "Упокоение нежити",
+    "esES": "Matar muertos vivientes"
   },
 
   {
   "Key": "UndeathToDeath.Description",
   "enGB": "Undeath to Death destroys undead creatures. The spell affects 1d6 HD worth of undead creatures per caster level (maximum 20d6). Those with the fewest Hit Dice are affected first, and among creatures with equal Hit Dice, those closest to the burst's point of origin are affected first. Undead creatures with Hit Dice equal to or less than 9 + 1 per caster level (maximum +10) that fail their saving throw are slain outright, while undead creatures with more Hit Dice than that which fail their saving throw take 100 damage instead. HD that are not sufficient to affect a creature are wasted.",
-  "zhCN": "该法术能够熄灭不死生物的生命之火，将其立刻击杀。此法术可影响总生命骰数不超过每施法者等级1d6（最高20d6）的不死生物。生命骰数越低的生物越先受影响，而在相同生命骰数的生物中，最接近法术爆发源点的生物先受影响。生命骰数小于等于9+每施法者等级1点（最高+10）的亡灵生物若豁免失败，将被立即杀死；生命骰数高于该数值的亡灵生物若豁免失败，则改为受到100点伤害。不足以影响一个生物的多余生命骰数忽略不计。"
+  "zhCN": "该法术能够熄灭不死生物的生命之火，将其立刻击杀。此法术可影响总生命骰数不超过每施法者等级1d6（最高20d6）的不死生物。生命骰数越低的生物越先受影响，而在相同生命骰数的生物中，最接近法术爆发源点的生物先受影响。生命骰数小于等于9+每施法者等级1点（最高+10）的亡灵生物若豁免失败，将被立即杀死；生命骰数高于该数值的亡灵生物若豁免失败，则改为受到100点伤害。不足以影响一个生物的多余生命骰数忽略不计。",
+    "deDE": "Der Zauber vernichtet Untote mit insgesamt 1d6 TW pro Zauberstufe (maximal 20d6). Zuerst sind diejenigen mit den wenigsten TW betroffen; bei Gleichstand die dem Ursprung nächsten. Misslingt der Rettungswurf, werden Untote mit höchstens 9 + 1 TW pro Zauberstufe (maximal +10) sofort vernichtet; Untote mit mehr TW erleiden stattdessen 100 Schaden. Nicht ausreichende übrige TW verfallen.",
+    "frFR": "Ce sort détruit les morts-vivants pour un total de 1d6 DV par niveau de lanceur de sorts (maximum 20d6). Il affecte d'abord ceux ayant le moins de DV, puis, à égalité, les plus proches du centre. En cas de sauvegarde ratée, ceux ayant au plus 9 + 1 DV par niveau (maximum +10) sont détruits ; ceux ayant davantage de DV subissent plutôt 100 dégâts. Les DV restants insuffisants sont perdus.",
+    "ruRU": "Заклинание уничтожает нежить с суммарными КЗ 1d6 за уровень заклинателя (максимум 20d6). Сначала действует на существ с наименьшими КЗ, при равенстве — на ближайших к центру. При провале спасброска нежить с КЗ не выше 9 + 1 за уровень заклинателя (максимум +10) погибает немедленно; имеющая больше КЗ получает 100 урона. Недостаточный остаток КЗ пропадает.",
+    "esES": "El conjuro destruye muertos vivientes con un total de 1d6 DG por nivel de lanzador (máximo 20d6). Afecta primero a los de menos DG y, en caso de empate, a los más cercanos al centro. Si fallan la salvación, los que tengan como máximo 9 + 1 DG por nivel (máximo +10) son destruidos; los de más DG sufren 100 de daño. Los DG restantes insuficientes se pierden."
   },
 
   {
   "Key": "HealDamage.Description",
   "enGB": "Heal enables you to channel positive energy into a creature to wipe away injury and afflictions. It immediately ends any and all of the following adverse conditions affecting the target: ability damage, blinded, confused, dazed, dazzled, diseased, exhausted, fatigued, nauseated, poisoned, sickened, and stunned. It also cures 10 hit points of damage per caster level, to a maximum of 200 points at 20th level. Heal does not remove negative levels or restore permanently drained ability score points. If used against an undead creature, heal acts like harm.",
-  "zhCN": "医疗术可以让你向生物引导正向能量，驱除伤害和负向效果。它可立即结束以下所有影响目标的不利状态：属性伤害、目盲、困惑、眩晕、目眩、患病、力竭、疲劳、反胃、中毒、恶心及震慑。它还能治疗伤害，恢复每施法者等级10点生命值（20级时达到最多200点）。医疗术不会移除负向等级，也无法恢复永久的属性流失。如果对不死生物使用，医疗术改为产生类似重伤术的效果。"
+  "zhCN": "医疗术可以让你向生物引导正向能量，驱除伤害和负向效果。它可立即结束以下所有影响目标的不利状态：属性伤害、目盲、困惑、眩晕、目眩、患病、力竭、疲劳、反胃、中毒、恶心及震慑。它还能治疗伤害，恢复每施法者等级10点生命值（20级时达到最多200点）。医疗术不会移除负向等级，也无法恢复永久的属性流失。如果对不死生物使用，医疗术改为产生类似重伤术的效果。",
+    "deDE": "Heilung fokussiert positive Energie in eine Kreatur und beendet Attributsschaden, Blindheit, Verwirrung, Benommenheit, Blendung, Krankheit, Entkräftung, Erschöpfung, Übelkeit, Vergiftung, Kränkeln und Betäubung. Außerdem heilt sie 10 Trefferpunkte pro Zauberstufe, maximal 200 auf Stufe 20. Negative Stufen und dauerhaft entzogene Attributspunkte werden nicht wiederhergestellt. Gegen Untote wirkt sie wie Leid.",
+    "frFR": "Guérison suprême canalise l'énergie positive dans une créature et met fin aux dégâts de caractéristique, à la cécité, la confusion, l'hébétement, l'éblouissement, la maladie, l'épuisement, la fatigue, la nausée, l'empoisonnement, la fièvre et l'étourdissement. Elle soigne aussi 10 points de vie par niveau de lanceur de sorts, maximum 200 au niveau 20. Elle ne retire pas les niveaux négatifs ni les diminutions permanentes de caractéristique. Sur un mort-vivant, elle agit comme Mise à mal.",
+    "ruRU": "Излечение направляет положительную энергию в существо, снимая урон характеристикам, слепоту, замешательство, ступор, ослепление ярким светом, болезни, бессилие, усталость, тошноту, отравление, дезориентацию и шок. Оно восстанавливает 10 ОЗ за уровень заклинателя, максимум 200 на 20-м уровне. Не снимает отрицательные уровни и не восстанавливает навсегда вытянутые характеристики. На нежить действует как Повреждение.",
+    "esES": "Sanar canaliza energía positiva en una criatura y elimina daño de característica, ceguera, confusión, atontamiento, deslumbramiento, enfermedad, agotamiento, fatiga, mareo, envenenamiento, indisposición y aturdimiento. También cura 10 puntos de golpe por nivel de lanzador, máximo 200 a nivel 20. No elimina niveles negativos ni restaura características drenadas permanentemente. Contra muertos vivientes funciona como Dañar."
   },
 
   {
     "Key":"commandUndead.Duration",
     "enGB": "1 minute/level",
-    "zhCN":"1分钟/级"
+    "zhCN":"1分钟/级",
+    "deDE": "1 Minute/Stufe",
+    "frFR": "1 minute/niveau",
+    "ruRU": "1 минута/уровень",
+    "esES": "1 minuto/nivel"
   },
 
   {
   "Key": "commandUndead.Description",
   "enGB": "You can make any undead creature fight on your side as if it was your ally. It will attack your opponents to the best of its ability.",
-  "zhCN": "你可以让不死生物为你作战，如同它是你的盟友。它会尽全力攻击你的敌人。"
+  "zhCN": "你可以让不死生物为你作战，如同它是你的盟友。它会尽全力攻击你的敌人。",
+    "deDE": "Du lässt einen Untoten wie einen Verbündeten für dich kämpfen. Er greift deine Gegner nach besten Kräften an.",
+    "frFR": "Vous faites combattre un mort-vivant à vos côtés comme un allié. Il attaque vos adversaires au mieux de ses capacités.",
+    "ruRU": "Вы заставляете нежить сражаться на вашей стороне как союзника. Она атакует ваших противников в меру своих сил.",
+    "esES": "Haces que un muerto viviente luche de tu lado como un aliado. Atacará a tus enemigos lo mejor que pueda."
   },
 
   {
   "Key": "WavesOfFatigue.Description",
   "enGB": "Waves of negative energy render all living creatures in the spell's area fatigued. Creatures that are already fatigued become exhausted instead.",
-  "zhCN": "潮水般的负向能量使法术范围内的所有活物陷入疲劳状态。对于已经处于疲劳状态的生物，则改为使其陷入力竭状态。"
+  "zhCN": "潮水般的负向能量使法术范围内的所有活物陷入疲劳状态。对于已经处于疲劳状态的生物，则改为使其陷入力竭状态。",
+    "deDE": "Wellen negativer Energie lassen alle lebenden Kreaturen im Wirkungsbereich erschöpft werden. Bereits erschöpfte Kreaturen werden stattdessen entkräftet.",
+    "frFR": "Des vagues d'énergie négative fatiguent toutes les créatures vivantes dans la zone. Les créatures déjà fatiguées deviennent épuisées.",
+    "ruRU": "Волны отрицательной энергии вызывают усталость у всех живых существ в области. Уже уставшие существа вместо этого получают бессилие.",
+    "esES": "Olas de energía negativa fatigan a todas las criaturas vivas en la zona. Las que ya estén fatigadas quedan exhaustas."
   },
 
   {
   "Key": "DeathBlessingMajorAbility.Description",
   "enGB": "Starting from level 10, you can launch a melee contact attack against an enemy, inflicting excruciating pain upon it. If you hit successfully, you cause the target to suffer 1d4 temporary negative levels for 1 hour. Additionally, you can expend a swift action to activate this ability, enabling you to apply this effect to your next melee attack within the next minute. These temporary negative levels can be stacked. You will not receive any benefits from causing these negative levels (such as the temporary hit points gained by undead creatures due to the necromancy spell).",
-  "zhCN": "10级起，你可以对敌人发起一次近战接触攻击，使其承受难忍痛苦。若成功命中，你令目标承受1d4个临时负向等级，持续1小时。此外，你也能够花费迅捷动作来启动此能力，使你在接下来一分钟内，下一次近战攻击附带此效果。这些临时负向等级可叠加。你不会因造成这些负向等级而获得好处（比如不死生物因弱能术而获得的临时生命值。"
+  "zhCN": "10级起，你可以对敌人发起一次近战接触攻击，使其承受难忍痛苦。若成功命中，你令目标承受1d4个临时负向等级，持续1小时。此外，你也能够花费迅捷动作来启动此能力，使你在接下来一分钟内，下一次近战攻击附带此效果。这些临时负向等级可叠加。你不会因造成这些负向等级而获得好处（比如不死生物因弱能术而获得的临时生命值。",
+    "deDE": "Ab Stufe 10 kannst du einen Berührungsangriff im Nahkampf gegen einen Feind ausführen. Bei einem Treffer erleidet er 1d4 temporäre negative Stufen für 1 Stunde. Alternativ aktivierst du diese Fähigkeit als schnelle Aktion, um deinen nächsten Nahkampfangriff innerhalb 1 Minute damit zu versehen. Diese negativen Stufen sind kumulativ. Du erhältst daraus keine Vorteile, etwa temporäre Trefferpunkte wie Untote durch Entkräftung.",
+    "frFR": "Dès le niveau 10, vous pouvez effectuer une attaque de contact au corps à corps contre un ennemi. Si elle touche, il subit 1d4 niveaux négatifs temporaires pendant 1 heure. Vous pouvez aussi activer l'aptitude par une action rapide pour appliquer l'effet à votre prochaine attaque au corps à corps dans la minute. Ces niveaux négatifs se cumulent. Vous n'en tirez aucun avantage, comme les points de vie temporaires accordés aux morts-vivants par Énergie négative.",
+    "ruRU": "С 10-го уровня вы можете совершить ближнюю атаку касанием против врага. При попадании он получает 1d4 временных отрицательных уровней на 1 час. Также можно активировать способность быстрым действием, чтобы наложить эффект следующей ближней атакой в течение 1 минуты. Отрицательные уровни складываются. Вы не получаете от них преимуществ, например временных ОЗ, которые нежить получает от Обессиливания.",
+    "esES": "Desde nivel 10 puedes realizar un ataque de toque cuerpo a cuerpo contra un enemigo. Si aciertas, le impones 1d4 niveles negativos temporales durante 1 hora. También puedes activar la aptitud como acción rápida para aplicar el efecto a tu siguiente ataque cuerpo a cuerpo durante el próximo minuto. Estos niveles negativos se acumulan. No obtienes beneficios por causarlos, como los puntos de golpe temporales que los muertos vivientes reciben de Enervación."
   },
 
   {
   "Key": "UndeadSubdomainBaseAbility.Description",
   "enGB": "You can use melee contact attacks to make a creature exhibit certain characteristics of an undead creature and be enhanced at the same time. When the touched creature is determining the effect of healing or causing damage based on positive or negative energy, it is regarded as an undead creature. Additionally, it gains the亵渎 bonus on attack rolls， skill checks， attribute checks， and saving throws， for a duration equal to half of the class level that grants you this domain (minimum 1 round). This ability can be cast once per day equal to 3 + the adjustment for perception.",
-  "zhCN": "你可以通过近战接触攻击，让一个生物显现出不死生物的某些特性，同时被增强。被触碰的生物在判定基于正向或负向能量的治疗或造成伤害效果时，视为不死生物，同时在攻击检定，技能检定，属性检定和豁免鉴定上获得亵渎加值，持续轮数等于赋予你此子域的职业等级的一半（最少1轮）。此能力每日可施展次数等于3+感知调整值。"
+  "zhCN": "你可以通过近战接触攻击，让一个生物显现出不死生物的某些特性，同时被增强。被触碰的生物在判定基于正向或负向能量的治疗或造成伤害效果时，视为不死生物，同时在攻击检定，技能检定，属性检定和豁免鉴定上获得亵渎加值，持续轮数等于赋予你此子域的职业等级的一半（最少1轮）。此能力每日可施展次数等于3+感知调整值。",
+    "deDE": "Ein Berührungsangriff im Nahkampf verleiht einer Kreatur Merkmale der Untoten und stärkt sie. Für Heilung und Schaden durch positive oder negative Energie gilt sie als untot. Sie erhält zudem einen weltlichen Bonus auf Angriffs-, Fertigkeits-, Attributs- und Rettungswürfe. Die Dauer beträgt die Hälfte der Stufe in der Klasse, die dir diese Unterdomäne verleiht, in Runden (mindestens 1). Täglich 3 + dein Weisheitsmodifikator Mal einsetzbar.",
+    "frFR": "Une attaque de contact au corps à corps confère à une créature des traits de mort-vivant et la renforce. Elle est traitée comme morte-vivante pour les soins ou dégâts d'énergie positive ou négative. Elle gagne aussi un bonus de malveillance aux jets d'attaque et de sauvegarde et aux tests de compétence et de caractéristique. La durée est égale à la moitié du niveau de la classe accordant ce sous-domaine, en rounds (minimum 1). Utilisable 3 + votre modificateur de Sagesse fois par jour.",
+    "ruRU": "Ближняя атака касанием придаёт существу черты нежити и усиливает его. При определении лечения и урона положительной или отрицательной энергией оно считается нежитью. Также оно получает нечистый бонус к броскам атаки, проверкам навыков и характеристик и спасброскам. Длительность в раундах равна половине уровня класса, давшего этот поддомен (минимум 1). Доступно 3 + модификатор Мудрости раз в день.",
+    "esES": "Un ataque de toque cuerpo a cuerpo otorga a una criatura rasgos de muerto viviente y la refuerza. Se considera un muerto viviente al determinar la curación o el daño por energía positiva o negativa. Además obtiene un bonificador profano a las tiradas de ataque y salvación y las pruebas de habilidad y característica. Dura tantos asaltos como la mitad del nivel de la clase que otorga este subdominio (mínimo 1). Puede usarse 3 + tu modificador de Sabiduría veces al día."
   },
 
   {
   "Key": "DeathBlessingMinorAbility.Description",
   "enGB": "Starting from level 1, you can transform your appearance into that of a corpse, making you appear even more terrifying within one minute and providing protection similar to that of an undead creature. Your intimidate communication skill check gains a +4 bonus, and your saving throws against diseases, mental effects, paralyzation, toxins, and stun receive a +2 bonus of blasphemy. From level 15, you will transform into an undead creature.",
-  "zhCN": "1级起，你可以将外貌变得宛如一具尸体，在1分钟内让你变得更加骇人，并提供近似于不死生物的防护。你用于威吓的沟通技能检定获得+4加值，抵抗疾病、心智效应、麻痹、毒素和震慑豁免检定获得+2亵渎加值，15级起你将化身为不死生物。"
+  "zhCN": "1级起，你可以将外貌变得宛如一具尸体，在1分钟内让你变得更加骇人，并提供近似于不死生物的防护。你用于威吓的沟通技能检定获得+4加值，抵抗疾病、心智效应、麻痹、毒素和震慑豁免检定获得+2亵渎加值，15级起你将化身为不死生物。",
+    "deDE": "Ab Stufe 1 kannst du 1 Minute lang wie eine Leiche aussehen. Du erhältst +4 auf Überzeugen zum Einschüchtern sowie einen weltlichen Bonus von +2 auf Rettungswürfe gegen Krankheiten, geistesbeeinflussende Effekte, Lähmung, Gift und Betäubung. Ab Stufe 15 wirst du dabei zu einem Untoten.",
+    "frFR": "Dès le niveau 1, vous prenez l'apparence d'un cadavre pendant 1 minute. Vous gagnez +4 aux tests de Persuasion pour intimider et un bonus de malveillance de +2 aux sauvegardes contre les maladies, effets mentaux, paralysies, poisons et étourdissements. Dès le niveau 15, vous devenez alors un mort-vivant.",
+    "ruRU": "С 1-го уровня вы можете на 1 минуту принять облик трупа. Вы получаете +4 к проверкам Убеждения для запугивания и нечистый бонус +2 к спасброскам против болезней, эффектов воздействия на разум, паралича, ядов и шока. С 15-го уровня вы при этом становитесь нежитью.",
+    "esES": "Desde nivel 1 puedes adoptar el aspecto de un cadáver durante 1 minuto. Obtienes +4 a las pruebas de Persuasión para intimidar y un bonificador profano de +2 a las salvaciones contra enfermedades, efectos enajenadores, parálisis, venenos y aturdimiento. Desde nivel 15 te transformas entonces en un muerto viviente."
   },
 
   {
   "Key": "UndeadAnimalBonusFeature.Name",
   "enGB": "Death with Grace",
-  "zhCN": "优雅归亡"
+  "zhCN": "优雅归亡",
+    "deDE": "Anmut im Tod",
+    "frFR": "Grâce dans la mort",
+    "ruRU": "Изящная смерть",
+    "esES": "Gracia en la muerte"
   },
 
   {
   "Key": "UndeadAnimalBonusFeature.Description",
   "enGB": "The peaceful death has a unique charm. The deceased animal companion gains a +6 bonus to Charisma.",
-  "zhCN": "宁静的死亡具有独特的魅力，死蚀动物伙伴获得+6魅力加值。"
+  "zhCN": "宁静的死亡具有独特的魅力，死蚀动物伙伴获得+6魅力加值。",
+    "deDE": "Ein friedlicher Tod besitzt seinen eigenen Charme. Der todesgezeichnete Tiergefährte erhält +6 auf Charisma.",
+    "frFR": "La mort paisible a un charme unique. Le compagnon animal mortifère gagne +6 en Charisme.",
+    "ruRU": "У мирной смерти особое очарование. Смертоприкосновенный питомец получает +6 к Харизме.",
+    "esES": "Una muerte serena tiene un encanto especial. El compañero animal tocado por la muerte obtiene +6 a Carisma."
   },
 
   {
   "Key": "BloodragerUndeadGhostStrike.Description",
   "enGB": "From level 4 onwards, your melee attacks are treated as having the weapon special ability Ghostly, and they deal an additional 1d6 damage to living creatures.",
-  "zhCN": "4级起，你的近战攻击视为具有武器特殊能力“幽冥”，同时对活物增加1d6伤害。"
+  "zhCN": "4级起，你的近战攻击视为具有武器特殊能力“幽冥”，同时对活物增加1d6伤害。",
+    "deDE": "Ab Stufe 4 gelten deine Nahkampfangriffe als mit der Waffeneigenschaft Geisterhafte Berührung versehen und verursachen gegen lebende Kreaturen zusätzlich 1d6 Schaden.",
+    "frFR": "Dès le niveau 4, vos attaques au corps à corps sont considérées comme dotées de la propriété d'arme Spectrale et infligent 1d6 dégâts supplémentaires aux créatures vivantes.",
+    "ruRU": "С 4-го уровня ваши ближние атаки считаются обладающими свойством Призрачное оружие и наносят живым существам дополнительно 1d6 урона.",
+    "esES": "Desde nivel 4 tus ataques cuerpo a cuerpo se consideran dotados de la propiedad Toque fantasmal y causan 1d6 de daño adicional a criaturas vivas."
   },
 
   {
   "Key": "BloodragerUndeadOneFootInTheGrave.Description",
   "enGB": "After reaching level 20, you will transform into a Undead creature and become immune to cold, paralysis and sleep. The damage reduction provided by your damage reduction ability is increased to 8 points. When casting spells and spell-like abilities against non-living creatures, you gain a +4 morale bonus on saving throws. You will possess these benefits permanently, even if you do not enter Bloodthirst Fury.",
-  "zhCN": "达到20级后，你将化身为不死生物，同时对寒冷、麻痹和睡眠免疫。你的伤害减免能力提供的伤害减免提高到8点。你在对抗不死生物施展的法术和类法术能力时，豁免检定获得+4士气加值。你将永久具有这些益处，即使未进入血承狂暴也是如此。"
+  "zhCN": "达到20级后，你将化身为不死生物，同时对寒冷、麻痹和睡眠免疫。你的伤害减免能力提供的伤害减免提高到8点。你在对抗不死生物施展的法术和类法术能力时，豁免检定获得+4士气加值。你将永久具有这些益处，即使未进入血承狂暴也是如此。",
+    "deDE": "Ab Stufe 20 wirst du untot und immun gegen Kälte, Lähmung und Schlaf. Die Schadensreduzierung deiner entsprechenden Fähigkeit steigt auf 8. Du erhältst einen Moralbonus von +4 auf Rettungswürfe gegen Zauber und zauberähnliche Fähigkeiten von Untoten. Diese Vorteile gelten dauerhaft, auch außerhalb deiner Blutrage.",
+    "frFR": "Au niveau 20, vous devenez un mort-vivant, immunisé contre le froid, la paralysie et le sommeil. La réduction des dégâts de votre aptitude correspondante passe à 8. Vous gagnez un bonus de moral de +4 aux sauvegardes contre les sorts et pouvoirs magiques lancés par les morts-vivants. Ces avantages sont permanents, même hors de votre rage sanguine.",
+    "ruRU": "На 20-м уровне вы становитесь нежитью и получаете иммунитет к холоду, параличу и сну. Снижение урона вашей соответствующей способности возрастает до 8. Вы получаете боевой дух +4 к спасброскам против заклинаний и псевдозаклинаний, применённых нежитью. Эти преимущества постоянны и действуют вне кровавой ярости.",
+    "esES": "A nivel 20 te conviertes en un muerto viviente inmune al frío, la parálisis y el sueño. La reducción de daño de tu aptitud correspondiente aumenta a 8. Obtienes un bonificador de moral de +4 a las salvaciones contra conjuros y aptitudes sortílegas lanzados por muertos vivientes. Los beneficios son permanentes, incluso fuera de tu furia de sangre."
   },
 
   {
   "Key": "DeathtouchedFortitudeBonus.Description",
   "enGB": "Starting from level 6, when a dead-withered animal companion fights against a normal opponent and the effect does not affect items or undead creatures, it gains a +4 morale bonus on the Constitution saving throw, and also receives all the benefits of the Life and Death Interwoven feat.",
-  "zhCN": "6级起，死蚀动物伙伴对抗正常不会影响物品或不死生物的效果时，在强韧豁免上获得+4士气加值，同时获得生死交织的所有好处。"
+  "zhCN": "6级起，死蚀动物伙伴对抗正常不会影响物品或不死生物的效果时，在强韧豁免上获得+4士气加值，同时获得生死交织的所有好处。",
+    "deDE": "Ab Stufe 6 erhält der todesgezeichnete Tiergefährte einen Moralbonus von +4 auf Zähigkeitswürfe gegen Effekte, die normalerweise weder Gegenstände noch Untote betreffen. Außerdem erhält er alle Vorteile von Lebensstarke Seele.",
+    "frFR": "Dès le niveau 6, le compagnon animal mortifère gagne un bonus de moral de +4 aux jets de Vigueur contre les effets qui n'affectent normalement ni les objets ni les morts-vivants. Il gagne aussi tous les avantages de Domination de la vie.",
+    "ruRU": "С 6-го уровня смертоприкосновенный питомец получает боевой дух +4 к спасброскам Стойкости против эффектов, обычно не действующих на предметы и нежить, а также все преимущества черты Господствующая над жизнью душа.",
+    "esES": "Desde nivel 6, el compañero animal tocado por la muerte obtiene un bonificador de moral de +4 a las salvaciones de Fortaleza contra efectos que normalmente no afectan a objetos ni muertos vivientes, además de todos los beneficios de Alma dominadora de vida."
   },
 
   {
   "Key": "ResistLevelDrainDhampir.Description",
   "enGB": "Immune energy depletion effect.",
-  "zhCN": "免疫能量流失效果。"
+  "zhCN": "免疫能量流失效果。",
+    "deDE": "Immun gegen Energieentzug.",
+    "frFR": "Immunité à l'absorption d'énergie.",
+    "ruRU": "Иммунитет к вытягиванию энергии.",
+    "esES": "Inmunidad a la consunción de energía."
   },
 
   {
   "Key": "WrackingRay.Description",
   "enGB": "A ray of sickly greenish-gray negative energy issues forth from the palm of your hand.\n\nMake a ranged touch attack against the target. A creature hit by this spell is wracked by painful spasms as its muscles and sinews wither and twist.\n\nThe subject takes 1d4 points of Dexterity and Strength damage per 3 caster levels you possess (maximum 5d4 each). A successful Fortitude save halves the damage.",
-  "zhCN": "一道黯淡的青灰色负向能量从你的掌心发出。\n\n对目标进行一次远程接触攻击。被此法术击中的生物的肌肉和肌腱枯萎扭曲，陷入痛苦的痉挛。\n\n受术者受到每3个施法者等级1d4点敏捷和力量伤害（最高各5d4点）。通过成功的强韧豁免可减半该伤害。"
+  "zhCN": "一道黯淡的青灰色负向能量从你的掌心发出。\n\n对目标进行一次远程接触攻击。被此法术击中的生物的肌肉和肌腱枯萎扭曲，陷入痛苦的痉挛。\n\n受术者受到每3个施法者等级1d4点敏捷和力量伤害（最高各5d4点）。通过成功的强韧豁免可减半该伤害。",
+    "deDE": "Ein kränklich grüngrauer Strahl negativer Energie schießt aus deiner Handfläche.\n\nFühre einen Berührungsangriff im Fernkampf aus. Die getroffene Kreatur wird von schmerzhaften Krämpfen geschüttelt, während Muskeln und Sehnen verkümmern und sich verdrehen.\n\nDas Ziel erleidet pro 3 Zauberstufen jeweils 1d4 Geschicklichkeits- und Stärkeschaden (maximal je 5d4). Ein erfolgreicher Zähigkeitswurf halbiert den Schaden.",
+    "frFR": "Un rayon d'énergie négative d'un gris verdâtre maladif jaillit de votre paume.\n\nEffectuez une attaque de contact à distance. La créature touchée est prise de spasmes douloureux tandis que ses muscles et tendons se flétrissent et se tordent.\n\nElle subit 1d4 dégâts de Dextérité et de Force par tranche de 3 niveaux de lanceur de sorts (maximum 5d4 chacun). Un jet de Vigueur réussi réduit les dégâts de moitié.",
+    "ruRU": "Из вашей ладони вырывается болезненный зеленовато-серый луч отрицательной энергии.\n\nСовершите дальнюю атаку касанием. Поражённое существо корчится от болезненных спазмов, пока его мышцы и сухожилия усыхают и скручиваются.\n\nЦель получает по 1d4 урона Ловкости и Силе за каждые 3 уровня заклинателя (максимум по 5d4). Успешный спасбросок Стойкости уменьшает урон вдвое.",
+    "esES": "Un rayo de energía negativa de un enfermizo gris verdoso sale de tu palma.\n\nRealiza un ataque de toque a distancia. La criatura alcanzada sufre espasmos dolorosos mientras sus músculos y tendones se marchitan y retuercen.\n\nSufre 1d4 de daño de Destreza y Fuerza por cada 3 niveles de lanzador (máximo 5d4 a cada una). Una salvación de Fortaleza exitosa reduce el daño a la mitad."
   },
 
   {
   "Key": "HarmDamage.Description",
   "enGB": "The Grave Wound spell inflicts negative energy damage equal to 10 points per caster level, up to a maximum of 200 points at 20th level. A successful Will saving throw reduces the damage by half. When cast upon undead creatures, the spell functions identically to the Heal spell.",
-  "zhCN": "重伤术会以负向能量冲击目标，造成每施法者等级10点伤害（20级时达到最高的200点）。如果生物的意志豁免成功，则重伤术的伤害减半。如果对不死生物使用，重伤术产生如同医疗术的效果。"
+  "zhCN": "重伤术会以负向能量冲击目标，造成每施法者等级10点伤害（20级时达到最高的200点）。如果生物的意志豁免成功，则重伤术的伤害减半。如果对不死生物使用，重伤术产生如同医疗术的效果。",
+    "deDE": "Leid verursacht 10 negativen Energieschaden pro Zauberstufe, maximal 200 auf Stufe 20. Ein erfolgreicher Willenswurf halbiert den Schaden. Gegen Untote wirkt der Zauber wie Heilung.",
+    "frFR": "Mise à mal inflige 10 dégâts d'énergie négative par niveau de lanceur de sorts, maximum 200 au niveau 20. Un jet de Volonté réussi réduit les dégâts de moitié. Sur un mort-vivant, le sort agit comme Guérison suprême.",
+    "ruRU": "Повреждение наносит 10 урона отрицательной энергией за уровень заклинателя, максимум 200 на 20-м уровне. Успешный спасбросок Воли уменьшает урон вдвое. На нежить заклинание действует как Излечение.",
+    "esES": "Dañar causa 10 de daño de energía negativa por nivel de lanzador, máximo 200 a nivel 20. Una salvación de Voluntad exitosa reduce el daño a la mitad. Contra muertos vivientes funciona como Sanar."
   },
 
   {
     "Key": "commandUndead.SavingThrow",
     "enGB": "Will negates",
-    "zhCN": "意志，免除效果"
+    "zhCN": "意志，免除效果",
+    "deDE": "Wille negiert",
+    "frFR": "Volonté, annule",
+    "ruRU": "Воля отменяет",
+    "esES": "Voluntad niega"
   },
 
   {
   "Key": "Fester.Description",
   "enGB": "Necrotic energy permeates the target, blocking healing abilities and lowering the target's resistance. The target takes a penalty to spell resistance equal to 2 + your caster level and cannot regain hit points. If the target succeeds on a Fortitude saving throw, fester lasts only a single round.",
-  "zhCN": "死灵能量将浸透目标，阻碍<b><color=#703565>治疗</color></b>的能力并且降低目标的抗力。目标的<b><color=#703565>法术抗力</color></b>降低2+你的<b><color=#703565>施法者等级</color></b>，并且无法恢复<b><color=#703565>生命值</color></b>。如果目标<b><color=#703565>强韧豁免</color></b>成功，则死疽仅持续1<b><color=#703565>轮</color></b>。"
+  "zhCN": "死灵能量将浸透目标，阻碍<b><color=#703565>治疗</color></b>的能力并且降低目标的抗力。目标的<b><color=#703565>法术抗力</color></b>降低2+你的<b><color=#703565>施法者等级</color></b>，并且无法恢复<b><color=#703565>生命值</color></b>。如果目标<b><color=#703565>强韧豁免</color></b>成功，则死疽仅持续1<b><color=#703565>轮</color></b>。",
+    "deDE": "Nekrotische Energie durchdringt das Ziel und verhindert Heilung. Seine Zauberresistenz sinkt um 2 + deine Zauberstufe, und es kann keine Trefferpunkte zurückerhalten. Bei erfolgreichem Zähigkeitswurf hält der Zauber nur 1 Runde an.",
+    "frFR": "L'énergie nécrotique imprègne la cible et bloque les soins. Sa résistance à la magie diminue de 2 + votre niveau de lanceur de sorts, et elle ne peut récupérer aucun point de vie. Si elle réussit un jet de Vigueur, le sort ne dure que 1 round.",
+    "ruRU": "Некротическая энергия пропитывает цель, препятствуя лечению. Её устойчивость к магии снижается на 2 + ваш уровень заклинателя, и она не может восстанавливать ОЗ. При успешном спасброске Стойкости эффект длится лишь 1 раунд.",
+    "esES": "La energía necrótica impregna al objetivo e impide su curación. Su resistencia a conjuros se reduce en 2 + tu nivel de lanzador y no puede recuperar puntos de golpe. Si supera una salvación de Fortaleza, el conjuro solo dura 1 asalto."
   },
 
   {
     "Key": "Eyebite.Name",
     "enGB": "Dread Gaze",
-    "zhCN": "慑心目光"
+    "zhCN": "慑心目光",
+    "deDE": "Schreckensblick",
+    "frFR": "Regard de terreur",
+    "ruRU": "Ужасающий взор",
+    "esES": "Mirada aterradora"
   },
 
   {
     "Key": "Eyebite.Description",
     "enGB": "Your gaze radiates waves of dreadful necromantic power. Each living enemy within 30 feet must succeed at a <b><color=#703565>Fortitude saving throw</color></b> or suffer the harmful effects of the <b><color=#703565>spell</color></b>. This attack has three different effects depending on the target's <b><color=#703565>Hit Dice</color></b>.\nIf the target has 10 or more Hit Dice, it becomes <b><color=#703565>sickened</color></b> for 10 minutes per <b><color=#703565>caster level</color></b>. If a target with 10 or more Hit Dice is already sickened and fails its saving throw again, it becomes nauseated instead.\nIf the target has 5–9 Hit Dice, it becomes <b><color=#703565>frightened</color></b> and sickened for 10 minutes per caster level.\nIf the target has 4 or fewer Hit Dice, it becomes <b><color=#703565>paralyzed</color></b>, frightened, and sickened for 10 minutes per caster level.\nThese effects are cumulative and concurrent.",
-    "zhCN": "你的目光辐射出令人胆寒的死灵能量波动。30英尺范围内每个活物敌人必须成功进行<b><color=#703565>强韧豁免检定</color></b>，否则将承受<b><color=#703565>法术</color></b>的有害效果。根据目标的<b><color=#703565>生命骰数</color></b>，这种袭击具有三种不同效果。\n如果目标生命骰数大于或等于10，它将在每<b><color=#703565>施法者等级</color></b>10分钟内陷入<b><color=#703565>恶心</color></b>状态。如果生命骰数大于或等于10的目标已经陷入恶心状态，并且再次豁免失败，则改为陷入反胃状态。\n如果目标生命骰数在5–9之间，它将在每施法者等级10分钟内陷入<b><color=#703565>惊恐</color></b>和恶心状态。\n如果目标生命骰数小于或等于4，它将在每施法者等级10分钟内陷入<b><color=#703565>麻痹</color></b>、惊恐和恶心状态。\n这些效果互相累计并同时生效。"
+    "zhCN": "你的目光辐射出令人胆寒的死灵能量波动。30英尺范围内每个活物敌人必须成功进行<b><color=#703565>强韧豁免检定</color></b>，否则将承受<b><color=#703565>法术</color></b>的有害效果。根据目标的<b><color=#703565>生命骰数</color></b>，这种袭击具有三种不同效果。\n如果目标生命骰数大于或等于10，它将在每<b><color=#703565>施法者等级</color></b>10分钟内陷入<b><color=#703565>恶心</color></b>状态。如果生命骰数大于或等于10的目标已经陷入恶心状态，并且再次豁免失败，则改为陷入反胃状态。\n如果目标生命骰数在5–9之间，它将在每施法者等级10分钟内陷入<b><color=#703565>惊恐</color></b>和恶心状态。\n如果目标生命骰数小于或等于4，它将在每施法者等级10分钟内陷入<b><color=#703565>麻痹</color></b>、惊恐和恶心状态。\n这些效果互相累计并同时生效。",
+    "deDE": "Dein Blick strahlt furchtbare nekromantische Macht aus. Jeder lebende Feind innerhalb von 30 Fuß muss einen Zähigkeitswurf bestehen oder erleidet je nach Trefferwürfeln folgende Effekte:\nAb 10 TW: Kränkeln für 10 Minuten pro Zauberstufe. Kränkelt ein solches Ziel bereits und misslingt sein Rettungswurf erneut, leidet es stattdessen unter Übelkeit.\n5–9 TW: Verängstigt und kränkelnd für 10 Minuten pro Zauberstufe.\nBis 4 TW: Gelähmt, verängstigt und kränkelnd für 10 Minuten pro Zauberstufe.\nDie Effekte sind kumulativ und gelten gleichzeitig.",
+    "frFR": "Votre regard émet des vagues de puissance nécromantique terrifiante. Chaque ennemi vivant dans un rayon de 30 pieds doit réussir un jet de Vigueur ou subir les effets suivants selon ses dés de vie :\n10 DV ou plus : fièvre pendant 10 minutes par niveau de lanceur de sorts. Si une telle cible est déjà fiévreuse et rate encore sa sauvegarde, elle devient nauséeuse.\n5–9 DV : effrayée et fiévreuse pendant 10 minutes par niveau.\n4 DV ou moins : paralysée, effrayée et fiévreuse pendant 10 minutes par niveau.\nLes effets sont cumulatifs et simultanés.",
+    "ruRU": "Ваш взгляд излучает волны ужасающей некромантии. Каждый живой враг в радиусе 30 футов должен пройти спасбросок Стойкости или получить эффекты согласно своим КЗ:\n10 КЗ и более: дезориентация на 10 минут за уровень заклинателя. Если такая цель уже дезориентирована и вновь проваливает спасбросок, она получает тошноту вместо этого.\n5–9 КЗ: испуг и дезориентация на 10 минут за уровень.\n4 КЗ и менее: паралич, испуг и дезориентация на 10 минут за уровень.\nЭффекты накапливаются и действуют одновременно.",
+    "esES": "Tu mirada irradia oleadas de poder nigromántico aterrador. Cada enemigo vivo en un radio de 30 pies debe superar una salvación de Fortaleza o sufrir efectos según sus Dados de Golpe:\n10 DG o más: indisposición durante 10 minutos por nivel de lanzador. Si ya está indispuesto y vuelve a fallar, queda mareado en su lugar.\n5–9 DG: asustado e indispuesto durante 10 minutos por nivel.\n4 DG o menos: paralizado, asustado e indispuesto durante 10 minutos por nivel.\nLos efectos son acumulativos y simultáneos."
   },
 
   {
     "Key": "RaiseDead.Description",
     "enGB": "You restore life to a deceased party member. A raised creature has a number of hit points equal to its current HD. Raise dead also removes death's door. Coming back from the dead is an ordeal, and the subject gains two permanent negative levels when it is raised. If the target is undead, it is not affected by these negative levels or by death's door.",
-    "zhCN": "你让一名死亡的队友复活。复活后的生物拥有等同于当前生命骰数的生命值。复活亡者还会移除生命垂危状态。从死亡中归来是一场磨难，受术者复活时会获得2个永久负向等级。若目标为不死生物，则不受这些负向等级以及生命垂危的影响。"
+    "zhCN": "你让一名死亡的队友复活。复活后的生物拥有等同于当前生命骰数的生命值。复活亡者还会移除生命垂危状态。从死亡中归来是一场磨难，受术者复活时会获得2个永久负向等级。若目标为不死生物，则不受这些负向等级以及生命垂危的影响。",
+    "deDE": "Du erweckst ein verstorbenes Gruppenmitglied mit Trefferpunkten in Höhe seiner aktuellen TW zum Leben und entfernst An der Schwelle des Todes. Die Rückkehr verursacht 2 permanente negative Stufen. Untote Ziele sind von diesen negativen Stufen und An der Schwelle des Todes nicht betroffen.",
+    "frFR": "Vous ramenez à la vie un compagnon décédé avec autant de points de vie que ses DV actuels, et retirez Aux portes de la mort. Ce retour lui inflige 2 niveaux négatifs permanents. Une cible morte-vivante n'est affectée ni par ces niveaux négatifs ni par Aux portes de la mort.",
+    "ruRU": "Вы возвращаете к жизни погибшего спутника с числом ОЗ, равным его текущим КЗ, и снимаете состояние Порог смерти. Возвращение даёт ему 2 постоянных отрицательных уровня. Нежить не получает эти уровни и не подвержена состоянию Порог смерти.",
+    "esES": "Devuelves la vida a un compañero fallecido con tantos puntos de golpe como sus DG actuales y eliminas A las puertas de la muerte. El regreso le impone 2 niveles negativos permanentes. Un objetivo muerto viviente no sufre esos niveles ni A las puertas de la muerte."
   },
 
   {
     "Key": "PlagueStorm.Description",
     "enGB": "You create a hideous gray cloud that infects creatures with one of several diseases. The disease takes effect immediately. If a target fails its saving throw, it must attempt a Fortitude save at the start of each subsequent round to resist the disease's worsening; on a failure, it takes the disease's ability damage again.",
-    "zhCN": "你创造一团污秽的灰色云雾，使范围内生物感染数种疾病之一。疾病会立即生效。若目标豁免失败，则在之后每轮开始时必须再次进行强韧豁免以抵御疫病恶化；若失败，则再次承受该疾病造成的属性伤害。"
+    "zhCN": "你创造一团污秽的灰色云雾，使范围内生物感染数种疾病之一。疾病会立即生效。若目标豁免失败，则在之后每轮开始时必须再次进行强韧豁免以抵御疫病恶化；若失败，则再次承受该疾病造成的属性伤害。",
+    "deDE": "Du erschaffst eine abscheuliche graue Wolke, die Kreaturen mit einer von mehreren Krankheiten ansteckt. Die Krankheit wirkt sofort. Bei misslungenem Rettungswurf muss das Ziel zu Beginn jeder folgenden Runde einen Zähigkeitswurf gegen die Verschlimmerung bestehen; bei einem Fehlschlag erleidet es erneut den Attributsschaden der Krankheit.",
+    "frFR": "Vous créez un nuage gris immonde qui infecte les créatures d'une maladie parmi plusieurs. La maladie agit immédiatement. Si la cible rate sa sauvegarde, elle doit réussir un jet de Vigueur au début de chaque round suivant contre l'aggravation ; un échec inflige à nouveau les dégâts de caractéristique de la maladie.",
+    "ruRU": "Вы создаёте мерзкое серое облако, заражающее существ одной из нескольких болезней. Болезнь действует немедленно. При провале спасброска цель в начале каждого следующего раунда должна пройти спасбросок Стойкости против ухудшения; при провале она вновь получает урон характеристикам от болезни.",
+    "esES": "Creas una nube gris repulsiva que infecta a las criaturas con una de varias enfermedades. La enfermedad actúa de inmediato. Si el objetivo falla su salvación, debe superar una salvación de Fortaleza al inicio de cada asalto posterior para evitar el empeoramiento; si falla, vuelve a sufrir el daño de característica de la enfermedad."
   },
 
   {
     "Key": "UmbralStrike.Description",
     "enGB": "You create a bolt of dark energy and make a ranged touch attack that ignores concealment, but not total concealment. If you hit, the target takes 1d6 damage per caster level, maximum 20d6. Half of this damage is unholy damage and half is negative energy. The bolt's shadow blinds the target for the spell's duration. A successful Fortitude save negates the blindness but no longer halves the damage.",
-    "zhCN": "你创造一道黑暗能量箭矢并进行一次远程接触攻击，该攻击无视隐蔽，但不能无视全隐蔽。若命中，目标受到每施法者等级1d6点伤害，最高20d6。伤害的一半为污邪伤害，另一半为负能量伤害。箭矢的阴影会笼罩目标，使其在法术持续时间内目盲。强韧豁免成功可以免除目盲，但不再使伤害减半。"
+    "zhCN": "你创造一道黑暗能量箭矢并进行一次远程接触攻击，该攻击无视隐蔽，但不能无视全隐蔽。若命中，目标受到每施法者等级1d6点伤害，最高20d6。伤害的一半为污邪伤害，另一半为负能量伤害。箭矢的阴影会笼罩目标，使其在法术持续时间内目盲。强韧豁免成功可以免除目盲，但不再使伤害减半。",
+    "deDE": "Du erschaffst ein Geschoss dunkler Energie und führst einen Berührungsangriff im Fernkampf aus, der Tarnung, aber nicht vollständige Tarnung ignoriert. Bei einem Treffer erleidet das Ziel 1d6 Schaden pro Zauberstufe, maximal 20d6. Die Hälfte ist unheiliger Schaden, die andere Hälfte negative Energie. Der Schatten des Geschosses macht das Ziel für die Wirkungsdauer blind. Ein erfolgreicher Zähigkeitswurf verhindert die Blindheit, halbiert aber nicht mehr den Schaden.",
+    "frFR": "Vous créez un projectile d'énergie sombre et effectuez une attaque de contact à distance qui ignore le camouflage, sauf le camouflage total. Si elle touche, la cible subit 1d6 dégâts par niveau de lanceur de sorts, maximum 20d6 : moitié impies, moitié d'énergie négative. L'ombre du projectile l'aveugle pour la durée du sort. Un jet de Vigueur réussi annule la cécité, mais ne réduit plus les dégâts de moitié.",
+    "ruRU": "Вы создаёте снаряд тёмной энергии и совершаете дальнюю атаку касанием, игнорирующую маскировку, но не полную маскировку. При попадании цель получает 1d6 урона за уровень заклинателя, максимум 20d6: половина — нечестивый урон, половина — отрицательная энергия. Тень снаряда ослепляет цель на время заклинания. Успешный спасбросок Стойкости отменяет слепоту, но больше не уменьшает урон вдвое.",
+    "esES": "Creas un proyectil de energía oscura y realizas un ataque de toque a distancia que ignora la ocultación, salvo la total. Si aciertas, causa 1d6 de daño por nivel de lanzador, máximo 20d6: mitad impío y mitad energía negativa. La sombra del proyectil ciega al objetivo durante el conjuro. Una salvación de Fortaleza exitosa evita la ceguera, pero ya no reduce el daño a la mitad."
   },
 
   {
     "Key": "BoneSpear.Description",
     "enGB": "You take control of the target's bones, tearing them away from the body and forming them into a deadly projectile. The spell deals 10 damage per caster level unless the target succeeds at a Fortitude save. On a successful save, the target still takes 1d6 damage per caster level. If the target dies from this damage, a bone spear forms from its bones and can be launched within the next 5 rounds.",
-    "zhCN": "你控制目标的骨骼，将其强行撕离躯体并塑造成致命投矛。除非目标通过强韧豁免，否则此法术会立即造成每施法者等级10点伤害。若豁免成功，目标仍会受到每施法者等级1d6点伤害。如果目标死于此伤害，其骨骼会形成一支白骨利矛，你可在接下来的5轮内将其掷出。"
+    "zhCN": "你控制目标的骨骼，将其强行撕离躯体并塑造成致命投矛。除非目标通过强韧豁免，否则此法术会立即造成每施法者等级10点伤害。若豁免成功，目标仍会受到每施法者等级1d6点伤害。如果目标死于此伤害，其骨骼会形成一支白骨利矛，你可在接下来的5轮内将其掷出。",
+    "deDE": "Du reißt die Knochen des Ziels aus seinem Körper und formst sie zu einem tödlichen Geschoss. Bei misslungenem Zähigkeitswurf erleidet das Ziel 10 Schaden pro Zauberstufe, bei Erfolg dennoch 1d6 pro Zauberstufe. Stirbt es dadurch, entsteht aus seinen Knochen ein Speer, den du innerhalb der nächsten 5 Runden schleudern kannst.",
+    "frFR": "Vous arrachez les os de la cible et les façonnez en projectile mortel. Si elle rate son jet de Vigueur, elle subit 10 dégâts par niveau de lanceur de sorts ; si elle le réussit, elle subit tout de même 1d6 par niveau. Si ces dégâts la tuent, ses os forment une lance que vous pouvez lancer dans les 5 rounds suivants.",
+    "ruRU": "Вы вырываете кости цели из тела и превращаете их в смертоносный снаряд. При провале спасброска Стойкости цель получает 10 урона за уровень заклинателя, при успехе — всё равно 1d6 за уровень. Если этот урон её убивает, из костей образуется копьё, которое можно метнуть в течение следующих 5 раундов.",
+    "esES": "Arrancas los huesos del objetivo y los conviertes en un proyectil mortal. Si falla una salvación de Fortaleza, sufre 10 de daño por nivel de lanzador; si la supera, aún sufre 1d6 por nivel. Si muere por este daño, sus huesos forman una lanza que puedes arrojar en los próximos 5 asaltos."
   },
 
   {
     "Key": "FingerOfDeath.Description",
     "enGB": "This spell channels death into one creature. If the target's Hit Dice are lower than your caster level and it fails its Fortitude save, it dies instantly. If the target's Hit Dice are not lower than your caster level and it fails the save, it instead takes 10 damage per caster level. On a successful save, the target takes 3d6 damage plus 1 damage per caster level.",
-    "zhCN": "该法术将死亡之力灌入一个生物。若目标生命骰数低于你的施法者等级且强韧豁免失败，目标会立即死亡。若目标生命骰数不低于你的施法者等级且豁免失败，则改为受到每施法者等级10点伤害。豁免成功时，目标受到3d6点伤害加每施法者等级1点伤害。"
+    "zhCN": "该法术将死亡之力灌入一个生物。若目标生命骰数低于你的施法者等级且强韧豁免失败，目标会立即死亡。若目标生命骰数不低于你的施法者等级且豁免失败，则改为受到每施法者等级10点伤害。豁免成功时，目标受到3d6点伤害加每施法者等级1点伤害。",
+    "deDE": "Du leitest den Tod in eine Kreatur. Hat sie weniger TW als deine Zauberstufe und misslingt ihr Zähigkeitswurf, stirbt sie sofort. Hat sie mindestens ebenso viele TW und misslingt der Wurf, erleidet sie stattdessen 10 Schaden pro Zauberstufe. Bei erfolgreichem Rettungswurf erleidet sie 3d6 + 1 Schaden pro Zauberstufe.",
+    "frFR": "Vous insufflez la mort dans une créature. Si ses DV sont inférieurs à votre niveau de lanceur de sorts et qu'elle rate son jet de Vigueur, elle meurt sur-le-champ. Si ses DV sont au moins égaux à votre niveau et qu'elle échoue, elle subit plutôt 10 dégâts par niveau. Une sauvegarde réussie lui inflige 3d6 dégâts, plus 1 par niveau.",
+    "ruRU": "Вы направляете смерть в существо. Если его КЗ меньше вашего уровня заклинателя и оно проваливает спасбросок Стойкости, оно немедленно погибает. Если КЗ не меньше вашего уровня и спасбросок провален, оно получает 10 урона за уровень. При успехе получает 3d6 урона плюс 1 за уровень заклинателя.",
+    "esES": "Canalizas la muerte hacia una criatura. Si sus DG son inferiores a tu nivel de lanzador y falla la salvación de Fortaleza, muere al instante. Si sus DG son iguales o superiores y falla, sufre 10 de daño por nivel. Si supera la salvación, sufre 3d6 de daño más 1 por nivel de lanzador."
   },
 
   {
     "Key": "RestoreUndead.Description",
     "enGB": "This spell fully heals all allied undead creatures and can also restore temporarily dead undead allies before applying its healing.",
-    "zhCN": "此法术完全治疗所有友方不死生物，并且可以在治疗前先复活暂时死去的不死生物盟友。"
+    "zhCN": "此法术完全治疗所有友方不死生物，并且可以在治疗前先复活暂时死去的不死生物盟友。",
+    "deDE": "Dieser Zauber heilt alle verbündeten Untoten vollständig und kann vor der Heilung auch vorübergehend tote untote Verbündete wiederherstellen.",
+    "frFR": "Ce sort soigne entièrement tous les morts-vivants alliés et peut aussi ranimer ceux qui sont temporairement morts avant d'appliquer les soins.",
+    "ruRU": "Заклинание полностью исцеляет всю союзную нежить и перед лечением может также вернуть временно погибших союзников-нежить.",
+    "esES": "Este conjuro cura por completo a todos los muertos vivientes aliados y puede devolver a los que hayan muerto temporalmente antes de aplicar la curación."
   },
 
   {
     "Key": "SymbolOfWeakness.Description",
     "enGB": "This rune is activated by any creature. Once triggered, a symbol of weakness remains active for 10 minutes per caster level and deals 3d6 Strength damage to all creatures within 30 feet. A creature can only be affected by this symbol once per day. This spell can benefit from Empower Spell and Maximize Spell metamagic.",
-    "zhCN": "任何生物都可以触发此符文。触发后，虚弱徽记会维持每施法者等级10分钟，并对30英尺内所有生物造成3d6点力量伤害。每个生物每天只能受到同一个徽记影响一次。此法术可以受到法术强效和法术极效超魔影响。"
+    "zhCN": "任何生物都可以触发此符文。触发后，虚弱徽记会维持每施法者等级10分钟，并对30英尺内所有生物造成3d6点力量伤害。每个生物每天只能受到同一个徽记影响一次。此法术可以受到法术强效和法术极效超魔影响。",
+    "deDE": "Jede Kreatur kann diese Rune auslösen. Danach bleibt das Symbol der Schwäche 10 Minuten pro Zauberstufe aktiv und verursacht allen Kreaturen innerhalb von 30 Fuß 3d6 Stärkeschaden. Jede Kreatur kann nur einmal täglich von demselben Symbol betroffen sein. Zauber verstärken und Zauber maximieren können diesen Zauber beeinflussen.",
+    "frFR": "Toute créature peut déclencher cette rune. Une fois activé, le Symbole de faiblesse reste actif 10 minutes par niveau de lanceur de sorts et inflige 3d6 dégâts de Force aux créatures dans un rayon de 30 pieds. Une créature ne peut être affectée par ce même symbole qu'une fois par jour. Le sort bénéficie d'Extension d'effet et de Quintessence des sorts.",
+    "ruRU": "Любое существо может активировать руну. После этого Символ слабости действует 10 минут за уровень заклинателя и наносит 3d6 урона Силе всем существам в радиусе 30 футов. Каждое существо может подвергнуться действию этого символа лишь раз в день. Заклинание поддерживает метамагию Усиленное и Максимизированное заклинание.",
+    "esES": "Cualquier criatura puede activar esta runa. Símbolo de debilidad permanece activo 10 minutos por nivel de lanzador y causa 3d6 de daño de Fuerza a todas las criaturas en un radio de 30 pies. Una criatura solo puede verse afectada por el mismo símbolo una vez al día. El conjuro admite las metamagias Potenciar conjuro y Maximizar conjuro."
   },
 
   {
     "Key": "DeathClutch.Description",
     "enGB": "With a grasping motion, you cause the target's heart to struggle inside its chest. If the target's Hit Dice are lower than your caster level and it fails its Fortitude save, it dies instantly. If its Hit Dice are not lower than your caster level and it fails the save, it is stunned for 1 minute per caster level and takes 1d6 Constitution drain plus 1d6 Constitution bleed. On a successful save, the target is dazed for 1d4 rounds.",
-    "zhCN": "你向目标伸出手作擒握之姿，使其心脏在躯干中痛苦挣扎。若目标生命骰数低于你的施法者等级且强韧豁免失败，目标会立即死亡。若目标生命骰数不低于你的施法者等级且豁免失败，目标会震慑每施法者等级1分钟，并受到1d6点体质流失与1d6点体质流血伤害。若强韧豁免成功，目标陷入恍惚1d4轮。"
+    "zhCN": "你向目标伸出手作擒握之姿，使其心脏在躯干中痛苦挣扎。若目标生命骰数低于你的施法者等级且强韧豁免失败，目标会立即死亡。若目标生命骰数不低于你的施法者等级且豁免失败，目标会震慑每施法者等级1分钟，并受到1d6点体质流失与1d6点体质流血伤害。若强韧豁免成功，目标陷入恍惚1d4轮。",
+    "deDE": "Mit einer greifenden Geste lässt du das Herz des Ziels in seiner Brust ringen. Hat es weniger TW als deine Zauberstufe und misslingt sein Zähigkeitswurf, stirbt es sofort. Hat es mindestens ebenso viele TW und misslingt der Wurf, ist es 1 Minute pro Zauberstufe betäubt und erleidet 1d6 Konstitutionsentzug sowie 1d6 Konstitutionsblutung. Bei erfolgreichem Rettungswurf ist es 1d4 Runden benommen.",
+    "frFR": "D'un geste de saisie, vous tourmentez le cœur de la cible dans sa poitrine. Si ses DV sont inférieurs à votre niveau de lanceur de sorts et qu'elle rate son jet de Vigueur, elle meurt sur-le-champ. Si ses DV sont au moins égaux à votre niveau et qu'elle échoue, elle est étourdie pendant 1 minute par niveau et subit 1d6 diminution permanente de Constitution et 1d6 saignement de Constitution. Une sauvegarde réussie la laisse hébétée pendant 1d4 rounds.",
+    "ruRU": "Хватающим жестом вы заставляете сердце цели мучительно биться в груди. Если её КЗ меньше вашего уровня заклинателя и она проваливает спасбросок Стойкости, она немедленно погибает. Если КЗ не меньше вашего уровня и спасбросок провален, цель получает шок на 1 минуту за уровень, 1d6 вытягивания Телосложения и кровотечение Телосложения 1d6. При успехе она получает ступор на 1d4 раунда.",
+    "esES": "Con un gesto de agarre haces que el corazón del objetivo se retuerza en su pecho. Si sus DG son inferiores a tu nivel de lanzador y falla la salvación de Fortaleza, muere al instante. Si sus DG son iguales o superiores y falla, queda aturdido durante 1 minuto por nivel y sufre 1d6 de consunción de Constitución y 1d6 de hemorragia de Constitución. Si supera la salvación, queda atontado durante 1d4 asaltos."
   },
 
   {
     "Key": "BestowCurseGreater.Description",
     "enGB": "You place a greater curse on the target. Choose one of the following curses: Greater Curse of Feeble Body - the target takes a -12 penalty to Constitution; Greater Curse of Weakness - the target takes a -12 penalty to Strength and Dexterity; Greater Curse of Idiocy - the target takes a -12 penalty to Intelligence, Wisdom, and Charisma; Greater Curse of Deterioration - the target takes a -8 penalty on attack rolls, saves, ability checks, and skill checks; Greater Curse of Terror - each round the target must succeed at a Will save or remain in place under a fear effect. These curses can stack with themselves.",
-    "zhCN": "你对目标施以高等诅咒，从下列诅咒中选择一项：高等弱体诅咒——目标的体质受到-12减值；高等无能诅咒——目标的力量与敏捷受到-12减值；高等愚痴诅咒——目标的智力、感知与魅力受到-12减值；高等衰颓诅咒——目标在攻击检定、豁免检定、属性检定与技能检定时受到-8减值；高等恐怖诅咒——目标每轮必须通过意志豁免，否则将在原地承受恐惧效果。这些诅咒可以与自身叠加。"
+    "zhCN": "你对目标施以高等诅咒，从下列诅咒中选择一项：高等弱体诅咒——目标的体质受到-12减值；高等无能诅咒——目标的力量与敏捷受到-12减值；高等愚痴诅咒——目标的智力、感知与魅力受到-12减值；高等衰颓诅咒——目标在攻击检定、豁免检定、属性检定与技能检定时受到-8减值；高等恐怖诅咒——目标每轮必须通过意志豁免，否则将在原地承受恐惧效果。这些诅咒可以与自身叠加。",
+    "deDE": "Du belegst das Ziel mit einem mächtigen Fluch. Wähle:<br>Mächtiger Fluch des schwachen Körpers: –12 auf Konstitution.<br>Mächtiger Fluch der Schwäche: –12 auf Stärke und Geschicklichkeit.<br>Mächtiger Fluch der Torheit: –12 auf Intelligenz, Weisheit und Charisma.<br>Mächtiger Fluch des Verfalls: –8 auf Angriffs-, Rettungs-, Attributs- und Fertigkeitswürfe.<br>Mächtiger Fluch des Schreckens: Das Ziel muss jede Runde einen Willenswurf bestehen oder unter einem Furchteffekt an Ort und Stelle bleiben.<br>Diese Flüche sind mit sich selbst kumulativ.",
+    "frFR": "Vous infligez une malédiction supérieure. Choisissez :<br>Malédiction supérieure du corps affaibli : –12 en Constitution.<br>Malédiction supérieure de faiblesse : –12 en Force et en Dextérité.<br>Malédiction supérieure d'idiotie : –12 en Intelligence, Sagesse et Charisme.<br>Malédiction supérieure de dégradation : –8 aux jets d'attaque et de sauvegarde et aux tests de caractéristique et de compétence.<br>Malédiction supérieure de terreur : chaque round, la cible doit réussir un jet de Volonté ou rester sur place sous un effet de terreur.<br>Ces malédictions se cumulent avec elles-mêmes.",
+    "ruRU": "Вы накладываете высшее проклятие. Выберите:<br>Высшее проклятие слабого тела: –12 к Телосложению.<br>Высшее проклятие слабости: –12 к Силе и Ловкости.<br>Высшее проклятие глупости: –12 к Интеллекту, Мудрости и Харизме.<br>Высшее проклятие упадка: –8 к броскам атаки, спасброскам, проверкам характеристик и навыков.<br>Высшее проклятие ужаса: каждый раунд цель должна пройти спасбросок Воли или оставаться на месте под действием страха.<br>Эти проклятия складываются сами с собой.",
+    "esES": "Impones una maldición mayor. Elige:<br>Maldición mayor del cuerpo débil: –12 a Constitución.<br>Maldición mayor de debilidad: –12 a Fuerza y Destreza.<br>Maldición mayor de idiotez: –12 a Inteligencia, Sabiduría y Carisma.<br>Maldición mayor de deterioro: –8 a las tiradas de ataque y salvación y las pruebas de característica y habilidad.<br>Maldición mayor de terror: cada asalto el objetivo debe superar una salvación de Voluntad o permanecer en su sitio bajo un efecto de miedo.<br>Estas maldiciones se acumulan consigo mismas."
   },
 
   {
     "Key": "GreaterHorrifyingCurse.Name",
     "enGB": "Greater Curse of Terror",
-    "zhCN": "高等恐怖诅咒"
+    "zhCN": "高等恐怖诅咒",
+    "deDE": "Mächtiger Fluch des Schreckens",
+    "frFR": "Malédiction supérieure de terreur",
+    "ruRU": "Высшее проклятие ужаса",
+    "esES": "Maldición mayor de terror"
   },
 
   {
     "Key": "GreaterHorrifyingCurse.Description",
     "enGB": "Each round the target must succeed at a Will save or remain in place under a fear effect.",
-    "zhCN": "目标每回合必须成功进行意志豁免，否则将在原地承受恐惧效果。"
+    "zhCN": "目标每回合必须成功进行意志豁免，否则将在原地承受恐惧效果。",
+    "deDE": "Das Ziel muss jede Runde einen Willenswurf bestehen oder unter einem Furchteffekt an Ort und Stelle bleiben.",
+    "frFR": "Chaque round, la cible doit réussir un jet de Volonté ou rester sur place sous un effet de terreur.",
+    "ruRU": "Каждый раунд цель должна пройти спасбросок Воли или оставаться на месте под действием страха.",
+    "esES": "Cada asalto el objetivo debe superar una salvación de Voluntad o permanecer en su sitio bajo un efecto de miedo."
   },
 
   {
     "Key": "HorridWilting.Description",
     "enGB": "This spell evaporates moisture from living creatures, dealing 1d8 damage per caster level, maximum 20d8. Water elementals and plant creatures instead take 1d10 damage per caster level, maximum 20d10. Damage from this spell correctly benefits from Empower Spell and Maximize Spell. Targets that fail their saving throw are withered and take an additional 1d6 damage per caster level on the next round.",
-    "zhCN": "此法术蒸发活物体内的水分，造成每施法者等级1d8点伤害，最高20d8。水元素和植物类生物改为受到每施法者等级1d10点伤害，最高20d10。此法术的伤害可以正确受到法术强效和法术极效超魔影响。豁免失败的目标会陷入凋死状态，并在下一轮额外受到每施法者等级1d6点伤害。"
+    "zhCN": "此法术蒸发活物体内的水分，造成每施法者等级1d8点伤害，最高20d8。水元素和植物类生物改为受到每施法者等级1d10点伤害，最高20d10。此法术的伤害可以正确受到法术强效和法术极效超魔影响。豁免失败的目标会陷入凋死状态，并在下一轮额外受到每施法者等级1d6点伤害。",
+    "deDE": "Du entziehst lebenden Kreaturen Feuchtigkeit und verursachst 1d8 Schaden pro Zauberstufe, maximal 20d8. Wasserelementare und Pflanzen erleiden stattdessen 1d10 pro Zauberstufe, maximal 20d10. Zauber verstärken und Zauber maximieren beeinflussen den Schaden korrekt. Bei misslungenem Rettungswurf verdorren Ziele und erleiden in der nächsten Runde zusätzlich 1d6 Schaden pro Zauberstufe.",
+    "frFR": "Vous évaporez l'humidité des créatures vivantes, infligeant 1d8 dégâts par niveau de lanceur de sorts, maximum 20d8. Les élémentaires d'eau et les plantes subissent plutôt 1d10 par niveau, maximum 20d10. Extension d'effet et Quintessence des sorts s'appliquent correctement aux dégâts. Les cibles qui ratent leur sauvegarde se flétrissent et subissent encore 1d6 dégâts par niveau au round suivant.",
+    "ruRU": "Вы испаряете влагу из живых существ, нанося 1d8 урона за уровень заклинателя, максимум 20d8. Водяные элементали и растения получают вместо этого 1d10 за уровень, максимум 20d10. Метамагия Усиленное и Максимизированное заклинание корректно влияет на урон. Провалившие спасбросок цели иссыхают и в следующем раунде получают дополнительно 1d6 урона за уровень.",
+    "esES": "Evaporas la humedad de las criaturas vivas y causas 1d8 de daño por nivel de lanzador, máximo 20d8. Los elementales de agua y las plantas sufren en su lugar 1d10 por nivel, máximo 20d10. Potenciar conjuro y Maximizar conjuro se aplican correctamente al daño. Los objetivos que fallen la salvación se marchitan y sufren 1d6 de daño adicional por nivel en el siguiente asalto."
   },
 
   {
     "Key": "Soulreaver.Description",
     "enGB": "This potent death spell deals 1d8 damage per caster level, maximum 25d8, to living creatures in a 30-foot radius. Damage from this spell correctly benefits from Empower Spell and Maximize Spell. Targets that fail their saving throw also gain 1d4 negative levels.",
-    "zhCN": "这个强大的死亡法术对30英尺半径范围内的活物造成每施法者等级1d8点伤害，最高25d8。此法术的伤害可以正确受到法术强效和法术极效超魔影响。豁免失败的目标还会获得1d4个负向等级。"
+    "zhCN": "这个强大的死亡法术对30英尺半径范围内的活物造成每施法者等级1d8点伤害，最高25d8。此法术的伤害可以正确受到法术强效和法术极效超魔影响。豁免失败的目标还会获得1d4个负向等级。",
+    "deDE": "Dieser mächtige Todeszauber verursacht lebenden Kreaturen im Umkreis von 30 Fuß 1d8 Schaden pro Zauberstufe, maximal 25d8. Zauber verstärken und Zauber maximieren beeinflussen den Schaden korrekt. Bei misslungenem Rettungswurf erhalten die Ziele außerdem 1d4 negative Stufen.",
+    "frFR": "Ce puissant sort de mort inflige aux créatures vivantes dans un rayon de 30 pieds 1d8 dégâts par niveau de lanceur de sorts, maximum 25d8. Extension d'effet et Quintessence des sorts s'appliquent correctement aux dégâts. Les cibles qui ratent leur sauvegarde subissent aussi 1d4 niveaux négatifs.",
+    "ruRU": "Могучее заклинание смерти наносит живым существам в радиусе 30 футов 1d8 урона за уровень заклинателя, максимум 25d8. Метамагия Усиленное и Максимизированное заклинание корректно влияет на урон. Провалившие спасбросок цели также получают 1d4 отрицательных уровня.",
+    "esES": "Este poderoso conjuro de muerte causa 1d8 de daño por nivel de lanzador, máximo 25d8, a las criaturas vivas en un radio de 30 pies. Potenciar conjuro y Maximizar conjuro se aplican correctamente al daño. Los objetivos que fallen la salvación también sufren 1d4 niveles negativos."
   },
 
   {
     "Key": "DomainOfTheHungryFlesh.Description",
     "enGB": "You create a terrible abomination in a 40-foot area. It attacks creatures inside, attempts to trip them, entangles them, and deals 1d4 damage to a random physical ability score. While in the area, all creatures take a –4 penalty on Fortitude, Reflex, and Will saving throws, with no saving throw to resist this penalty. The penalty ends when they leave the area. Each round, creatures in the area take 2d6 damage plus 1d4 damage per caster level. The area lasts for 1 round per caster level.",
-    "zhCN": "你在40英尺范围内创造一片可怖畸变血肉。它会攻击范围内的生物，尝试将其绊摔，使其纠缠，并对随机一项物理属性造成1d4点伤害。所有生物处于区域内时，强韧、反射和意志豁免检定均受到−4减值，此减值无需豁免，离开区域后解除。范围内生物每轮受到2d6点伤害加每施法者等级1d4点伤害。此区域持续每施法者等级1轮。"
+    "zhCN": "你在40英尺范围内创造一片可怖畸变血肉。它会攻击范围内的生物，尝试将其绊摔，使其纠缠，并对随机一项物理属性造成1d4点伤害。所有生物处于区域内时，强韧、反射和意志豁免检定均受到−4减值，此减值无需豁免，离开区域后解除。范围内生物每轮受到2d6点伤害加每施法者等级1d4点伤害。此区域持续每施法者等级1轮。",
+    "deDE": "Du erschaffst eine schreckliche Fleischmasse in einem 40-Fuß-Bereich. Sie greift Kreaturen darin an, versucht sie zu Fall zu bringen, verstrickt sie und verursacht 1d4 Schaden an einem zufälligen körperlichen Attribut. Alle Kreaturen im Bereich erleiden –4 auf Zähigkeits-, Reflex- und Willenswürfe, ohne Rettungswurf gegen diesen Malus. Er endet beim Verlassen. Jede Runde erleiden Kreaturen darin 2d6 + 1d4 Schaden pro Zauberstufe. Der Bereich hält 1 Runde pro Zauberstufe an.",
+    "frFR": "Vous créez une abomination de chair dans une zone de 40 pieds. Elle attaque les créatures présentes, tente de les faire tomber, les enchevêtre et inflige 1d4 dégâts à une caractéristique physique aléatoire. Toutes les créatures dans la zone subissent –4 aux jets de Vigueur, Réflexes et Volonté, sans sauvegarde contre ce malus ; il cesse à leur sortie. Chaque round, elles subissent 2d6 dégâts plus 1d4 par niveau de lanceur de sorts. La zone dure 1 round par niveau.",
+    "ruRU": "Вы создаёте жуткую массу плоти в области 40 футов. Она атакует существ внутри, пытается сбить их с ног, опутывает и наносит 1d4 урона случайной физической характеристике. Все существа в области получают –4 к спасброскам Стойкости, Реакции и Воли без спасброска против штрафа; штраф исчезает при выходе. Каждый раунд существа внутри получают 2d6 урона плюс 1d4 за уровень заклинателя. Область существует 1 раунд за уровень.",
+    "esES": "Creas una abominación de carne en una zona de 40 pies. Ataca a las criaturas dentro, intenta derribarlas, las enmaraña y causa 1d4 de daño a una característica física aleatoria. Todas las criaturas en la zona sufren –4 a las salvaciones de Fortaleza, Reflejos y Voluntad, sin salvación contra este penalizador; desaparece al salir. Cada asalto sufren 2d6 de daño más 1d4 por nivel de lanzador. La zona dura 1 asalto por nivel."
   },
 
   {
     "Key": "WailOfBanshee.Description",
     "enGB": "You emit a terrible, soul-chilling scream in a 60-foot radius. If a target's Hit Dice are lower than your caster level and it fails its Fortitude save, it dies instantly. If its Hit Dice are not lower than your caster level and it fails the save, it instead takes 10 damage per caster level. On a successful save, the target is dazed for 1d4 rounds.",
-    "zhCN": "你发出骇人的摄魂尖啸，影响60英尺半径范围内的生物。若目标生命骰数低于你的施法者等级且强韧豁免失败，目标会立即死亡。若目标生命骰数不低于你的施法者等级且豁免失败，则改为受到每施法者等级10点伤害。豁免成功的目标陷入恍惚1d4轮。"
+    "zhCN": "你发出骇人的摄魂尖啸，影响60英尺半径范围内的生物。若目标生命骰数低于你的施法者等级且强韧豁免失败，目标会立即死亡。若目标生命骰数不低于你的施法者等级且豁免失败，则改为受到每施法者等级10点伤害。豁免成功的目标陷入恍惚1d4轮。",
+    "deDE": "Du stößt einen schrecklichen, seelenerschütternden Schrei mit 60 Fuß Radius aus. Hat ein Ziel weniger TW als deine Zauberstufe und misslingt sein Zähigkeitswurf, stirbt es sofort. Hat es mindestens ebenso viele TW und misslingt der Wurf, erleidet es stattdessen 10 Schaden pro Zauberstufe. Bei erfolgreichem Rettungswurf ist es 1d4 Runden benommen.",
+    "frFR": "Vous poussez un cri terrifiant dans un rayon de 60 pieds. Si les DV d'une cible sont inférieurs à votre niveau de lanceur de sorts et qu'elle rate son jet de Vigueur, elle meurt sur-le-champ. Si ses DV sont au moins égaux à votre niveau et qu'elle échoue, elle subit plutôt 10 dégâts par niveau. Une sauvegarde réussie la laisse hébétée pendant 1d4 rounds.",
+    "ruRU": "Вы издаёте леденящий душу вопль в радиусе 60 футов. Если КЗ цели меньше вашего уровня заклинателя и она проваливает спасбросок Стойкости, она немедленно погибает. Если КЗ не меньше вашего уровня и спасбросок провален, она получает 10 урона за уровень. При успехе цель получает ступор на 1d4 раунда.",
+    "esES": "Emites un grito aterrador en un radio de 60 pies. Si los DG del objetivo son inferiores a tu nivel de lanzador y falla la salvación de Fortaleza, muere al instante. Si sus DG son iguales o superiores y falla, sufre 10 de daño por nivel. Si supera la salvación, queda atontado durante 1d4 asaltos."
   },
 
   {
     "Key": "NegativeEruption.Description",
     "enGB": "This spell functions as harm, but affects all creatures in a 30-foot radius. Additionally, all affected undead creatures gain a +2 bonus on attack rolls, damage rolls, and Will saves, twice your caster level in temporary hit points, and have all harmful effects removed.",
-    "zhCN": "此法术效果类似重伤术，但影响30英尺半径范围内的所有生物。此外，所有受影响的不死生物在攻击检定、伤害检定和意志豁免上获得+2加值，获得等同于你施法者等级两倍的临时生命值，并移除身上的所有有害效果。"
+    "zhCN": "此法术效果类似重伤术，但影响30英尺半径范围内的所有生物。此外，所有受影响的不死生物在攻击检定、伤害检定和意志豁免上获得+2加值，获得等同于你施法者等级两倍的临时生命值，并移除身上的所有有害效果。",
+    "deDE": "Dieser Zauber wirkt wie Leid, betrifft jedoch alle Kreaturen im Umkreis von 30 Fuß. Alle betroffenen Untoten erhalten außerdem +2 auf Angriffs-, Schadens- und Willenswürfe sowie temporäre Trefferpunkte in Höhe deiner doppelten Zauberstufe; alle schädlichen Effekte werden von ihnen entfernt.",
+    "frFR": "Ce sort fonctionne comme Mise à mal, mais affecte toutes les créatures dans un rayon de 30 pieds. Tous les morts-vivants affectés gagnent aussi +2 aux jets d'attaque, de dégâts et de Volonté, des points de vie temporaires égaux à deux fois votre niveau de lanceur de sorts, et perdent tous leurs effets néfastes.",
+    "ruRU": "Заклинание действует как Повреждение, но затрагивает всех существ в радиусе 30 футов. Вся затронутая нежить дополнительно получает +2 к броскам атаки, урона и спасброскам Воли, временные ОЗ в размере удвоенного уровня заклинателя и избавляется от всех вредных эффектов.",
+    "esES": "Este conjuro funciona como Dañar, pero afecta a todas las criaturas en un radio de 30 pies. Además, todos los muertos vivientes afectados obtienen +2 a las tiradas de ataque, daño y salvaciones de Voluntad, puntos de golpe temporales iguales al doble de tu nivel de lanzador y la eliminación de todos sus efectos perjudiciales."
   },
 
   {
     "Key": "DeathRealm.Description",
     "enGB": "When you cast this spell, you expose the reality around you to inevitable death. All living creatures within 80 feet of you take 10 damage per caster level and suffer 2d4 permanent negative levels. A successful Fortitude save negates the damage but does not prevent the negative levels.",
-    "zhCN": "施放这个法术时，你将周围的一切现实导向不可避免的死亡。距离你80英尺内的所有活物受到每施法者等级10点伤害，并承受2d4个永久负向等级。成功进行强韧豁免检定可免除伤害，但无法免除负向等级。"
+    "zhCN": "施放这个法术时，你将周围的一切现实导向不可避免的死亡。距离你80英尺内的所有活物受到每施法者等级10点伤害，并承受2d4个永久负向等级。成功进行强韧豁免检定可免除伤害，但无法免除负向等级。",
+    "deDE": "Du setzt die Wirklichkeit um dich dem unvermeidlichen Tod aus. Alle lebenden Kreaturen innerhalb von 80 Fuß erleiden 10 Schaden pro Zauberstufe und 2d4 permanente negative Stufen. Ein erfolgreicher Zähigkeitswurf verhindert den Schaden, jedoch nicht die negativen Stufen.",
+    "frFR": "Vous exposez la réalité autour de vous à une mort inéluctable. Toutes les créatures vivantes dans un rayon de 80 pieds subissent 10 dégâts par niveau de lanceur de sorts et 2d4 niveaux négatifs permanents. Un jet de Vigueur réussi annule les dégâts, mais pas les niveaux négatifs.",
+    "ruRU": "Вы подчиняете окружающую реальность неизбежной смерти. Все живые существа в радиусе 80 футов получают 10 урона за уровень заклинателя и 2d4 постоянных отрицательных уровня. Успешный спасбросок Стойкости отменяет урон, но не отрицательные уровни.",
+    "esES": "Expones la realidad que te rodea a una muerte inevitable. Todas las criaturas vivas a 80 pies o menos sufren 10 de daño por nivel de lanzador y 2d4 niveles negativos permanentes. Una salvación de Fortaleza exitosa anula el daño, pero no los niveles negativos."
   },
 
   {
     "Key": "PitOfDespair.Description",
     "enGB": "You create a 40-foot pit around a Nightshade Nightcrawler. The spell is treated as necromancy and affects enemies only. The pit and the summoned nightcrawler last for 1 minute per caster level. Creatures falling into the pit take 20d6 bludgeoning damage, and creatures in the pit take 1d6 negative energy damage per caster level each round.",
-    "zhCN": "你围绕一只巨虫夜影创造一个40英尺范围的陷坑。此法术视为死灵学派法术，并且只影响敌人。陷坑和召唤出的巨虫夜影持续每施法者等级1分钟。坠入陷坑的生物受到20d6点钝击伤害，陷坑中的生物每轮受到每施法者等级1d6点负能量伤害。"
+    "zhCN": "你围绕一只巨虫夜影创造一个40英尺范围的陷坑。此法术视为死灵学派法术，并且只影响敌人。陷坑和召唤出的巨虫夜影持续每施法者等级1分钟。坠入陷坑的生物受到20d6点钝击伤害，陷坑中的生物每轮受到每施法者等级1d6点负能量伤害。",
+    "deDE": "Du erschaffst eine 40-Fuß-Grube um einen Nachtschatten-Nachtkriecher. Der Zauber gilt als Nekromantie und betrifft nur Feinde. Grube und herbeigerufener Nachtkriecher bleiben 1 Minute pro Zauberstufe bestehen. Hineinfallende Kreaturen erleiden 20d6 Wuchtschaden; Kreaturen in der Grube erleiden jede Runde 1d6 negativen Energieschaden pro Zauberstufe.",
+    "frFR": "Vous créez une fosse de 40 pieds autour d'un Rampant ténébreux. Le sort relève de la nécromancie et n'affecte que les ennemis. La fosse et le Rampant ténébreux convoqué durent 1 minute par niveau de lanceur de sorts. Les créatures qui tombent subissent 20d6 dégâts contondants ; celles dans la fosse subissent 1d6 dégâts d'énergie négative par niveau chaque round.",
+    "ruRU": "Вы создаёте 40-футовую яму вокруг существа «Ночная тень — ползущий в ночи». Заклинание относится к некромантии и действует только на врагов. Яма и призванное существо «Ночная тень — ползущий в ночи» существуют 1 минуту за уровень заклинателя. Падающие существа получают 20d6 дробящего урона, а находящиеся в яме — каждый раунд 1d6 урона отрицательной энергией за уровень заклинателя.",
+    "esES": "Creas un foso de 40 pies alrededor de una Noctoruga noctumbra. El conjuro es de nigromancia y solo afecta a enemigos. El foso y la Noctoruga noctumbra convocada duran 1 minuto por nivel de lanzador. Las criaturas que caen sufren 20d6 de daño contundente; las que estén dentro sufren cada asalto 1d6 de daño de energía negativa por nivel de lanzador."
   },
 
   {
     "Key": "DoomOfServitude.Description",
     "enGB": "There is no escape for any mortal soul. This spell functions as repurpose, except the duration is permanent. The target immediately takes 6 damage per caster level, and then takes 6 damage per caster level each round until death. If the target dies during the effect, it rises as an undead creature under your command.",
-    "zhCN": "凡俗灵魂无处可逃。此法术效果类似重赋使命，但持续时间为永久。目标立即受到每施法者等级6点伤害，之后每轮受到每施法者等级6点伤害，直至死亡。若目标在此效果持续期间死亡，它会复生为受你控制的不死生物。"
+    "zhCN": "凡俗灵魂无处可逃。此法术效果类似重赋使命，但持续时间为永久。目标立即受到每施法者等级6点伤害，之后每轮受到每施法者等级6点伤害，直至死亡。若目标在此效果持续期间死亡，它会复生为受你控制的不死生物。",
+    "deDE": "Keine sterbliche Seele entkommt. Dieser Zauber wirkt wie Umnutzung, jedoch dauerhaft. Das Ziel erleidet sofort 6 Schaden pro Zauberstufe und danach jede Runde denselben Schaden, bis es stirbt. Stirbt es während des Effekts, erhebt es sich als Untoter unter deinem Befehl.",
+    "frFR": "Aucune âme mortelle ne peut s'échapper. Ce sort fonctionne comme Reconversion, mais sa durée est permanente. La cible subit immédiatement 6 dégâts par niveau de lanceur de sorts, puis autant chaque round jusqu'à sa mort. Si elle meurt pendant l'effet, elle se relève en mort-vivant sous vos ordres.",
+    "ruRU": "Ни одной смертной душе не спастись. Заклинание действует как Переназначение, но постоянно. Цель немедленно получает 6 урона за уровень заклинателя, а затем столько же каждый раунд до смерти. Если она погибает во время действия эффекта, то восстаёт нежитью под вашим командованием.",
+    "esES": "Ningún alma mortal puede escapar. Este conjuro funciona como Readaptar, pero dura permanentemente. El objetivo sufre de inmediato 6 de daño por nivel de lanzador y vuelve a sufrirlo cada asalto hasta morir. Si muere durante el efecto, se alza como un muerto viviente bajo tus órdenes."
   },
 
   {
     "Key": "AbsoluteDeath.Description",
     "enGB": "A sense of imminent death fills the target's heart. If the target fails its Will save, it dies immediately. If the Will save succeeds, it must attempt an additional Fortitude save. If the Fortitude save fails, the target still dies immediately. If both saves succeed, the target takes 10 damage per caster level and remains in place under a fear effect for 1 round.",
-    "zhCN": "迫近死亡的预感充满目标心中。若目标意志豁免失败，它会立即死亡。若意志豁免成功，目标还必须进行一次强韧豁免。若强韧豁免失败，目标仍会立即死亡。若两次豁免均成功，目标受到每施法者等级10点伤害，并在原地承受恐惧效果1轮。"
+    "zhCN": "迫近死亡的预感充满目标心中。若目标意志豁免失败，它会立即死亡。若意志豁免成功，目标还必须进行一次强韧豁免。若强韧豁免失败，目标仍会立即死亡。若两次豁免均成功，目标受到每施法者等级10点伤害，并在原地承受恐惧效果1轮。",
+    "deDE": "Todesahnung erfüllt das Herz des Ziels. Misslingt sein Willenswurf, stirbt es sofort. Bei Erfolg muss es zusätzlich einen Zähigkeitswurf bestehen oder ebenfalls sofort sterben. Besteht es beide Würfe, erleidet es 10 Schaden pro Zauberstufe und bleibt 1 Runde lang unter einem Furchteffekt an Ort und Stelle.",
+    "frFR": "Le pressentiment d'une mort imminente envahit le cœur de la cible. Si elle rate son jet de Volonté, elle meurt immédiatement. Si elle le réussit, elle doit aussi réussir un jet de Vigueur ou mourir malgré tout. Si elle réussit les deux, elle subit 10 dégâts par niveau de lanceur de sorts et reste sur place sous un effet de terreur pendant 1 round.",
+    "ruRU": "Предчувствие смерти наполняет сердце цели. При провале спасброска Воли она немедленно погибает. При успехе она должна дополнительно пройти спасбросок Стойкости; провал также означает немедленную смерть. При успехе обоих спасбросков цель получает 10 урона за уровень заклинателя и остаётся на месте под действием страха на 1 раунд.",
+    "esES": "Un presentimiento de muerte inminente invade el corazón del objetivo. Si falla la salvación de Voluntad, muere al instante. Si la supera, debe superar además una de Fortaleza o también muere. Si supera ambas, sufre 10 de daño por nivel de lanzador y permanece en su sitio bajo un efecto de miedo durante 1 asalto."
   }
 ]
