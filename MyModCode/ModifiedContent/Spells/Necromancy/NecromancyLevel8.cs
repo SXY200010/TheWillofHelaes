@@ -633,6 +633,14 @@ namespace CruoromancerTweaks.ModifiedContent.Spells.Necromancy
             BlueprintAbility DomainOfTheHungryFlesh = BlueprintTool.Get<BlueprintAbility>("0d820abda7693a9418546a47eea62ea2");
             BlueprintAbilityAreaEffect DomainOfTheHungryFleshArea = BlueprintTool.Get<BlueprintAbilityAreaEffect>("6df8ed6ff8ac4974aba16eca1b7b5cbe");
 
+            AbilityConfigurator.For(DomainOfTheHungryFlesh)
+                .SetDescription(DomainOfTheHungryFleshDescription)
+                .EditComponent<SpellComponent>(c =>
+                {
+                    c.School = SpellSchool.Necromancy;
+                })
+                .Configure();
+
             // 不同区域分别维护Buff实例，豁免减值不重复叠加。
             var hungryFleshSavePenalty = BuffConfigurator.New("HungryFleshSavePenaltyBuff", "D38D8D64EE1B4B9B9E8F548CBB9A5CFD")
                 .SetIcon(DomainOfTheHungryFlesh.Icon)
